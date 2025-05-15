@@ -1,0 +1,9 @@
+name: Musr IP
+desc: Information IP
+tiles:
+  - name: IP
+    icon: 'mappin.and.ellipse'
+    backgroundColor: '#00FF00'
+script-providers:
+  IP:
+    url: https://gist.githubusercontent.com/DungHoang120401/74f1e326df2a9673260d537bf8a5bea9/raw/2d1714cd9bc3bda7b1f5af1babc35fdd9c67cce8/ThongTinIP.js
