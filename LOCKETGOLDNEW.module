@@ -1,10 +1,10 @@
-#!name=Locket Gold 🏅- NightmarketServer
+#!name=Locket Gold 🏅- Nguyễn Ngọc Anh Tú
 #!desc=Mở khoá premium cho ứng dụng Locket Widget 
-# 👤 Author: Nightmarket Server 
-# 💬 Discord: https://discord.gg/juY9tw5AJY  
-# 🚀 Released by: Nightmarket Server  
+# 👤 Author: Nguyễn Ngọc Anh Tú 
+# 💬 Facebook: fb.com/NguyenNgocAnhTu.VN 
+# 🚀 Released by: Nguyễn Ngọc Anh Tú
 #!version= 5
-update-url = https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/locketV5.module
+update-url = https://raw.githubusercontent.com/AnhTuKaZe/Locket/refs/heads/main/LOCKETGOLDNEW.module
 
 [Script]
 # ～ Egern transfer to Shadowrocket & Surge & LanceX
