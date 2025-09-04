@@ -1,0 +1,27 @@
+#!name=Colorful Weather Pro – Gỡ Quảng Cáo & Mở Khóa SVIP
+#!desc=Chặn quảng cáo trong ứng dụng Caiyun Weather, mở khóa các tính năng SVIP (chỉ hoạt động với phiên bản dưới 7.20.2).
+#!author=RuCu6, Keywos, 可莉🅥
+# 💬 Gmail: nguyenngocanhtuwork@gmail.com
+# 🚀 Released by: nguyenngocanhtuwork@gmail.com
+
+[Rule]
+DOMAIN,abyss.cyapi.cn,REJECT
+DOMAIN,ad.cyapi.cn,REJECT
+DOMAIN,gather.colorfulclouds.net,REJECT
+
+[Map Local]
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+# 共享会员
+[彩云天气]共享会员 = type=http-request, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\?, script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/ColorfulCloudsWeatherPro/ColorfulCloudsWeatherPro.js
+
+[彩云天气]共享会员 = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(api\/v1\/user_detail|p\/v1\/vip_info|v2\/user), script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/ColorfulCloudsWeatherPro/ColorfulCloudsWeatherPro.js, requires-body=true
+
+# 底部菜单栏,活动推广
+[彩云天气]移除广告 = type=http-response, pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?, script-path=https://raw.githubusercontent.com/sooyaaabo/Loon/main/Script/ColorfulCloudsWeatherPro/ColorfulCloudsWeatherPro.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% biz.cyapi.cn, starplucker.cyapi.cn, api.caiyunapp.com, cdn-w.caiyunapp.com, *.cyapi.cn

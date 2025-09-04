@@ -1,0 +1,14 @@
+#!name=Wink
+#!desc=Unlock VIP Wink qua API Meitu
+# 💬 Gmail: nguyenngocanhtuwork@gmail.com
+# 🚀 Released by: nguyenngocanhtuwork@gmail.com
+[General]
+bypass-system = true
+skip-proxy = *.local, *.crashlytics.com
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+
+[MITM]
+hostname = api.revenuecat.com, buy.itunes.apple.com, api-sub.meitu.com
+
+[Script]
+WinkVipCrack.js=type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js
