@@ -1,8 +1,8 @@
 #!name=Colorful Weather Pro – Gỡ Quảng Cáo & Mở Khóa SVIP
 #!desc=Chặn quảng cáo trong ứng dụng Caiyun Weather, mở khóa các tính năng SVIP (chỉ hoạt động với phiên bản dưới 7.20.2).
 #!author=RuCu6, Keywos, 可莉🅥
-# 💬 Gmail: nguyenngocanhtuwork@gmail.com
-# 🚀 Released by: nguyenngocanhtuwork@gmail.com
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
 
 [Rule]
 DOMAIN,abyss.cyapi.cn,REJECT

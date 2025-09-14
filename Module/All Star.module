@@ -1,8 +1,8 @@
 #!name=Tổng Hợp (VSCO, PicsArt, Alight Motion, Spotify, Wink)
 #!desc=Gói script unlock premium cho nhiều app (VSCO, PicsArt, Alight Motion, Spotify, Wink, v.v.) qua MITM và RevenueCat bypass.
-# 💬 Gmail: nguyenngocanhtuwork@gmail.com
-# 🚀 Released by: nguyenngocanhtuwork@gmail.com
-#!author=nguyenngocanhtuwork@gmail.com
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
+#!author=quocchienn
 [General]
 bypass-system = true
 skip-proxy = *.local, *.crashlytics.com

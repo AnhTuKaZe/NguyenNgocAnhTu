@@ -4,8 +4,8 @@
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MeiTu.png
 #!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id416048305
-# 💬 Gmail: nguyenngocanhtuwork@gmail.com
-# 🚀 Released by: nguyenngocanhtuwork@gmail.com
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
 
 [Body Rewrite]
 http-response-jq ^https:\/\/api\.xiuxiu\.meitu\.com\/v\d\/common\/config\.json 'delpaths([["data","home_top_live"]])'

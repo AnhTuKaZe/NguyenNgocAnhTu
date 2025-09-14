@@ -1,0 +1,22 @@
+[General]
+dns-server = 160.191.243.40
+skip-proxy = 160.191.243.40
+always-resolve = true
+bypass-system-dns = true
+
+[Proxy]
+# Không dùng proxy, để trống
+
+[Rule]
+# Ưu tiên xử lý DNS & traffic liên quan đến Locket / Apple trực tiếp
+DOMAIN-KEYWORD,locket,DIRECT
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+
+# Trường hợp cần bỏ chặn OCSP
+DOMAIN-SUFFIX,ocsp.apple.com,DIRECT
+
+# Mọi thứ còn lại đều DIRECT
+FINAL,DIRECT
