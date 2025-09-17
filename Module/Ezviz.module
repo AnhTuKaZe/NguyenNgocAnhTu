@@ -1,0 +1,27 @@
+#!name=EZVIZ – Gỡ Quảng Cáo Video
+#!desc=Chặn toàn bộ quảng cáo trong ứng dụng xem video EZVIZ (萤石云视频).
+#!author=可莉🅥
+#!openUrl=https://apps.apple.com/app/id571195405
+📢 KÊNH CẬP NHẬT
+🖥 Facebook: NguyenNgocAnhTu.VN
+🌐 Luôn cập nhật các .sgmodule mới nhất, tối ưu, dễ dùng, an toàn.
+
+[URL Rewrite]
+^https:\/\/api\.ys7\.com\/api\/ads - reject
+
+[Map Local]
+^https:\/\/i\.ys7\.com\/api\/user\/tabList data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 我的页面 - 轮播图推广
+^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 智能 - 玩法 - 精选专题
+^https:\/\/api\.ys7\.com\/v3\/intelligent-app\/apps\/linkage data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+^https:\/\/api\.ys7\.com\/v3\/configurations\/gray\/info\?grayTypes=185 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 天气视频
+^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.ys7.com, i.ys7.com

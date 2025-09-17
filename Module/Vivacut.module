@@ -1,0 +1,15 @@
+#!name=Vivacut
+#!desc=Vivacut解锁会员
+📢 KÊNH CẬP NHẬT
+🖥 Facebook: NguyenNgocAnhTu.VN
+🌐 Luôn cập nhật các .sgmodule mới nhất, tối ưu, dễ dùng, an toàn.
+#!homepage=https://whatshub.top
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/vivacut.png
+
+[Script]
+Vivacut=type=http-response,pattern=^https:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vivacut.js
+
+[MITM] 
+hostname = %APPEND% medi.dxzzy321.top
+
+#!author=89996462
