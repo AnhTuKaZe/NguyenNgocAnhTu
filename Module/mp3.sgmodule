@@ -1,8 +1,0 @@
-#!name=Unlock zingmp3
-#!desc=zingmp3
-
-[MITM]
-hostname = %APPEND% api.zingmp3.vn
-
-[Script]
-zingmp3 = type=http-response,pattern=^https:\/\/api\.zingmp3\.vn\/1\.0\/getUserInfo\?data=*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zozocao/SurgeLK/main/scripts/zozocao/mp3.js,script-update-interval=-1 

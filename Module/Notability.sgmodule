@@ -1,8 +1,0 @@
-#!name=Unlock Notability
-#!desc=Notability
-
-[Script]
-Notability = type=http-response,pattern=^https:\/\/notability\.com\/subscriptions$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zozocao/SurgeLK/main/scripts/zozocao/Notability.js
-
-[MITM]
-hostname=%APPEND% notability.com

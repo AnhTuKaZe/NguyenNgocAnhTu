@@ -1,8 +1,0 @@
-#!name=Unlock Mix 
-#!desc=Unlock Full Membership 
-
-[Script]
-camera360-Mix = requires-body=1,script-path=https://raw.githubusercontent.com/zozocao/SurgeLK/main/scripts/zozocao/mix.js,type=http-response,pattern=^https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery
-
-[MITM]
-hostname = %APPEND% *bm.camera360.com
