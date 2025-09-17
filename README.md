@@ -1,6 +1,27 @@
+<h1 align="center">📦 NguyenNgocAnhTu Shadowrocket Collection</h1>
+
+<pre align="center">
+███╗   ██╗██╗   ██╗██╗ ██████╗ ███╗   ██╗
+████╗  ██║██║   ██║██║██╔═══██╗████╗  ██║
+██╔██╗ ██║██║   ██║██║██║   ██║██╔██╗ ██║
+██║╚██╗██║██║   ██║██║██║   ██║██║╚██╗██║
+██║ ╚████║╚██████╔╝██║╚██████╔╝██║ ╚████║
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+</pre>
+
 <p align="center">
-  <img src="https://github.com/bongsusu/banner/blob/main/Purple%20and%20Black%20Modern%20Game%20Streamer%20Twitch%20Banner.jpg" alt="Banner" width="100%">
+  <b>Tổng hợp các script .sgmodule dành cho Loon / Surge / Stash</b><br>
+  <i>Đã Việt hóa & tối ưu theo phong cách <b>NguyenNgocAnhTu</b></i>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge&logo=github" alt="Status">
+  <img src="https://img.shields.io/badge/MITM-Ready-blue?style=for-the-badge" alt="MITM Ready">
+  <img src="https://img.shields.io/badge/Update-Weekly-orange?style=for-the-badge" alt="Weekly Update">
+  <img src="https://img.shields.io/badge/Made%20with-❤️-ff69b4?style=for-the-badge" alt="Love">
+</p>
+
+---
 
 > ⚠️ **Cảnh Báo Sử Dụng**  
 > Không được dùng nội dung trong repo này cho mục đích vi phạm pháp luật hoặc lừa đảo.  
@@ -8,16 +29,9 @@
 
 ---
 
-# 📦 NguyenNgocAnhTu Shadowrocket Collection
-✨ **Tổng hợp các script `.sgmodule`** dành cho **Loon / Surge / Stash**, đã được Việt hóa & chuẩn hóa theo phong cách riêng của **NguyenNgocAnhTu**.
-
-> 🛠 **Phân phối bởi:** [NguyenNgocAnhTu](https://www.facebook.com/NguyenNgocAnhTu.VN)
-
----
-
 ## ☁️ 1.1.1.1 with WARP – Cloudflare
 - 🔧 **Mô tả:** WARP – bảng điều khiển giám sát & trích xuất thông tin node  
-- 👤 **Tác giả:** VirgilClyne & R·E
+- 👤 **Tác giả:** VirgilClyne & R·E  
 
 ---
 
