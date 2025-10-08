@@ -81,16 +81,3 @@ hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.c
 # - Nếu bạn muốn tách lại từng module hoặc đổi tên, chỉ báo cho mình (mình sẽ cập nhật ngay).
 
 # -----------------------------
-# Authors (tập trung — đặt ở cuối như yêu cầu)
-# - KazeMod Server
-# - @DivineEngine
-# - @app2smile
-# - @Maasea
-# - @VirgilClyne
-# - @ddgksf2013
-# - @deezertidal
-# - @Choler
-# - @bai1zi
-# -----------------------------
-
-# End of merged file
