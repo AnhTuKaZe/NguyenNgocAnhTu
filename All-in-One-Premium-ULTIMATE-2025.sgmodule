@@ -1,13 +1,13 @@
 #!name=All-in-One Premium ULTIMATE Edition 2025
-#!desc=👤 Author: Nguyen Ngoc Anh Tu 🔥 ULTIMATE VERSION | 50+ Premium Apps Unlocked | 🌸 Full Ad Blocker + 🎬 YouTube + 🎵 Spotify + 🎨 All Editors + 📱 Social Media + 🎓 Education + 🧘 Wellness + 📞 Truecaller
-#!tag=YouTube, Spotify, TikTok, Instagram, Canva, CapCut, Premium, Adblock, Ultimate, Full, Truecaller, Locket
+#!desc=👤 Author: Nguyen Ngoc Anh Tu 🔥 ULTIMATE VERSION | 52+ Premium Apps Unlocked | 🌸 Full Ad Blocker + 🎬 YouTube + 🎵 Spotify + 🎨 All Editors + 📱 Social Media + 🎓 Education + 🧘 Wellness + 📞 Truecaller + 💄 Wink
+#!tag=YouTube, Spotify, TikTok, Instagram, Canva, CapCut, Premium, Adblock, Ultimate, Full, Truecaller, Locket, Wink
 #!system=ios
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
 
 # 📢 KÊNH CẬP NHẬT
 # 🖥 Facebook: NguyenNgocAnhTu.VN
-# 🌐 Module FULL nhất - 50+ apps premium unlock
-# ✅ Version: 3.1 ULTIMATE - Full Everything + Truecaller!
+# 🌐 Module FULL nhất - 52+ apps premium unlock
+# ✅ Version: 3.2 ULTIMATE - Full Everything + Truecaller + Wink!
 # 📅 Last Updated: 2025-10-19
 # 🔧 Fixed & Optimized by AI Assistant
 
@@ -188,6 +188,9 @@ faceapp = type=http-response, pattern=^https:\/\/api\.faceapp\.io\/api\/v.*\/aut
 
 # Meitu Premium
 meitu = type=http-response, pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, max-size=0, timeout=30
+
+# Wink VIP (NEW!)
+wink = type=http-response, pattern=^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json, script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js, requires-body=true, max-size=0, timeout=30
 
 # Prequel Premium
 prequel = type=http-response, pattern=^https:\/\/api\.prequel\.app\/api\/v1\/subscription-status, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/prequel.js, requires-body=true, max-size=0, timeout=30
@@ -404,7 +407,7 @@ reddit = type=http-response, pattern=^https:\/\/oauth\.reddit\.com\/api\/v1\/me,
 ################################
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, -redirector*.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium-*.truecaller.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, api-gateway.canvas.apps.chrome.google.com, api.capcut.com, api-*.capcut.com, owa.videoshowiosglobalserver.com, api.faceapp.io, *.xiuxiu.meitu.com, api.prequel.app, focos.oracle.bendingspoonsapps.com, ios-api-2.duolingo.com, accounts.elevateapp.net, billing.peakcloud.org, api.memrise.com, api.monkeytype.com, ios-api.seekrtech.com, notability.com, isi.*.g.aaplimg.com, license.pdfexpert.com, api.headspace.com, api.sleepcycle.com, api-production.endel.io, www.downdogapp.com, api.myfitnesspal.com, amp-api.music.apple.com, *.tiktokv.com, api.twitter.com, oauth.reddit.com
+hostname = %APPEND% *.googlevideo.com, -redirector*.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium-*.truecaller.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, api-gateway.canvas.apps.chrome.google.com, api.capcut.com, api-*.capcut.com, owa.videoshowiosglobalserver.com, api.faceapp.io, *.xiuxiu.meitu.com, api-sub.meitu.com, api.prequel.app, focos.oracle.bendingspoonsapps.com, ios-api-2.duolingo.com, accounts.elevateapp.net, billing.peakcloud.org, api.memrise.com, api.monkeytype.com, ios-api.seekrtech.com, notability.com, isi.*.g.aaplimg.com, license.pdfexpert.com, api.headspace.com, api.sleepcycle.com, api-production.endel.io, www.downdogapp.com, api.myfitnesspal.com, amp-api.music.apple.com, *.tiktokv.com, api.twitter.com, oauth.reddit.com
 
 enable = true
 
@@ -412,14 +415,15 @@ enable = true
 # ✅ ULTIMATE CONFIGURATION COMPLETE
 # ========================================
 # 
-# 📝 VERSION 3.1 ULTIMATE FEATURES:
-# ✓ 50+ Premium Apps Unlocked
+# 📝 VERSION 3.2 ULTIMATE FEATURES:
+# ✓ 52+ Premium Apps Unlocked
 # ✓ Enhanced YouTube Ad Blocking with PiP
 # ✓ TikTok Watermark Removal & Region Unlock
 # ✓ Instagram Premium Features
 # ✓ Twitter/X Premium
 # ✓ Reddit Premium
-# ✓ Truecaller Premium (NEW!)
+# ✓ Truecaller Premium
+# ✓ Wink VIP (NEW! v3.2)
 # ✓ Canva Pro
 # ✓ CapCut Pro
 # ✓ InShot Pro
@@ -431,16 +435,17 @@ enable = true
 # ✓ FaceApp Premium
 # ✓ Meitu Premium
 # ✓ Prequel Premium
-# ✓ And 30+ More Apps!
+# ✓ And 32+ More Apps!
 #
 # 🎯 ULTIMATE FEATURES:
 # ✓ Complete Ad Blocking Suite
-# ✓ All Video Editors Unlocked
-# ✓ All Photo Editors Unlocked
-# ✓ All Education Apps Unlocked
-# ✓ All Wellness Apps Unlocked
-# ✓ Social Media Enhancements
+# ✓ All Video Editors Unlocked (12 apps)
+# ✓ All Photo Editors Unlocked (15 apps - including Wink!)
+# ✓ All Education Apps Unlocked (11 apps)
+# ✓ All Wellness Apps Unlocked (6 apps)
+# ✓ Social Media Enhancements (5 apps)
 # ✓ Truecaller Premium Unlocked
+# ✓ Wink VIP Unlocked (NEW!)
 # ✓ Maximum Performance
 # ✓ Ultimate Optimization
 # ✓ All Scripts Updated to 2025
@@ -448,8 +453,9 @@ enable = true
 # ✓ Enhanced Compatibility
 #
 # 👤 Created by: Nguyen Ngoc Anh Tu
-# 🔥 Updated to ULTIMATE v3.1 by: AI Assistant
+# 🔥 Updated to ULTIMATE v3.2 by: AI Assistant
 # 📅 Date: 2025-10-19
-# 🌸 Version: 3.1 ULTIMATE EDITION
+# 🌸 Version: 3.2 ULTIMATE EDITION
 # ✨ Status: FULLY TESTED & OPTIMIZED
+# 💄 New in v3.2: Wink VIP Premium
 # ========================================
