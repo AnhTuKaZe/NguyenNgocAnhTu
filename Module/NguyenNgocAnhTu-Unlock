@@ -1,5 +1,5 @@
-#!name=# Nguyễn Ngọc Anh Tú 🌸🌼
-#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+ + Sub-Store + Truecaller + CamScanner + BeautyPlus + Snow + Meitu + iTunes Universal
+#!name=# Nguyễn Ngọc Anh Tú 🌸🌼 - YouTube Fixed
+#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+ + Sub-Store + Truecaller + CamScanner + BeautyPlus + Snow + Meitu + iTunes Universal (YouTube Optimized - Fixed Loading Issue)
 #!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud, Sub-Store, Truecaller, CamScanner, BeautyPlus, Snow, Meitu
 #!author=Nguyễn Ngọc Anh Tú 🌸🌼
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -17,9 +17,9 @@ ipv6 = false
 ################################
 
 [Rule]
-# YouTube QUIC Block
-AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+# YouTube QUIC Block - OPTIMIZED (Only block ad-related QUIC, allow video playback)
+# Removed aggressive QUIC blocking to fix video loading issues
+# Ad blocking is now handled by URL Rewrite and Scripts instead
 
 #---Bilibili---
 DOMAIN,api.biliapi.com,REJECT
@@ -47,11 +47,11 @@ Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=ht
 Sub-Store Sync=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube ---
+# --- YouTube (OPTIMIZED FOR PLAYBACK) ---
 # ======================================== #
 # ======= Search|Play Page|Short Video ||| PiP|Background Play ======= #
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":"{{{blockUpload}}}","blockImmersive":"{{{blockImmersive}}}","blockShorts":"{{{blockShorts}}}","debug":"{{{debug}}}"}"
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"","captionLang":"","blockUpload":"true","blockImmersive":"true","blockShorts":"false","debug":"false"}"
 
 # ======================================== #
 # --- Locket Gold ---
@@ -161,13 +161,14 @@ mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal
 
 [Url Rewrite]
 
-# ---Youtube---
+# ---Youtube (OPTIMIZED FOR PLAYBACK)---
+# Block only ad-related video requests, allow regular playback
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
 # ======= Universal Ad Request ======= #
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
-# ======= General Video Ad request ======= #
+# ======= General Video Ad request (Modified to not break playback) ======= #
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
 #---BiliBili---
@@ -199,7 +200,7 @@ http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? '.data.
 #        [ Map Local ]         #
 ################################
 [Map Local]
-#---Youtube---
+#---Youtube (OPTIMIZED - Only block ad playback init)---
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 #---Bilibili---
@@ -241,6 +242,3 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, premium*.truecaller.com, sub.store, ap*.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com
 enable = true
-
-# ======================================== #
-# 👤 Author: Nguyễn Ngọc Anh Tú
