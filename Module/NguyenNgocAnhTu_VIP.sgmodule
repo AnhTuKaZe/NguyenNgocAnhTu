@@ -1,7 +1,7 @@
-#!name=# Nguyễn Ngọc Anh Tú 🌸🌼
-#!desc= Nguyễn Ngọc Anh Tú 🌸�
-#!tag=YouTube, PiP, Fixed, Premium, Optimized
-#!author=Nguyễn Ngọc Anh Tú 🌸🌼 
+#!name=# Nguyễn Ngọc Anh Tú 🌸🌼 Ultra Optimized ⚡🚀
+#!desc=YouTube AdBlock + PiP + Locket + Spotify + 30+ Apps | XÓA BILIBILI | Tối ưu tốc độ tối đa
+#!tag=YouTube, Locket, Spotify, Fast, Premium, Optimized, No-Bilibili
+#!author=Nguyễn Ngọc Anh Tú 🌸🌼 - Ultimate Edition
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 
 [General]
@@ -16,6 +16,7 @@ ipv6 = false
 
 [Rule]
 # YouTube QUIC - Không chặn để video load nhanh
+# Ad blocking handled by scripts
 
 ################################
 #         [ Script ]           #
@@ -23,18 +24,18 @@ ipv6 = false
 [Script]
 
 # ======================================== #
-# --- YouTube (PiP FIXED) ---
-# ======================================== #
-# Dùng DualSub script - Support PiP tốt hơn
-youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=30,engine=jsc,script-path=https://raw.githubusercontent.com/DualSubs/YouTube/main/js/YouTube.request.js
-
-youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=30,engine=jsc,script-path=https://raw.githubusercontent.com/DualSubs/YouTube/main/js/YouTube.response.js
-
-# ======================================== #
 # --- Sub-Store ---
 # ======================================== #
 Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
 Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
+Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+
+# ======================================== #
+# --- YouTube (OPTIMIZED) ---
+# ======================================== #
+youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+
+youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"blockUpload":"false","blockImmersive":"false","blockShorts":"false","debug":"false"}"
 
 # ======================================== #
 # --- Locket Gold ---
@@ -146,14 +147,14 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 
 [Url Rewrite]
 
-# ---YouTube Ad Blocking---
+# ---YouTube Ad Blocking (Optimized)---
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.*&oad - reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
 ^https?:\/\/[\w-]+\.googlevideo\.com\/ptracking - reject
 
-# ---Google Redirect---
+# ---Google Redirect Fix---
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
@@ -163,7 +164,7 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 
 [Map Local]
 
-# YouTube ad initialization
+# YouTube ad initialization blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.*&oad data-type=text data="" status-code=200
 
 ################################
@@ -172,7 +173,7 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 
 [Header Rewrite]
 
-# RevenueCat
+# RevenueCat (for Locket, VSCO, Mojo, etc.)
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 
