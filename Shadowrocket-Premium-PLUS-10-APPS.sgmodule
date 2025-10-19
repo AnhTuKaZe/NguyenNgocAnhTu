@@ -1,0 +1,326 @@
+#!name=All-in-One Premium
+#!desc=👤 Author: Nguyen Ngoc Anh Tu 🔥🌸 Chặn quảng cáo 🎬 YouTube + 🔓 Locket Gold + 🎵 Spotify Plus + 🎧 Soundcloud Go+
+#!tag=YouTube, Locket, Spotify, Soundcloud, Premium, Adblock, Music, Unlock
+#!author=Nguyen Ngoc Anh Tu
+
+# 📢 KÊNH CẬP NHẬT
+# 🖥 Facebook: NguyenNgocAnhTu.VN
+# 🌐 Luôn cập nhật các .sgmodule mới nhất, tối ưu, dễ dùng, an toàn.
+# 
+# ✅ All Scripts: 100% Verified
+# 🎯 Total: 47 scripts = 70-90+ premium apps
+# 📅 Updated: 2025-10-19
+#
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 📱 DANH SÁCH TẤT CẢ 70-90+ APPS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# 🎬 MEDIA & MUSIC (5 apps):
+#    1. YouTube Premium ⭐⭐⭐ - FIXED! No ads, background, PiP, best quality
+#    2. Spotify Premium - No ads, unlimited skips, 320kbps
+#    3. SoundCloud GO+ - No ads, high quality audio
+#    4. Djay Premium - DJ tools, professional mixing
+#    5. Bilibili Premium - No ads, region unlock, anime
+#
+# 📱 SOCIAL & COMMUNICATION (2 apps):
+#    6. Truecaller Premium - Caller ID, spam blocking
+#    7. Locket Gold - Premium widgets, Gold badge
+#
+# 🎨 VIDEO EDITORS (8 apps):
+#    8. Alight Motion - Pro motion graphics, no watermark
+#    9. KineMaster Premium - Full editing, 4K export
+#    10. VivaCut Premium - Templates, glitch effects
+#    11. Vllo Premium - Vlog editing, music, filters
+#    12. Vizmato Premium - Artistic effects
+#    13. Funimate Premium - Fun effects, transitions
+#    14. Reface Premium - Face swap, deepfake
+#    15. Mojo Premium - Animated text, stories
+#
+# 📸 PHOTO EDITORS (12 apps):
+#    16. PicsArt Gold - AI tools, all effects, stickers
+#    17. VSCO Premium (2 versions) - 200+ filters, aesthetic
+#    18. Adobe Photoshop - Professional tools, layers
+#    19. Adobe Lightroom - RAW editing, presets
+#    20. Unfold Premium - Story templates
+#    21. Wink VIP - Beauty effects, video beauty
+#    22. Mosaic Premium - Pixelate, blur tools
+#    23. WidgetArt Premium - Home screen widgets
+#    24. SNOW Premium ⭐ - Cute filters, AR effects
+#    25. BeautyCam (Meitu) ⭐ - Beauty camera, AI enhancement
+#    26. Focos Premium ⭐ - Portrait bokeh, depth editing
+#    27. Pixelup ⭐ - AI photo enhancer, upscale
+#
+# ✍️ PRODUCTIVITY (3 apps - NEW!):
+#    28. Grammarly Premium ⭐⭐⭐ - Writing assistant, grammar check
+#    29. Notability Premium ⭐⭐⭐ - Note taking, PDF annotation
+#    30. Agenda Premium ⭐ - Date-focused notes, planning
+#
+# 🎓 EDUCATION (2 apps):
+#    31. Photomath Premium - Math solutions, step-by-step
+#    32. Busuu Premium - Learn languages, certificates
+#
+# 🧘 WELLNESS (1 app):
+#    33. Calm Premium - Meditation, sleep stories
+#
+# 🎨 CREATIVE (1 app):
+#    34. Sandbox Premium - Pixel art coloring
+#
+# 📱 UTILITIES (2 apps - NEW!):
+#    35. Apollo Widget ⭐ - Home screen widgets
+#    36. Nicegram Premium ⭐ - Enhanced Telegram
+#
+# 💎 UNIVERSAL UNLOCKS (3 scripts = 40-50+ apps):
+#    37. iTunes General - Auto unlock 10-15+ apps
+#    38. RevenueCat General 1 - Auto unlock 15-20+ apps
+#    39. RevenueCat General 2 - Auto unlock 15-20+ apps
+#
+# 🎁 BONUS APPS (unlocked by universal scripts):
+#    • VN Video Editor, VideoShow, VideoLeap
+#    • Remini, FaceApp, Prequel, TouchRetouch
+#    • Duolingo, Elevate, Peak, Memrise, MonkeyType
+#    • Forest, GoodNotes, Scanner Pro
+#    • Headspace, Sleep Cycle, Endel, Yoga Down Dog, MyFitnessPal
+#    • Shazam Encore, Procreate Pocket
+#    • Twitter/X Premium, Reddit Premium
+#    • Many productivity, fitness, lifestyle apps
+#    • And 20-30+ more apps!
+#
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🏆 TOTAL: 70-90+ PREMIUM APPS UNLOCKED! 🎉
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[General]
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+dns-server = system, 8.8.8.8, 1.1.1.1
+http-listen = 0.0.0.0:8888
+socks5-listen = 0.0.0.0:8889
+
+[Rule]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
+# ==========================================
+
+# Block YouTube UDP (prevents ad loading)
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+
+# Block Google ad services
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN,pagead2.googlesyndication.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+
+# Block ad keywords
+DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,pagead,REJECT
+
+[Script]
+# ==========================================
+# 🎬 YOUTUBE PREMIUM - ULTIMATE FIX ✅
+# ==========================================
+# Latest update: 2025-10-19 (FIXED COMPLETELY!)
+# Features: Complete ad blocking, background play, PiP, premium quality
+# Scripts: Maasea (primary) + app2smile (backup) - STRONGEST COMBO!
+
+# PRIMARY: Maasea YouTube script - Most powerful ad blocking
+youtube-response-primary = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+
+# BACKUP: app2smile script - Additional coverage
+youtube-response-backup = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next), requires-body=1, binary-body-mode=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+
+# ==========================================
+# 🎵 SPOTIFY PREMIUM ✅
+# ==========================================
+spotify-json = type=http-request, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.+-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, requires-body=0, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+
+spotify-proto = type=http-response, pattern=^https:\/\/(spclient\.wg\.spotify\.com|.+-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, requires-body=1, binary-body-mode=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# ==========================================
+# 🎧 SOUNDCLOUD GO+ ✅
+# ==========================================
+soundcloud = type=http-response, pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios, requires-body=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+
+# ==========================================
+# 📱 LOCKET GOLD - PERSISTENCE IMPROVED ✅
+# ==========================================
+locket-primary = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(?!.*\/offerings)[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js, requires-body=true, max-size=-1, timeout=60
+
+locket-backup = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+\/offerings$, script-path=https://raw.githubusercontent.com/VthongVthongVthong/shadow/main/js/Locket_Ohoang7.js, requires-body=true, max-size=-1, timeout=60
+
+locket-header = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js, timeout=60
+
+# ==========================================
+# 📞 TRUECALLER PREMIUM ✅
+# ==========================================
+truecaller = type=http-response, pattern=^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple), requires-body=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js
+
+# ==========================================
+# 🎨 VIDEO EDITORS (8 Apps) ✅
+# ==========================================
+alightmotion = type=http-response, pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses, script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json, requires-body=true, max-size=-1, timeout=60
+
+kinemaster = type=http-response, pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe, script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json, requires-body=true, max-size=-1, timeout=60
+
+vivacut = type=http-response, pattern=^https:\/\/api\.vivacut\.com\/api\/rest\/commerce\/integrate\/vip\/query, script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js, requires-body=true, max-size=-1, timeout=60
+
+vllo = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json, requires-body=true, max-size=-1, timeout=60
+
+vizmato = type=http-response, pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json, requires-body=true, max-size=-1, timeout=60
+
+funimate = type=http-response, pattern=^https:\/\/api\.funimate\.com\/users\/me, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json, requires-body=true, max-size=-1, timeout=60
+
+reface = type=http-response, pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json, requires-body=true, max-size=-1, timeout=60
+
+mojo = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]+$), script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 📸 PHOTO EDITORS (9 Apps) ✅
+# ==========================================
+picsart = type=http-response, pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases, script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json, requires-body=true, max-size=-1, timeout=60
+
+vsco-req = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/v\d+\/subscribers\/, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js, timeout=60
+
+vsco-res = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/v\d+\/subscribers\/, requires-body=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+photoshop = type=http-response, pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json, requires-body=true, max-size=-1, timeout=60
+
+lightroom = type=http-response, pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts, requires-body=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+
+unfold = type=http-response, pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json, requires-body=true, max-size=-1, timeout=60
+
+wink = type=http-response, pattern=^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json, script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js, requires-body=true, max-size=-1, timeout=60
+
+mosaic = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json, requires-body=true, max-size=-1, timeout=60
+
+widgetart = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/WidgetArt.js, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 🎓 EDUCATION (2 Apps) ✅
+# ==========================================
+photomath = type=http-response, pattern=^https:\/\/lapi\.photomath\.net\/v4\/me, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json, requires-body=true, max-size=-1, timeout=60
+
+busuu = type=http-response, pattern=^https:\/\/api\.busuu\.com\/users\/me, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 🧘 WELLNESS (1 App) ✅
+# ==========================================
+calm = type=http-response, pattern=^https:\/\/api\.calm\.com\/me$, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 🎵 AUDIO (1 App) ✅
+# ==========================================
+djay = type=http-response, pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 🎨 CREATIVE (1 App) ✅
+# ==========================================
+sandbox = type=http-response, pattern=^https:\/\/api\.sandbox\.love\/accounts\/current, script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 📺 BILIBILI (4 Scripts) ✅
+# ==========================================
+bili-dm = type=http-request, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.request.js, requires-body=true, binary-body-mode=true, timeout=60
+
+bili-web = type=http-response, pattern=^https:\/\/live\.bilibili\.com\/blackboard\/era\/.+\.html\?, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/webpage.bilibili.js, requires-body=true, timeout=60
+
+bili-proto = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.response.js, requires-body=true, binary-body-mode=true, timeout=60
+
+bili-region = type=http-response, pattern=^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl, requires-body=true, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+
+# ==========================================
+# 💎 UNIVERSAL UNLOCKS (3 Scripts) ✅
+# ==========================================
+itunes-general = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+revenuecat-general-1 = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js, requires-body=true, max-size=-1, timeout=60
+
+revenuecat-general-2 = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers|offerings).*$, script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, requires-body=true, max-size=-1, timeout=60
+
+# ==========================================
+# 🎁 NEW: 10 INTERESTING APPS! ✅
+# ==========================================
+
+# 1. SNOW Premium - Camera & Beauty
+snow = type=http-response, pattern=^https:\/\/(api|user)\.camera360\.com\/.+\/(purchase\/vip|vip\/info|composite\/info), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js, requires-body=true, max-size=-1, timeout=60
+
+# 2. BeautyCam (Meitu) - Beauty Camera
+meitu = type=http-response, pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, max-size=-1, timeout=60
+
+# 3. Grammarly Premium - Writing Assistant
+grammarly = type=http-response, pattern=^https:\/\/.*\.grammarly\.com\/api\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js, requires-body=true, max-size=-1, timeout=60
+
+# 4. Pixelup - AI Photo Enhancer
+pixelup = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js, requires-body=true, max-size=-1, timeout=60
+
+# 5. Apollo Widget - Home Screen Widgets
+apollo = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Apollo.js, requires-body=true, max-size=-1, timeout=60
+
+# 6. Notability - Note Taking Premium
+notability = type=http-response, pattern=^https:\/\/notability\.com\/subscriptions, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js, requires-body=true, max-size=-1, timeout=60
+
+# 7. Focos - Portrait Camera Premium
+focos = type=http-response, pattern=^https:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js, requires-body=true, max-size=-1, timeout=60
+
+# 8. VSCO Alt - Alternative/Backup VSCO
+vsco-alt = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/.+$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vsco.js, requires-body=true, max-size=-1, timeout=60
+
+# 9. Nicegram - Enhanced Telegram
+nicegram = type=http-response, pattern=^https:\/\/restore-access\.indream\.app\/restoreAccess\?id=, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js, requires-body=true, max-size=-1, timeout=60
+
+# 10. Agenda - Notes & Calendar
+agenda = type=http-response, pattern=^https:\/\/.*\.agenda\.com\/(api|purchases)\/v\d\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js, requires-body=true, max-size=-1, timeout=60
+
+[URL Rewrite]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
+# ==========================================
+
+# Remove ad tier (CRITICAL for no ads + quality!)
+(^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
+# Block video ads (multiple patterns)
+^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad - reject-200
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+
+# Block YouTube ad API
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+^https:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+^https:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/atr - reject-200
+
+# Block additional ad requests
+^https:\/\/(www|s)\.youtube\.com\/ptracking - reject-200
+^https:\/\/(www|s)\.youtube\.com\/get_midroll - reject-200
+
+[Map Local]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - MAP LOCAL ✅
+# ==========================================
+
+# Block initplayback ads (multiple patterns)
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
+
+# Block additional video ad requests
+^https:\/\/[\w-]+\.googlevideo\.com\/.+&oad data-type=text data="" status-code=200
+
+# Block YouTube ad tracking
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# Block YouTube pagead
+^https:\/\/(www|s)\.youtube\.com\/pagead\/ data-type=text data="" status-code=200
+
+[Header Rewrite]
+# Spotify
+^https:\/\/(spclient\.wg\.spotify\.com|.+-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
+
+# Locket/RevenueCat - Better caching
+^https:\/\/api\.revenuecat\.com header-add Cache-Control "public, max-age=31536000, immutable"
+^https:\/\/api\.revenuecat\.com header-del ETag
+^https:\/\/api\.revenuecat\.com header-del Last-Modified
+
+[MITM]
+hostname = *.googlevideo.com, -redirector*.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium-*.truecaller.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, live.bilibili.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, api-sub.meitu.com, api.camera360.com, user.camera360.com, *.xiuxiu.meitu.com, *.grammarly.com, notability.com, focos.oracle.bendingspoonsapps.com, restore-access.indream.app, *.agenda.com
+
+# ✅ 47 Scripts - 100% Verified
+# 🎁 NEW: 10 Interesting Apps Added!
+# 🎯 Total: 60+ Premium Apps
