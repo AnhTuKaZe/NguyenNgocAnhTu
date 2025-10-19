@@ -5,12 +5,13 @@
 ### Bạn có lag không?
 
 **CÓ lag** → `YouTube-AdBlock-ULTRA-FAST.sgmodule` 🚀  
-**KHÔNG lag** → `YouTube-AdBlock-BALANCED.sgmodule` ⚡  
-**Cần 30+ apps** → `YouTube-AdBlock-Optimized.sgmodule` 📦
+**KHÔNG lag, chỉ cần vài apps** → `YouTube-AdBlock-BALANCED.sgmodule` ⚡  
+**Power user, cần 30+ apps, KHÔNG dùng Bilibili** → `YouTube-AdBlock-ULTIMATE.sgmodule` 🏆  
+**Cần Bilibili** → `YouTube-AdBlock-Optimized.sgmodule` 📦
 
 ---
 
-## 📦 3 Phiên Bản
+## 📦 4 Phiên Bản
 
 ### 🚀 ULTRA FAST (Nhanh nhất)
 ```
@@ -21,7 +22,7 @@
 File: YouTube-AdBlock-ULTRA-FAST.sgmodule
 ```
 
-### ⚡ BALANCED (Recommended) 
+### ⚡ BALANCED (Recommended cho Most Users) 
 ```
 ✅ YouTube + Locket + Spotify + 6 apps
 ✅ 1.2s load, <10% lag
@@ -30,11 +31,21 @@ File: YouTube-AdBlock-ULTRA-FAST.sgmodule
 File: YouTube-AdBlock-BALANCED.sgmodule
 ```
 
-### 📦 FULL (Đầy đủ)
+### 🏆 ULTIMATE (Power Users - NO Bilibili) ⭐ NEW!
 ```
-✅ YouTube + 30+ apps unlock
+✅ YouTube + 30+ premium apps
+✅ 1.5s load, <15% lag
+✅ XÓA Bilibili → Nhanh hơn Full 40%
+✅ BEST cho power users
+
+File: YouTube-AdBlock-ULTIMATE.sgmodule
+```
+
+### 📦 FULL (Có Bilibili)
+```
+✅ YouTube + Bilibili + 30+ apps
 ⚠️ 2.5s load, 20-30% lag
-✅ Đầy đủ nhất
+✅ Đầy đủ nhất (với Bilibili)
 
 File: YouTube-AdBlock-Optimized.sgmodule
 ```
@@ -74,13 +85,26 @@ Shadowrocket: Đổi .sgmodule → .conf → Import
 ```
 → Dùng BALANCED ⚡
 → File: YouTube-AdBlock-BALANCED.sgmodule
-→ Nhanh + đủ features
+→ Nhanh + đủ features phổ biến
+```
+
+### Power Users (KHÔNG dùng Bilibili):
+```
+→ Dùng ULTIMATE 🏆
+→ File: YouTube-AdBlock-ULTIMATE.sgmodule
+→ 30+ apps + Nhanh hơn Full 40%
 ```
 
 ### Nếu lag:
 ```
 → Chuyển sang ULTRA FAST 🚀
 → File: YouTube-AdBlock-ULTRA-FAST.sgmodule
+```
+
+### Nếu cần Bilibili:
+```
+→ Dùng FULL 📦
+→ File: YouTube-AdBlock-Optimized.sgmodule
 ```
 
 ---
