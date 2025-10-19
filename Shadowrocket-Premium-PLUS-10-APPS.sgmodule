@@ -16,7 +16,7 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #
 # 🎬 MEDIA & MUSIC (5 apps):
-#    1. YouTube Premium - Chặn ads, background play, PiP
+#    1. YouTube Premium ⭐⭐⭐ - FIXED! No ads, background, PiP, best quality
 #    2. Spotify Premium - No ads, unlimited skips, 320kbps
 #    3. SoundCloud GO+ - No ads, high quality audio
 #    4. Djay Premium - DJ tools, professional mixing
@@ -97,16 +97,25 @@ http-listen = 0.0.0.0:8888
 socks5-listen = 0.0.0.0:8889
 
 [Rule]
-# Ad Blocking
+# YouTube Ad Blocking - Enhanced
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN,pagead2.googlesyndication.com,REJECT
 DOMAIN-KEYWORD,adservice,REJECT
 
 [Script]
 # ==========================================
-# 🎬 YOUTUBE PREMIUM ✅
+# 🎬 YOUTUBE PREMIUM - ENHANCED ✅
 # ==========================================
-youtube = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+# Latest update: 2025-10-19
+# Features: Ad blocking, background play, PiP, premium quality
+
+# Main YouTube script - removes ads & enables premium features
+youtube-response = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+
+# Additional blocking script for feed ads
+youtube-proto = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next), requires-body=1, binary-body-mode=1, max-size=2097152, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
 
 # ==========================================
 # 🎵 SPOTIFY PREMIUM ✅
@@ -251,11 +260,31 @@ nicegram = type=http-response, pattern=^https:\/\/restore-access\.indream\.app\/
 agenda = type=http-response, pattern=^https:\/\/.*\.agenda\.com\/(api|purchases)\/v\d\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js, requires-body=true, max-size=-1, timeout=60
 
 [URL Rewrite]
-# YouTube Ads
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - COMPLETE ✅
+# ==========================================
+
+# Block video ads in playback
 ^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad - reject-200
+
+# Block YouTube ad stats & tracking
 ^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+^https:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+
+# Remove ad tier from video URLs (improves quality)
 (^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
+# Block initplayback ads
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+
+[Map Local]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - MAP LOCAL ✅
+# ==========================================
+
+# Block initplayback ads
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 [Header Rewrite]
 # Spotify
