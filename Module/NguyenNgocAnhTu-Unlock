@@ -1,4 +1,4 @@
-#!name=All-Nguyễn Ngọc Anh Tú !
+#!name=# Nguyễn Ngọc Anh Tú 🌸🌼
 #!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+
 #!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud
 
@@ -16,22 +16,9 @@ ipv6 = false
 ################################
 
 [Rule]
-# ==========================================
-# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
-# ==========================================
-
-# Block YouTube UDP (prevents ad loading)
+# YouTube QUIC Block
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
-
-# Block Google ad services
-DOMAIN-SUFFIX,googleadservices.com,REJECT
-DOMAIN,pagead2.googlesyndication.com,REJECT
-DOMAIN-SUFFIX,doubleclick.net,REJECT
-
-# Block ad keywords
-DOMAIN-KEYWORD,adservice,REJECT
-DOMAIN-KEYWORD,pagead,REJECT
 
 #---Bilibili---
 DOMAIN,api.biliapi.com,REJECT
@@ -50,22 +37,16 @@ localhost = 127.0.0.1
 #         [ Script ]           #
 ################################
 [Script]
-# ==========================================
-# 🎬 YOUTUBE PREMIUM - ULTIMATE FIX ✅
-# ==========================================
-# Latest update: 2025-10-19 (FIXED COMPLETELY!)
-# Features: Complete ad blocking (22 mechanisms), background play, PiP, premium quality
-# Scripts: Maasea (primary) + app2smile (backup) - STRONGEST COMBO!
-
-# PRIMARY: Maasea YouTube script - Most powerful ad blocking
-youtube-response-primary = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
-
-# BACKUP: app2smile script - Additional coverage
-youtube-response-backup = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next),requires-body=1,binary-body-mode=1,max-size=-1,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+# --- YouTube ---
+# ======= Search|Play Page|Short Video ||| PiP|Background Play ======= #
+# youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting),requires-body=1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js
+# youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{scriptExecutionEngine}}},script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.preview.js
+# youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{scriptExecutionEngine}}},script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":{{{blockUpload}}},"blockImmersive":{{{blockImmersive}}},"debug":{{{debug}}}}"
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":"{{{blockUpload}}}","blockImmersive":"{{{blockImmersive}}}","blockShorts":"{{{blockShorts}}}","debug":"{{{debug}}}"}"
 
 # --- Locket Gold (REPLACED) ---
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/Hasukatsu/Shadowrocket_module/refs/heads/main/script/locket.js, requires-body=true, max-size=-1, timeout=120
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/Hasukatsu/Shadowrocket_module/refs/heads/main/script/deleteHeader.js, timeout=120
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js, requires-body=true, max-size=-1, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js, timeout=120
 
 # --- Spotify Plus ---
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
@@ -84,93 +65,28 @@ SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/confi
 # ProtoBuf处理
 [哔哩哔哩]ProtoBuf处理 = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.response.js, requires-body=true, binary-body-mode=true, argument="[{{{showUpList}}},{{{filterTopReplies}}},{airborneDm},{{{logLevel}}}]"
 
-# ==========================================
-# 🎨 VIDEO EDITORS ✅
-# ==========================================
+# --- Alight Motion ---
 Alightmotion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
+PicsArt = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,max-size=131072,requires-body=true,timeout=10,enable=true
+VSCO=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+VSCO1=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 KineMaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,max-size=131072,requires-body=true,timeout=10,enable=true
-VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,pattern=^https:\/\/api\.vivacut\.com\/api\/rest\/commerce\/integrate\/vip\/query,max-size=131072,requires-body=true,timeout=10,enable=true
+SandboxPixelArt = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js,pattern=https://api.sandbox.love/accounts/current,max-size=131072,requires-body=true,timeout=10,enable=true
+VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,pattern=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,max-size=131072,requires-body=true,timeout=10,enable=true
 funimate = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json,pattern=^https:\/\/api\.funimate\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
+LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
 Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
 reface = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=true,timeout=10,enable=true
 mojo = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
-
-# ==========================================
-# 📸 PHOTO EDITORS ✅
-# ==========================================
-PicsArt = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,max-size=131072,requires-body=true,timeout=10,enable=true
-VSCO=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-VSCO1=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
-LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+bussu = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json,pattern=^https:\/\/api\.busuu\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+calm = type = http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=true,timeout=10,enable=true
 unfold =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=true,timeout=10,enable=true
 mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
-wink = type=http-response,script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js,pattern=^https:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=true,timeout=10,enable=true
 
-# ==========================================
-# 🎓 EDUCATION ✅
-# ==========================================
-Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
-bussu = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json,pattern=^https:\/\/api\.busuu\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# ==========================================
-# 🧘 WELLNESS ✅
-# ==========================================
-calm = type = http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=true,timeout=10,enable=true
-
-# ==========================================
-# 🎵 AUDIO ✅
-# ==========================================
-Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# ==========================================
-# 🎨 CREATIVE ✅
-# ==========================================
-SandboxPixelArt = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js,pattern=https://api.sandbox.love/accounts/current,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# ==========================================
-# 🎁 NEW APPS (10 INTERESTING APPS!) ✅
-# ==========================================
-
-# 1. SNOW Premium - Camera & Beauty
-snow = type=http-response, pattern=^https:\/\/(api|user)\.camera360\.com\/.+\/(purchase\/vip|vip\/info|composite\/info), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js, requires-body=true, max-size=-1, timeout=60
-
-# 2. BeautyCam (Meitu) - Beauty Camera
-meitu = type=http-response, pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, max-size=-1, timeout=60
-
-# 3. Grammarly Premium - Writing Assistant
-grammarly = type=http-response, pattern=^https:\/\/.*\.grammarly\.com\/api\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js, requires-body=true, max-size=-1, timeout=60
-
-# 4. Pixelup - AI Photo Enhancer
-pixelup = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Pixelup.js, requires-body=true, max-size=-1, timeout=60
-
-# 5. Apollo Widget - Home Screen Widgets
-apollo = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Apollo.js, requires-body=true, max-size=-1, timeout=60
-
-# 6. Notability - Note Taking Premium
-notability = type=http-response, pattern=^https:\/\/notability\.com\/subscriptions, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js, requires-body=true, max-size=-1, timeout=60
-
-# 7. Focos - Portrait Camera Premium
-focos = type=http-response, pattern=^https:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js, requires-body=true, max-size=-1, timeout=60
-
-# 8. VSCO Alt - Alternative/Backup VSCO
-vsco-alt = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/.+$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vsco.js, requires-body=true, max-size=-1, timeout=60
-
-# 9. Nicegram - Enhanced Telegram
-nicegram = type=http-response, pattern=^https:\/\/restore-access\.indream\.app\/restoreAccess\?id=, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js, requires-body=true, max-size=-1, timeout=60
-
-# 10. Agenda - Notes & Calendar
-agenda = type=http-response, pattern=^https:\/\/.*\.agenda\.com\/(api|purchases)\/v\d\/, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js, requires-body=true, max-size=-1, timeout=60
-
-# ==========================================
-# 💎 UNIVERSAL UNLOCKS ✅
-# ==========================================
-itunes-general = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
-
-revenuecat-general-1 = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js, requires-body=true, max-size=-1, timeout=60
-
-revenuecat-general-2 = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers|offerings).*$, script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, requires-body=true, max-size=-1, timeout=60
 
 ################################
 #        [ Url Rewrite ]       #
@@ -178,26 +94,16 @@ revenuecat-general-2 = type=http-response, pattern=^https:\/\/api\.revenuecat\.c
 
 [Url Rewrite]
 
-# ==========================================
-# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
-# ==========================================
-
-# Remove ad tier (CRITICAL for no ads + quality!)
-(^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
-# Block video ads (multiple patterns)
-^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad _ reject-200
-^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad _ reject-img
-
-# Block YouTube ad API
-^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
-^https:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
-^https:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
-^https:\/\/(www|s)\.youtube\.com\/api\/stats\/atr _ reject-200
-
-# Block additional ad requests
-^https:\/\/(www|s)\.youtube\.com\/ptracking _ reject-200
-^https:\/\/(www|s)\.youtube\.com\/get_midroll _ reject-200
+# ---Youtube---
+# /Modules/YT-Adblocker.module
+# ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+# ======= Universal Ad Request ======= #
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
+# ======= General Video Ad request ======= #
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
 #---BiliBili---
 ^https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?(.*)&mobi_app=iphone&(.*)$ https://api.bilibili.com/pgc/page/channel?$1&mobi_app=iphone_i&$2 header
@@ -205,7 +111,6 @@ revenuecat-general-2 = type=http-response, pattern=^https:\/\/api\.revenuecat\.c
 # --- Alight Motion ---
 ^http://(www.)?g.cn https://www.google.com 302
 ^http://(www.)?google.cn https://www.google.com 302
-
 ################################
 #        [ Body Rewrite ]      #
 ################################
@@ -217,7 +122,7 @@ http-response-jq ^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\? '.data[][
 http-response-jq ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? 'del(.data.payment)'
 http-response-jq ^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\? '.data |= (del(.play_together_info, .play_together_info_v2, .activity_banner_info) | if .function_card then .function_card[] = null end | if .new_tab_info.outer_list then .new_tab_info.outer_list |= map(select(.biz_id != 33)) end | if .card_list then .card_list |= map(select(.card_type | IN("banner_v2", "activity_card_v1") | not)) end | reduce ([["show_reserve_status"], false], [["reserve_info", "show_reserve_status"], false], [["shopping_info", "is_show"], 0]) as [$path, $value] (.; if getpath($path) then setpath($path; $value) end))'
 http-response-jq ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? 'delpaths([["data","common_equip"]])'
-http-response-jq ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? '.data.tab = [     {         pos: 1,         id: 731,         name: "直播",         tab_id: "直播tab",         uri: "bilibili://live/home"     },     {         pos: 2,         id: 477,         name: "推荐",         tab_id: "推荐tab",         uri: "bilibili://pegasus/promo",         default_selected: 1     },     {         pos: 3,         id: 478,         name: "热门",         tab_id: "热门tab",         uri: "bilibili://pegasus/hottopic"     },     {         pos: 4,         id: 3502,         name: "动画",         tab_id: "bangumi",         uri: "bilibili://pgc/bangumi_v2"     },     {         pos: 5,         id: 3503,         name: "影视",         tab_id: "film",         uri: "bilibili://pgc/cinema_v2"     } ] |  .data.top = [     {         pos: 1,         id: 176,         name: "消息",         tab_id: "消息Top",         uri: "bilibili://link/im_home",         icon: "http://i0.hdslb.com/bfs/archive/d43047538e72c9ed8fd8e4e34415fbe3a4f632cb.png"     } ] |  .data.bottom = [     {         pos: 1,         id: 177,         name: "首页",         tab_id: "home",         uri: "bilibili://main/home/",         icon: "http://i0.hdslb.com/bfs/archive/63d7ee88d471786c1af45af86e8cb7f607edf91b.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/e5106aa688dc729e7f0eafcbb80317feb54a43bd.png"     },     {         pos: 2,         id: 179,         name: "动态",         tab_id: "dynamic",         uri: "bilibili://following/home/",         icon: "http://i0.hdslb.com/bfs/archive/86dfbe5fa32f11a8588b9ae0fccb77d3c27cedf6.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/25b658e1f6b6da57eecba328556101dbdcb4b53f.png"     },     {         pos: 5,         id: 181,         name: "我的",         tab_id: "我的Bottom",         uri: "bilibili://user_center/",         icon: "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef441ab57845bf26ef5cade401e00.png"     } ] '
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? '.data.tab = [     {         pos: 1,         id: 731,         name: "直播",         tab_id: "直播tab",         uri: "bilibili://live/home"     },     {         pos: 2,         id: 477,         name: "推荐",         tab_id: "推荐tab",         uri: "bilibili://pegasus/promo",         default_selected: 1     },     {         pos: 3,         id: 478,         name: "热门",         tab_id: "热门tab",         uri: "bilibili://pegasus/hottopic"     },     {         pos: 4,         id: 3502,         name: "动画",         tab_id: "bangumi",         uri: "bilibili://pgc/bangumi_v2"     },     {         pos: 5,         id: 3503,         name: "影视",         tab_id: "film",         uri: "bilibili://pgc/cinema_v2"     } ] |  .data.top = [     {         pos: 1,         id: 176,         name: "消息",         tab_id: "消息Top",         uri: "bilibili://link/im_home",         icon: "http://i0.hdslb.com/bfs/archive/d43047538e72c9ed8fd8e4e34415fbe3a4f632cb.png"     } ] |  .data.bottom = [     {         pos: 1,         id: 177,         name: "首页",         tab_id: "home",         uri: "bilibili://main/home/",         icon: "http://i0.hdslb.com/bfs/archive/63d7ee88d471786c1af45af86e8cb7f607edf91b.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/e5106aa688dc729e7f0eafcbb80317feb54a43bd.png"     },     {         pos: 2,         id: 179,         name: "动态",         tab_id: "dynamic",         uri: "bilibili://following/home/",         icon: "http://i0.hdslb.com/bfs/archive/86dfbe5fa32f11a8588b9ae0fccb77d3c27cedf6.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/25b658e1f6b6da57eecba328556101dbdcb4b53f.png"     },     {         pos: 5,         id: 181,         name: "我的",         tab_id: "我的Bottom",         uri: "bilibili://user_center/",         icon: "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef14dcf50e5cade401e00.png"     } ] '
 http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(list|show|event\/list2)\? '.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)'
 http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\? 'if .data.items then .data.items |= map(select((.banner_item == null) and (.ad_info == null) and (.card_goto == "av") and (.card_type | IN("small_cover_v2", "large_cover_single_v9", "large_cover_v1")))) end'
 http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | IN("vertical_ad_av", "vertical_ad_live", "vertical_ad_picture") | not)) | del(.story_cart_icon, .free_flow_toast, .image_infos, .course_info, .game_info)) end'
@@ -228,21 +133,8 @@ http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? '.data.
 #        [ Map Local ]         #
 ################################
 [Map Local]
-# ==========================================
-# 🎬 YOUTUBE AD BLOCKING - MAP LOCAL ✅
-# ==========================================
-
-# Block initplayback ads
-^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
-
-# Block additional video ad requests
-^https:\/\/[\w-]+\.googlevideo\.com\/.+&oad data-type=text data="" status-code=200
-
-# Block YouTube ad tracking
-^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-# Block YouTube pagead
-^https:\/\/(www|s)\.youtube\.com\/pagead\/ data-type=text data="" status-code=200
+#---Youtube---
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 #---Bilibili---
 # 移除直播广告
@@ -277,9 +169,7 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 #          [ MITM ]            #
 ################################
 [MITM]
-hostname = %APPEND%  - redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *spclient.spotify.com,api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app,lcs-mobile-cops.adobe.io,api.vivacut.com,api-sub.meitu.com,api.camera360.com,user.camera360.com,*.xiuxiu.meitu.com,*.grammarly.com,notability.com,focos.oracle.bendingspoonsapps.com,restore-access.indream.app,*.agenda.com,api.sandbox.love
+hostname = %APPEND%  - redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *spclient.spotify.com,api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app
 enable = true
 
-# ==========================================
-# ✅ ALL-IN-ONE PREMIUM - ULTIMATE ✅
-# ==========================================
+# 👤 Author: Nguyễn Ngọc Anh Tú 
