@@ -97,25 +97,36 @@ http-listen = 0.0.0.0:8888
 socks5-listen = 0.0.0.0:8889
 
 [Rule]
-# YouTube Ad Blocking - Enhanced
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
+# ==========================================
+
+# Block YouTube UDP (prevents ad loading)
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+
+# Block Google ad services
 DOMAIN-SUFFIX,googleadservices.com,REJECT
 DOMAIN,pagead2.googlesyndication.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+
+# Block ad keywords
 DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,pagead,REJECT
 
 [Script]
 # ==========================================
-# 🎬 YOUTUBE PREMIUM - ENHANCED ✅
+# 🎬 YOUTUBE PREMIUM - ULTIMATE FIX ✅
 # ==========================================
-# Latest update: 2025-10-19
-# Features: Ad blocking, background play, PiP, premium quality
+# Latest update: 2025-10-19 (FIXED COMPLETELY!)
+# Features: Complete ad blocking, background play, PiP, premium quality
+# Scripts: Maasea (primary) + app2smile (backup) - STRONGEST COMBO!
 
-# Main YouTube script - removes ads & enables premium features
-youtube-response = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+# PRIMARY: Maasea YouTube script - Most powerful ad blocking
+youtube-response-primary = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
-# Additional blocking script for feed ads
-youtube-proto = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next), requires-body=1, binary-body-mode=1, max-size=2097152, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+# BACKUP: app2smile script - Additional coverage
+youtube-response-backup = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next), requires-body=1, binary-body-mode=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
 
 # ==========================================
 # 🎵 SPOTIFY PREMIUM ✅
@@ -261,30 +272,42 @@ agenda = type=http-response, pattern=^https:\/\/.*\.agenda\.com\/(api|purchases)
 
 [URL Rewrite]
 # ==========================================
-# 🎬 YOUTUBE AD BLOCKING - COMPLETE ✅
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
 # ==========================================
 
-# Block video ads in playback
-^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad - reject-200
+# Remove ad tier (CRITICAL for no ads + quality!)
+(^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
-# Block YouTube ad stats & tracking
+# Block video ads (multiple patterns)
+^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad - reject-200
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+
+# Block YouTube ad API
 ^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
 ^https:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/atr - reject-200
 
-# Remove ad tier from video URLs (improves quality)
-(^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
-# Block initplayback ads
-^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+# Block additional ad requests
+^https:\/\/(www|s)\.youtube\.com\/ptracking - reject-200
+^https:\/\/(www|s)\.youtube\.com\/get_midroll - reject-200
 
 [Map Local]
 # ==========================================
 # 🎬 YOUTUBE AD BLOCKING - MAP LOCAL ✅
 # ==========================================
 
-# Block initplayback ads
+# Block initplayback ads (multiple patterns)
 ^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
+
+# Block additional video ad requests
+^https:\/\/[\w-]+\.googlevideo\.com\/.+&oad data-type=text data="" status-code=200
+
+# Block YouTube ad tracking
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# Block YouTube pagead
+^https:\/\/(www|s)\.youtube\.com\/pagead\/ data-type=text data="" status-code=200
 
 [Header Rewrite]
 # Spotify
