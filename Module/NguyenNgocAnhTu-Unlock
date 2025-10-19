@@ -1,12 +1,13 @@
-#!name=# Nguyễn Ngọc Anh Tú 🌸🌼
-#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+
-#!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud
+#!name=# Nguyễn Ngọc Anh Tú 🌸🌼 - Enhanced Edition
+#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+ + Sub-Store + Truecaller + CamScanner + BeautyPlus + Snow + Meitu + iTunes Universal
+#!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud, Sub-Store, Truecaller, CamScanner, BeautyPlus, Snow, Meitu
+#!author=Nguyễn Ngọc Anh Tú + duyvinh09
+#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 
 [General]
 user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
-#Alight Motion
 bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com, *.crashlytics.com
 tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
 dns-server = system
 ipv6 = false
@@ -37,24 +38,78 @@ localhost = 127.0.0.1
 #         [ Script ]           #
 ################################
 [Script]
+
+# ======================================== #
+# --- Sub-Store (NEW from duyvinh09) --- #
+# ======================================== #
+Sub-Store Core=type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120
+Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true
+Sub-Store Sync=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+
+# ======================================== #
 # --- YouTube ---
+# ======================================== #
 # ======= Search|Play Page|Short Video ||| PiP|Background Play ======= #
+youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":"{{{blockUpload}}}","blockImmersive":"{{{blockImmersive}}}","blockShorts":"{{{blockShorts}}}","debug":"{{{debug}}}"}"
 
-# --- Locket Gold (UPDATED) ---
+# ======================================== #
+# --- Locket Gold ---
+# ======================================== #
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js, requires-body=true, max-size=-1, timeout=120
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js, timeout=120
 
-# --- Spotify Plus (UPDATED) ---
+# ======================================== #
+# --- RevenueCat Universal (NEW) --- #
+# ======================================== #
+# Comment out if you prefer specific Locket script above
+#RevenueCatVip = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/revenuecat.js, requires-body=true, max-size=-1, timeout=60
+
+# ======================================== #
+# --- Spotify Plus ---
+# ======================================== #
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-# Additional Spotify header fix
 spotify-header = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/.*,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js
 
+# ======================================== #
 # --- Soundcloud Go+ ---
+# ======================================== #
 SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 
+# ======================================== #
+# --- Truecaller Premium (NEW) --- #
+# ======================================== #
+Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
+
+# ======================================== #
+# --- CamScanner (NEW) --- #
+# ======================================== #
+Camscanner = type=http-response,pattern=https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+
+# ======================================== #
+# --- BeautyPlus (NEW) --- #
+# ======================================== #
+BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js, requires-body=true, max-size=-1, timeout=60
+
+# ======================================== #
+# --- Snow (NEW) --- #
+# ======================================== #
+Snow = type=http-response, pattern=^https?:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status, script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js, requires-body=true, max-size=-1, timeout=60
+
+# ======================================== #
+# --- Meitu/MeiTuXiuXiu (NEW) --- #
+# ======================================== #
+Meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
+
+# ======================================== #
+# --- iTunes Universal (NEW) --- #
+# ======================================== #
+iTunes = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+# ======================================== #
 # --- BiliBili no Ads ---
+# ======================================== #
 # 空降助手
 [哔哩哔哩]空降助手 = type=http-request, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.request.js, requires-body=true, binary-body-mode=true, argument=[{{{logLevel}}}]
 
@@ -64,11 +119,25 @@ SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/confi
 # ProtoBuf处理
 [哔哩哔哩]ProtoBuf处理 = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.response.js, requires-body=true, binary-body-mode=true, argument="[{{{showUpList}}},{{{filterTopReplies}}},{airborneDm},{{{logLevel}}}]"
 
+# ======================================== #
 # --- Alight Motion ---
+# ======================================== #
 Alightmotion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
+
+# ======================================== #
+# --- PicsArt ---
+# ======================================== #
 PicsArt = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,max-size=131072,requires-body=true,timeout=10,enable=true
+
+# ======================================== #
+# --- VSCO ---
+# ======================================== #
 VSCO=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 VSCO1=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+# ======================================== #
+# --- Other Premium Apps ---
+# ======================================== #
 KineMaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,max-size=131072,requires-body=true,timeout=10,enable=true
 SandboxPixelArt = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js,pattern=https://api.sandbox.love/accounts/current,max-size=131072,requires-body=true,timeout=10,enable=true
 VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,pattern=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,max-size=131072,requires-body=true,timeout=10,enable=true
@@ -93,8 +162,6 @@ mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal
 [Url Rewrite]
 
 # ---Youtube---
-# /Modules/YT-Adblocker.module
-# ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
 # ======= Universal Ad Request ======= #
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
@@ -106,7 +173,7 @@ mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal
 #---BiliBili---
 ^https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?(.*)&mobi_app=iphone&(.*)$ https://api.bilibili.com/pgc/page/channel?$1&mobi_app=iphone_i&$2 header
 
-# --- Alight Motion ---
+# --- Google redirect fix ---
 ^http://(www.)?g.cn https://www.google.com 302
 ^http://(www.)?google.cn https://www.google.com 302
 
@@ -161,6 +228,10 @@ http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? '.data.
 #         [ Header ]           #
 ################################
 [Header Rewrite]
+# RevenueCat header fix
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
+
 # Spotify fix if-none-match
 http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ header-del if-none-match
 
@@ -168,7 +239,8 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 #          [ MITM ]            #
 ################################
 [MITM]
-hostname = %APPEND%  - redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *spclient.spotify.com,api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, app.algoriddim.com, buy.itunes.apple.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, premium*.truecaller.com, sub.store, ap*.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com
 enable = true
 
-# 👤 Author: Nguyễn Ngọc Anh Tú 
+# ======================================== #
+# 👤 Author: Nguyễn Ngọc Anh Tú
