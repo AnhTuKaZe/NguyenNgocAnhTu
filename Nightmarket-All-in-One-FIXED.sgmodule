@@ -1,0 +1,130 @@
+#!name=Nightmarket All-in-One — Media Premium 2025 (YOUTUBE FIXED!)
+#!desc=Gộp: YouTube Adblock ULTIMATE FIX + PiP/Background, SoundCloudGo patch, Spotify partial premium, Truecaller premium, LocketGold Free. Yêu cầu bật MITM/SSL & QUIC protection.
+#!tag=YouTube,SoundCloud,Spotify,Truecaller,Locket,Adblock,PiP,Fixed
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+# 👤 Origin authors: @DivineEngine, @app2smile, @Maasea, @Marol62926, little34306, Nightmarket Server, @ddgksf2013, @deezertidal
+# 🚀 Merged by: Nightmarket All-in-One
+# 🔥 YouTube ULTIMATE FIX: 22 blocking mechanisms (Updated 2025-10-19)
+
+# ==========================================
+# 🎬 YOUTUBE PREMIUM - ULTIMATE FIX ✅
+# ==========================================
+# Latest update: 2025-10-19 (FIXED COMPLETELY!)
+# Features: Complete ad blocking (22 mechanisms), background play, PiP, premium quality
+# Scripts: Maasea (primary) + app2smile (backup) - STRONGEST COMBO!
+
+[Rule]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
+# ==========================================
+
+# Block YouTube UDP (prevents ad loading)
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+
+# Block Google ad services
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN,pagead2.googlesyndication.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+
+# Block ad keywords
+DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,pagead,REJECT
+
+[Script]
+# ==========================================
+# 🎬 YOUTUBE PREMIUM - ULTIMATE FIX ✅
+# ==========================================
+# Latest update: 2025-10-19 (FIXED COMPLETELY!)
+# Features: Complete ad blocking, background play, PiP, premium quality
+# Scripts: Maasea (primary) + app2smile (backup) - STRONGEST COMBO!
+
+# PRIMARY: Maasea YouTube script - Most powerful ad blocking
+youtube-response-primary = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=1, max-size=-1, binary-body-mode=1, timeout=60, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+
+# BACKUP: app2smile script - Additional coverage
+youtube-response-backup = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next), requires-body=1, binary-body-mode=1, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+
+# ==========================================
+# 🎧 SOUNDCLOUD GO+ ✅
+# ==========================================
+SoundCloudGo+ = type=http-response, pattern=https://api-mobile.soundcloud.com/configuration/ios, requires-body=1, script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+
+# ==========================================
+# 🎵 SPOTIFY PREMIUM ✅
+# ==========================================
+# JSON artist/album endpoints
+spotify-json = type=http-request, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/, requires-body=0, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+
+# Protobuf / bootstrap / customization (binary bodies)
+spotify-proto = type=http-response, pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$, requires-body=1, binary-body-mode=1, max-size=-1, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, script-update-interval=0, timeout=60
+
+# ==========================================
+# 📞 TRUECALLER PREMIUM ✅
+# ==========================================
+Truecaller = type=http-response, pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products/apple), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js
+
+# ==========================================
+# 📱 LOCKET GOLD ✅
+# ==========================================
+# Egern transfer to Shadowrocket & Surge & LanceX
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/VthongVthongVthong/shadow/main/js/Locket_Ohoang7.js, requires-body=true, max-size=-1, timeout=60
+
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/VthongVthongVthong/shadow/main/module/deleteHeader.js, timeout=60
+
+[URL Rewrite]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - ULTIMATE ✅
+# ==========================================
+
+# Remove ad tier (CRITICAL for no ads + quality!)
+(^https:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
+# Block video ads (multiple patterns)
+^https:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback)).+&oad - reject-200
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+
+# Block YouTube ad API
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+^https:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+^https:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/atr - reject-200
+
+# Block additional ad requests
+^https:\/\/(www|s)\.youtube\.com\/ptracking - reject-200
+^https:\/\/(www|s)\.youtube\.com\/get_midroll - reject-200
+
+[Map Local]
+# ==========================================
+# 🎬 YOUTUBE AD BLOCKING - MAP LOCAL ✅
+# ==========================================
+
+# Block initplayback ads (multiple patterns)
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
+
+# Block additional video ad requests
+^https:\/\/[\w-]+\.googlevideo\.com\/.+&oad data-type=text data="" status-code=200
+
+# Block YouTube ad tracking
+^https:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# Block YouTube pagead
+^https:\/\/(www|s)\.youtube\.com\/pagead\/ data-type=text data="" status-code=200
+
+[Header Rewrite]
+# Spotify
+^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/v1\/customize$ header-del if-none-match
+
+[MITM]
+# Append existing hostnames
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, premium*.truecaller.com, api.revenuecat.com
+
+# ==========================================
+# 🎉 NIGHTMARKET ALL-IN-ONE - YOUTUBE FIXED!
+# ==========================================
+# YouTube: ULTIMATE FIX with 22 blocking mechanisms ✅
+# → 2 Scripts (Maasea + app2smile)
+# → 7 Rule blocks
+# → 9 URL Rewrites
+# → 4 Map Locals
+# → NO ADS + PREMIUM QUALITY! 🔥
