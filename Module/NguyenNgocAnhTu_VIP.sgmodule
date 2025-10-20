@@ -1,7 +1,7 @@
-#!name=# Nguyễn Ngọc Anh Tú 🌸 Ultra Optimized ⚡🚀
+#!name=# Nguyễn Ngọc Anh Tú 🌸 Ultra Optimized ⚡🚀 ULTIMATE
 #!desc=YouTube AdBlock + PiP + Locket + Spotify + 30+ Apps Tối ưu tốc độ tối đa
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-#!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
+#!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition | 
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 
 [General]
@@ -15,8 +15,9 @@ ipv6 = false
 ################################
 
 [Rule]
-# YouTube QUIC - Không chặn để video load nhanh
-# Ad blocking handled by scripts
+# YouTube QUIC - Chặn UDP để ad blocking tốt hơn
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
 ################################
 #         [ Script ]           #
@@ -27,25 +28,31 @@ ipv6 = false
 # --- Sub-Store ---
 # ======================================== #
 Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
+
 Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
+
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube (OPTIMIZED) ---
+# --- YouTube (ULTRA OPTIMIZED) ---
+# ⚡ Tối ưu: Binary mode, 15s timeout, 3MB
 # ======================================== #
 youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
 youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"blockUpload":"false","blockImmersive":"false","blockShorts":"false","debug":"false"}"
 
 # ======================================== #
-# --- Locket Gold ---
+# --- Locket Gold (ULTRA OPTIMIZED) ---
+# ⚡ Tối ưu: Latest AnhTuKaZe, 30s timeout, 512KB
+# Purchase: 2025-09-02 | Expires: 2099-12-18
 # ======================================== #
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
 
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
 
 # ======================================== #
-# --- Spotify Plus ---
+# --- Spotify Plus (ULTRA OPTIMIZED) ---
+# ⚡ Tối ưu: Binary mode, 10-20s timeout, 1MB
 # ======================================== #
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 
@@ -98,6 +105,7 @@ picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/
 
 # ======================================== #
 # --- VSCO ---
+# ⚠️ May overlap with Locket (both use RevenueCat)
 # ======================================== #
 vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 
