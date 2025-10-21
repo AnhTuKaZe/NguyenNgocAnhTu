@@ -46,7 +46,7 @@ youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 # ⚡ Tối ưu: Latest AnhTuKaZe, 30s timeout, 512KB
 # Purchase: 2025-09-02 | Expires: 2099-12-18
 # ======================================== #
-locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/receipts$,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
+locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
 
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
 
@@ -139,7 +139,7 @@ vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt
 
 reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
 
-mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[a-zA-Z0-9_-]*$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json
+mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json
 
 bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
 
@@ -148,46 +148,6 @@ calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1
 unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
 
 mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json
-
-# ======================================== #
-# --- RoPhim Ultimate 2025 (LATEST) ---
-# 🎬 Latest & strongest RoPhim script 2025 with AI & 8K
-# ======================================== #
-rophim-ultimate-2025 = type=http-response,pattern=api\.rofilm\.net||rophimapi\.net||api\.rophim\.com,requires-body=1,max-size=20971520,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-ultimate-2025.js
-
-rophim-backup-dabeecao-2025 = type=http-response,pattern=api\.rofilm\.net||rophimapi\.net||api\.rophim\.com,requires-body=1,max-size=10485760,binary-body-mode=1,timeout=45,script-path=https://api.dabeecao.org/data/scripts/rox.user.js
-
-rophim-backup-hcsavn-2025 = type=http-response,pattern=api\.rofilm\.net||rophimapi\.net||api\.rophim\.com,requires-body=1,max-size=5242880,binary-body-mode=1,timeout=35,script-path=https://raw.githubusercontent.com/hcsavn/script/main/rophim.js
-
-rophim-backup-hiepkim-2025 = type=http-response,pattern=api\.rofilm\.net||rophimapi\.net||api\.rophim\.com,requires-body=1,max-size=3145728,binary-body-mode=0,timeout=25,script-path=https://raw.githubusercontent.com/hiepkimcdtk55/script/main/rophim-ultimate.js
-
-rophim-request-2025 = type=http-request,pattern=api\.rofilm\.net||rophimapi\.net||api\.rophim\.com,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-request-2025.js,timeout=20
-
-rophim-ads-2025 = type=http-response,pattern=api\.rofilm\.net.*(ad|ads|advertisement|tracking|analytics|popup|banner|spam),requires-body=1,max-size=4194304,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
-
-rophim-speed-2025 = type=http-response,pattern=api\.rofilm\.net.*(stream|video|play|quality|download|8k|hdr),requires-body=1,max-size=41943040,binary-body-mode=1,timeout=90,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-speed.js
-
-rophim-ai-2025 = type=http-response,pattern=api\.rofilm\.net.*(ai|enhance|upscale|optimize),requires-body=1,max-size=10485760,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-ai-2025.js
-
-# ======================================== #
-# --- Wink Ultimate 2025 (LATEST) ---
-# 💎 Latest & strongest Wink script 2025 with AI & 8K
-# ======================================== #
-wink-ultimate-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=10485760,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-ultimate-2025.js
-
-wink-backup-quocchienn-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=5242880,binary-body-mode=1,timeout=45,script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js
-
-wink-backup-hcsavn-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=3145728,binary-body-mode=1,timeout=35,script-path=https://raw.githubusercontent.com/hcsavn/script/main/wink-vip.js
-
-wink-backup-hiepkim-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=2097152,binary-body-mode=0,timeout=25,script-path=https://raw.githubusercontent.com/hiepkimcdtk55/script/main/wink-ultimate.js
-
-wink-request-2025 = type=http-request,pattern=^https?:\/\/api-sub\.meitu\.com,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-request-2025.js,timeout=20
-
-wink-ads-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ad|ads|advertisement|tracking|analytics|popup|banner|spam),requires-body=1,max-size=4194304,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
-
-wink-speed-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(video|edit|process|export|render|8k|ai),requires-body=1,max-size=20971520,binary-body-mode=1,timeout=90,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-speed.js
-
-wink-ai-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ai|enhance|upscale|optimize|generate),requires-body=1,max-size=10485760,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-ai-2025.js
 
 ################################
 #        [ Url Rewrite ]       #
@@ -206,25 +166,6 @@ wink-ai-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ai|e
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
-# ---RoPhim Ultimate 2025 (LATEST)---
-^https?://api\.rofilm\.net/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
-^https?://rophimapi\.net/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
-^https?://api\.rophim\.com/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
-^https?://api\.rofilm\.net/.*quality=.* https://api.rofilm.net/quality=8K 302
-^https?://rophimapi\.net/.*quality=.* https://rophimapi.net/quality=8K 302
-^https?://api\.rophim\.com/.*quality=.* https://api.rophim.com/quality=8K 302
-^https?://api\.rofilm\.net/.*premium=.* https://api.rofilm.net/premium=true 302
-^https?://rophimapi\.net/.*vip=.* https://rophimapi.net/vip=1 302
-^https?://api\.rofilm\.net/.*ai=.* https://api.rofilm.net/ai=true 302
-
-# ---Wink Ultimate 2025 (LATEST)---
-^https?://api-sub\.meitu\.com/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
-^https?://api\.meitu\.com/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
-^https?://api-sub\.meitu\.com/.*premium=.* https://api-sub.meitu.com/premium=true 302
-^https?://api-sub\.meitu\.com/.*vip=.* https://api-sub.meitu.com/vip=1 302
-^https?://api-sub\.meitu\.com/.*quality=.* https://api-sub.meitu.com/quality=8K 302
-^https?://api-sub\.meitu\.com/.*ai=.* https://api-sub.meitu.com/ai=true 302
-
 ################################
 #        [ Map Local ]         #
 ################################
@@ -233,19 +174,6 @@ wink-ai-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ai|e
 
 # YouTube ad initialization blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.*&oad data-type=text data="" status-code=200
-
-# RoPhim Ultimate 2025 blocking
-^https?://api\.rofilm\.net/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
-^https?://rophimapi\.net/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
-^https?://api\.rophim\.com/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
-^https?://api\.rofilm\.net/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true,"quality":"8K","aiEnhanced":true,"year":"2025"} status-code=200
-^https?://rophimapi\.net/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true,"quality":"8K","aiEnhanced":true,"year":"2025"} status-code=200
-
-# Wink Ultimate 2025 blocking
-^https?://api-sub\.meitu\.com/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
-^https?://api\.meitu\.com/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
-^https?://api-sub\.meitu\.com/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true,"allFeatures":true,"aiEnhanced":true,"8kExport":true,"year":"2025"} status-code=200
-^https?://api-sub\.meitu\.com/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true,"allFeatures":true,"aiEnhanced":true,"8kExport":true,"year":"2025"} status-code=200
 
 ################################
 #         [ Header ]           #
@@ -260,38 +188,10 @@ wink-ai-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ai|e
 # Spotify
 ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
 
-# RoPhim Ultimate 2025
-^https://api\.rofilm\.net header-del x-requested-with
-^https://rophimapi\.net header-del x-requested-with
-^https://api\.rophim\.com header-del x-requested-with
-^https://api\.rofilm\.net header-add X-Premium-User "true"
-^https://rophimapi\.net header-add X-VIP-Status "active"
-^https://api\.rophim\.com header-add X-Premium-User "true"
-^https://api\.rofilm\.net header-add X-Quality "8K"
-^https://rophimapi\.net header-add X-Quality "8K"
-^https://api\.rofilm\.net header-add X-AI-Enhanced "true"
-^https://rophimapi\.net header-add X-AI-Enhanced "true"
-^https://api\.rofilm\.net header-add X-Year "2025"
-^https://rophimapi\.net header-add X-Year "2025"
-
-# Wink Ultimate 2025
-^https://api-sub\.meitu\.com header-del x-requested-with
-^https://api\.meitu\.com header-del x-requested-with
-^https://api-sub\.meitu\.com header-add X-Premium-User "true"
-^https://api\.meitu\.com header-add X-VIP-Status "active"
-^https://api-sub\.meitu\.com header-add X-All-Features "true"
-^https://api\.meitu\.com header-add X-All-Features "true"
-^https://api-sub\.meitu\.com header-add X-8K-Export "true"
-^https://api\.meitu\.com header-add X-8K-Export "true"
-^https://api-sub\.meitu\.com header-add X-AI-Enhanced "true"
-^https://api\.meitu\.com header-add X-AI-Enhanced "true"
-^https://api-sub\.meitu\.com header-add X-Year "2025"
-^https://api\.meitu\.com header-add X-Year "2025"
-
 ################################
 #          [ MITM ]            #
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store, api.rofilm.net, rophimapi.net, api.rophim.com, *.rofilm.net, *.rophimapi.net, *.rophim.com, cdn.rofilm.net, static.rofilm.net, img.rofilm.net, api.meitu.com, *.meitu.com, cdn.meitu.com, static.meitu.com, img.meitu.com
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store
 enable = true
