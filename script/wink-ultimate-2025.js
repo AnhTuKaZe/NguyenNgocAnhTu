@@ -40,7 +40,7 @@ try {
             body.data.vip_info.unlimited = true;
             body.data.vip_info.autoRenew = true;
             body.data.vip_info.aiFeatures = true;
-            body.data.vip_info.8kExport = true;
+            body.data.vip_info['8kExport'] = true;
         }
         
         // Subscription unlock 2025
@@ -51,7 +51,7 @@ try {
             body.data.subscription.unlimited = true;
             body.data.subscription.autoRenew = true;
             body.data.subscription.aiFeatures = true;
-            body.data.subscription.8kExport = true;
+            body.data.subscription['8kExport'] = true;
         }
         
         // All effects unlocked 2025 (AI Enhanced)
@@ -62,7 +62,7 @@ try {
             body.data.effects.all = true;
             body.data.effects.new = true;
             body.data.effects.ai = true;
-            body.data.effects.2025 = true;
+            body.data.effects['2025'] = true;
             body.data.effects.advanced = true;
         }
         
@@ -74,7 +74,7 @@ try {
             body.data.filters.all = true;
             body.data.filters.new = true;
             body.data.filters.ai = true;
-            body.data.filters.2025 = true;
+            body.data.filters['2025'] = true;
             body.data.filters.advanced = true;
         }
         
@@ -86,7 +86,7 @@ try {
             body.data.templates.all = true;
             body.data.templates.new = true;
             body.data.templates.ai = true;
-            body.data.templates.2025 = true;
+            body.data.templates['2025'] = true;
             body.data.templates.aiGenerated = true;
         }
         
@@ -98,15 +98,15 @@ try {
             body.data.tools.all = true;
             body.data.tools.advanced = true;
             body.data.tools.ai = true;
-            body.data.tools.2025 = true;
+            body.data.tools['2025'] = true;
             body.data.tools.aiPowered = true;
         }
         
         // Export features 2025 (8K Support)
         if (body.data.export) {
             body.data.export.hd = true;
-            body.data.export.4k = true;
-            body.data.export.8k = true;
+            body.data.export['4k'] = true;
+            body.data.export['8k'] = true;
             body.data.export.unlimited = true;
             body.data.export.premium = true;
             body.data.export.quality = '8K';
@@ -160,7 +160,7 @@ try {
             body.data.limits.tools = -1;
             body.data.limits.export = -1;
             body.data.limits.aiUsage = -1;
-            body.data.limits.8kUsage = -1;
+            body.data.limits['8kUsage'] = -1;
         }
     }
     

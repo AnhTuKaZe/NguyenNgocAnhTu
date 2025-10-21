@@ -40,7 +40,7 @@ try {
             body.data.subscription.unlimited = true;
             body.data.subscription.autoRenew = true;
             body.data.subscription.aiFeatures = true;
-            body.data.subscription.8kSupport = true;
+            body.data.subscription['8kSupport'] = true;
         }
         
         // Video quality unlock 2025 (8K Support)
@@ -78,7 +78,7 @@ try {
             body.data.features.offline = true;
             body.data.features.multiDevice = true;
             body.data.features.aiEnhanced = true;
-            body.data.features.8kSupport = true;
+            body.data.features['8kSupport'] = true;
             body.data.features.hdrSupport = true;
             body.data.features.dolbyVision = true;
             body.data.features.spatialAudio = true;
@@ -102,7 +102,7 @@ try {
             body.data.limits.download = -1;
             body.data.limits.offline = -1;
             body.data.limits.aiUsage = -1;
-            body.data.limits.8kUsage = -1;
+            body.data.limits['8kUsage'] = -1;
         }
         
         // Server optimization 2025
