@@ -1,0 +1,277 @@
+#!name=Complete Ultimate 2025 🚀💎
+#!desc=Complete configuration with all apps + RoPhim & Wink 2025 support
+#!author=AnhTuKaZe
+#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+#!tag=Complete, Ultimate, 2025, All Apps, RoPhim, Wink, YouTube, Spotify, Locket
+
+[General]
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+dns-server = system, 8.8.8.8, 1.1.1.1, 208.67.222.222
+ipv6 = false
+
+################################
+#         [ Rule ]             #
+################################
+
+[Rule]
+# YouTube QUIC - Chặn UDP để ad blocking tốt hơn
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+
+# RoPhim & Wink optimization 2025
+AND,((DOMAIN-SUFFIX,rofilm.net), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,rophimapi.net), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN-SUFFIX,meitu.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,api-sub.meitu.com), (PROTOCOL,UDP)),REJECT
+
+################################
+#         [ Script ]           #
+################################
+
+[Script]
+
+# ======================================== #
+# --- Sub-Store ---
+# ======================================== #
+Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
+
+Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
+
+Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+
+# ======================================== #
+# --- YouTube (ULTRA OPTIMIZED) ---
+# ======================================== #
+youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+
+youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"blockUpload":"false","blockImmersive":"false","blockShorts":"false","debug":"false"}"
+
+# ======================================== #
+# --- RoPhim Ultimate 2025 ---
+# ======================================== #
+rophim-ultimate-2025 = type=http-response,pattern=^https?:\/\/api\.rofilm\.net\/.*,requires-body=1,max-size=20971520,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-ultimate-2025-shadowrocket.js
+
+rophim-backup-2025 = type=http-response,pattern=^https?:\/\/rophimapi\.net\/.*,requires-body=1,max-size=10485760,binary-body-mode=1,timeout=45,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-ultimate-2025-shadowrocket.js
+
+rophim-request-2025 = type=http-request,pattern=^https?:\/\/api\.rofilm\.net\/.*,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-request-2025-shadowrocket.js,timeout=20
+
+# ======================================== #
+# --- Wink Ultimate 2025 ---
+# ======================================== #
+wink-ultimate-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=10485760,binary-body-mode=1,timeout=60,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-ultimate-2025-shadowrocket.js
+
+wink-backup-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/.*,requires-body=1,max-size=5242880,binary-body-mode=1,timeout=45,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-ultimate-2025-shadowrocket.js
+
+wink-request-2025 = type=http-request,pattern=^https?:\/\/api-sub\.meitu\.com\/.*,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-request-2025-shadowrocket.js,timeout=20
+
+# ======================================== #
+# --- Locket Gold (ULTRA OPTIMIZED) ---
+# ======================================== #
+locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/receipts$,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
+
+locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
+
+# ======================================== #
+# --- Spotify Plus (ULTRA OPTIMIZED) ---
+# ======================================== #
+spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+
+spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=1048576,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# ======================================== #
+# --- SoundCloud Go+ ---
+# ======================================== #
+soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+
+# ======================================== #
+# --- Truecaller Premium ---
+# ======================================== #
+truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
+
+# ======================================== #
+# --- CamScanner ---
+# ======================================== #
+camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+
+# ======================================== #
+# --- BeautyPlus ---
+# ======================================== #
+beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
+
+# ======================================== #
+# --- Snow ---
+# ======================================== #
+snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js
+
+# ======================================== #
+# --- Meitu ---
+# ======================================== #
+meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
+
+# ======================================== #
+# --- iTunes Universal ---
+# ======================================== #
+itunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+
+# ======================================== #
+# --- Alight Motion ---
+# ======================================== #
+alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json
+
+# ======================================== #
+# --- PicsArt ---
+# ======================================== #
+picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json
+
+# ======================================== #
+# --- VSCO ---
+# ======================================== #
+vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+# ======================================== #
+# --- KineMaster ---
+# ======================================== #
+kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
+
+# ======================================== #
+# --- Other Premium Apps ---
+# ======================================== #
+sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
+
+vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js
+
+funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json
+
+photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
+
+photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json
+
+lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+
+djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
+
+vllo = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json
+
+vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
+
+reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
+
+mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[a-zA-Z0-9_-]*$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json
+
+bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
+
+calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
+
+unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
+
+# ======================================== #
+# --- Ad Blocking 2025 ---
+# ======================================== #
+rophim-ads-2025 = type=http-response,pattern=^https?:\/\/api\.rofilm\.net\/.*(ad|ads|advertisement|tracking|analytics|popup|banner|spam),requires-body=1,max-size=4194304,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
+
+wink-ads-2025 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/.*(ad|ads|advertisement|tracking|analytics|popup|banner|spam),requires-body=1,max-size=4194304,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
+
+################################
+#        [ Url Rewrite ]       #
+################################
+
+[Url Rewrite]
+
+# RoPhim Ultimate 2025
+^https?://api\.rofilm\.net/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
+^https?://rophimapi\.net/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
+^https?://api\.rofilm\.net/.*quality=.* https://api.rofilm.net/quality=8K 302
+^https?://rophimapi\.net/.*quality=.* https://rophimapi.net/quality=8K 302
+^https?://api\.rofilm\.net/.*premium=.* https://api.rofilm.net/premium=true 302
+^https?://rophimapi\.net/.*vip=.* https://rophimapi.net/vip=1 302
+^https?://api\.rofilm\.net/.*ai=.* https://api.rofilm.net/ai=true 302
+
+# Wink Ultimate 2025
+^https?://api-sub\.meitu\.com/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
+^https?://api\.meitu\.com/.*\?.*&(ad|ads|popup|banner|tracking|spam)=.* - reject
+^https?://api-sub\.meitu\.com/.*premium=.* https://api-sub.meitu.com/premium=true 302
+^https?://api-sub\.meitu\.com/.*vip=.* https://api-sub.meitu.com/vip=1 302
+^https?://api-sub\.meitu\.com/.*quality=.* https://api-sub.meitu.com/quality=8K 302
+^https?://api-sub\.meitu\.com/.*ai=.* https://api-sub.meitu.com/ai=true 302
+
+# YouTube Ad Block
+^https?://youtubei\.googleapis\.com/youtubei/v1/player\?adSignalsInfo=.* - reject
+^https?://youtubei\.googleapis\.com/youtubei/v1/player\?.*&adSignalsInfo=.* - reject
+
+# Spotify Ad Block
+^https?://spclient\.wg\.spotify\.com/.*ad_break.* - reject
+^https?://spclient\.wg\.spotify\.com/.*ad-break.* - reject
+
+################################
+#        [ Map Local ]         #
+################################
+
+[Map Local]
+
+# RoPhim Ultimate 2025 blocking
+^https?://api\.rofilm\.net/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
+^https?://rophimapi\.net/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
+^https?://api\.rofilm\.net/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true,"quality":"8K","aiEnhanced":true,"year":"2025"} status-code=200
+^https?://rophimapi\.net/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true,"quality":"8K","aiEnhanced":true,"year":"2025"} status-code=200
+
+# Wink Ultimate 2025 blocking
+^https?://api-sub\.meitu\.com/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
+^https?://api\.meitu\.com/.*(ad|ads|popup|banner|tracking|spam) data-type=text data="" status-code=200
+^https?://api-sub\.meitu\.com/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true,"allFeatures":true,"aiEnhanced":true,"8kExport":true,"year":"2025"} status-code=200
+^https?://api-sub\.meitu\.com/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true,"allFeatures":true,"aiEnhanced":true,"8kExport":true,"year":"2025"} status-code=200
+
+# YouTube Ad Block
+^https?://youtubei\.googleapis\.com/youtubei/v1/player\?adSignalsInfo=.* data-type=text data="" status-code=200
+
+# Spotify Ad Block
+^https?://spclient\.wg\.spotify\.com/.*ad_break.* data-type=text data="" status-code=200
+
+################################
+#         [ Header ]           #
+################################
+
+[Header Rewrite]
+
+# RoPhim Ultimate 2025
+^https://api\.rofilm\.net header-del x-requested-with
+^https://rophimapi\.net header-del x-requested-with
+^https://api\.rofilm\.net header-add X-Premium-User "true"
+^https://rophimapi\.net header-add X-VIP-Status "active"
+^https://api\.rofilm\.net header-add X-Quality "8K"
+^https://rophimapi\.net header-add X-Quality "8K"
+^https://api\.rofilm\.net header-add X-AI-Enhanced "true"
+^https://rophimapi\.net header-add X-AI-Enhanced "true"
+^https://api\.rofilm\.net header-add X-Year "2025"
+^https://rophimapi\.net header-add X-Year "2025"
+
+# Wink Ultimate 2025
+^https://api-sub\.meitu\.com header-del x-requested-with
+^https://api\.meitu\.com header-del x-requested-with
+^https://api-sub\.meitu\.com header-add X-Premium-User "true"
+^https://api\.meitu\.com header-add X-VIP-Status "active"
+^https://api-sub\.meitu\.com header-add X-All-Features "true"
+^https://api\.meitu\.com header-add X-All-Features "true"
+^https://api-sub\.meitu\.com header-add X-8K-Export "true"
+^https://api\.meitu\.com header-add X-8K-Export "true"
+^https://api-sub\.meitu\.com header-add X-AI-Enhanced "true"
+^https://api\.meitu\.com header-add X-AI-Enhanced "true"
+^https://api-sub\.meitu\.com header-add X-Year "2025"
+^https://api\.meitu\.com header-add X-Year "2025"
+
+# YouTube Optimization
+^https://youtubei\.googleapis\.com header-add X-YouTube-Client-Name "1"
+^https://youtubei\.googleapis\.com header-add X-YouTube-Client-Version "2.20231201.00.00"
+
+# Spotify Optimization
+^https://spclient\.wg\.spotify\.com header-add X-Spotify-Client-Version "1.2.0"
+
+################################
+#          [ MITM ]            #
+################################
+
+[MITM]
+hostname = %APPEND% api.rofilm.net, rophimapi.net, api.rophim.com, *.rofilm.net, *.rophimapi.net, *.rophim.com, cdn.rofilm.net, static.rofilm.net, img.rofilm.net, api-sub.meitu.com, api.meitu.com, *.meitu.com, cdn.meitu.com, static.meitu.com, img.meitu.com, youtubei.googleapis.com, *.googlevideo.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com, api-mobile.soundcloud.com, premium-*.truecaller.com, api.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app
+enable = true
