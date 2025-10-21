@@ -1,0 +1,128 @@
+#!name=Wink Ultimate Pro 💎
+#!desc=Ultimate Wink VIP unlock with multiple bypass layers, speed optimization, and enhanced features
+#!author=quocchienn, AnhTuKaZe, hcsavn, hiepkimcdtk55
+#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+#!tag=Wink, Video, Editor, Premium, VIP, Meitu
+
+[General]
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+dns-server = system, 8.8.8.8, 1.1.1.1
+ipv6 = false
+
+################################
+#         [ Rule ]             #
+################################
+
+[Rule]
+# Wink API optimization
+AND,((DOMAIN-SUFFIX,meitu.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,api-sub.meitu.com), (PROTOCOL,UDP)),REJECT
+
+################################
+#         [ Script ]           #
+################################
+
+[Script]
+
+# ======================================== #
+# --- Wink Ultimate Pro (Primary) ---
+# ⚡ Tối ưu: Binary mode, 30s timeout, 3MB
+# ======================================== #
+wink-primary = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=3145728,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js
+
+# ======================================== #
+# --- Wink Backup Script 1 ---
+# 🔄 Fallback: Alternative script source
+# ======================================== #
+wink-backup1 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=2097152,binary-body-mode=1,timeout=25,script-path=https://raw.githubusercontent.com/hcsavn/script/main/wink-vip.js
+
+# ======================================== #
+# --- Wink Backup Script 2 ---
+# 🔄 Fallback: Community script
+# ======================================== #
+wink-backup2 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=1048576,binary-body-mode=0,timeout=20,script-path=https://raw.githubusercontent.com/hiepkimcdtk55/script/main/wink-ultimate.js
+
+# ======================================== #
+# --- Wink Request Optimization ---
+# ⚡ Tối ưu request headers và parameters
+# ======================================== #
+wink-request = type=http-request,pattern=^https?:\/\/api-sub\.meitu\.com,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-request.js,timeout=15
+
+# ======================================== #
+# --- Wink Premium Unlock ---
+# 💎 Unlock premium features và VIP status
+# ======================================== #
+wink-premium = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(premium|vip|subscription|user),requires-body=1,max-size=2097152,binary-body-mode=0,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-premium.js
+
+# ======================================== #
+# --- Wink Ad Blocking ---
+# 🚫 Chặn quảng cáo và tracking
+# ======================================== #
+wink-ads = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ad|ads|advertisement|tracking|analytics),requires-body=1,max-size=1048576,timeout=10,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
+
+# ======================================== #
+# --- Wink Speed Optimization ---
+# ⚡ Tối ưu tốc độ xử lý video
+# ======================================== #
+wink-speed = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(video|edit|process|export),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=45,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-speed.js
+
+# ======================================== #
+# --- Wink Features Unlock ---
+# 🎨 Unlock all editing features
+# ======================================== #
+wink-features = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(features|tools|effects|filters),requires-body=1,max-size=1572864,binary-body-mode=0,timeout=25,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-features.js
+
+################################
+#        [ Url Rewrite ]       #
+################################
+
+[Url Rewrite]
+# Wink API optimization
+^https?://api-sub\.meitu\.com/.*\?.*&(ad|ads|popup|banner)=.* - reject
+^https?://api\.meitu\.com/.*\?.*&(ad|ads|popup|banner)=.* - reject
+
+# Premium features redirect
+^https?://api-sub\.meitu\.com/.*premium=.* https://api-sub.meitu.com/premium=true 302
+^https?://api-sub\.meitu\.com/.*vip=.* https://api-sub.meitu.com/vip=1 302
+
+# Quality boost
+^https?://api-sub\.meitu\.com/.*quality=.* https://api-sub.meitu.com/quality=high 302
+
+################################
+#        [ Map Local ]         #
+################################
+
+[Map Local]
+# Block Wink ads
+^https?://api-sub\.meitu\.com/.*(ad|ads|popup|banner) data-type=text data="" status-code=200
+^https?://api\.meitu\.com/.*(ad|ads|popup|banner) data-type=text data="" status-code=200
+
+# Premium response
+^https?://api-sub\.meitu\.com/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true} status-code=200
+^https?://api-sub\.meitu\.com/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true} status-code=200
+
+################################
+#         [ Header ]           #
+################################
+
+[Header Rewrite]
+# Wink headers optimization
+^https://api-sub\.meitu\.com header-del x-requested-with
+^https://api\.meitu\.com header-del x-requested-with
+
+# Add premium headers
+^https://api-sub\.meitu\.com header-add X-Premium-User "true"
+^https://api\.meitu\.com header-add X-VIP-Status "active"
+
+# Device optimization
+^https://api-sub\.meitu\.com header-add X-Device-Type "premium"
+^https://api\.meitu\.com header-add X-Device-Type "premium"
+
+################################
+#          [ MITM ]            #
+################################
+
+[MITM]
+hostname = %APPEND% api-sub.meitu.com, api.meitu.com, *.meitu.com, cdn.meitu.com, static.meitu.com, img.meitu.com
+enable = true

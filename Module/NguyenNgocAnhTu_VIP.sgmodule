@@ -167,6 +167,26 @@ rophim-speed = type=http-response,pattern=api\.rofilm\.net.*(stream|video|play|q
 
 rophim-premium = type=http-response,pattern=api\.rofilm\.net.*(premium|vip|subscription|user),requires-body=1,max-size=2097152,binary-body-mode=0,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/rophim-premium.js
 
+# ======================================== #
+# --- Wink Ultimate Pro (NEW 2024) ---
+# 💎 Ultimate Wink VIP unlock with multiple layers
+# ======================================== #
+wink-primary = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=3145728,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/quocchienn/co_tien_khong/refs/heads/Module/WinkVipCrack.js
+
+wink-backup1 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=2097152,binary-body-mode=1,timeout=25,script-path=https://raw.githubusercontent.com/hcsavn/script/main/wink-vip.js
+
+wink-backup2 = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=1048576,binary-body-mode=0,timeout=20,script-path=https://raw.githubusercontent.com/hiepkimcdtk55/script/main/wink-ultimate.js
+
+wink-request = type=http-request,pattern=^https?:\/\/api-sub\.meitu\.com,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-request.js,timeout=15
+
+wink-premium = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(premium|vip|subscription|user),requires-body=1,max-size=2097152,binary-body-mode=0,timeout=20,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-premium.js
+
+wink-ads = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(ad|ads|advertisement|tracking|analytics),requires-body=1,max-size=1048576,timeout=10,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js
+
+wink-speed = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(video|edit|process|export),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=45,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-speed.js
+
+wink-features = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com.*(features|tools|effects|filters),requires-body=1,max-size=1572864,binary-body-mode=0,timeout=25,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/wink-features.js
+
 ################################
 #        [ Url Rewrite ]       #
 ################################
@@ -192,6 +212,13 @@ rophim-premium = type=http-response,pattern=api\.rofilm\.net.*(premium|vip|subsc
 ^https?://rophimapi\.net/.*quality=.* https://rophimapi.net/quality=1080p 302
 ^https?://api\.rophim\.com/.*quality=.* https://api.rophim.com/quality=1080p 302
 
+# ---Wink Ultimate Pro (NEW 2024)---
+^https?://api-sub\.meitu\.com/.*\?.*&(ad|ads|popup|banner)=.* - reject
+^https?://api\.meitu\.com/.*\?.*&(ad|ads|popup|banner)=.* - reject
+^https?://api-sub\.meitu\.com/.*premium=.* https://api-sub.meitu.com/premium=true 302
+^https?://api-sub\.meitu\.com/.*vip=.* https://api-sub.meitu.com/vip=1 302
+^https?://api-sub\.meitu\.com/.*quality=.* https://api-sub.meitu.com/quality=high 302
+
 ################################
 #        [ Map Local ]         #
 ################################
@@ -207,6 +234,12 @@ rophim-premium = type=http-response,pattern=api\.rofilm\.net.*(premium|vip|subsc
 ^https?://api\.rophim\.com/.*(ad|ads|popup|banner) data-type=text data="" status-code=200
 ^https?://api\.rofilm\.net/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true} status-code=200
 ^https?://rophimapi\.net/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true} status-code=200
+
+# Wink Ultimate Pro blocking
+^https?://api-sub\.meitu\.com/.*(ad|ads|popup|banner) data-type=text data="" status-code=200
+^https?://api\.meitu\.com/.*(ad|ads|popup|banner) data-type=text data="" status-code=200
+^https?://api-sub\.meitu\.com/.*premium.* data-type=json data={"premium":true,"vip":true,"unlimited":true} status-code=200
+^https?://api-sub\.meitu\.com/.*vip.* data-type=json data={"vip":true,"premium":true,"unlimited":true} status-code=200
 
 ################################
 #         [ Header ]           #
@@ -229,10 +262,16 @@ rophim-premium = type=http-response,pattern=api\.rofilm\.net.*(premium|vip|subsc
 ^https://rophimapi\.net header-add X-VIP-Status "active"
 ^https://api\.rophim\.com header-add X-Premium-User "true"
 
+# Wink Ultimate Pro
+^https://api-sub\.meitu\.com header-del x-requested-with
+^https://api\.meitu\.com header-del x-requested-with
+^https://api-sub\.meitu\.com header-add X-Premium-User "true"
+^https://api\.meitu\.com header-add X-VIP-Status "active"
+
 ################################
 #          [ MITM ]            #
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store, api.rofilm.net, rophimapi.net, api.rophim.com, *.rofilm.net, *.rophimapi.net, *.rophim.com, cdn.rofilm.net, static.rofilm.net, img.rofilm.net
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store, api.rofilm.net, rophimapi.net, api.rophim.com, *.rofilm.net, *.rophimapi.net, *.rophim.com, cdn.rofilm.net, static.rofilm.net, img.rofilm.net, api.meitu.com, *.meitu.com, cdn.meitu.com, static.meitu.com, img.meitu.com
 enable = true
