@@ -166,7 +166,7 @@ lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/account
 djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
 
 # vllo Premium
-vllo = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json
+vllo = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json
 
 # vizmato Premium
 vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
@@ -196,31 +196,31 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 # ======================================== #
 
 # InShot Premium
-inshot = type=http-response,pattern=^https:\/\/api\.inshot\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json
+inshot = type=http-response,pattern=^https:\/\/api\.inshot\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json
 
 # PowerDirector Premium
-powerdirector = type=http-response,pattern=^https:\/\/api\.cyberlink\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/PowerDirector.json
+powerdirector = type=http-response,pattern=^https:\/\/api\.cyberlink\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/PowerDirector.json
 
 # Prequel Premium
-prequel = type=http-response,pattern=^https:\/\/api\.prequel\.app\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
+prequel = type=http-response,pattern=^https:\/\/api\.prequel\.app\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
 
 # Prisma Premium
-prisma = type=http-response,pattern=^https:\/\/api\.prisma\.ai\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json
+prisma = type=http-response,pattern=^https:\/\/api\.prisma\.ai\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json
 
 # Tezza Premium
-tezza = type=http-response,pattern=^https:\/\/api\.tezza\.co\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/tezza.json
+tezza = type=http-response,pattern=^https:\/\/api\.tezza\.co\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/tezza.json
 
 # Headspace Premium
-headspace = type=http-response,pattern=^https:\/\/api\.headspace\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json
+headspace = type=http-response,pattern=^https:\/\/api\.headspace\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json
 
 # SimplyPiano Premium
-simplypiano = type=http-response,pattern=^https:\/\/api\.simplypiano\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/simplypiano.json
+simplypiano = type=http-response,pattern=^https:\/\/api\.simplypiano\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/simplypiano.json
 
 # Replika Premium
-replika = type=http-response,pattern=^https:\/\/api\.replika\.ai\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json
+replika = type=http-response,pattern=^https:\/\/api\.replika\.ai\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json
 
 # WidgetSmith Premium
-widgetsmith = type=http-response,pattern=^https:\/\/api\.widgetsmith\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/widgetsmith.json
+widgetsmith = type=http-response,pattern=^https:\/\/api\.widgetsmith\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/widgetsmith.json
 
 ################################
 #        [ Url Rewrite ]       #
