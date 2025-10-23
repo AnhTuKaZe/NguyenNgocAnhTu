@@ -1,5 +1,5 @@
 #!name=Tú Đẹp Trai 🌸 Ultra Optimized ⚡🚀
-#!desc=YouTube AdBlock + PiP + Locket + Spotify + 30+ Apps | ALL LATEST VERSIONS | Tối ưu tốc độ tối đa
+#!desc=YouTube AdBlock + PiP + Locket + Spotify + 40+ Apps | ALL LATEST VERSIONS | Tối ưu tốc độ tối đa
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 #!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -189,6 +189,39 @@ unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receip
 # mosaic Premium
 mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json
 
+# ======================================== #
+# --- Additional Premium Apps (NEW) ---
+# ⚡ Tối ưu: Latest iSteal-it (2024-11-13)
+# 🎯 Features: Premium features + No ads + Advanced functionality
+# ======================================== #
+
+# InShot Premium
+inshot = type=http-response,pattern=^https:\/\/api\.inshot\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json
+
+# PowerDirector Premium
+powerdirector = type=http-response,pattern=^https:\/\/api\.cyberlink\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/PowerDirector.json
+
+# Prequel Premium
+prequel = type=http-response,pattern=^https:\/\/api\.prequel\.app\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
+
+# Prisma Premium
+prisma = type=http-response,pattern=^https:\/\/api\.prisma\.ai\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json
+
+# Tezza Premium
+tezza = type=http-response,pattern=^https:\/\/api\.tezza\.co\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/tezza.json
+
+# Headspace Premium
+headspace = type=http-response,pattern=^https:\/\/api\.headspace\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json
+
+# SimplyPiano Premium
+simplypiano = type=http-response,pattern=^https:\/\/api\.simplypiano\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/simplypiano.json
+
+# Replika Premium
+replika = type=http-response,pattern=^https:\/\/api\.replika\.ai\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json
+
+# WidgetSmith Premium
+widgetsmith = type=http-response,pattern=^https:\/\/api\.widgetsmith\.com\/v1\/user\/profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/widgetsmith.json
+
 ################################
 #        [ Url Rewrite ]       #
 ################################
@@ -233,5 +266,5 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store, api.inshot.com, api.cyberlink.com, api.prequel.app, api.prisma.ai, api.tezza.co, api.headspace.com, api.simplypiano.com, api.replika.ai, api.widgetsmith.com
 enable = true
