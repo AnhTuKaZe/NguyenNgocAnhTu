@@ -1,5 +1,5 @@
 #!name=Tú Đẹp Trai 🌸 Ultra Optimized ⚡🚀
-#!desc=YouTube AdBlock + PiP + Locket + Spotify + 30+ Apps | Sub-Store 2.20.32 | Tối ưu tốc độ tối đa
+#!desc=YouTube AdBlock + PiP + Locket + Spotify + 30+ Apps | Tối ưu tốc độ tối đa
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 #!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -25,14 +25,10 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 [Script]
 
 # ======================================== #
-# --- Sub-Store 2.20.32 (LATEST) ---
-# ⚡ Tối ưu: Latest version, 60s timeout
+# --- Sub-Store (REMOVED - BROKEN LINKS) ---
+# ❌ Links không hoạt động, đã xóa để tối ưu module
+# 💡 Sử dụng Sub-Store app riêng để có trải nghiệm tốt nhất
 # ======================================== #
-Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/download/2.20.32/sub-store-1.min.js,requires-body=true,timeout=60
-
-Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/download/2.20.32/sub-store-0.min.js,requires-body=true,timeout=30
-
-Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/download/2.20.32/cron-sync-artifacts.min.js
 
 # ======================================== #
 # --- YouTube (ULTRA OPTIMIZED) ---
