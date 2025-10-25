@@ -1,146 +1,36 @@
-#!name=All-in-One Premium
-#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+
-#!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud
+#!name=Locket Gold Premium
+#!desc=Unlock Locket Gold - Clean & Optimized
+#!author=Ohoang7 (Original) | Optimized by NguyenNgocAnhTu
 
 [General]
-user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
 bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
-tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
 dns-server = system
 ipv6 = false
 
 ################################
-#         [ Rule ]             #
-################################
-
-[Rule]
-# YouTube QUIC Block
-AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
-
-################################
-#         [ Host ]           #
-################################
-[Host]
-localhost = 127.0.0.1
-
-################################
 #         [ Script ]           #
 ################################
+
 [Script]
-# --- YouTube ---
-# ======= Search|Play Page|Short Video ||| PiP|Background Play ======= #
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":"{{{blockUpload}}}","blockImmersive":"{{{blockImmersive}}}","blockShorts":"{{{blockShorts}}}","debug":"{{{debug}}}"}"
+# --- Locket Gold Unlock ---
+locket-response = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/locket.js, requires-body=true, max-size=524288, timeout=30
 
-# --- Locket Gold ---
-# Original code by Ohoang7 - Using official product ID
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/locket.js, requires-body=true, max-size=-1, timeout=120
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/deleteHeader.js, timeout=120
-
-# --- Spotify Plus ---
-spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-
-# --- Soundcloud Go+ ---
-SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
-
-# --- Alight Motion ---
-Alightmotion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- PicsArt ---
-PicsArt = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- VSCO ---
-VSCO=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-VSCO1=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-
-# --- KineMaster ---
-KineMaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- SandBox Pixel Art ---
-SandboxPixelArt = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js,pattern=https://api.sandbox.love/accounts/current,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- VivaCut ---
-VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,pattern=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Funimate ---
-funimate = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json,pattern=^https:\/\/api\.funimate\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Photomath ---
-Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Photoshop ---
-Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- LightRoom ---
-LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
-
-# --- Djay ---
-Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Vllo ---
-Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Vizmato ---
-vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Reface ---
-reface = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=true,timeout=10,enable=true
-
-# --- Mojo ---
-mojo = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Bussu ---
-bussu = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json,pattern=^https:\/\/api\.busuu\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
-
-# --- Calm ---
-calm = type = http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=true,timeout=10,enable=true
-
-# --- Unfold ---
-unfold =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=true,timeout=10,enable=true
-
-# --- Mosaic ---
-mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
+locket-header = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/deleteHeader.js, timeout=10
 
 ################################
-#        [ Url Rewrite ]       #
-################################
-
-[Url Rewrite]
-
-# ---Youtube---
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
-# ======= Universal Ad Request ======= #
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
-# ======= General Video Ad request ======= #
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
-# --- Google Redirect ---
-^http://(www.)?g.cn https://www.google.com 302
-^http://(www.)?google.cn https://www.google.com 302
-
-################################
-#        [ Map Local ]         #
-################################
-
-[Map Local]
-#---Youtube---
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
-
-################################
-#        [ Header Rewrite ]    #
+#     [ Header Rewrite ]       #
 ################################
 
 [Header Rewrite]
-# Spotify fix if-none-match
-http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ header-del if-none-match
+# RevenueCat ETag header removal
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 
 ################################
 #          [ MITM ]            #
 ################################
+
 [MITM]
-hostname = %APPEND%  - redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com,api-mobile.soundcloud.com, api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app,lcs-mobile-cops.adobe.io
+hostname = %APPEND% api.revenuecat.com
 enable = true
