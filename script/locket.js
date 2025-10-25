@@ -1,17 +1,14 @@
-////////////////////////////////
-//  Locket Gold Unlock Script //
-//    Stable & Simple V3.1    //
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Messenger Channel (Latest Updates): 
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // 🇻🇳 Cập nhật bởi: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Kênh Messenger (Cập nhật mới nhất): 
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 // Parse response với try-catch (QUAN TRỌNG: tránh crash nếu API lỗi)
 var obj;
