@@ -81,11 +81,11 @@ truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/
 
 # ======================================== #
 # --------- [ CamScanner Pro ] -----------
-# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
-# 📄 Features: Premium + OCR + Cloud sync + No watermark
-# 🔧 Author: @duyvinh09
+# ⚡ Optimized: Yu9191 (Latest), 10s timeout, 128KB
+# 📄 Features: Premium + OCR + Cloud sync + No watermark + Error handling
+# 🔧 Author: @Yu9191
 # ======================================== #
-camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+camscanner = type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/CamScanner.js
 
 # ======================================== #
 # -------- [ BeautyPlus Premium ] --------
