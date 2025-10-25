@@ -1,80 +1,20 @@
-// 🇬🇧 Update By: NguyenNgocAnhTu
-// 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
-// 💬 Messenger Channel (Latest Updates): 
-//    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
-// 🇻🇳 Cập nhật bởi: NguyenNgocAnhTu
-// 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
-// 💬 Kênh Messenger (Cập nhật mới nhất): 
-//    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
+// Updated deleteHeader.js
+// ========= Header Modification ========= //
+const version = 'V1.0.3';
 
-// ============================================
-// CONFIGURATION
-// ============================================
-var CONFIG = {
-  VERSION: "3.0.0",
-  DEBUG: false // Set true để bật debug logging
-};
-
-// ============================================
-// VALIDATE REQUEST
-// ============================================
-if (!$request || !$request.headers) {
-  if (CONFIG.DEBUG) console.log("[deleteHeader v" + CONFIG.VERSION + "] ❌ Invalid request");
-  $done({});
+function setHeaderValue(e, a, d) {
+  var r = a.toLowerCase();
+  r in e ? e[r] = d : e[a] = d;
 }
 
-// ============================================
-// HEADER REMOVAL FUNCTION
-// ============================================
-/**
- * Remove ETag header với tất cả các variants
- * @param {Object} headers - Request headers object
- * @param {String} key - Header key cần remove
- */
-function removeHeader(headers, key) {
-  var variants = [
-    key,                          // Original case
-    key.toLowerCase(),            // lowercase
-    key.toUpperCase(),            // UPPERCASE
-    "If-None-Match",              // Related header
-    "if-none-match"               // lowercase variant
-  ];
-  
-  for (var i = 0; i < variants.length; i++) {
-    if (headers[variants[i]]) {
-      delete headers[variants[i]];
-    }
-  }
-  
-  return headers;
-}
-
-// ============================================
-// APPLY HEADER REMOVAL
-// ============================================
+// Lấy headers hiện tại từ request
 var modifiedHeaders = $request.headers;
 
-try {
-  // Remove ETag headers
-  removeHeader(modifiedHeaders, "X-RevenueCat-ETag");
-  removeHeader(modifiedHeaders, "X-Platform-Version");
-  
-  // Set bypass headers (optional, for extra cache bypass)
-  modifiedHeaders["Cache-Control"] = "no-cache";
-  modifiedHeaders["Pragma"] = "no-cache";
-  
-  if (CONFIG.DEBUG) {
-    console.log("[deleteHeader v" + CONFIG.VERSION + "] ✅ Headers cleaned successfully");
-  }
-  
-} catch (e) {
-  console.log("[deleteHeader v" + CONFIG.VERSION + "] ❌ Error:", e.message);
-  // Continue anyway
-}
+// Thay đổi giá trị của X-RevenueCat-ETag
+setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
-// ============================================
-// RETURN MODIFIED HEADERS
-// ============================================
+// Debug: In header đã sửa (tuỳ chọn)
+console.log("Modified Headers:", JSON.stringify(modifiedHeaders));
+
+// Kết thúc request với header đã sửa đổi
 $done({ headers: modifiedHeaders });
