@@ -50,29 +50,113 @@ spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=1048576,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 ################################
-#     [ Premium Apps ]         #
+#      [ SoundCloud ]          #
 ################################
 soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+
+################################
+#      [ TrueCaller ]          #
+################################
 truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
+
+################################
+#      [ CamScanner ]          #
+################################
 camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+
+################################
+#      [ BeautyPlus ]          #
+################################
 beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
+
+################################
+#         [ Snow ]             #
+################################
 snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js
+
+################################
+#        [ Meitu ]             #
+################################
 meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
+
+################################
+#        [ iTunes ]            #
+################################
 itunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+
+################################
+#    [ Alight Motion ]         #
+################################
 alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json
+
+################################
+#       [ PicsArt ]            #
+################################
 picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json
+
+################################
+#      [ KineMaster ]          #
+################################
 kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
+
+################################
+#       [ SandBox ]            #
+################################
 sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
+
+################################
+#       [ VivaCut ]            #
+################################
 vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js
+
+################################
+#       [ Funimate ]           #
+################################
 funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json
+
+################################
+#      [ Photomath ]           #
+################################
 photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
+
+################################
+#      [ Photoshop ]           #
+################################
 photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json
+
+################################
+#      [ Lightroom ]           #
+################################
 lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+
+################################
+#         [ djay ]             #
+################################
 djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
+
+################################
+#       [ vizmato ]            #
+################################
 vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
+
+################################
+#       [ reface ]             #
+################################
 reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
+
+################################
+#        [ bussu ]             #
+################################
 bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
+
+################################
+#         [ calm ]             #
+################################
 calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
+
+################################
+#       [ unfold ]             #
+################################
 unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
 
 ################################
