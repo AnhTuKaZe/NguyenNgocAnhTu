@@ -1,5 +1,5 @@
 #!name=Tú Nè Đừng Sợ 🌸⚡🚀
-#!desc=Sub-Store + YouTube + Locket + Spotify + 25+ Premium Apps
+#!desc=Sub-Store + YouTube + Locket + Spotify + Grammarly + 35+ Premium Apps
 #!author=Nguyễn Ngọc Anh Tú 🌸
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Diamond.png
@@ -160,6 +160,57 @@ calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1
 unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
 
 ################################
+#      [ Grammarly ]           #
+################################
+grammarly = type=http-response,pattern=^https?:\/\/.*\.grammarly\.com\/(api\/v\d\/subscription|v\d\/user\/oranonymous),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js
+
+################################
+#     [ Notability ]           #
+################################
+notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js
+
+################################
+#       [ Moises ]             #
+################################
+moises = type=http-response,pattern=^https?:\/\/api\.moises\.ai\/graphql,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Moises.js
+
+################################
+#       [ FaceLab ]            #
+################################
+facelab = type=http-response,pattern=^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/FaceLab.js
+
+################################
+#        [ Focos ]             #
+################################
+focos = type=http-response,pattern=^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
+
+################################
+#       [ Context ]            #
+################################
+context-response = type=http-response,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js
+context-header = type=http-request,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js,timeout=10
+
+################################
+#       [ FaceApp ]            #
+################################
+faceapp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io\/api\/v\d+\/auth\/user\/credentials,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/faceapp.json
+
+################################
+#         [ ELSA ]             #
+################################
+elsa = type=http-response,pattern=^https?:\/\/pool\.elsanow\.io\/.*\/api\/v1\/users\/subscriptions,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/elsa.json
+
+################################
+#       [ Prequel ]            #
+################################
+prequel = type=http-response,pattern=^https?:\/\/api\.prequel\.app\/api\/v1\/users\/current\/subscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
+
+################################
+#       [ Bazaart ]            #
+################################
+bazaart = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bazaart.json
+
+################################
 #     [ Url Rewrite ]          #
 ################################
 
@@ -186,6 +237,8 @@ unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receip
 [Header Rewrite]
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
+^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
+^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
 
 ################################
@@ -193,5 +246,5 @@ unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receip
 ################################
 
 [MITM]
-hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app
+hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, pool.elsanow.io, api.prequel.app
 enable = true
