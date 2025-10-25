@@ -1,6 +1,6 @@
 ////////////////////////////////
 //  Locket Gold Unlock Script //
-//   Ultra Optimized V2.1.0   //
+//   Tested & Working V2.1.5  //
 ////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
@@ -13,26 +13,36 @@
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 ////////////////////////////////
 
-const obj = JSON.parse($response.body);
-const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
+var obj = JSON.parse($response.body);
+var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
 
-if (ua && ua.includes("Locket")) {
-  const info = {
+if (ua.includes("Locket")) {
+  var purchaseDate = "2024-07-28T01:04:17Z";
+  var expiresDate = "2099-12-31T23:59:59Z";
+  
+  var subscriptionInfo = {
     is_sandbox: false,
     ownership_type: "PURCHASED",
     billing_issues_detected_at: null,
     period_type: "normal",
-    expires_date: "2099-12-31T23:59:59Z",
+    expires_date: expiresDate,
     grace_period_expires_date: null,
     unsubscribe_detected_at: null,
-    original_purchase_date: "2024-07-28T01:04:17Z",
-    purchase_date: "2024-07-28T01:04:17Z",
-    store: "app_store",
-    product_identifier: "locket.premium.yearly"
+    original_purchase_date: purchaseDate,
+    purchase_date: purchaseDate,
+    store: "app_store"
   };
   
-  obj.subscriber.subscriptions["locket.premium.yearly"] = info;
-  obj.subscriber.entitlements.premium = obj.subscriber.entitlements.Gold = info;
+  var entitlementInfo = {
+    grace_period_expires_date: null,
+    purchase_date: purchaseDate,
+    product_identifier: "locket.premium.yearly",
+    expires_date: expiresDate
+  };
+  
+  obj.subscriber.subscriptions["locket.premium.yearly"] = subscriptionInfo;
+  obj.subscriber.entitlements["premium"] = entitlementInfo;
+  obj.subscriber.entitlements["Gold"] = entitlementInfo;
 }
 
 $done({ body: JSON.stringify(obj) });

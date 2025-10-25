@@ -1,6 +1,6 @@
 ////////////////////////////////
 //   RevenueCat ETag Remover  //
-//   Ultra Optimized V1.0.4   //
+//   Tested & Working V1.0.5  //
 ////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
@@ -13,5 +13,7 @@
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 ////////////////////////////////
 
-$request.headers["X-RevenueCat-ETag"] = $request.headers["x-revenuecat-etag"] = "";
-$done({ headers: $request.headers });
+var headers = $request.headers;
+headers["X-RevenueCat-ETag"] = "";
+headers["x-revenuecat-etag"] = "";
+$done({ headers: headers });
