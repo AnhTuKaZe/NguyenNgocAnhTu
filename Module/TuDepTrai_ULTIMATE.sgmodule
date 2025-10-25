@@ -5,15 +5,10 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Diamond.png
 
 [General]
-# ⚡ Performance Optimization
 bypass-system = true
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
 dns-server = system
 ipv6 = false
-# Script cache for faster loading (24 hours)
-force-http-engine-hosts = %APPEND% sub.store
-# Better DNS resolution
-always-real-ip = %APPEND% *.apple.com, *.icloud.com
 
 # ======================================== #
 # ============== [ RULE ] ================ #
