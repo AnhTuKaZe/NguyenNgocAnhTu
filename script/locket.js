@@ -1,6 +1,6 @@
 ////////////////////////////////
 //  Locket Gold Unlock Script //
-//    Working Ver V2.0.1      //
+//   Ultra Optimized V2.1.0   //
 ////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
@@ -13,36 +13,26 @@
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 ////////////////////////////////
 
-const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 const obj = JSON.parse($response.body);
-
-const purchaseDate = "2024-07-28T01:04:17Z";
-const expiresDate = "2099-12-31T23:59:59Z";
-
-const subscriptionInfo = {
-  is_sandbox: false,
-  ownership_type: "PURCHASED",
-  billing_issues_detected_at: null,
-  period_type: "normal",
-  expires_date: expiresDate,
-  grace_period_expires_date: null,
-  unsubscribe_detected_at: null,
-  original_purchase_date: purchaseDate,
-  purchase_date: purchaseDate,
-  store: "app_store"
-};
-
-const entitlementInfo = {
-  grace_period_expires_date: null,
-  purchase_date: purchaseDate,
-  product_identifier: "locket.premium.yearly",
-  expires_date: expiresDate
-};
+const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 
 if (ua && ua.includes("Locket")) {
-  obj.subscriber.subscriptions["locket.premium.yearly"] = subscriptionInfo;
-  obj.subscriber.entitlements["premium"] = entitlementInfo;
-  obj.subscriber.entitlements["Gold"] = entitlementInfo;
+  const info = {
+    is_sandbox: false,
+    ownership_type: "PURCHASED",
+    billing_issues_detected_at: null,
+    period_type: "normal",
+    expires_date: "2099-12-31T23:59:59Z",
+    grace_period_expires_date: null,
+    unsubscribe_detected_at: null,
+    original_purchase_date: "2024-07-28T01:04:17Z",
+    purchase_date: "2024-07-28T01:04:17Z",
+    store: "app_store",
+    product_identifier: "locket.premium.yearly"
+  };
+  
+  obj.subscriber.subscriptions["locket.premium.yearly"] = info;
+  obj.subscriber.entitlements.premium = obj.subscriber.entitlements.Gold = info;
 }
 
 $done({ body: JSON.stringify(obj) });
