@@ -1,5 +1,14 @@
+// ============================================
 // Locket Gold Unlock - Ultimate Optimized Version
-// Based on Code 1 (Hasukatsu) + Official Product ID
+// Update By NguyenNgocAnhTu
+// Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
+// Messenger Channel (Latest Updates): https://www.messenger.com/channel/NguyenNgocAnhTu.VN
+// ============================================
+// Locket Gold Unlock - Phiên bản tối ưu hóa tối đa
+// Cập nhật bởi NguyenNgocAnhTu
+// Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
+// Kênh Messenger (Cập nhật mới nhất): https://www.messenger.com/channel/NguyenNgocAnhTu.VN
+// ============================================
 
 const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 let obj;
