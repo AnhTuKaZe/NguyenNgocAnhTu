@@ -1,5 +1,5 @@
 #!name=Tú Đẹp Trai 🌸 ULTIMATE Edition ⚡🚀
-#!desc=YouTube + Locket + Spotify + WPS + 51 Premium Apps | Full Optimized
+#!desc=YouTube + Locket + Spotify + WPS + 47 Premium Apps | Verified & Optimized
 #!author=Nguyễn Ngọc Anh Tú 🌸
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Diamond.png
@@ -177,28 +177,12 @@ funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,r
 photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
 
 # ======================================== #
-# ------- [ Photoshop Premium ] ----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🎨 Features: Premium tools + Cloud storage + AI features
-# 🔧 Author: @iSteal-it
-# ======================================== #
-photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json
-
-# ======================================== #
 # ------- [ Lightroom Premium ] ----------
 # ⚡ Optimized: litieyin, 10s timeout, 128KB
 # 📷 Features: Premium presets + Cloud sync + RAW editing
 # 🔧 Author: @litieyin
 # ======================================== #
 lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
-
-# ======================================== #
-# --------- [ djay Premium ] -------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🎚️ Features: Premium tools + All effects + No ads
-# 🔧 Author: @iSteal-it
-# ======================================== #
-djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
 
 # ======================================== #
 # -------- [ Vizmato Premium ] -----------
@@ -215,14 +199,6 @@ vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt
 # 🔧 Author: @iSteal-it
 # ======================================== #
 reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
-
-# ======================================== #
-# --------- [ Busuu Premium ] ------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🗣️ Features: Premium courses + Offline mode + Certificates
-# 🔧 Author: @iSteal-it
-# ======================================== #
-bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
 
 # ======================================== #
 # --------- [ Calm Premium ] -------------
@@ -297,14 +273,6 @@ context-header = type=http-request,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.
 # 🔧 Author: @iSteal-it
 # ======================================== #
 faceapp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io\/api\/v\d+\/auth\/user\/credentials,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/faceapp.json
-
-# ======================================== #
-# -------- [ ELSA Speak Pro ] ------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🗣️ Features: Lifetime membership + AI pronunciation coach
-# 🔧 Author: @iSteal-it
-# ======================================== #
-elsa = type=http-response,pattern=^https?:\/\/pool\.elsanow\.io\/.*\/api\/v1\/users\/subscriptions,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/elsa.json
 
 # ======================================== #
 # -------- [ Prequel Premium ] -----------
@@ -466,5 +434,5 @@ hyperweb = type=http-response,pattern=^https?:\/\/zy6kcqa01a\.execute-api\.us-ea
 # ======================================== #
 
 [MITM]
-hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, pool.elsanow.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com, *.wps.cn, api.craft.do, docs.craft.do, backend.getdrafts.com, accounts.agenda.com, api2.vlognow.me, *.vlognow.me, filmicpro.oracle.bendingspoonsapps.com, apimboom2.globaldelight.net, api-production.endel.io, mobile-api.adguard.org, zy6kcqa01a.execute-api.us-east-2.amazonaws.com
+hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, web.vizmato.com, api.reface.video, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com, *.wps.cn, api.craft.do, docs.craft.do, backend.getdrafts.com, accounts.agenda.com, api2.vlognow.me, *.vlognow.me, filmicpro.oracle.bendingspoonsapps.com, apimboom2.globaldelight.net, api-production.endel.io, mobile-api.adguard.org, zy6kcqa01a.execute-api.us-east-2.amazonaws.com
 enable = true
