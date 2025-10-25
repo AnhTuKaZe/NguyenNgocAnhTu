@@ -10,40 +10,48 @@ skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
 dns-server = system
 ipv6 = false
 
+################################
+#         [ Rule ]             #
+################################
+
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
+################################
+#        [ Script ]            #
+################################
+
 [Script]
 
-# ======================================== #
-# Sub-Store
-# ======================================== #
+################################
+#       [ Sub-Store ]          #
+################################
 Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
 Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
-# ======================================== #
-# YouTube
-# ======================================== #
+################################
+#        [ YouTube ]           #
+################################
 youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"blockUpload\":\"false\",\"blockImmersive\":\"false\",\"blockShorts\":\"false\",\"debug\":\"false\"}"
 
-# ======================================== #
-# Locket Gold
-# ======================================== #
+################################
+#      [ Locket Gold ]         #
+################################
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
 
-# ======================================== #
-# Spotify
-# ======================================== #
+################################
+#        [ Spotify ]           #
+################################
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=1048576,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
-# ======================================== #
-# Premium Apps
-# ======================================== #
+################################
+#     [ Premium Apps ]         #
+################################
 soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
 camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
@@ -67,6 +75,10 @@ bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,require
 calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
 unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
 
+################################
+#     [ Url Rewrite ]          #
+################################
+
 [Url Rewrite]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.*&oad - reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
@@ -76,13 +88,25 @@ unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receip
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
+################################
+#      [ Map Local ]           #
+################################
+
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.*&oad data-type=text data="" status-code=200
+
+################################
+#    [ Header Rewrite ]        #
+################################
 
 [Header Rewrite]
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
+
+################################
+#         [ MITM ]             #
+################################
 
 [MITM]
 hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app
