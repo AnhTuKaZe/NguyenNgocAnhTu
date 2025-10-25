@@ -13,8 +13,17 @@
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 ////////////////////////////////
 
-const headers = $request.headers;
-headers["X-RevenueCat-ETag"] = "";
-headers["x-revenuecat-etag"] = "";
+// Kiểm tra request tồn tại
+if (!$request || !$request.headers) {
+  $done({});
+}
 
-$done({ headers });
+const headers = $request.headers;
+
+// Xóa ETag headers (cả uppercase và lowercase)
+delete headers["X-RevenueCat-ETag"];
+delete headers["x-revenuecat-etag"];
+
+console.log("✅ ETag headers removed");
+
+$done({ headers: headers });

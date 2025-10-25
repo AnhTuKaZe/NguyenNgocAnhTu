@@ -1,31 +1,51 @@
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////
+//  Locket Gold Unlock Script //
+//   Ultimate Optimized Ver   //
+////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Messenger Channel (Latest Updates): 
-//  https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////////////////////////////////////////////////////////////////////
+//    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
+////////////////////////////////
 // 🇻🇳 Cập nhật bởi: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Kênh Messenger (Cập nhật mới nhất): 
-//  https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////////////////////////////////////////////////////////////////////
+//    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
+////////////////////////////////
 
-const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
+// Kiểm tra request headers
+if (!$response || !$response.body) {
+  $done({});
+}
+
+const ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
 let obj;
 
+// Parse response body với error handling
 try {
   obj = JSON.parse($response.body);
+  
+  // Đảm bảo cấu trúc subscriber tồn tại
+  if (!obj.subscriber) {
+    obj.subscriber = {};
+  }
+  if (!obj.subscriber.entitlements) {
+    obj.subscriber.entitlements = {};
+  }
+  if (!obj.subscriber.subscriptions) {
+    obj.subscriber.subscriptions = {};
+  }
 } catch (e) {
-  console.log("Parse error:", e);
-  obj = { subscriber: { entitlements: {}, subscriptions: {} } };
+  console.log("❌ Parse error:", e.message);
+  $done({});
 }
 
 // Chỉ xử lý nếu là Locket app
-if (ua && ua.includes("Locket")) {
+if (ua.includes("Locket")) {
   const purchaseDate = "2024-07-28T01:04:17Z";
   const expiresDate = "2099-12-31T23:59:59Z";
   
-  // Subscription info
+  // Subscription info - Đầy đủ theo RevenueCat API
   const subscriptionInfo = {
     is_sandbox: false,
     ownership_type: "PURCHASED",
@@ -47,12 +67,12 @@ if (ua && ua.includes("Locket")) {
     expires_date: expiresDate
   };
 
-  // Apply unlock
+  // Apply unlock - Thêm cả 2 key để đảm bảo 100%
   obj.subscriber.subscriptions["locket.premium.yearly"] = subscriptionInfo;
   obj.subscriber.entitlements["premium"] = entitlementInfo;
-  
-  // Backup entitlement với tên khác (đảm bảo unlock 100%)
   obj.subscriber.entitlements["Gold"] = entitlementInfo;
+  
+  console.log("✅ Locket Gold Unlocked Successfully!");
 }
 
 $done({ body: JSON.stringify(obj) });
