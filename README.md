@@ -11,9 +11,10 @@
 /workspace/
 ├── Module/
 │   ├── NguyenNgocAnhTu_VIP.sgmodule    # Main module file
-│   ├── locket.js                        # Unlock script V3.1
-│   └── deleteHeader.js                  # Header remover V2.1
-├── script/ (deprecated - use Module/)
+│   └── js/
+│       ├── locket.js                    # Unlock script V3.1
+│       └── deleteHeader.js              # Header remover V2.1
+├── LICENSE
 └── README.md
 ```
 
@@ -69,8 +70,8 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 ## 🔧 Technical Details
 
 ### Script URLs
-- **Unlock Script:** `https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/locket.js`
-- **Header Script:** `https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/deleteHeader.js`
+- **Unlock Script:** `https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/locket.js`
+- **Header Script:** `https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/deleteHeader.js`
 
 ### Patterns
 - **Response:** `^https://api\.revenuecat\.com/.*/（receipts$|subscribers/[^/]+$)`
