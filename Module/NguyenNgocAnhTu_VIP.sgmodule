@@ -1,436 +1,175 @@
-#!name=Tú Đẹp Trai 🌸 ULTIMATE Edition ⚡🚀
-#!desc=YouTube + Locket + Spotify + WPS + 47 Premium Apps | ⚡ Ultra Fast & Optimized
-#!author=Nguyễn Ngọc Anh Tú 🌸
-#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+#!name=All-in-One Premium
+#!desc=Chặn quảng cáo YouTube + Unlock Locket Gold + Spotify Plus + Soundcloud Go+
+#!tag=YouTube, Locket, Spotify, Premium, Adblock, Soundcloud
 
 [General]
+user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
+#Alight Motion
 bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
+tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
 dns-server = system
 ipv6 = false
 
-# ======================================== #
-# ============== [ RULE ] ================ #
-# ======================================== #
+################################
+#         [ Rule ]             #
+################################
 
 [Rule]
-# YouTube QUIC - Block UDP for better ad blocking
+# YouTube QUIC Block
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
-# ======================================== #
-# ============= [ SCRIPT ] =============== #
-# ======================================== #
+#---Bilibili---
+DOMAIN,api.biliapi.com,REJECT
+DOMAIN,app.biliapi.com,REJECT
+DOMAIN,api.biliapi.net,REJECT
+DOMAIN,app.biliapi.net,REJECT
+AND,((DOMAIN-SUFFIX,chat.bilibili.com),(OR,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,tracker)))),REJECT
 
+################################
+#         [ Host ]           #
+################################
+[Host]
+localhost = 127.0.0.1
+
+################################
+#         [ Script ]           #
+################################
 [Script]
+# --- YouTube ---
+# ======= Search|Play Page|Short Video ||| PiP|Background Play ======= #
+# youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting),requires-body=1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js
+# youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{scriptExecutionEngine}}},script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.preview.js
+# youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{scriptExecutionEngine}}},script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.preview.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":{{{blockUpload}}},"blockImmersive":{{{blockImmersive}}},"debug":{{{debug}}}}"
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"{{{lyricLang}}}","captionLang":"{{{captionLang}}}","blockUpload":"{{{blockUpload}}}","blockImmersive":"{{{blockImmersive}}}","blockShorts":"{{{blockShorts}}}","debug":"{{{debug}}}"}"
 
-# ======================================== #
-# --- Sub-Store (Subscription Manager) ---
-# ⚡ Optimized: Latest release, 30-60s timeout
-# 📦 Features: Subscription management + Sync + Preview
-# 🔧 Author: Sub-Store Team
-# ======================================== #
-Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
-Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
-Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+# --- Locket Gold (REPLACED) ---
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/Hasukatsu/Shadowrocket_module/refs/heads/main/script/locket.js, requires-body=true, max-size=-1, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/Hasukatsu/Shadowrocket_module/refs/heads/main/script/deleteHeader.js, timeout=120
 
-# ======================================== #
-# -------- [ YouTube Premium ] -----------
-# ⚡ Optimized: Maasea (2025-07-12), Binary mode, Unlimited size
-# 📺 Features: AdBlock + PiP + Background Play + Translate
-# 🔧 Author: @Maasea (Official config)
-# ======================================== #
-youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"off\",\"captionLang\":\"off\",\"blockUpload\":false,\"blockImmersive\":false,\"blockShorts\":false,\"debug\":false}"
+# --- Spotify Plus ---
+spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
 
-# ======================================== #
-# ---------- [ Locket Gold ] -------------
-# ⚡ Optimized: AnhTuKaZe (2025-10-21), 30s timeout, 512KB
-# 💎 Purchase: 2025-09-02 | Expires: 2099-12-18
-# 📸 Features: Premium widget + Unlimited photos
-# 🔧 Author: @AnhTuKaZe (PRIMARY RevenueCat handler)
-# ======================================== #
-locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
-locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
+# --- Soundcloud Go+ ---
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 
-# ======================================== #
-# --------- [ Spotify Premium ] ----------
-# ⚡ Optimized: app2smile (2025-10-17), Binary mode, 10-20s timeout
-# 🎵 Features: Premium + No ads + Unlimited skips + High quality
-# 🔧 Author: @app2smile
-# ======================================== #
-spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=1048576,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+# --- BiliBili no Ads ---
+# 空降助手
+[哔哩哔哩]空降助手 = type=http-request, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.request.js, requires-body=true, binary-body-mode=true, argument=[{{{logLevel}}}]
 
-# ======================================== #
-# --------- [ SoundCloud Go+ ] -----------
-# ⚡ Optimized: Marol62926 (2024-07), 10s timeout, 256KB
-# 🎧 Features: Premium + No ads + Offline + High quality
-# 🔧 Author: @Marol62926
-# ======================================== #
-soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+# 净化内嵌网页广告
+[哔哩哔哩]净化内嵌网页广告 = type=http-response, pattern=^https:\/\/live\.bilibili\.com\/blackboard\/era\/.+\.html\?, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/webpage.bilibili.js, requires-body=true
 
-# ======================================== #
-# -------- [ TrueCaller Premium ] --------
-# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
-# 📞 Features: Premium + Caller ID + Spam blocking
-# 🔧 Author: @duyvinh09
-# ======================================== #
-truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
+# ProtoBuf处理
+[哔哩哔哩]ProtoBuf处理 = type=http-response, pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$, script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.protobuf.response.js, requires-body=true, binary-body-mode=true, argument="[{{{showUpList}}},{{{filterTopReplies}}},{airborneDm},{{{logLevel}}}]"
 
-# ======================================== #
-# --------- [ CamScanner Pro ] -----------
-# ⚡ Optimized: Yu9191 (Latest), 10s timeout, 128KB
-# 📄 Features: Premium + OCR + Cloud sync + No watermark + Error handling
-# 🔧 Author: @Yu9191
-# ======================================== #
-camscanner = type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/CamScanner.js
+# --- Alight Motion ---
+Alightmotion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
+PicsArt = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,max-size=131072,requires-body=true,timeout=10,enable=true
+VSCO=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+VSCO1=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+KineMaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,max-size=131072,requires-body=true,timeout=10,enable=true
+SandboxPixelArt = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js,pattern=https://api.sandbox.love/accounts/current,max-size=131072,requires-body=true,timeout=10,enable=true
+VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,pattern=https://N9dev-dev.github.io/SL/scripts/VivaCut.js,max-size=131072,requires-body=true,timeout=10,enable=true
+funimate = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json,pattern=^https:\/\/api\.funimate\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
+LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
+Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
+vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
+reface = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=true,timeout=10,enable=true
+mojo = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
+bussu = type = http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json,pattern=^https:\/\/api\.busuu\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
+calm = type = http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=true,timeout=10,enable=true
+unfold =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=true,timeout=10,enable=true
+mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
 
-# ======================================== #
-# -------- [ BeautyPlus Premium ] --------
-# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
-# 💄 Features: Premium filters + Advanced editing + No ads
-# 🔧 Author: @duyvinh09
-# ======================================== #
-beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
 
-# ======================================== #
-# --------- [ Snow Premium ] -------------
-# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
-# ❄️ Features: Premium filters + AR effects + Beauty tools
-# 🔧 Author: @duyvinh09
-# ======================================== #
-snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js
-
-# ======================================== #
-# -------- [ Meitu XiuXiu Pro ] ----------
-# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
-# 🎨 Features: Premium filters + Advanced retouching + Templates
-# 🔧 Author: @duyvinh09
-# ======================================== #
-meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
-
-# ======================================== #
-# ------- [ iTunes Universal Pro ] -------
-# ⚡ Optimized: chxm1023 (2025-10-17), 10s timeout, 128KB
-# 🍎 Features: Universal iTunes receipt validation
-# 🔧 Author: @chxm1023 (PRIMARY iTunes handler)
-# ⚠️ Note: Handles multiple apps via iTunes verification
-# ======================================== #
-itunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
-
-# ======================================== #
-# ------ [ Alight Motion Premium ] -------
-# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
-# 🎬 Features: Premium effects + No watermark + All tools
-# 🔧 Author: @iSteal-it
-# ======================================== #
-alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json
-
-# ======================================== #
-# -------- [ PicsArt Premium ] -----------
-# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
-# 🖼️ Features: Premium tools + AI effects + Templates
-# 🔧 Author: @iSteal-it
-# ======================================== #
-picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json
-
-# ======================================== #
-# ------- [ KineMaster Premium ] ---------
-# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
-# 🎥 Features: Premium assets + No watermark + 4K export
-# 🔧 Author: @iSteal-it
-# ======================================== #
-kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
-
-# ======================================== #
-# --------- [ SandBox Premium ] ----------
-# ⚡ Optimized: N9dev-dev, 10s timeout, 128KB
-# 🎮 Features: Premium access + Full features
-# 🔧 Author: @N9dev-dev
-# ======================================== #
-sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
-
-# ======================================== #
-# -------- [ VivaCut Premium ] -----------
-# ⚡ Optimized: N9dev-dev, 10s timeout, 128KB
-# ✂️ Features: Premium effects + Transitions + No watermark
-# 🔧 Author: @N9dev-dev
-# ======================================== #
-vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js
-
-# ======================================== #
-# -------- [ Funimate Premium ] ----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🎞️ Features: Premium effects + Transitions + No ads
-# 🔧 Author: @iSteal-it
-# ======================================== #
-funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json
-
-# ======================================== #
-# ------- [ Photomath Premium ] ----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 📐 Features: Step-by-step solutions + Expert explanations
-# 🔧 Author: @iSteal-it
-# ======================================== #
-photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
-
-# ======================================== #
-# ------- [ Lightroom Premium ] ----------
-# ⚡ Optimized: litieyin, 10s timeout, 128KB
-# 📷 Features: Premium presets + Cloud sync + RAW editing
-# 🔧 Author: @litieyin
-# ======================================== #
-lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
-
-# ======================================== #
-# -------- [ Vizmato Premium ] -----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🎬 Features: Premium effects + Filters + No watermark
-# 🔧 Author: @iSteal-it
-# ======================================== #
-vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
-
-# ======================================== #
-# -------- [ Reface Premium ] ------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🤳 Features: Unlimited face swaps + No watermark
-# 🔧 Author: @iSteal-it
-# ======================================== #
-reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
-
-# ======================================== #
-# --------- [ Calm Premium ] -------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🧘 Features: Premium content + Sleep stories + Masterclasses
-# 🔧 Author: @iSteal-it
-# ======================================== #
-calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
-
-# ======================================== #
-# -------- [ Unfold Premium ] ------------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 📱 Features: Premium templates + Fonts + Stickers
-# 🔧 Author: @iSteal-it
-# ======================================== #
-unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
-
-# ======================================== #
-# ------- [ Grammarly Premium ] ----------
-# ⚡ Optimized: chxm1023 (2024-01), 10s timeout, 128KB
-# 📝 Features: Advanced grammar check + Plagiarism detection + Tone
-# 🔧 Author: @chxm1023
-# ======================================== #
-grammarly = type=http-response,pattern=^https?:\/\/.*\.grammarly\.com\/(api\/v\d\/subscription|v\d\/user\/oranonymous),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js
-
-# ======================================== #
-# ------- [ Notability Premium ] ---------
-# ⚡ Optimized: chxm1023 (2025-02), 10s timeout, 256KB
-# 📓 Features: Premium subscription + Full sync + All tools
-# 🔧 Author: @chxm1023
-# ======================================== #
-notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js
-
-# ======================================== #
-# ------- [ Moises Premium ] -------------
-# ⚡ Optimized: chxm1023 (2024-10), 10s timeout, 256KB
-# 🎵 Features: Pro subscription + 999 credits + Vocal/instrument removal
-# 🔧 Author: @chxm1023
-# ======================================== #
-moises = type=http-response,pattern=^https?:\/\/api\.moises\.ai\/graphql,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Moises.js
-
-# ======================================== #
-# -------- [ FaceLab Premium ] -----------
-# ⚡ Optimized: chxm1023 (2024-02), 10s timeout, 128KB
-# 📷 Features: Premium effects + Aging filters + Face editing
-# 🔧 Author: @chxm1023
-# ======================================== #
-facelab = type=http-response,pattern=^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/FaceLab.js
-
-# ======================================== #
-# -------- [ Focos Premium ] -------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 📸 Features: Creator bundle + Professional portrait tools
-# 🔧 Author: @chxm1023
-# ======================================== #
-focos = type=http-response,pattern=^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
-
-# ======================================== #
-# ------- [ Context Premium ] ------------
-# ⚡ Optimized: chxm1023 (2025-08), 10s timeout, 128KB
-# 🌐 Features: Plus subscription + AI English learning
-# 🔧 Author: @chxm1023
-# ⚠️ Note: Uses different RevenueCat domain (no conflict with Locket)
-# ======================================== #
-context-response = type=http-response,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js
-context-header = type=http-request,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js,timeout=10
-
-# ======================================== #
-# -------- [ FaceApp Premium ] -----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🤳 Features: Premium subscription + All filters + No watermark
-# 🔧 Author: @iSteal-it
-# ======================================== #
-faceapp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io\/api\/v\d+\/auth\/user\/credentials,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/faceapp.json
-
-# ======================================== #
-# -------- [ Prequel Premium ] -----------
-# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
-# 🎬 Features: Trial subscription + Premium effects + Filters
-# 🔧 Author: @iSteal-it
-# ======================================== #
-prequel = type=http-response,pattern=^https?:\/\/api\.prequel\.app\/api\/v1\/users\/current\/subscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
-
-# ======================================== #
-# -------- [ XMind Premium ] -------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 🧠 Features: Premium subscription + Cloud sync + All templates
-# 🔧 Author: @chxm1023
-# ⚠️ Note: Must restore purchase after login
-# ======================================== #
-xmind = type=http-response,pattern=^https?:\/\/(?:www\.)?xmind\..*\/.+\/(devices|token\/.+),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
-
-# ======================================== #
-# -------- [ Caiyun Weather Pro ] --------
-# ⚡ Optimized: chxm1023 (2024-02), 10s timeout, 256KB
-# ☁️ Features: SVIP + 48h forecast + Satellite map + AI weather
-# 🔧 Author: @chxm1023
-# ⚠️ Note: Includes SVIP map request header modification
-# ======================================== #
-caiyun-response = type=http-response,pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)),requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
-caiyun-header = type=http-request,pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js,timeout=10
-
-# ======================================== #
-# --------- [ WPS Office ] ---------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 📄 Features: Super VIP + All templates + Cloud storage
-# 🔧 Author: @chxm1023
-# ======================================== #
-wps = type=http-response,pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
-
-# ======================================== #
-# ----------- [ Craft ] ------------------
-# ⚡ Optimized: chxm1023 (2024-10), 10s timeout, 128KB
-# 📝 Features: V2 Team subscription + Cloud sync + All features
-# 🔧 Author: @chxm1023
-# ======================================== #
-craft = type=http-response,pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Craft.js
-
-# ======================================== #
-# ----------- [ Drafts ] -----------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 📝 Features: Pro subscription + Quick capture + All features
-# 🔧 Author: @chxm1023
-# ======================================== #
-drafts = type=http-response,pattern=^https?:\/\/backend\.getdrafts\.com\/api\/v\d\/verification\/(account_status|verify_receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Drafts.js
-
-# ======================================== #
-# ----------- [ Agenda ] -----------------
-# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
-# 📅 Features: Premium + Calendar notes + Lifetime unlock
-# 🔧 Author: @chxm1023
-# ======================================== #
-agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js
-
-# ======================================== #
-# --------- [ VN VlogNow ] ---------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 🎬 Features: Annual subscription + All effects + No watermark
-# 🔧 Author: @chxm1023
-# ======================================== #
-vn = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
-
-# ======================================== #
-# -------- [ FilmicPro ] -----------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 📹 Features: Pro subscription + Professional camera tools
-# 🔧 Author: @chxm1023
-# ======================================== #
-filmicpro = type=http-response,pattern=^https:\/\/filmicpro\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmicpro.js
-
-# ======================================== #
-# ----------- [ Flow ] -------------------
-# ⚡ Optimized: chxm1023 (2024-09), 10s timeout, 128KB
-# 🎨 Features: Video/photo editing suite + Annual subscription
-# 🔧 Author: @chxm1023
-# ======================================== #
-flow = type=http-response,pattern=^https?:\/\/.*\.vlognow\.me\/.*-pay\/api\/v\d\/(user\/subscriptions|public\/iap\/receipt\/status),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Flow.js
-
-# ======================================== #
-# ----------- [ Boom ] -------------------
-# ⚡ Optimized: chxm1023 (@ddm1023), 10s timeout, 128KB
-# 🎵 Features: Lifetime purchase + All presets + 3D audio
-# 🔧 Author: @chxm1023
-# ======================================== #
-boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
-
-# ======================================== #
-# ----------- [ Endel ] ------------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 🧘 Features: Yearly subscription + Personalized soundscapes
-# 🔧 Author: @chxm1023
-# ======================================== #
-endel = type=http-response,pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
-
-# ======================================== #
-# --------- [ AdGuard ] ------------------
-# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
-# 🛡️ Features: Lifetime purchase + Premium filters + Safari blocker
-# 🔧 Author: @chxm1023
-# ======================================== #
-adguard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
-
-# ======================================== #
-# -------- [ Hyperweb ] ------------------
-# ⚡ Optimized: chxm1023, 10s timeout, 128KB
-# 🌐 Features: Pro subscription + AI browser features
-# 🔧 Author: @chxm1023
-# ======================================== #
-hyperweb = type=http-response,pattern=^https?:\/\/zy6kcqa01a\.execute-api\.us-east-2\.amazonaws\.com\/prod\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
-
-# ======================================== #
-# ========= [ URL REWRITE ] ============== #
-# ======================================== #
+################################
+#        [ Url Rewrite ]       #
+################################
 
 [Url Rewrite]
-# YouTube Ad Blocking
-^https?:\/\/[\w-]+\.googlevideo\.com\/.*&oad - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
-^https?:\/\/[\w-]+\.googlevideo\.com\/ptracking - reject
 
-# Google Redirect Fix
-^http:\/\/(www\.)?g\.cn https://www.google.com 302
-^http:\/\/(www\.)?google\.cn https://www.google.com 302
+# ---Youtube---
+# /Modules/YT-Adblocker.module
+# ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-img
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+# ======= Universal Ad Request ======= #
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
+# ======= General Video Ad request ======= #
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
-# ======================================== #
-# ========= [ MAP LOCAL ] ================ #
-# ======================================== #
+#---BiliBili---
+^https:\/\/api\.bilibili\.com\/pgc\/page\/channel\?(.*)&mobi_app=iphone&(.*)$ https://api.bilibili.com/pgc/page/channel?$1&mobi_app=iphone_i&$2 header
 
+# --- Alight Motion ---
+^http://(www.)?g.cn https://www.google.com 302
+^http://(www.)?google.cn https://www.google.com 302
+################################
+#        [ Body Rewrite ]      #
+################################
+
+[Body Rewrite]
+
+#---BiliBili---
+http-response-jq ^https:\/\/api\.bilibili\.com\/x\/pd-proxy\/tracker\? '.data[][]?="stun.chat.bilibili.com:3478"'
+http-response-jq ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? 'del(.data.payment)'
+http-response-jq ^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\? '.data |= (del(.play_together_info, .play_together_info_v2, .activity_banner_info) | if .function_card then .function_card[] = null end | if .new_tab_info.outer_list then .new_tab_info.outer_list |= map(select(.biz_id != 33)) end | if .card_list then .card_list |= map(select(.card_type | IN("banner_v2", "activity_card_v1") | not)) end | reduce ([["show_reserve_status"], false], [["reserve_info", "show_reserve_status"], false], [["shopping_info", "is_show"], 0]) as [$path, $value] (.; if getpath($path) then setpath($path; $value) end))'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? 'delpaths([["data","common_equip"]])'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? '.data.tab = [     {         pos: 1,         id: 731,         name: "直播",         tab_id: "直播tab",         uri: "bilibili://live/home"     },     {         pos: 2,         id: 477,         name: "推荐",         tab_id: "推荐tab",         uri: "bilibili://pegasus/promo",         default_selected: 1     },     {         pos: 3,         id: 478,         name: "热门",         tab_id: "热门tab",         uri: "bilibili://pegasus/hottopic"     },     {         pos: 4,         id: 3502,         name: "动画",         tab_id: "bangumi",         uri: "bilibili://pgc/bangumi_v2"     },     {         pos: 5,         id: 3503,         name: "影视",         tab_id: "film",         uri: "bilibili://pgc/cinema_v2"     } ] |  .data.top = [     {         pos: 1,         id: 176,         name: "消息",         tab_id: "消息Top",         uri: "bilibili://link/im_home",         icon: "http://i0.hdslb.com/bfs/archive/d43047538e72c9ed8fd8e4e34415fbe3a4f632cb.png"     } ] |  .data.bottom = [     {         pos: 1,         id: 177,         name: "首页",         tab_id: "home",         uri: "bilibili://main/home/",         icon: "http://i0.hdslb.com/bfs/archive/63d7ee88d471786c1af45af86e8cb7f607edf91b.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/e5106aa688dc729e7f0eafcbb80317feb54a43bd.png"     },     {         pos: 2,         id: 179,         name: "动态",         tab_id: "dynamic",         uri: "bilibili://following/home/",         icon: "http://i0.hdslb.com/bfs/archive/86dfbe5fa32f11a8588b9ae0fccb77d3c27cedf6.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/25b658e1f6b6da57eecba328556101dbdcb4b53f.png"     },     {         pos: 5,         id: 181,         name: "我的",         tab_id: "我的Bottom",         uri: "bilibili://user_center/",         icon: "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",         icon_selected: "http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef14dcf50e5cade401e00.png"     } ] '
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(list|show|event\/list2)\? '.data |= with_entries(if .key | IN("show", "event_list") then .value = [] else . end)'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\? 'if .data.items then .data.items |= map(select((.banner_item == null) and (.ad_info == null) and (.card_goto == "av") and (.card_type | IN("small_cover_v2", "large_cover_single_v9", "large_cover_v1")))) end'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\? 'if .data.items then .data.items |= map(select((.ad_info == null) and (.card_goto | IN("vertical_ad_av", "vertical_ad_live", "vertical_ad_picture") | not)) | del(.story_cart_icon, .free_flow_toast, .image_infos, .course_info, .game_info)) end'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/mine(\/ipad)?\? '.data |= (     del(.answer, .live_tip, .vip_section, .vip_section_v2, .modular_vip_section) |      .vip_type = 2 |      .vip |= if . != null and .status == 0         then . + {              status: 1,              type: 2,              due_date: 9005270400000,              role: 15,              vip_type: 2,              vip_pay_type: 1,              label: {                 bg_color: "#FB7299",                 border_color: "",                 bg_style: 1,                 text: "年度大会员",                 path: "",                 image: "https://i0.hdslb.com/bfs/vip/8d4f8bfc713826a5412a0a27eaaac4d6b9ede1d9.png",                 label_theme: "annual_vip",                 text_color: "#FFFFFF"             },              nickname_color: "#FB7299"          }          else .      end |      if .sections_v2 then .sections_v2 =          [             {                 "items": [                     {                         "id": 396,                         "title": "离线缓存",                         "uri": "bilibili://user_center/download",                         "icon": "http://i0.hdslb.com/bfs/archive/5fc84565ab73e716d20cd2f65e0e1de9495d56f8.png",                         "common_op_item": {}                     },                     {                         "id": 397,                         "title": "历史记录",                         "uri": "bilibili://user_center/history",                         "icon": "http://i0.hdslb.com/bfs/archive/8385323c6acde52e9cd52514ae13c8b9481c1a16.png",                         "common_op_item": {}                     },                     {                         "id": 3072,                         "title": "我的收藏",                         "uri": "bilibili://user_center/favourite?version=2",                         "icon": "http://i0.hdslb.com/bfs/archive/d79b19d983067a1b91614e830a7100c05204a821.png",                         "common_op_item": {}                     },                     {                         "id": 2830,                         "title": "稍后再看",                         "uri": "bilibili://user_center/watch_later_v2",                         "icon": "http://i0.hdslb.com/bfs/archive/63bb768caa02a68cb566a838f6f2415f0d1d02d6.png",                         "need_login": 1,                         "common_op_item": {}                     }                 ],                 "style": 1,                 "button": {}             },             {                 "title": "推荐服务",                 "items": [                     {                         "id": 402,                         "title": "个性装扮",                         "uri": "https://www.bilibili.com/h5/mall/home?navhide=1&f_source=shop&from=myservice",                         "icon": "http://i0.hdslb.com/bfs/archive/0bcad10661b50f583969b5a188c12e5f0731628c.png",                         "common_op_item": {}                     },                     {                         "id": 622,                         "title": "会员购",                         "uri": "bilibili://mall/home",                         "icon": "http://i0.hdslb.com/bfs/archive/19c794f01def1a267b894be84427d6a8f67081a9.png",                         "common_op_item": {}                     },                     {                         "id": 404,                         "title": "我的钱包",                         "uri": "bilibili://bilipay/mine_wallet",                         "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png",                         "common_op_item": {}                     },                     {                         "id": 406,                         "title": "我的直播",                         "uri": "bilibili://user_center/live_center",                         "icon": "http://i0.hdslb.com/bfs/archive/1db5791746a0112890b77a0236baf263d71ecb27.png",                         "common_op_item": {},                     }                 ],                 "style": 1,                 "button": {}             },             {                 "title": "更多服务",                 "items": [                     {                         "id": 407,                         "title": "联系客服",                         "uri": "bilibili://user_center/feedback",                         "icon": "http://i0.hdslb.com/bfs/archive/7ca840cf1d887a45ee1ef441ab57845bf26ef5fa.png",                         "common_op_item": {}                     },                     {                         "id": 410,                         "title": "设置",                         "uri": "bilibili://user_center/setting",                         "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png",                         "common_op_item": {}                     }                 ],                 "style": 2,                 "button": {}             }         ]     end |      if .ipad_sections then .ipad_sections =          [             {                 "id": 747,                 "title": "离线缓存",                 "uri": "bilibili://user_center/download",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/9bd72251f7366c491cfe78818d453455473a9678.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             },             {                 "id": 748,                 "title": "历史记录",                 "uri": "bilibili://user_center/history",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/83862e10685f34e16a10cfe1f89dbd7b2884d272.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             },             {                 "id": 749,                 "title": "我的收藏",                 "uri": "bilibili://user_center/favourite",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/6ae7eff6af627590fc4ed80c905e9e0a6f0e8188.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             },             {                 "id": 750,                 "title": "稍后再看",                 "uri": "bilibili://user_center/watch_later",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/928ba9f559b02129e51993efc8afe95014edec94.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             }         ]      end |      if .ipad_upper_sections then .ipad_upper_sections =          [             {                 "id": 752,                 "title": "创作首页",                 "uri": "/uper/homevc",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/d20dfed3b403c895506b1c92ecd5874abb700c01.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             }         ]      end |      if .ipad_recommend_sections then .ipad_recommend_sections =          [             {                 "id": 755,                 "title": "我的关注",                 "uri": "bilibili://user_center/myfollows",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/fdd7f676030c6996d36763a078442a210fc5a8c0.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             },             {                 "id": 756,                 "title": "我的消息",                 "uri": "bilibili://link/im_home",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/e1471740130a08a48b02a4ab29ed9d5f2281e3bf.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             }         ]      end |      if .ipad_more_sections then .ipad_more_sections =          [             {                 "id": 763,                 "title": "我的客服",                 "uri": "bilibili://user_center/feedback",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/7801a6180fb67cf5f8ee05a66a4668e49fb38788.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             },             {                 "id": 764,                 "title": "设置",                 "uri": "bilibili://user_center/setting",                 "icon": "http://i0.hdslb.com/bfs/feed-admin/34e8faea00b3dd78977266b58d77398b0ac9410b.png",                 "mng_resource": { "icon_id": 0, "icon": "" }             }         ]      end )'
+http-response-jq ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? '.data.vip |= if . != null and .status == 0 then . + { status: 1, type: 2, due_date: 9005270400000, role: 15 } else . end'
+
+################################
+#        [ Map Local ]         #
+################################
 [Map Local]
-# YouTube ad initialization blocking
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.*&oad data-type=text data="" status-code=200
+#---Youtube---
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
-# ======================================== #
-# ======= [ HEADER REWRITE ] ============= #
-# ======================================== #
+#---Bilibili---
+# 移除直播广告
+^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+# 移除直播间的游戏推广内容
+^https:\/\/line3-h5-mobile-api\.biligame\.com\/game\/live\/large_card_material\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+# 移除大会员广告、移除右上角活动入口
+^https:\/\/ap[ip]\.bilibili\.com\/x\/(resource\/(top\/activity|patch\/tab)|v2\/search\/square|vip\/ads\/materials)\? data-type=text data="{"code":-404,"message":"-404","ttl":1,"data":null}" status-code=200 header="Content-Type:text/plain"
+
+# 移除播放页开通会员横幅
+^https:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive\? data-type=text data="{"code":0,"data":{"closeType":"close_win","container":[],"showTime":""},"message":"success"}" status-code=200 header="Content-Type:text/plain"
+
+# 移除青少年模式弹窗
+^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus$ data-type=base64 data="AAAAABMKEQgCEgl0ZWVuYWdlcnMgAioA"
+
+# 移除搜索框关键词
+^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$ data-type=base64 data="AAAAACkaHeaQnOe0ouinhumikeOAgeeVquWJp+aIlnVw5Li7IgAoAToAQgBKAA=="
+
+# 移除播放页面广告
+^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.view\.v1\.View\/TFInfo$ data-type=base64 data="AAAAAAIIAQ=="
+
+################################
+#         [ Header ]           #
+################################
 [Header Rewrite]
-# RevenueCat (Locket)
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
+# Spotify fix if-none-match
+http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ header-del if-none-match
 
-# RevenueCat (Context)
-^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
-^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
-
-# Spotify
-^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
-
-# ======================================== #
-# ============ [ MITM ] ================== #
-# ======================================== #
-
+################################
+#          [ MITM ]            #
+################################
 [MITM]
-hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, web.vizmato.com, api.reface.video, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com, *.wps.cn, api.craft.do, docs.craft.do, backend.getdrafts.com, accounts.agenda.com, api2.vlognow.me, *.vlognow.me, filmicpro.oracle.bendingspoonsapps.com, apimboom2.globaldelight.net, api-production.endel.io, mobile-api.adguard.org, zy6kcqa01a.execute-api.us-east-2.amazonaws.com
+hostname = %APPEND%  - redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *spclient.spotify.com,api-mobile.soundcloud.com, grpc.biliapi.net, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, live.bilibili.com, line3-h5-mobile-api.biligame.com, api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app
 enable = true
+
+# 👤 Author: Hasukatsu
