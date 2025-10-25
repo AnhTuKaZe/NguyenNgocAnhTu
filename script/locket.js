@@ -1,5 +1,5 @@
-// Locket Gold Unlock - Optimized
-// Original by Ohoang7
+// Locket Gold Unlock - Ultimate Optimized Version
+// Based on Code 1 (Hasukatsu) + Official Product ID
 
 const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 let obj;
@@ -7,30 +7,43 @@ let obj;
 try {
   obj = JSON.parse($response.body);
 } catch (e) {
+  console.log("Parse error:", e);
   obj = { subscriber: { entitlements: {}, subscriptions: {} } };
 }
 
+// Chỉ xử lý nếu là Locket app
 if (ua && ua.includes("Locket")) {
-  const info = {
+  const purchaseDate = "2024-07-28T01:04:17Z";
+  const expiresDate = "2099-12-31T23:59:59Z";
+  
+  // Subscription info
+  const subscriptionInfo = {
     is_sandbox: false,
     ownership_type: "PURCHASED",
     billing_issues_detected_at: null,
     period_type: "normal",
-    expires_date: "2099-12-31T23:59:59Z",
+    expires_date: expiresDate,
     grace_period_expires_date: null,
     unsubscribe_detected_at: null,
-    original_purchase_date: "2024-07-28T01:04:18Z",
-    purchase_date: "2024-07-28T01:04:17Z",
+    original_purchase_date: purchaseDate,
+    purchase_date: purchaseDate,
     store: "app_store"
   };
 
-  obj.subscriber.subscriptions["locket.premium.yearly"] = info;
-  obj.subscriber.entitlements["premium"] = {
+  // Entitlement info
+  const entitlementInfo = {
     grace_period_expires_date: null,
-    purchase_date: "2024-07-28T01:04:17Z",
+    purchase_date: purchaseDate,
     product_identifier: "locket.premium.yearly",
-    expires_date: "2099-12-31T23:59:59Z"
+    expires_date: expiresDate
   };
+
+  // Apply unlock
+  obj.subscriber.subscriptions["locket.premium.yearly"] = subscriptionInfo;
+  obj.subscriber.entitlements["premium"] = entitlementInfo;
+  
+  // Backup entitlement với tên khác (đảm bảo unlock 100%)
+  obj.subscriber.entitlements["Gold"] = entitlementInfo;
 }
 
 $done({ body: JSON.stringify(obj) });
