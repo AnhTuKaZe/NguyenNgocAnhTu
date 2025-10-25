@@ -1,6 +1,6 @@
 ////////////////////////////////
 //   RevenueCat ETag Remover  //
-//       Optimized Ver        //
+//    Optimized Ver V1.0.4    //
 ////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
@@ -13,17 +13,27 @@
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 ////////////////////////////////
 
-// Kiểm tra request tồn tại
+// Safety check
 if (!$request || !$request.headers) {
   $done({});
 }
 
-const headers = $request.headers;
+// Function để set header value (hỗ trợ cả uppercase và lowercase)
+function setHeaderValue(headers, key, value) {
+  const lowerKey = key.toLowerCase();
+  // Xóa cả 2 dạng nếu tồn tại
+  delete headers[key];
+  delete headers[lowerKey];
+  // Set giá trị mới
+  headers[key] = value;
+}
 
-// Xóa ETag headers (cả uppercase và lowercase)
-delete headers["X-RevenueCat-ETag"];
-delete headers["x-revenuecat-etag"];
+var modifiedHeaders = $request.headers;
 
-console.log("✅ ETag headers removed");
+// Xóa X-RevenueCat-ETag header (set = "" để bypass cache)
+setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
-$done({ headers: headers });
+// Log để debug (không log toàn bộ headers vì có thể chứa token)
+console.log("✅ RevenueCat ETag header removed successfully");
+
+$done({ headers: modifiedHeaders });
