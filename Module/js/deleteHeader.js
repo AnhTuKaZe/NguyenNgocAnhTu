@@ -1,17 +1,14 @@
-////////////////////////////////
-//   RevenueCat ETag Remover  //
-//    Stable & Simple V2.1    //
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // 🇬🇧 Update By: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Messenger Channel (Latest Updates): 
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // 🇻🇳 Cập nhật bởi: NguyenNgocAnhTu
 // 📘 Facebook: https://www.facebook.com/NguyenNgocAnhTu.VN
 // 💬 Kênh Messenger (Cập nhật mới nhất): 
 //    https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 // Function xử lý header (hỗ trợ uppercase, lowercase, và các variant)
 function setHeaderValue(headers, key, value) {
