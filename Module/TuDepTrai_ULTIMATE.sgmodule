@@ -1,5 +1,5 @@
 #!name=Tú Đẹp Trai 🌸 ULTIMATE Edition ⚡🚀
-#!desc=YouTube + Locket + Spotify + Grammarly + Notability + 40+ Premium Apps | Full Optimized
+#!desc=YouTube + Locket + Spotify + WPS + 51 Premium Apps | Full Optimized
 #!author=Nguyễn Ngọc Anh Tú 🌸
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Diamond.png
@@ -334,6 +334,94 @@ caiyun-response = type=http-response,pattern=^https?:\/\/(biz|wrapper|starplucke
 caiyun-header = type=http-request,pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js,timeout=10
 
 # ======================================== #
+# --------- [ WPS Office ] ---------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📄 Features: Super VIP + All templates + Cloud storage
+# 🔧 Author: @chxm1023
+# ======================================== #
+wps = type=http-response,pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
+
+# ======================================== #
+# ----------- [ Craft ] ------------------
+# ⚡ Optimized: chxm1023 (2024-10), 10s timeout, 128KB
+# 📝 Features: V2 Team subscription + Cloud sync + All features
+# 🔧 Author: @chxm1023
+# ======================================== #
+craft = type=http-response,pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Craft.js
+
+# ======================================== #
+# ----------- [ Drafts ] -----------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📝 Features: Pro subscription + Quick capture + All features
+# 🔧 Author: @chxm1023
+# ======================================== #
+drafts = type=http-response,pattern=^https?:\/\/backend\.getdrafts\.com\/api\/v\d\/verification\/(account_status|verify_receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Drafts.js
+
+# ======================================== #
+# ----------- [ Agenda ] -----------------
+# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
+# 📅 Features: Premium + Calendar notes + Lifetime unlock
+# 🔧 Author: @chxm1023
+# ======================================== #
+agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js
+
+# ======================================== #
+# --------- [ VN VlogNow ] ---------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🎬 Features: Annual subscription + All effects + No watermark
+# 🔧 Author: @chxm1023
+# ======================================== #
+vn = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
+
+# ======================================== #
+# -------- [ FilmicPro ] -----------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📹 Features: Pro subscription + Professional camera tools
+# 🔧 Author: @chxm1023
+# ======================================== #
+filmicpro = type=http-response,pattern=^https:\/\/filmicpro\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmicpro.js
+
+# ======================================== #
+# ----------- [ Flow ] -------------------
+# ⚡ Optimized: chxm1023 (2024-09), 10s timeout, 128KB
+# 🎨 Features: Video/photo editing suite + Annual subscription
+# 🔧 Author: @chxm1023
+# ======================================== #
+flow = type=http-response,pattern=^https?:\/\/.*\.vlognow\.me\/.*-pay\/api\/v\d\/(user\/subscriptions|public\/iap\/receipt\/status),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Flow.js
+
+# ======================================== #
+# ----------- [ Boom ] -------------------
+# ⚡ Optimized: chxm1023 (@ddm1023), 10s timeout, 128KB
+# 🎵 Features: Lifetime purchase + All presets + 3D audio
+# 🔧 Author: @chxm1023
+# ======================================== #
+boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+
+# ======================================== #
+# ----------- [ Endel ] ------------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🧘 Features: Yearly subscription + Personalized soundscapes
+# 🔧 Author: @chxm1023
+# ======================================== #
+endel = type=http-response,pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
+
+# ======================================== #
+# --------- [ AdGuard ] ------------------
+# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
+# 🛡️ Features: Lifetime purchase + Premium filters + Safari blocker
+# 🔧 Author: @chxm1023
+# ======================================== #
+adguard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+
+# ======================================== #
+# -------- [ Hyperweb ] ------------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🌐 Features: Pro subscription + AI browser features
+# 🔧 Author: @chxm1023
+# ======================================== #
+hyperweb = type=http-response,pattern=^https?:\/\/zy6kcqa01a\.execute-api\.us-east-2\.amazonaws\.com\/prod\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
+
+# ======================================== #
 # ========= [ URL REWRITE ] ============== #
 # ======================================== #
 
@@ -378,5 +466,5 @@ caiyun-header = type=http-request,pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiy
 # ======================================== #
 
 [MITM]
-hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, pool.elsanow.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com
+hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, pool.elsanow.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com, *.wps.cn, api.craft.do, docs.craft.do, backend.getdrafts.com, accounts.agenda.com, api2.vlognow.me, *.vlognow.me, filmicpro.oracle.bendingspoonsapps.com, apimboom2.globaldelight.net, api-production.endel.io, mobile-api.adguard.org, zy6kcqa01a.execute-api.us-east-2.amazonaws.com
 enable = true
