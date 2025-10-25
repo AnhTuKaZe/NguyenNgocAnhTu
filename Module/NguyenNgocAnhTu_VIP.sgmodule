@@ -1,6 +1,8 @@
 #!name=Locket Gold Premium
-#!desc=Unlock Locket Gold - Clean & Optimized
-#!author=Ohoang7 (Original) | Optimized by NguyenNgocAnhTu
+#!desc=Unlock Locket Gold - Stable & Optimized by NguyenNgocAnhTu
+#!author=NguyenNgocAnhTu | Original by Ohoang7
+#!homepage=https://www.facebook.com/NguyenNgocAnhTu.VN
+#!icon=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/icon/locket.png
 
 [General]
 bypass-system = true
@@ -14,16 +16,21 @@ ipv6 = false
 
 [Script]
 # --- Locket Gold Unlock ---
-locket-response = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/locket.js, requires-body=true, max-size=524288, timeout=30
+# 💎 Features: Premium + Unlimited Photos + No Watermark
+# 📅 Expires: 2099-12-31
+# 🔧 Version: V3.1 (Stable)
+locket-response = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/locket.js, requires-body=true, max-size=524288, timeout=30
 
-locket-header = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/script/deleteHeader.js, timeout=10
+# --- RevenueCat ETag Header Remover ---
+# 🔧 Version: V2.1 (Stable)
+locket-header = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/deleteHeader.js, timeout=10
 
 ################################
 #     [ Header Rewrite ]       #
 ################################
 
 [Header Rewrite]
-# RevenueCat ETag header removal
+# RevenueCat ETag header removal (backup method)
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 
