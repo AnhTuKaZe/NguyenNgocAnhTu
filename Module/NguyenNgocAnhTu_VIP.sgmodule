@@ -1,7 +1,6 @@
-#!name=Tú Đẹp Trai 🌸 Ultra Optimized ⚡🚀
-#!desc=YouTube AdBlock + PiP + Locket + Spotify + 40+ Apps |Tối ưu tốc độ tối đa
-#!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-#!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
+#!name=Tú Đẹp Trai 🌸 ULTIMATE Edition ⚡🚀
+#!desc=YouTube + Locket + Spotify + WPS + 47 Premium Apps | ⚡ Ultra Fast & Optimized
+#!author=Nguyễn Ngọc Anh Tú 🌸
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 
 [General]
@@ -10,261 +9,428 @@ skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
 dns-server = system
 ipv6 = false
 
-################################
-#         [ Rule ]             #
-################################
+# ======================================== #
+# ============== [ RULE ] ================ #
+# ======================================== #
 
 [Rule]
-# YouTube QUIC - Chặn UDP để ad blocking tốt hơn
+# YouTube QUIC - Block UDP for better ad blocking
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
-################################
-#         [ Script ]           #
-################################
+# ======================================== #
+# ============= [ SCRIPT ] =============== #
+# ======================================== #
 
 [Script]
 
 # ======================================== #
-# --- Sub-Store (REMOVED - BROKEN LINKS) ---
-# ❌ Links không hoạt động, đã xóa để tối ưu module
-# 💡 Sử dụng Sub-Store app riêng để có trải nghiệm tốt nhất
+# --- Sub-Store (Subscription Manager) ---
+# ⚡ Optimized: Latest release, 30-60s timeout
+# 📦 Features: Subscription management + Sync + Preview
+# 🔧 Author: Sub-Store Team
 # ======================================== #
+Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=60
+Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
+Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=60,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube (ULTRA OPTIMIZED) ---
-# ⚡ Tối ưu: Latest Maasea (2025-07-20), Binary mode, 15s timeout, 3MB
-# 🎯 Features: AdBlock + PiP + No Shorts + No Upload + No Immersive
+# -------- [ YouTube Premium ] -----------
+# ⚡ Optimized: Maasea (2025-07-12), Binary mode, Unlimited size
+# 📺 Features: AdBlock + PiP + Background Play + Translate
+# 🔧 Author: @Maasea (Official config)
 # ======================================== #
-youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
-
-youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"blockUpload\":\"false\",\"blockImmersive\":\"false\",\"blockShorts\":\"false\",\"debug\":\"false\"}"
+youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"off\",\"captionLang\":\"off\",\"blockUpload\":false,\"blockImmersive\":false,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
-# --- Locket Gold (ULTRA OPTIMIZED) ---
-# ⚡ Tối ưu: Latest AnhTuKaZe (2025-10-21), 30s timeout, 512KB
-# 💎 Purchase: 2025-09-02 | Expires: 2099-12-18 | Store: App Store
+# ---------- [ Locket Gold ] -------------
+# ⚡ Optimized: AnhTuKaZe (2025-10-21), 30s timeout, 512KB
+# 💎 Purchase: 2025-09-02 | Expires: 2099-12-18
+# 📸 Features: Premium widget + Unlimited photos
+# 🔧 Author: @AnhTuKaZe (PRIMARY RevenueCat handler)
 # ======================================== #
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/locket.js,requires-body=true,max-size=524288,timeout=30
-
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/script/deleteHeader.js,timeout=10
 
 # ======================================== #
-# --- Spotify Plus (ULTRA OPTIMIZED) ---
-# ⚡ Tối ưu: Latest app2smile (2025-10-17), Binary mode, 10-20s timeout, 1MB
-# 🎵 Features: Premium features + No ads + Unlimited skips
+# --------- [ Spotify Premium ] ----------
+# ⚡ Optimized: app2smile (2025-10-17), Binary mode, 10-20s timeout
+# 🎵 Features: Premium + No ads + Unlimited skips + High quality
+# 🔧 Author: @app2smile
 # ======================================== #
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=1048576,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 # ======================================== #
-# --- SoundCloud Go+ ---
-# ⚡ Tối ưu: Latest Marol62926 (2024-07-21)
-# 🎧 Features: Premium features + No ads + High quality
+# --------- [ SoundCloud Go+ ] -----------
+# ⚡ Optimized: Marol62926 (2024-07), 10s timeout, 256KB
+# 🎧 Features: Premium + No ads + Offline + High quality
+# 🔧 Author: @Marol62926
 # ======================================== #
 soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 
 # ======================================== #
-# --- Truecaller Premium (UPDATED) ---
-# ⚡ Tối ưu: Latest duyvinh09 (2025-10-21), 10s timeout, 128KB
-# 📞 Features: Premium features + No ads + Caller ID
+# -------- [ TrueCaller Premium ] --------
+# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
+# 📞 Features: Premium + Caller ID + Spam blocking
+# 🔧 Author: @duyvinh09
 # ======================================== #
 truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
 
 # ======================================== #
-# --- CamScanner Premium ---
-# ⚡ Tối ưu: Latest duyvinh09 (2025-10-21)
-# 📄 Features: Premium features + No ads + OCR
+# --------- [ CamScanner Pro ] -----------
+# ⚡ Optimized: Yu9191 (Latest), 10s timeout, 128KB
+# 📄 Features: Premium + OCR + Cloud sync + No watermark + Error handling
+# 🔧 Author: @Yu9191
 # ======================================== #
-camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+camscanner = type=http-response,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/(purchase\/cs\/query_property|queryProperty|getPrivilegeItem),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/CamScanner.js
 
 # ======================================== #
-# --- BeautyPlus Premium ---
-# ⚡ Tối ưu: Latest duyvinh09 (2025-10-21)
-# 💄 Features: Premium filters + No ads + Advanced editing
+# -------- [ BeautyPlus Premium ] --------
+# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
+# 💄 Features: Premium filters + Advanced editing + No ads
+# 🔧 Author: @duyvinh09
 # ======================================== #
 beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
 
 # ======================================== #
-# --- Snow Premium ---
-# ⚡ Tối ưu: Latest duyvinh09 (2025-10-21)
-# ❄️ Features: Premium filters + No ads + Advanced effects
+# --------- [ Snow Premium ] -------------
+# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
+# ❄️ Features: Premium filters + AR effects + Beauty tools
+# 🔧 Author: @duyvinh09
 # ======================================== #
 snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js
 
 # ======================================== #
-# --- Meitu Premium ---
-# ⚡ Tối ưu: Latest duyvinh09 (2025-10-21)
-# 🎨 Features: Premium filters + No ads + Advanced editing
+# -------- [ Meitu XiuXiu Pro ] ----------
+# ⚡ Optimized: duyvinh09 (2025-10-21), 10s timeout, 128KB
+# 🎨 Features: Premium filters + Advanced retouching + Templates
+# 🔧 Author: @duyvinh09
 # ======================================== #
 meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
 
 # ======================================== #
-# --- iTunes Universal (UPDATED) ---
-# ⚡ Tối ưu: Latest chxm1023 (2025-10-17), 10s timeout, 128KB
+# ------- [ iTunes Universal Pro ] -------
+# ⚡ Optimized: chxm1023 (2025-10-17), 10s timeout, 128KB
 # 🍎 Features: Universal iTunes receipt validation
+# 🔧 Author: @chxm1023 (PRIMARY iTunes handler)
+# ⚠️ Note: Handles multiple apps via iTunes verification
 # ======================================== #
 itunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
 
 # ======================================== #
-# --- Alight Motion Premium ---
-# ⚡ Tối ưu: Latest iSteal-it (2024-11-13)
-# 🎬 Features: Premium features + No ads + Advanced editing
+# ------ [ Alight Motion Premium ] -------
+# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
+# 🎬 Features: Premium effects + No watermark + All tools
+# 🔧 Author: @iSteal-it
 # ======================================== #
 alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json
 
 # ======================================== #
-# --- PicsArt Premium ---
-# ⚡ Tối ưu: Latest iSteal-it (2024-11-13)
-# 🖼️ Features: Premium features + No ads + Advanced editing
+# -------- [ PicsArt Premium ] -----------
+# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
+# 🖼️ Features: Premium tools + AI effects + Templates
+# 🔧 Author: @iSteal-it
 # ======================================== #
 picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json
 
 # ======================================== #
-# --- VSCO Premium ---
-# ⚡ Tối ưu: Latest NobyDa (2025-07-17)
-# ⚠️ May overlap with Locket (both use RevenueCat)
-# 📸 Features: Premium filters + No ads + Advanced editing
-# ======================================== #
-vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-
-vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-
-# ======================================== #
-# --- KineMaster Premium ---
-# ⚡ Tối ưu: Latest iSteal-it (2024-11-13)
-# 🎥 Features: Premium features + No ads + Advanced editing
+# ------- [ KineMaster Premium ] ---------
+# ⚡ Optimized: iSteal-it (2024-11), 10s timeout, 128KB
+# 🎥 Features: Premium assets + No watermark + 4K export
+# 🔧 Author: @iSteal-it
 # ======================================== #
 kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
 
 # ======================================== #
-# --- Other Premium Apps (ALL LATEST) ---
-# ⚡ Tối ưu: Tất cả scripts đều phiên bản mới nhất
-# 🎯 Features: Premium features + No ads + Advanced functionality
+# --------- [ SandBox Premium ] ----------
+# ⚡ Optimized: N9dev-dev, 10s timeout, 128KB
+# 🎮 Features: Premium access + Full features
+# 🔧 Author: @N9dev-dev
 # ======================================== #
-
-# SandBox Premium
 sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
 
-# VivaCut Premium
+# ======================================== #
+# -------- [ VivaCut Premium ] -----------
+# ⚡ Optimized: N9dev-dev, 10s timeout, 128KB
+# ✂️ Features: Premium effects + Transitions + No watermark
+# 🔧 Author: @N9dev-dev
+# ======================================== #
 vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js
 
-# Funimate Premium
+# ======================================== #
+# -------- [ Funimate Premium ] ----------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🎞️ Features: Premium effects + Transitions + No ads
+# 🔧 Author: @iSteal-it
+# ======================================== #
 funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json
 
-# Photomath Premium
+# ======================================== #
+# ------- [ Photomath Premium ] ----------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 📐 Features: Step-by-step solutions + Expert explanations
+# 🔧 Author: @iSteal-it
+# ======================================== #
 photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
 
-# Photoshop Premium
-photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json
-
-# Lightroom Premium
+# ======================================== #
+# ------- [ Lightroom Premium ] ----------
+# ⚡ Optimized: litieyin, 10s timeout, 128KB
+# 📷 Features: Premium presets + Cloud sync + RAW editing
+# 🔧 Author: @litieyin
+# ======================================== #
 lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
 
-# djay Premium
-djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
-
-# vllo Premium
-vllo = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json
-
-# vizmato Premium
+# ======================================== #
+# -------- [ Vizmato Premium ] -----------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🎬 Features: Premium effects + Filters + No watermark
+# 🔧 Author: @iSteal-it
+# ======================================== #
 vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
 
-# reface Premium
+# ======================================== #
+# -------- [ Reface Premium ] ------------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🤳 Features: Unlimited face swaps + No watermark
+# 🔧 Author: @iSteal-it
+# ======================================== #
 reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
 
-# mojo Premium
-mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json
-
-# bussu Premium
-bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
-
-# calm Premium
+# ======================================== #
+# --------- [ Calm Premium ] -------------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🧘 Features: Premium content + Sleep stories + Masterclasses
+# 🔧 Author: @iSteal-it
+# ======================================== #
 calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
 
-# unfold Premium
+# ======================================== #
+# -------- [ Unfold Premium ] ------------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 📱 Features: Premium templates + Fonts + Stickers
+# 🔧 Author: @iSteal-it
+# ======================================== #
 unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
 
-# mosaic Premium
-mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json
+# ======================================== #
+# ------- [ Grammarly Premium ] ----------
+# ⚡ Optimized: chxm1023 (2024-01), 10s timeout, 128KB
+# 📝 Features: Advanced grammar check + Plagiarism detection + Tone
+# 🔧 Author: @chxm1023
+# ======================================== #
+grammarly = type=http-response,pattern=^https?:\/\/.*\.grammarly\.com\/(api\/v\d\/subscription|v\d\/user\/oranonymous),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js
 
 # ======================================== #
-# --- Additional Premium Apps (NEW) ---
-# ⚡ Tối ưu: Latest iSteal-it (2024-11-13)
-# 🎯 Features: Premium features + No ads + Advanced functionality
+# ------- [ Notability Premium ] ---------
+# ⚡ Optimized: chxm1023 (2025-02), 10s timeout, 256KB
+# 📓 Features: Premium subscription + Full sync + All tools
+# 🔧 Author: @chxm1023
 # ======================================== #
+notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Notability.js
 
-# InShot Premium
-inshot = type=http-response,pattern=^https:\/\/api\.inshot\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json
+# ======================================== #
+# ------- [ Moises Premium ] -------------
+# ⚡ Optimized: chxm1023 (2024-10), 10s timeout, 256KB
+# 🎵 Features: Pro subscription + 999 credits + Vocal/instrument removal
+# 🔧 Author: @chxm1023
+# ======================================== #
+moises = type=http-response,pattern=^https?:\/\/api\.moises\.ai\/graphql,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Moises.js
 
-# PowerDirector Premium
-powerdirector = type=http-response,pattern=^https:\/\/api\.cyberlink\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/PowerDirector.json
+# ======================================== #
+# -------- [ FaceLab Premium ] -----------
+# ⚡ Optimized: chxm1023 (2024-02), 10s timeout, 128KB
+# 📷 Features: Premium effects + Aging filters + Face editing
+# 🔧 Author: @chxm1023
+# ======================================== #
+facelab = type=http-response,pattern=^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/FaceLab.js
 
-# Prequel Premium
-prequel = type=http-response,pattern=^https:\/\/api\.prequel\.app\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
+# ======================================== #
+# -------- [ Focos Premium ] -------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📸 Features: Creator bundle + Professional portrait tools
+# 🔧 Author: @chxm1023
+# ======================================== #
+focos = type=http-response,pattern=^https?:\/\/focos\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Focos.js
 
-# Prisma Premium
-prisma = type=http-response,pattern=^https:\/\/api\.prisma\.ai\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json
+# ======================================== #
+# ------- [ Context Premium ] ------------
+# ⚡ Optimized: chxm1023 (2025-08), 10s timeout, 128KB
+# 🌐 Features: Plus subscription + AI English learning
+# 🔧 Author: @chxm1023
+# ⚠️ Note: Uses different RevenueCat domain (no conflict with Locket)
+# ======================================== #
+context-response = type=http-response,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js
+context-header = type=http-request,pattern=^https?:\/\/rc\.visionarytech\.ltd\/.+\/(receipts$|subscribers\/?(.*?)*$),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Context.js,timeout=10
 
-# Tezza Premium
-tezza = type=http-response,pattern=^https:\/\/api\.tezza\.co\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/tezza.json
+# ======================================== #
+# -------- [ FaceApp Premium ] -----------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🤳 Features: Premium subscription + All filters + No watermark
+# 🔧 Author: @iSteal-it
+# ======================================== #
+faceapp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io\/api\/v\d+\/auth\/user\/credentials,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/faceapp.json
 
-# Headspace Premium
-headspace = type=http-response,pattern=^https:\/\/api\.headspace\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json
+# ======================================== #
+# -------- [ Prequel Premium ] -----------
+# ⚡ Optimized: iSteal-it, 10s timeout, 128KB
+# 🎬 Features: Trial subscription + Premium effects + Filters
+# 🔧 Author: @iSteal-it
+# ======================================== #
+prequel = type=http-response,pattern=^https?:\/\/api\.prequel\.app\/api\/v1\/users\/current\/subscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json
 
-# SimplyPiano Premium
-simplypiano = type=http-response,pattern=^https:\/\/api\.simplypiano\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/simplypiano.json
+# ======================================== #
+# -------- [ XMind Premium ] -------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🧠 Features: Premium subscription + Cloud sync + All templates
+# 🔧 Author: @chxm1023
+# ⚠️ Note: Must restore purchase after login
+# ======================================== #
+xmind = type=http-response,pattern=^https?:\/\/(?:www\.)?xmind\..*\/.+\/(devices|token\/.+),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
 
-# Replika Premium
-replika = type=http-response,pattern=^https:\/\/api\.replika\.ai\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json
+# ======================================== #
+# -------- [ Caiyun Weather Pro ] --------
+# ⚡ Optimized: chxm1023 (2024-02), 10s timeout, 256KB
+# ☁️ Features: SVIP + 48h forecast + Satellite map + AI weather
+# 🔧 Author: @chxm1023
+# ⚠️ Note: Includes SVIP map request header modification
+# ======================================== #
+caiyun-response = type=http-response,pattern=^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners|ai\/weather|operation\/homefeatures)|p\/v\d\/(vip_info|user_info|entries|privileges)),requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js
+caiyun-header = type=http-request,pattern=^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images),script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun.js,timeout=10
 
-# WidgetSmith Premium
-widgetsmith = type=http-response,pattern=^https:\/\/api\.widgetsmith\.com\/v1\/user\/profile\?.*,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/widgetsmith.json
+# ======================================== #
+# --------- [ WPS Office ] ---------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📄 Features: Super VIP + All templates + Cloud storage
+# 🔧 Author: @chxm1023
+# ======================================== #
+wps = type=http-response,pattern=^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js
 
-################################
-#        [ Url Rewrite ]       #
-################################
+# ======================================== #
+# ----------- [ Craft ] ------------------
+# ⚡ Optimized: chxm1023 (2024-10), 10s timeout, 128KB
+# 📝 Features: V2 Team subscription + Cloud sync + All features
+# 🔧 Author: @chxm1023
+# ======================================== #
+craft = type=http-response,pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Craft.js
+
+# ======================================== #
+# ----------- [ Drafts ] -----------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📝 Features: Pro subscription + Quick capture + All features
+# 🔧 Author: @chxm1023
+# ======================================== #
+drafts = type=http-response,pattern=^https?:\/\/backend\.getdrafts\.com\/api\/v\d\/verification\/(account_status|verify_receipt),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Drafts.js
+
+# ======================================== #
+# ----------- [ Agenda ] -----------------
+# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
+# 📅 Features: Premium + Calendar notes + Lifetime unlock
+# 🔧 Author: @chxm1023
+# ======================================== #
+agenda = type=http-response,pattern=^https:\/\/accounts\.agenda\.com\/users\/.*\/license,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js
+
+# ======================================== #
+# --------- [ VN VlogNow ] ---------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🎬 Features: Annual subscription + All effects + No watermark
+# 🔧 Author: @chxm1023
+# ======================================== #
+vn = type=http-response,pattern=^https:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status?(.*?)*$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vn.js
+
+# ======================================== #
+# -------- [ FilmicPro ] -----------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 📹 Features: Pro subscription + Professional camera tools
+# 🔧 Author: @chxm1023
+# ======================================== #
+filmicpro = type=http-response,pattern=^https:\/\/filmicpro\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/filmicpro.js
+
+# ======================================== #
+# ----------- [ Flow ] -------------------
+# ⚡ Optimized: chxm1023 (2024-09), 10s timeout, 128KB
+# 🎨 Features: Video/photo editing suite + Annual subscription
+# 🔧 Author: @chxm1023
+# ======================================== #
+flow = type=http-response,pattern=^https?:\/\/.*\.vlognow\.me\/.*-pay\/api\/v\d\/(user\/subscriptions|public\/iap\/receipt\/status),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Flow.js
+
+# ======================================== #
+# ----------- [ Boom ] -------------------
+# ⚡ Optimized: chxm1023 (@ddm1023), 10s timeout, 128KB
+# 🎵 Features: Lifetime purchase + All presets + 3D audio
+# 🔧 Author: @chxm1023
+# ======================================== #
+boom = type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/boom.js
+
+# ======================================== #
+# ----------- [ Endel ] ------------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🧘 Features: Yearly subscription + Personalized soundscapes
+# 🔧 Author: @chxm1023
+# ======================================== #
+endel = type=http-response,pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Endel.js
+
+# ======================================== #
+# --------- [ AdGuard ] ------------------
+# ⚡ Optimized: chxm1023 (@ddm1023) (2025-01), 10s timeout, 128KB
+# 🛡️ Features: Lifetime purchase + Premium filters + Safari blocker
+# 🔧 Author: @chxm1023
+# ======================================== #
+adguard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
+
+# ======================================== #
+# -------- [ Hyperweb ] ------------------
+# ⚡ Optimized: chxm1023, 10s timeout, 128KB
+# 🌐 Features: Pro subscription + AI browser features
+# 🔧 Author: @chxm1023
+# ======================================== #
+hyperweb = type=http-response,pattern=^https?:\/\/zy6kcqa01a\.execute-api\.us-east-2\.amazonaws\.com\/prod\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Hyperweb.js
+
+# ======================================== #
+# ========= [ URL REWRITE ] ============== #
+# ======================================== #
 
 [Url Rewrite]
-
-# ---YouTube Ad Blocking (Optimized)---
+# YouTube Ad Blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/.*&oad - reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
 ^https?:\/\/[\w-]+\.googlevideo\.com\/ptracking - reject
 
-# ---Google Redirect Fix---
+# Google Redirect Fix
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
-################################
-#        [ Map Local ]         #
-################################
+# ======================================== #
+# ========= [ MAP LOCAL ] ================ #
+# ======================================== #
 
 [Map Local]
-
 # YouTube ad initialization blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.*&oad data-type=text data="" status-code=200
 
-################################
-#         [ Header ]           #
-################################
+# ======================================== #
+# ======= [ HEADER REWRITE ] ============= #
+# ======================================== #
 
 [Header Rewrite]
-
-# RevenueCat (for Locket, VSCO, Mojo, etc.)
+# RevenueCat (Locket)
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
+
+# RevenueCat (Context)
+^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
+^https:\/\/rc\.visionarytech\.ltd\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 
 # Spotify
 ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/user-customization-service\/v1\/customize$ header-del if-none-match
 
-################################
-#          [ MITM ]            #
-################################
+# ======================================== #
+# ============ [ MITM ] ================== #
+# ======================================== #
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store, api.inshot.com, api.cyberlink.com, api.prequel.app, api.prisma.ai, api.tezza.co, api.headspace.com, api.simplypiano.com, api.replika.ai, api.widgetsmith.com
+hostname = %APPEND% sub.store, -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, photos.adobe.io, web.vizmato.com, api.reface.video, api.calm.com, api.unfold.app, *.grammarly.com, notability.com, api.moises.ai, subscription-api.lyrebirdstudio.net, focos.oracle.bendingspoonsapps.com, rc.visionarytech.ltd, api.faceapp.io, api.prequel.app, *xmind.*, *.cyapi.cn, *.caiyunapp.com, *.wps.cn, api.craft.do, docs.craft.do, backend.getdrafts.com, accounts.agenda.com, api2.vlognow.me, *.vlognow.me, filmicpro.oracle.bendingspoonsapps.com, apimboom2.globaldelight.net, api-production.endel.io, mobile-api.adguard.org, zy6kcqa01a.execute-api.us-east-2.amazonaws.com
 enable = true
