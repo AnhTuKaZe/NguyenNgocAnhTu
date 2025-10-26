@@ -35,25 +35,17 @@ Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube Premium ---
-# 👤 Author: Maasea (github.com/Maasea/sgmodule)
-# ⚡ Latest version: 2024-10-26 (FIXED & UPDATED)
-# 🎬 Features:
-#    ✅ No Ads (YouTube & YouTube Music)
-#    ✅ Background Play & Picture-in-Picture
-#    ✅ Vietnamese subtitles & lyrics translation
-#    ✅ Block upload/shorts buttons (customizable)
-# 📝 Settings:
-#    - Lyric translation: Vietnamese (vi)
-#    - Caption translation: Vietnamese (vi)
-#    - Block upload button: YES
-#    - Block immersive button: YES
-#    - Block Shorts button: NO (keep Shorts)
-#    - Debug mode: OFF
-# ⚙️ Customize: Change language codes or set to "off" to disable
-#    Language codes: en, vi, zh-CN, zh-TW, ja, ko, etc.
-# ======================================== #
-youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
+# --- YouTube Premium 2025 - Nightmarket ---
+# 👤 Author: @Nightmarket Server, @Maasea
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
+# 🔧 Modified by: Nguyễn Ngọc Anh Tú
+# ⚡ Version: 2024-10-26 (PiP FIXED)
+# Request handler - BẮT BUỘC cho PiP hoạt động!
+youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
+
+# Response handler - Chặn quảng cáo & Premium features
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
 # --- Spotify Premium ---
