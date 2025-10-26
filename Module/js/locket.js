@@ -1,6 +1,4 @@
-// Updated Locket_fix.js
-// ========= Đặt ngày tham gia là 02/09/2025 ========= //
-var specificDate = "2025-09-02T00:00:00Z"; // Định dạng ISO 8601
+var specificDate = "2025-07-18T00:00:00Z"; // Định dạng ISO 8601
 
 // ========= ID Mapping ========= //
 const mapping = {
