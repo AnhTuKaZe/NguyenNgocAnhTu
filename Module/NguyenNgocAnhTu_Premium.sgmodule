@@ -35,30 +35,38 @@ Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube Premium (Full Working) ---
-# 👤 Author: Maasea (github.com/Maasea/sgmodule)
-# ⚡ Version: 2024-10-26 (FULLY FIXED)
+# --- YouTube Premium 2025 - Nightmarket ---
+# 👤 Author: @Nightmarket Server, @Maasea
+# 💬 Discord: https://discord.gg/juY9tw5AJY
+# 🚀 Released by: Nightmarket Server
+# 🔧 Modified by: Nguyễn Ngọc Anh Tú
+# ⚡ Version: 2024-10-26 (PiP FIXED)
+#
 # 🎬 Features:
-#    ✅ No Ads (YouTube & YouTube Music)
-#    ✅ Background Play & Picture-in-Picture (PiP)
-#    ✅ Vietnamese subtitles & lyrics translation
-#    ✅ Block upload/immersive buttons
-#    ✅ Keep Shorts button
-# 📝 Current Settings:
-#    lyricLang: "vi" (Vietnamese lyrics)
-#    captionLang: "vi" (Vietnamese subtitles)
-#    blockUpload: true (hide upload button)
-#    blockImmersive: true (hide immersive button)
-#    blockShorts: false (keep Shorts visible)
-#    debug: false (disable debug mode)
-# ⚙️ To customize: Change "vi" to "en", "zh-CN", etc. or "off" to disable
+#    ✅ Chặn quảng cáo YouTube + YouTube Music
+#    ✅ Hỗ trợ PiP (Picture-in-Picture)
+#    ✅ Phát nền (Background Play)
+#    ✅ Dịch phụ đề & lời bài hát tiếng Việt
+#    ✅ Chặn nút Upload, Immersive
+#    ✅ Giữ nút Shorts
+#
+# 📝 Cài đặt hiện tại:
+#    • lyricLang: "vi" (Dịch lời bài hát tiếng Việt)
+#    • captionLang: "vi" (Dịch phụ đề tiếng Việt)
+#    • blockUpload: true (Ẩn nút Upload)
+#    • blockImmersive: true (Ẩn nút chọn đoạn)
+#    • blockShorts: false (Giữ Shorts)
+#    • debug: false (Tắt debug)
+#
+# ⚙️ Tùy chỉnh: Đổi "vi" thành "en", "zh-CN", "ja", "ko"
+#              Hoặc "off" để tắt dịch
 # ======================================== #
 
-# Request handler - Required for PiP and background play
-youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.beta.js
+# Request handler - BẮT BUỘC cho PiP hoạt động!
+youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
 
-# Response handler - Main script for ad blocking and premium features
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.beta.js,argument="lyricLang=vi&captionLang=vi&blockUpload=true&blockImmersive=true&blockShorts=false&debug=false"
+# Response handler - Chặn quảng cáo & Premium features
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
 # --- Spotify Premium ---
