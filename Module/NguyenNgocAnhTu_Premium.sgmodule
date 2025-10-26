@@ -35,51 +35,54 @@ Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube Premium 2025 (Enhanced) ---
-# 👤 Author: Hasukatsu, @Maasea
+# --- YouTube Premium 2025 - Nightmarket (Enhanced) ---
+# 👤 Author: @Nightmarket Server, @Maasea
+# 💬 Discord: https://discord.gg/juY9tw5AJY
 # 🔧 Modified by: Nguyễn Ngọc Anh Tú 🌸
-# ⚡ Version: 2024-10-26 (FULLY WORKING + OPTIMIZED)
+# ⚡ Version: 3.5 (2024-10-26) - FIXED & ENHANCED
 # 📝 Description: Chặn quảng cáo YouTube + Music | Hỗ trợ PiP, phụ đề & phát nền
 #
-# ✅ SO SÁNH VỚI CODE KHÁC:
-#    • Youtube (Music) Enhance: THIẾU youtube.request → KHÔNG có PiP! ❌
-#    • Code này: CÓ ĐẦY ĐỦ youtube.request + response → PiP HOẠT ĐỘNG! ✅
+# ⚠️ QUAN TRỌNG:
+#    • Code Nightmarket gốc: CHỈ có youtube.response → KHÔNG PiP! ❌
+#    • Code này: Nightmarket + youtube.request → CÓ PiP! ✅
+#    • Đã thay placeholder {{{...}}} bằng giá trị cố định tiếng Việt
 #
 # 🎬 Tính năng:
 #    ✅ Chặn 100% quảng cáo YouTube + YouTube Music
-#    ✅ Picture-in-Picture (PiP) - ĐẦY ĐỦ và hoàn hảo
+#    ✅ Picture-in-Picture (PiP) - ĐÃ THÊM youtube.request!
 #    ✅ Background Play (Phát nền) - Ổn định
 #    ✅ Dịch phụ đề tiếng Việt tự động
 #    ✅ Dịch lời bài hát tiếng Việt (YouTube Music)
-#    ✅ Ẩn nút Upload, Immersive, Shorts
+#    ✅ Ẩn nút Upload (có thể tắt)
+#    ✅ Ẩn nút Immersive/chọn đoạn (có thể tắt)
+#    ✅ GIỮ nút Shorts (có thể ẩn)
 #    ✅ Chặn QUIC protocol (UDP)
-#    ✅ 5 URL Rewrite rules để chặn ads tốt hơn
 #
-# 📝 Cài đặt hiện tại (sẵn sàng dùng):
-#    • lyricLang: "vi" (Dịch lời bài hát sang tiếng Việt)
-#    • captionLang: "vi" (Dịch phụ đề sang tiếng Việt)
-#    • blockUpload: "true" (Ẩn nút Upload)
-#    • blockImmersive: "true" (Ẩn nút chọn đoạn)
-#    • blockShorts: "true" (Ẩn nút Shorts)
-#    • debug: "false" (Tắt chế độ debug)
+# 📝 Cài đặt hiện tại (Nightmarket pattern + fixed values):
+#    • lyricLang: "vi" (歌词翻译语言 = Dịch lời bài hát tiếng Việt)
+#    • captionLang: "vi" (字幕翻译语言 = Dịch phụ đề tiếng Việt)
+#    • blockUpload: true (屏蔽上传按钮 = Ẩn nút Upload)
+#    • blockImmersive: true (屏蔽选段按钮 = Ẩn nút chọn đoạn)
+#    • blockShorts: false (屏蔽Shorts按钮 = GIỮ nút Shorts)
+#    • debug: false (启用调试模式 = Tắt debug)
 #
-# ⚙️ Tùy chỉnh (sửa dòng 73):
+# ⚙️ Tùy chỉnh (sửa dòng 87):
 #    - Ngôn ngữ: "vi", "en", "zh-CN", "ja", "ko", "off"
-#    - Hiện/Ẩn nút: "true" (ẩn), "false" (hiện)
+#    - Hiện/Ẩn nút: true (ẩn), false (hiện)
 #
-# 🛡️ TẠI SAO CODE NÀY TỐT HƠN:
-#    1. Có youtube.request (Youtube Enhance KHÔNG có!) → PiP works!
-#    2. Có 5 URL Rewrite rules để chặn ads tốt hơn
-#    3. Giá trị cố định (không cần config placeholder)
-#    4. Timeout 30s (tối ưu cho mạng chậm)
+# 🔧 CẢI TIẾn SO VỚI NIGHTMARKET GỐC:
+#    + Thêm youtube.request (BẮT BUỘC cho PiP!)
+#    + Thay placeholder {{{...}}} bằng giá trị cố định
+#    + Format argument chuẩn JSON
+#    + Timeout 30s cho ổn định
 # ======================================== #
 
 # 🔑 Request handler - BẮT BUỘC cho PiP và Background Play!
-# (Youtube Enhance THIẾU phần này nên không có PiP!)
+# (Nightmarket gốc THIẾU phần này nên không có PiP!)
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
 
-# 🛡️ Response handler - Chặn quảng cáo và kích hoạt Premium features
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":\"true\",\"blockImmersive\":\"true\",\"blockShorts\":\"true\",\"debug\":\"false\"}"
+# 🛡️ Response handler - Pattern từ Nightmarket V3.5 (argument đã fix)
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
 # --- Spotify Premium ---
