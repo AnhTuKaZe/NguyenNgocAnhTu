@@ -38,6 +38,9 @@ Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-pa
 # --- YouTube Premium ---
 # 👤 Author: Maasea (github.com/Maasea/sgmodule)
 # ⚡ Latest version: 2025/7/12 (PiP fix, Background Play)
+# 🎬 Lyric & caption translation, No Ads
+# 📌 Credits: @VirgilClyne (translation feature)
+# ⚠️ Note: duyvinh09 uses old version (2025/3/30)
 # ======================================== #
 youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
@@ -56,7 +59,8 @@ spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.co
 
 # ======================================== #
 # --- SoundCloud Go+ ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 soundcloud = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/SoundCloudGoPlus.js
 
@@ -72,14 +76,17 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 # ======================================== #
 # --- VSCO ---
-# 👤 Author: duyvinh09
+# 👤 Author: Guding88 (github.com/Guding88/Script)
 # ⚡ Works alongside Locket (no conflict)
+# 🔄 Updated from original source
 # ======================================== #
-vsco = type=http-request,pattern=^https://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$),script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/VSCO.js,requires-body=true,timeout=60
+vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),script-path=https://raw.githubusercontent.com/Guding88/Script/main/VSCO.js,requires-body=true,timeout=60
+
+vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),script-path=https://raw.githubusercontent.com/Guding88/Script/main/VSCO.js,timeout=10
 
 # ======================================== #
 # --- RevenueCat Universal (OPTIONAL) ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
 # ⚠️ DISABLED (may conflict with Locket)
 # 💡 Supports: Mojo, PhotoRoom, Remove.bg, etc.
 # ======================================== #
@@ -87,61 +94,72 @@ vsco = type=http-request,pattern=^https://api.revenuecat.com/.+/(receipts$|subsc
 
 # ======================================== #
 # --- Alight Motion Pro ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/AlightMotion.js,max-size=131072,requires-body=true,timeout=10
 
 # ======================================== #
 # --- PicsArt Gold ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ chxm1023 has different API pattern (api.meiease.cn)
 # ======================================== #
 picsart = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/PicsArt.js,requires-body=true,timeout=60
 
 # ======================================== #
 # --- Wink Premium ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 wink = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/WinkVipCrack.js
 
 # ======================================== #
 # --- Truecaller Premium ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
 
 # ======================================== #
 # --- Adobe Lightroom ---
-# 👤 Author: duyvinh09
+# 👤 Author: Alex0510 (github.com/Alex0510/Eric)
+# 🔄 Updated from original source
 # ======================================== #
-lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/lightroom.js
+lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/lightroom.js
 
 # ======================================== #
 # --- KineMaster Pro ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v\d\/user\/subscribe$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Kinemaster.js
 
 # ======================================== #
 # --- CamScanner Pro ---
-# 👤 Author: duyvinh09
+# 👤 Author: chxm1023 (github.com/chxm1023/Rewrite)
+# 🔄 Updated from original source
 # ======================================== #
-camscanner = type=http-response,pattern=https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+camscanner = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
 
 # ======================================== #
 # --- BeautyPlus VIP ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 beautyplus = type=http-response,pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js,requires-body=true,max-size=-1,timeout=60
 
 # ======================================== #
 # --- Snow Premium ---
-# 👤 Author: duyvinh09
+# 👤 Author: chxm1023 (github.com/chxm1023/Rewrite)
+# 🔄 Updated from original source (2024-12-06)
+# ⚡ Supports: SNOW & Epik apps
 # ======================================== #
-snow = type=http-response,pattern=^https?:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js,requires-body=true,max-size=-1,timeout=60
+snow = type=http-response,pattern=^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js,requires-body=true,max-size=-1,timeout=60
 
 # ======================================== #
 # --- Meitu VIP ---
-# 👤 Author: duyvinh09
+# 👤 Author: duyvinh09 (Original author unknown)
+# ⚠️ No reliable alternative source found
 # ======================================== #
 meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
 
@@ -205,5 +223,5 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, ap*.intsig.net, api-cs.intsig.net, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
 enable = true
