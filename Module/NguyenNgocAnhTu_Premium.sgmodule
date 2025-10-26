@@ -25,22 +25,10 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 [Script]
 
 # ======================================== #
-# --- Sub-Store ---
-# 👤 Author: sub-store-org (Official)
-# ======================================== #
-Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120
-
-Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
-
-Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
-
-# ======================================== #
 # --- YouTube Premium ---
 # 👤 Author: Maasea (github.com/Maasea/sgmodule)
 # ⚡ Latest version: 2025/7/12 (PiP fix, Background Play)
 # 🎬 Lyric & caption translation, No Ads
-# 📌 Credits: @VirgilClyne (translation feature)
-# ⚠️ Note: duyvinh09 uses old version (2025/3/30)
 # ======================================== #
 youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
@@ -58,13 +46,6 @@ spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 # ======================================== #
-# --- SoundCloud Go+ ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-soundcloud = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/SoundCloudGoPlus.js
-
-# ======================================== #
 # --- Locket Gold ---
 # 👤 Author: AnhTuKaZe (Custom Script)
 # 🔐 Premium Lifetime (2025-09-02 → 2099-12-18)
@@ -73,114 +54,6 @@ soundcloud = type=http-response,pattern=https://api-mobile.soundcloud.com/config
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=524288,timeout=30
 
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=10
-
-# ======================================== #
-# --- VSCO ---
-# 👤 Author: Guding88 (github.com/Guding88/Script)
-# ⚡ Works alongside Locket (no conflict)
-# 🔄 Updated from original source
-# ======================================== #
-vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),script-path=https://raw.githubusercontent.com/Guding88/Script/main/VSCO.js,requires-body=true,timeout=60
-
-vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),script-path=https://raw.githubusercontent.com/Guding88/Script/main/VSCO.js,timeout=10
-
-# ======================================== #
-# --- RevenueCat Universal (OPTIONAL) ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ DISABLED (may conflict with Locket)
-# 💡 Supports: Mojo, PhotoRoom, Remove.bg, etc.
-# ======================================== #
-# revenuecat-universal = type=http-response,pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/revenuecat.js,requires-body=true,max-size=-1,timeout=60
-
-# ======================================== #
-# --- Alight Motion Pro ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/AlightMotion.js,max-size=131072,requires-body=true,timeout=10
-
-# ======================================== #
-# --- PicsArt Gold ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ chxm1023 has different API pattern (api.meiease.cn)
-# ======================================== #
-picsart = type=http-request,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/PicsArt.js,requires-body=true,timeout=60
-
-# ======================================== #
-# --- Wink Premium ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-wink = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/WinkVipCrack.js
-
-# ======================================== #
-# --- Truecaller Premium ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
-
-# ======================================== #
-# --- Adobe Lightroom ---
-# 👤 Author: Alex0510 (github.com/Alex0510/Eric)
-# 🔄 Updated from original source
-# ======================================== #
-lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/lightroom.js
-
-# ======================================== #
-# --- KineMaster Pro ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v\d\/user\/subscribe$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Kinemaster.js
-
-# ======================================== #
-# --- CamScanner Pro ---
-# 👤 Author: chxm1023 (github.com/chxm1023/Rewrite)
-# 🔄 Updated from original source
-# ======================================== #
-camscanner = type=http-response,pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com),requires-body=1,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
-
-# ======================================== #
-# --- BeautyPlus VIP ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-beautyplus = type=http-response,pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js,requires-body=true,max-size=-1,timeout=60
-
-# ======================================== #
-# --- Snow Premium ---
-# 👤 Author: chxm1023 (github.com/chxm1023/Rewrite)
-# 🔄 Updated from original source (2024-12-06)
-# ⚡ Supports: SNOW & Epik apps
-# ======================================== #
-snow = type=http-response,pattern=^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js,requires-body=true,max-size=-1,timeout=60
-
-# ======================================== #
-# --- Meitu VIP ---
-# 👤 Author: duyvinh09 (Original author unknown)
-# ⚠️ No reliable alternative source found
-# ======================================== #
-meitu = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
-
-# ======================================== #
-# --- iTunes Universal ---
-# 👤 Author: chxm1023
-# ⚡ Supports: VLLO, Mosaic, and more
-# ======================================== #
-itunes-universal = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js,requires-body=true,max-size=-1,timeout=60
-
-# ======================================== #
-# --- VivaCut Pro ---
-# 👤 Author: yqc007
-# ======================================== #
-vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com\/api\/rest\/commerce\/integrate\/vip\/query,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/VivaCutProCrack.js
-
-# ======================================== #
-# --- Sandbox Premium ---
-# 👤 Author: N9dev-dev
-# ======================================== #
-sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=15,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
 
 ################################
 #        [ Url Rewrite ]       #
@@ -194,10 +67,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
-# ---Google Redirect Fix---
-^http:\/\/(www\.)?g\.cn https://www.google.com 302
-^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
 ################################
 #        [ Map Local ]         #
@@ -214,7 +83,7 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Header Rewrite]
 
-# RevenueCat (for Locket, VSCO, and other RevenueCat apps)
+# RevenueCat (for Locket)
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
 
@@ -223,5 +92,5 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
 enable = true
