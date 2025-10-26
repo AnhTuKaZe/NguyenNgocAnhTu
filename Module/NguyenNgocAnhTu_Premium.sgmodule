@@ -1,5 +1,5 @@
-#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition V3
-#!desc=Tối ưu tốc độ tối đa - Verified & Updated Working Scripts Only
+#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition V3.1
+#!desc=Tối ưu tốc độ tối đa - All RevenueCat Apps Enabled (Locket + VSCO + Mojo)
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 #!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -107,13 +107,21 @@ itunes-universal = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com
 sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=15,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
 
 # ======================================== #
-# --- VSCO (OPTIONAL - DISABLED) ---
-# ⚠️ Conflicts with Locket (both use RevenueCat)
+# --- VSCO (VERIFIED WORKING) ---
 # ✅ NobyDa - Latest verified
-# Uncomment to use VSCO instead of Locket
+# ⚡ Works alongside Locket (different User-Agent detection)
 # ======================================== #
-# vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-# vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
+# ======================================== #
+# --- Mojo (WORKING - Uses Locket Script) ---
+# ✅ Uses same RevenueCat handler as Locket
+# ⚡ Locket script supports multiple apps via User-Agent
+# ⚡ Pattern matches Mojo-specific endpoints
+# ======================================== #
+mojo-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),requires-body=1,max-size=524288,timeout=30,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js
 
 # ======================================== #
 # --- REMOVED SCRIPTS (NOT AVAILABLE) ---
@@ -133,7 +141,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 # ❌ Unfold (source unavailable)
 # ❌ Vizmato (source unavailable)
 # ❌ djay (source unavailable)
-# ❌ Mojo (conflicts with Locket + source issues)
 # ======================================== #
 
 ################################
