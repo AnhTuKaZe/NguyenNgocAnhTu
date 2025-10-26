@@ -46,7 +46,7 @@ youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 
 # ======================================== #
 # --- Spotify Premium (ORIGINAL SOURCE) ---
-# ✅ app2smile - ORIGINAL AUTHOR (Not duyvinh09!)
+# ✅ app2smile
 # ⚡ Latest protobuf method, binary mode
 # ⚡ No ads, unlimited skips, offline download
 # 🎵 Updated: 2024-06-13
