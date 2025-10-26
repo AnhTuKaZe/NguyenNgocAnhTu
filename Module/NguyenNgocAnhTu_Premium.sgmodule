@@ -1,5 +1,5 @@
-#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
-#!desc=Tối ưu tốc độ tối đa
+#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition V2
+#!desc=Tối ưu tốc độ tối đa - Fixed All Conflicts & Updated
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 #!author=Nguyễn Ngọc Anh Tú 🌸 - Ultimate Edition
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -45,6 +45,7 @@ youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 # --- Locket Gold (ULTRA OPTIMIZED) ---
 # ⚡ Tối ưu: Latest AnhTuKaZe, 30s timeout, 512KB
 # Purchase: 2025-09-02 | Expires: 2099-12-18
+# ✅ PRIORITY: This script runs FIRST for RevenueCat
 # ======================================== #
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=524288,timeout=30
 
@@ -61,93 +62,136 @@ spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.co
 # ======================================== #
 # --- SoundCloud Go+ ---
 # ======================================== #
-soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=10,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+soundcloud = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=15,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 
 # ======================================== #
 # --- Truecaller Premium ---
 # ======================================== #
-truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/TrueCaller.js
+truecaller = type=http-response,pattern=^https:\/\/premium-.*\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/truecaller.js
 
 # ======================================== #
 # --- CamScanner ---
 # ======================================== #
-camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/camScanner.js
+camscanner = type=http-response,pattern=^https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
 
 # ======================================== #
 # --- BeautyPlus ---
 # ======================================== #
-beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/BeautyPlus.js
+beautyplus = type=http-response,pattern=^https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/BeautyPlus.js
 
 # ======================================== #
 # --- Snow ---
 # ======================================== #
-snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Snow.js
+snow = type=http-response,pattern=^https:\/\/user-snow-api\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js
 
 # ======================================== #
 # --- Meitu ---
 # ======================================== #
-meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/MeiTuXiuXiu.js
-
-# ======================================== #
-# --- iTunes Universal ---
-# ======================================== #
-itunes = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
+meitu = type=http-response,pattern=^https:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/meituxiuxiu.js
 
 # ======================================== #
 # --- Alight Motion ---
+# ⚡ Updated: Fixed script path
 # ======================================== #
-alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/alight-motion.json
+alightmotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alightmotion.js
 
 # ======================================== #
 # --- PicsArt ---
+# ⚡ Updated: Fixed script path
 # ======================================== #
-picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/gw-v2\/shop\/subscription\/apple\/purchases,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/picart.json
-
-# ======================================== #
-# --- VSCO ---
-# ⚠️ May overlap with Locket (both use RevenueCat)
-# ======================================== #
-vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-
-vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+picsart = type=http-response,pattern=^https:\/\/api\.picsart\.com\/(shop\/subscription\/apple\/purchases|users\/show\/me\.json),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/picsart.js
 
 # ======================================== #
 # --- KineMaster ---
+# ⚡ Updated: Fixed script path
 # ======================================== #
-kinemaster = type=http-response,pattern=^https:\/\/api-account\.kinemasters\.com\/v2\/user\/subscribe,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/refs/heads/main/Kinemaster.json
+kinemaster = type=http-response,pattern=^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/(.*\/product\/verifyReceipt$|v\d\/product\/verifyReceipt),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/KineMaster.js
 
 # ======================================== #
-# --- Other Premium Apps ---
+# --- VivaVideo ---
+# ⚡ Updated: Fixed script path
 # ======================================== #
-sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
+vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com\/api\/rest\/commerce\/integrate\/vip\/query,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vivavideo.js
 
-vivacut = type=http-response,pattern=^https:\/\/api\.vivacut\.com,requires-body=1,max-size=131072,timeout=10,script-path=https://N9dev-dev.github.io/SL/scripts/VivaCut.js
+# ======================================== #
+# --- Funimate ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/funimate.js
 
-funimate = type=http-response,pattern=^https:\/\/api\.funimate\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json
+# ======================================== #
+# --- Photomath ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+photomath = type=http-response,pattern=^https:\/\/(lapi\.photomath\.net\/v4\/me|lapi\.photomath\.com\/v4\/me),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/photomath.js
 
-photomath = type=http-response,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json
+# ======================================== #
+# --- Adobe Lightroom ---
+# ⚡ Updated: Better source
+# ======================================== #
+lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/lightroom.js
 
-photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json
+# ======================================== #
+# --- Reface ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/reface.js
 
-lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
+# ======================================== #
+# --- Bussu ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/busuu.js
 
-djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json
+# ======================================== #
+# --- Calm ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+calm = type=http-response,pattern=^https:\/\/(www\.)?calm\.com\/(mobile\/)?me(\?|$),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/calm.js
 
-vllo = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json
+# ======================================== #
+# --- Unfold ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/unfold.js
 
-vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json
+# ======================================== #
+# --- Vizmato ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+vizmato = type=http-response,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/vizmato.js
 
-reface = type=http-response,pattern=^https:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/reface.json
+# ======================================== #
+# --- djay ---
+# ⚡ Updated: Fixed script path
+# ======================================== #
+djay = type=http-response,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/djay.js
 
-mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json
+# ======================================== #
+# --- VSCO ---
+# ⚠️ DISABLED: Conflicts with Locket (both use RevenueCat)
+# Uncomment if you want to use VSCO instead of Locket
+# ======================================== #
+# vsco-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/.*VSCO,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+# vsco-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/.*VSCO,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 
-bussu = type=http-response,pattern=^https:\/\/api\.busuu\.com\/users\/me,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bussu.json
+# ======================================== #
+# --- Mojo ---
+# ⚠️ DISABLED: Conflicts with Locket (both use RevenueCat)
+# Uncomment if you want to use Mojo instead of Locket
+# ======================================== #
+# mojo = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojo.js
 
-calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/calm.json
+# ======================================== #
+# --- iTunes Universal (VLLO, MOSAIC, etc.) ---
+# ⚡ One script for all iTunes verifyReceipt apps
+# ======================================== #
+itunes-universal = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=15,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
 
-unfold = type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json
-
-mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=131072,timeout=10,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json
+# ======================================== #
+# --- Sandbox ---
+# ======================================== #
+sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/current,requires-body=1,max-size=131072,timeout=15,script-path=https://N9dev-dev.github.io/SL/scripts/SandBox.js
 
 ################################
 #        [ Url Rewrite ]       #
@@ -181,7 +225,7 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 
 [Header Rewrite]
 
-# RevenueCat (for Locket, VSCO, Mojo, etc.)
+# RevenueCat (for Locket and other RevenueCat apps)
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del x-revenuecat-etag
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) header-del X-RevenueCat-ETag
 
@@ -193,5 +237,5 @@ mosaic = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyRe
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, raw.githubusercontent.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, premium*.truecaller.com, ap*.intsig.net, api-cs.intsig.net, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, api-sub.meitu.com, buy.itunes.apple.com, us-central1-alight-creative.cloudfunctions.net, api.picsart.com, api-kinemaster-assetstore.nexstreaming.com, api-kinemaster-assetstore.kinemasters.com, api-account.kinemasters.com, api.sandbox.love, api.vivacut.com, api.funimate.com, lapi.photomath.net, lapi.photomath.com, lcs-mobile-cops.adobe.io, photos.adobe.io, app.algoriddim.com, web.vizmato.com, api.reface.video, api.busuu.com, api.calm.com, www.calm.com, api.unfold.app, sub.store
 enable = true
