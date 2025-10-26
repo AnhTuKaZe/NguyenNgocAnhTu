@@ -15,7 +15,7 @@ ipv6 = false
 ################################
 
 [Rule]
-# YouTube QUIC - Chặn UDP để ad blocking tốt hơn
+# YouTube QUIC Block
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
 AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
@@ -23,6 +23,14 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 #         [ Script ]           #
 ################################
 [Script]
+
+# ======================================== #
+# --- YouTube Premium 2025 - Nightmarket ---
+# 👤 Author: @Nightmarket Server, @Maasea
+# 💬 Discord: https://discord.gg/juY9tw5AJY  
+# 🚀 Released by: Nightmarket Server
+# ======================================== #
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
 # --- Sub-Store ---
@@ -33,21 +41,6 @@ Sub-Store-Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|a
 Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true,timeout=30
 
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
-
-# ======================================== #
-# --- YouTube Premium 2025 - Nightmarket (Enhanced) ---
-# 👤 Author: @Nightmarket Server, @Maasea
-# 💬 Discord: https://discord.gg/juY9tw5AJY
-# 🔧 Modified by: Nguyễn Ngọc Anh Tú 🌸
-# ⚡ Version: 3.5 (2024-10-26) - FIXED & ENHANCED
-# 📝 Description: Chặn quảng cáo YouTube + Music | Hỗ trợ PiP, phụ đề & phát nền
-
-# 🔑 Request handler - BẮT BUỘC cho PiP và Background Play!
-# (Nightmarket gốc THIẾU phần này nên không có PiP!)
-youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
-
-# 🛡️ Response handler - Pattern từ Nightmarket V3.5 (argument đã fix)
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
 
 # ======================================== #
 # --- Spotify Premium ---
@@ -191,23 +184,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Url Rewrite]
 
-# ======= YouTube Ad Blocking (FULL PROTECTION!) ======= #
-# Block video ads with oad parameter
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-img
-
-# Block all ad requests
-^https?:\/\/[\w-]+\.googlevideo\.com\/ptracking\? - reject-img
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
-
-# Block YouTube mobile ads
-^https?:\/\/[\w-]+\.youtube\.com\/get_midroll_ - reject-img
-^https?:\/\/[\w-]+\.youtube\.com\/api\/stats\/ads - reject-img
-
-# Remove ctier parameter for better quality
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-
 # ======= Google Redirect Fix ======= #
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
@@ -217,8 +193,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [Map Local]
-
-# ======= YouTube Ad Initialization Blocking ======= #
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 ################################
@@ -226,11 +200,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [Header Rewrite]
-
-# ======= YouTube Header Fix (BẮT BUỘC!) ======= #
-# Remove ad-related headers
-^https:\/\/[\w-]+\.googlevideo\.com\/videoplayback header-del x-playback-session-id
-^https:\/\/[\w-]+\.googlevideo\.com\/videoplayback header-del x-client-data
 
 # ======= RevenueCat Headers ======= #
 # For Locket, VSCO, and other RevenueCat apps
@@ -242,6 +211,5 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [MITM]
-# YouTube & Other Services
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, *.youtube.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
 enable = true
