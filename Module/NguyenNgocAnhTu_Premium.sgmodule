@@ -1,3 +1,9 @@
+#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸
+#!desc=Full Features
+#!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
+#!author=Nguyễn Ngọc Anh Tú 🌸 -
+#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+
 [General]
 bypass-system = true
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
