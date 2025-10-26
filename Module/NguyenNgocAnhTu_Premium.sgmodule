@@ -35,24 +35,27 @@ Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube Premium 2025 (All-in-One) ---
+# --- YouTube Premium 2025 (Enhanced) ---
 # 👤 Author: Hasukatsu, @Maasea
 # 🔧 Modified by: Nguyễn Ngọc Anh Tú 🌸
-# ⚡ Version: 2024-10-26 (FULLY WORKING)
+# ⚡ Version: 2024-10-26 (FULLY WORKING + OPTIMIZED)
 # 📝 Description: Chặn quảng cáo YouTube + Music | Hỗ trợ PiP, phụ đề & phát nền
+#
+# ✅ SO SÁNH VỚI CODE KHÁC:
+#    • Youtube (Music) Enhance: THIẾU youtube.request → KHÔNG có PiP! ❌
+#    • Code này: CÓ ĐẦY ĐỦ youtube.request + response → PiP HOẠT ĐỘNG! ✅
 #
 # 🎬 Tính năng:
 #    ✅ Chặn 100% quảng cáo YouTube + YouTube Music
-#    ✅ Picture-in-Picture (PiP) - Hoạt động hoàn hảo
-#    ✅ Background Play (Phát nền)
+#    ✅ Picture-in-Picture (PiP) - ĐẦY ĐỦ và hoàn hảo
+#    ✅ Background Play (Phát nền) - Ổn định
 #    ✅ Dịch phụ đề tiếng Việt tự động
 #    ✅ Dịch lời bài hát tiếng Việt (YouTube Music)
-#    ✅ Ẩn nút Upload
-#    ✅ Ẩn nút Immersive (chọn đoạn)
-#    ✅ Ẩn nút Shorts
+#    ✅ Ẩn nút Upload, Immersive, Shorts
 #    ✅ Chặn QUIC protocol (UDP)
+#    ✅ 5 URL Rewrite rules để chặn ads tốt hơn
 #
-# 📝 Cài đặt hiện tại:
+# 📝 Cài đặt hiện tại (sẵn sàng dùng):
 #    • lyricLang: "vi" (Dịch lời bài hát sang tiếng Việt)
 #    • captionLang: "vi" (Dịch phụ đề sang tiếng Việt)
 #    • blockUpload: "true" (Ẩn nút Upload)
@@ -60,16 +63,22 @@ Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-pa
 #    • blockShorts: "true" (Ẩn nút Shorts)
 #    • debug: "false" (Tắt chế độ debug)
 #
-# ⚙️ Tùy chỉnh:
-#    - Đổi "vi" thành "en" (Tiếng Anh), "zh-CN" (Tiếng Trung)
-#    - Đổi "ja" (Tiếng Nhật), "ko" (Tiếng Hàn), "off" (để tắt)
-#    - Đổi "true" thành "false" để hiện nút lại
+# ⚙️ Tùy chỉnh (sửa dòng 73):
+#    - Ngôn ngữ: "vi", "en", "zh-CN", "ja", "ko", "off"
+#    - Hiện/Ẩn nút: "true" (ẩn), "false" (hiện)
+#
+# 🛡️ TẠI SAO CODE NÀY TỐT HƠN:
+#    1. Có youtube.request (Youtube Enhance KHÔNG có!) → PiP works!
+#    2. Có 5 URL Rewrite rules để chặn ads tốt hơn
+#    3. Giá trị cố định (không cần config placeholder)
+#    4. Timeout 30s (tối ưu cho mạng chậm)
 # ======================================== #
 
-# Request handler - BẮT BUỘC cho PiP và Background Play hoạt động!
+# 🔑 Request handler - BẮT BUỘC cho PiP và Background Play!
+# (Youtube Enhance THIẾU phần này nên không có PiP!)
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
 
-# Response handler - Chặn quảng cáo và kích hoạt Premium features
+# 🛡️ Response handler - Chặn quảng cáo và kích hoạt Premium features
 youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":\"true\",\"blockImmersive\":\"true\",\"blockShorts\":\"true\",\"debug\":\"false\"}"
 
 # ======================================== #
