@@ -35,38 +35,42 @@ Sub-Store-Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=
 Sub-Store-Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
 
 # ======================================== #
-# --- YouTube Premium 2025 - Nightmarket ---
-# 👤 Author: @Nightmarket Server, @Maasea
-# 💬 Discord: https://discord.gg/juY9tw5AJY
-# 🚀 Released by: Nightmarket Server
-# 🔧 Modified by: Nguyễn Ngọc Anh Tú
-# ⚡ Version: 2024-10-26 (PiP FIXED)
+# --- YouTube Premium 2025 (All-in-One) ---
+# 👤 Author: Hasukatsu, @Maasea
+# 🔧 Modified by: Nguyễn Ngọc Anh Tú 🌸
+# ⚡ Version: 2024-10-26 (FULLY WORKING)
+# 📝 Description: Chặn quảng cáo YouTube + Music | Hỗ trợ PiP, phụ đề & phát nền
 #
-# 🎬 Features:
-#    ✅ Chặn quảng cáo YouTube + YouTube Music
-#    ✅ Hỗ trợ PiP (Picture-in-Picture)
-#    ✅ Phát nền (Background Play)
-#    ✅ Dịch phụ đề & lời bài hát tiếng Việt
-#    ✅ Chặn nút Upload, Immersive
-#    ✅ Giữ nút Shorts
+# 🎬 Tính năng:
+#    ✅ Chặn 100% quảng cáo YouTube + YouTube Music
+#    ✅ Picture-in-Picture (PiP) - Hoạt động hoàn hảo
+#    ✅ Background Play (Phát nền)
+#    ✅ Dịch phụ đề tiếng Việt tự động
+#    ✅ Dịch lời bài hát tiếng Việt (YouTube Music)
+#    ✅ Ẩn nút Upload
+#    ✅ Ẩn nút Immersive (chọn đoạn)
+#    ✅ Ẩn nút Shorts
+#    ✅ Chặn QUIC protocol (UDP)
 #
 # 📝 Cài đặt hiện tại:
-#    • lyricLang: "vi" (Dịch lời bài hát tiếng Việt)
-#    • captionLang: "vi" (Dịch phụ đề tiếng Việt)
-#    • blockUpload: true (Ẩn nút Upload)
-#    • blockImmersive: true (Ẩn nút chọn đoạn)
-#    • blockShorts: false (Giữ Shorts)
-#    • debug: false (Tắt debug)
+#    • lyricLang: "vi" (Dịch lời bài hát sang tiếng Việt)
+#    • captionLang: "vi" (Dịch phụ đề sang tiếng Việt)
+#    • blockUpload: "true" (Ẩn nút Upload)
+#    • blockImmersive: "true" (Ẩn nút chọn đoạn)
+#    • blockShorts: "true" (Ẩn nút Shorts)
+#    • debug: "false" (Tắt chế độ debug)
 #
-# ⚙️ Tùy chỉnh: Đổi "vi" thành "en", "zh-CN", "ja", "ko"
-#              Hoặc "off" để tắt dịch
+# ⚙️ Tùy chỉnh:
+#    - Đổi "vi" thành "en" (Tiếng Anh), "zh-CN" (Tiếng Trung)
+#    - Đổi "ja" (Tiếng Nhật), "ko" (Tiếng Hàn), "off" (để tắt)
+#    - Đổi "true" thành "false" để hiện nút lại
 # ======================================== #
 
-# Request handler - BẮT BUỘC cho PiP hoạt động!
+# Request handler - BẮT BUỘC cho PiP và Background Play hoạt động!
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js
 
-# Response handler - Chặn quảng cáo & Premium features
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":true,\"blockImmersive\":true,\"blockShorts\":false,\"debug\":false}"
+# Response handler - Chặn quảng cáo và kích hoạt Premium features
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,timeout=30,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{\"lyricLang\":\"vi\",\"captionLang\":\"vi\",\"blockUpload\":\"true\",\"blockImmersive\":\"true\",\"blockShorts\":\"true\",\"debug\":\"false\"}"
 
 # ======================================== #
 # --- Spotify Premium ---
@@ -210,14 +214,19 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Url Rewrite]
 
-# ---YouTube Ad Blocking (Enhanced)---
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+# ======= YouTube Ad Blocking (All-in-One Premium) ======= #
+# Block video ads with oad parameter
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+
+# Block universal ad requests
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
+
+# Remove ctier parameter for better quality
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
-# ---Google Redirect Fix---
+# ======= Google Redirect Fix ======= #
 ^http:\/\/(www\.)?g\.cn https://www.google.com 302
 ^http:\/\/(www\.)?google\.cn https://www.google.com 302
 
@@ -227,7 +236,7 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Map Local]
 
-# YouTube ad initialization blocking
+# ======= YouTube Ad Initialization Blocking ======= #
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 ################################
