@@ -223,14 +223,19 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Url Rewrite]
 
-# ======= YouTube Ad Blocking (All-in-One Premium) ======= #
+# ======= YouTube Ad Blocking (FULL PROTECTION!) ======= #
 # Block video ads with oad parameter
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad _ reject-200
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-img
 
-# Block universal ad requests
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads _ reject-200
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) _ reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
+# Block all ad requests
+^https?:\/\/[\w-]+\.googlevideo\.com\/ptracking\? - reject-img
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
+
+# Block YouTube mobile ads
+^https?:\/\/[\w-]+\.youtube\.com\/get_midroll_ - reject-img
+^https?:\/\/[\w-]+\.youtube\.com\/api\/stats\/ads - reject-img
 
 # Remove ctier parameter for better quality
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
@@ -254,7 +259,13 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 
 [Header Rewrite]
 
-# RevenueCat (for Locket, VSCO, and other RevenueCat apps)
+# ======= YouTube Header Fix (BẮT BUỘC!) ======= #
+# Remove ad-related headers
+^https:\/\/[\w-]+\.googlevideo\.com\/videoplayback header-del x-playback-session-id
+^https:\/\/[\w-]+\.googlevideo\.com\/videoplayback header-del x-client-data
+
+# ======= RevenueCat Headers ======= #
+# For Locket, VSCO, and other RevenueCat apps
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
 
@@ -263,5 +274,6 @@ sandbox = type=http-response,pattern=^https:\/\/api\.sandbox\.love\/accounts\/cu
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
+# YouTube & Other Services
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, *.youtube.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api.revenuecat.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *-spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, *.intsig.net, *.camscanner.com, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, *.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, premium*.truecaller.com, api.vivacut.com, api.sandbox.love, sub.store
 enable = true
