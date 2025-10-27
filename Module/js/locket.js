@@ -23,7 +23,7 @@ var hasu = {
   ownership_type: "PURCHASED",
   billing_issues_detected_at: null,
   period_type: "normal",
-  expires_date: "2099-12-18T01:04:17Z",
+  expires_date: "2099-07-18T01:04:17Z",
   grace_period_expires_date: null,
   unsubscribe_detected_at: null,
   original_purchase_date: specificDate,
