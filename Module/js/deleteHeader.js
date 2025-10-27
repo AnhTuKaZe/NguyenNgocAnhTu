@@ -1,96 +1,20 @@
-// ========================================
-// 🚀 Optimized Header Handler for iOS
-// ✨ iPhone & iPad Performance Optimized
-// 📱 Device-Aware Processing
-// ========================================
-const version = 'V2.0.0';
+// Updated deleteHeader.js
+// ========= Header Modification ========= //
+const version = 'V1.0.3';
 
-// ========= Performance Optimization ========= //
-const CONFIG = {
-  headerKey: "X-RevenueCat-ETag",
-  debugMode: false,
-  maxRetries: 3
-};
-
-// ========= Device Detection ========= //
-function getDeviceInfo() {
-  const ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
-  return {
-    isIPad: /iPad/.test(ua),
-    isIPhone: /iPhone/.test(ua),
-    iosVersion: (ua.match(/OS (\d+)_/) || [])[1] || "unknown"
-  };
+function setHeaderValue(e, a, d) {
+  var r = a.toLowerCase();
+  r in e ? e[r] = d : e[a] = d;
 }
 
-// ========= Optimized Header Setter ========= //
-function setHeaderValue(headers, key, value) {
-  if (!headers || typeof headers !== 'object') {
-    console.log("⚠️ Invalid headers object");
-    return false;
-  }
-  
-  try {
-    const lowerKey = key.toLowerCase();
-    
-    // Remove all variations of the header (case-insensitive)
-    Object.keys(headers).forEach(headerKey => {
-      if (headerKey.toLowerCase() === lowerKey) {
-        delete headers[headerKey];
-      }
-    });
-    
-    // Set new value if provided
-    if (value !== null && value !== undefined) {
-      headers[key] = value;
-    }
-    
-    return true;
-  } catch (e) {
-    console.log("❌ Error setting header:", e.message);
-    return false;
-  }
-}
+// Lấy headers hiện tại từ request
+var modifiedHeaders = $request.headers;
 
-// ========= Main Processing ========= //
-function processRequest() {
-  try {
-    // Device detection for optimized processing
-    const device = getDeviceInfo();
-    
-    // Clone headers to avoid mutation issues
-    const modifiedHeaders = Object.assign({}, $request.headers);
-    
-    // Remove ETag headers for RevenueCat
-    const headersToRemove = [
-      "X-RevenueCat-ETag",
-      "x-revenuecat-etag",
-      "If-None-Match",
-      "if-none-match"
-    ];
-    
-    headersToRemove.forEach(header => {
-      setHeaderValue(modifiedHeaders, header, null);
-    });
-    
-    // Performance logging for debugging
-    if (CONFIG.debugMode) {
-      console.log(`📱 Device: ${device.isIPad ? 'iPad' : 'iPhone'} | iOS: ${device.iosVersion}`);
-      console.log("✅ Headers modified successfully");
-    }
-    
-    // Return modified headers
-    $done({ headers: modifiedHeaders });
-    
-  } catch (error) {
-    console.log("❌ Critical error in processRequest:", error.message);
-    
-    // Fallback: Return original headers on error
-    $done({ headers: $request.headers });
-  }
-}
+// Thay đổi giá trị của X-RevenueCat-ETag
+setHeaderValue(modifiedHeaders, "X-RevenueCat-ETag", "");
 
-// ========= Memory-Efficient Execution ========= //
-// Immediate execution with memory cleanup
-(() => {
-  processRequest();
-})();
+// Debug: In header đã sửa (tuỳ chọn)
+console.log("Modified Headers:", JSON.stringify(modifiedHeaders));
+
+// Kết thúc request với header đã sửa đổi
+$done({ headers: modifiedHeaders });
