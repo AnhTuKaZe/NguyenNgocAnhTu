@@ -87,10 +87,8 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 [Url Rewrite]
 
 # YouTube Ad Blocking
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+&oad - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 
 ################################
 #        [ Map Local ]         #
@@ -98,8 +96,8 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Map Local]
 
-# YouTube ad initialization blocking
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
+# Disabled - May block thumbnails
+# ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 ################################
 #         [ Header ]           #
@@ -118,5 +116,5 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
+hostname = %APPEND% www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
 enable = true
