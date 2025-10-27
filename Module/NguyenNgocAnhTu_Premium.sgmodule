@@ -32,69 +32,26 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 ################################
 [Script]
 
-# ======================================== #
-# --- YouTube Premium ---
-# 👤 Author: Maasea (github.com/Maasea/sgmodule)
-# ⚡ Latest version: 2025/7/12 (PiP fix, Background Play)
-# 🎬 Lyric & caption translation, No Ads
-# 📱 Optimized for iPhone & iPad
-# ======================================== #
+# YouTube Premium - PiP, Background Play, No Ads
 youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
 youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
 
-# ======================================== #
-# --- Spotify Premium ---
-# 👤 Author: app2smile (github.com/app2smile/rules)
-# ⚡ Protobuf method, binary mode decoding
-# 🎵 No ads, unlimited skips, high quality
-# 📅 Last Updated: 2025-06-20
-# 📱 Enhanced timeout for stable playback
-# ======================================== #
+# Spotify Premium - No ads, unlimited skips
 spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=15,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 
 spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=25,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
-# ======================================== #
-# --- SoundCloud Go+ ---
-# 👤 Author: AnhTuKaZe (Optimized V2.0)
-# 🎵 Premium features: No ads, offline sync, HQ audio
-# 📅 Last Updated: 2025-10-27
-# 📱 iPhone & iPad Optimized with Device Detection
-# 🚀 Local Script for Maximum Performance
-# ======================================== #
+# SoundCloud Go+ - No ads, offline sync, HQ audio
 soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,max-size=1048576,script-path=soundcloud.js,timeout=20
 
-# ======================================== #
-# --- Wink Forever VIP ---
-# 👤 Author: AnhTuKaZe (Optimized V2.0)
-# 📸 Video editor with premium features
-# 📅 Last Updated: 2025-10-27
-# 📱 iPhone & iPad Optimized - Device-Aware Video Processing
-# 🚀 Local Script with Memory Optimization
-# ======================================== #
+# Wink Forever VIP
 wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=524288,script-path=wink.js,timeout=25
 
-# ======================================== #
-# --- Meitu Xiuxiu Premium ---
-# 👤 Author: AnhTuKaZe (Optimized V2.0)
-# 🎨 Photo editor SVIP - All features unlocked
-# 📅 Last Updated: 2025-10-27
-# 📱 iPhone & iPad Optimized - Device-Aware Image Processing
-# 🚀 Local Script with High-Res Photo Support
-# 💎 SVIP Level 5 - Lifetime Access
-# ======================================== #
+# Meitu Xiuxiu SVIP
 meitu-response = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=1048576,script-path=meitu.js,timeout=25
 
-# ======================================== #
-# --- Locket Gold ---
-# 👤 Author: AnhTuKaZe (Optimized V3.0)
-# 🔐 Premium Lifetime (2025-09-02 → 2099-12-18)
-# ⚡ Priority #1 for RevenueCat API
-# 📱 iPhone & iPad Optimized with Device Detection
-# 🚀 Enhanced Memory Management & Error Handling
-# 💾 Local Scripts for Maximum Performance
-# ======================================== #
+# Locket Gold - Premium Lifetime
 locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=locket.js,requires-body=true,max-size=2097152,timeout=30
 
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=deleteHeader.js,timeout=15
@@ -105,7 +62,7 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Url Rewrite]
 
-# ---YouTube Ad Blocking (Enhanced for iOS)---
+# YouTube Ad Blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
@@ -127,7 +84,7 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Header Rewrite]
 
-# RevenueCat (for Locket Gold - Enhanced)
+# RevenueCat
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del if-none-match
