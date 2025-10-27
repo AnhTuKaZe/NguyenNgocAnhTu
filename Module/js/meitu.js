@@ -1,11 +1,21 @@
 /*************************************
-Meitu Xiuxiu - Unlock SVIP Premium
-Original Author: chxm1023
-Telegram: https://t.me/chxm1023
-App Download: https://t.cn/AiN3YLHl
-Last Updated: 2025-10-27
-Tested & Working - Full VIP Access
+
+项目名称：美图秀秀 解锁SVIP
+下载地址：https://t.cn/AiN3YLHl
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
+
+**************************************
+
+[rewrite_local]
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+
+[mitm]
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
+
 *************************************/
+
 
 var chxm1023 = JSON.parse($response.body);
 const hysj = '/vip/prompt/query.json';
@@ -19,6 +29,7 @@ const sjs = '/user/info_by_entrance.json';
 const sjshf = '/home/home.json';
 const kta = 'https://api.posters.meitu.com/center/user_rights.json';
 const ktb = 'https://api.posters.meitu.com/center/user_rights_consume.json';
+
 
 if ($request.url.indexOf(hysj) != -1){
   chxm1023.data = {
