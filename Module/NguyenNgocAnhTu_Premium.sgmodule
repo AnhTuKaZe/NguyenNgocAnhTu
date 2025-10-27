@@ -1,5 +1,5 @@
 #!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸
-#!desc=Full Features
+#!desc=Full Features - Optimized for iPhone & iPad
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
 #!author=Nguyễn Ngọc Anh Tú 🌸 -
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
@@ -9,6 +9,14 @@ bypass-system = true
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
 dns-server = system
 ipv6 = false
+# Performance optimization for iOS devices
+http-api-tls = false
+allow-wifi-access = false
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+# Enhanced for smoother experience
+enhanced-mode-by-rule = true
+test-timeout = 5
 
 ################################
 #         [ Rule ]             #
@@ -29,10 +37,11 @@ AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 # 👤 Author: Maasea (github.com/Maasea/sgmodule)
 # ⚡ Latest version: 2025/7/12 (PiP fix, Background Play)
 # 🎬 Lyric & caption translation, No Ads
+# 📱 Optimized for iPhone & iPad
 # ======================================== #
-youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
 
-youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=15,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
+youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=5242880,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
 
 # ======================================== #
 # --- Spotify Premium ---
@@ -40,26 +49,29 @@ youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 # ⚡ Protobuf method, binary mode decoding
 # 🎵 No ads, unlimited skips, high quality
 # 📅 Last Updated: 2025-06-20
+# 📱 Enhanced timeout for stable playback
 # ======================================== #
-spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=10,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=15,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 
-spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=20,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=25,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 # ======================================== #
 # --- SoundCloud Go+ ---
 # 👤 Author: Marol62926 (MarScrpt)
 # 🎵 Premium features: No ads, offline sync, HQ audio
 # 📅 Last Updated: 2025-10-27
+# 📱 Optimized timeout for iOS
 # ======================================== #
-soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/soundcloud.js,timeout=30
+soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/soundcloud.js,timeout=20
 
 # ======================================== #
 # --- Wink Forever VIP ---
 # 👤 Author: Hausd0rff (yqc007/QuantumultX)
 # 📸 Video editor with premium features
 # 📅 Last Updated: 2023-05-30
+# 📱 Enhanced for smooth video processing
 # ======================================== #
-wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/wink.js,timeout=30
+wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=524288,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/wink.js,timeout=25
 
 # ======================================== #
 # --- Meitu Xiuxiu Premium ---
@@ -67,18 +79,22 @@ wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/
 # 🎨 Photo editor SVIP - All features unlocked
 # 📅 Last Updated: 2025-10-27
 # ✅ Tested & Confirmed Working!
+# 📱 Optimized for high-res image processing
 # ======================================== #
-meitu-response = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/meitu.js,timeout=30
+meitu-response = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/meitu.js,timeout=25
 
 # ======================================== #
 # --- Locket Gold ---
 # 👤 Author: AnhTuKaZe (Custom Script)
 # 🔐 Premium Lifetime (2025-09-02 → 2099-12-18)
 # ⚡ Priority #1 for RevenueCat API
+# 📱 iPhone & iPad Optimized with Device Detection
+# 🚀 Enhanced Memory Management & Error Handling
+# 💾 Max-size increased for better compatibility
 # ======================================== #
-locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=524288,timeout=30
+locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=2097152,timeout=30
 
-locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=10
+locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=15
 
 ################################
 #        [ Url Rewrite ]       #
@@ -86,7 +102,7 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Url Rewrite]
 
-# ---YouTube Ad Blocking (Enhanced)---
+# ---YouTube Ad Blocking (Enhanced for iOS)---
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
@@ -99,7 +115,7 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Map Local]
 
-# YouTube ad initialization blocking
+# YouTube ad initialization blocking (Fast response)
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
 ################################
@@ -108,9 +124,11 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 
 [Header Rewrite]
 
-# RevenueCat (for Locket)
+# RevenueCat (for Locket Gold - Enhanced)
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del if-none-match
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del If-None-Match
 
 ################################
 #          [ MITM ]            #
