@@ -57,44 +57,47 @@ spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.co
 
 # ======================================== #
 # --- SoundCloud Go+ ---
-# 👤 Author: Marol62926 (MarScrpt)
+# 👤 Author: AnhTuKaZe (Optimized V2.0)
 # 🎵 Premium features: No ads, offline sync, HQ audio
 # 📅 Last Updated: 2025-10-27
-# 📱 Optimized timeout for iOS
+# 📱 iPhone & iPad Optimized with Device Detection
+# 🚀 Local Script for Maximum Performance
 # ======================================== #
-soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/soundcloud.js,timeout=20
+soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,max-size=1048576,script-path=soundcloud.js,timeout=20
 
 # ======================================== #
 # --- Wink Forever VIP ---
-# 👤 Author: Hausd0rff (yqc007/QuantumultX)
+# 👤 Author: AnhTuKaZe (Optimized V2.0)
 # 📸 Video editor with premium features
-# 📅 Last Updated: 2023-05-30
-# 📱 Enhanced for smooth video processing
+# 📅 Last Updated: 2025-10-27
+# 📱 iPhone & iPad Optimized - Device-Aware Video Processing
+# 🚀 Local Script with Memory Optimization
 # ======================================== #
-wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=524288,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/wink.js,timeout=25
+wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,max-size=524288,script-path=wink.js,timeout=25
 
 # ======================================== #
 # --- Meitu Xiuxiu Premium ---
-# 👤 Author: chxm1023 (Verified Working)
+# 👤 Author: AnhTuKaZe (Optimized V2.0)
 # 🎨 Photo editor SVIP - All features unlocked
 # 📅 Last Updated: 2025-10-27
-# ✅ Tested & Confirmed Working!
-# 📱 Optimized for high-res image processing
+# 📱 iPhone & iPad Optimized - Device-Aware Image Processing
+# 🚀 Local Script with High-Res Photo Support
+# 💎 SVIP Level 5 - Lifetime Access
 # ======================================== #
-meitu-response = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/meitu.js,timeout=25
+meitu-response = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=1048576,script-path=meitu.js,timeout=25
 
 # ======================================== #
 # --- Locket Gold ---
-# 👤 Author: AnhTuKaZe (Custom Script)
+# 👤 Author: AnhTuKaZe (Optimized V3.0)
 # 🔐 Premium Lifetime (2025-09-02 → 2099-12-18)
 # ⚡ Priority #1 for RevenueCat API
 # 📱 iPhone & iPad Optimized with Device Detection
 # 🚀 Enhanced Memory Management & Error Handling
-# 💾 Max-size increased for better compatibility
+# 💾 Local Scripts for Maximum Performance
 # ======================================== #
-locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=2097152,timeout=30
+locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=locket.js,requires-body=true,max-size=2097152,timeout=30
 
-locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=15
+locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=deleteHeader.js,timeout=15
 
 ################################
 #        [ Url Rewrite ]       #
