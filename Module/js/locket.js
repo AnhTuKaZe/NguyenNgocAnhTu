@@ -47,7 +47,7 @@ if (match) {
   obj.subscriber.entitlements[entitlementKey] = hasu_entitlement;
 } else {
   obj.subscriber.subscriptions["locket.premium.yearly"] = hasu;
-  obj.subscriber.entitlements["Locket"] = hasu_entitlement;
+  obj.subscriber.entitlements["Gold"] = hasu_entitlement;
 }
 
 $done({ body: JSON.stringify(obj) });
