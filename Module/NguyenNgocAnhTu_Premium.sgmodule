@@ -54,14 +54,6 @@ spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.co
 soundcloud-response = type=http-response,pattern=^https://api-mobile\.soundcloud\.com/configuration/ios,requires-body=1,script-path=soundcloud.js,timeout=30
 
 # ======================================== #
-# --- Wink Forever VIP ---
-# 👤 Author: Hausd0rff (yqc007/QuantumultX)
-# 📸 Video editor with premium features
-# 📅 Last Updated: 2023-05-30
-# ======================================== #
-wink-response = type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=wink.js,timeout=30
-
-# ======================================== #
 # --- Locket Gold ---
 # 👤 Author: AnhTuKaZe (Custom Script)
 # 🔐 Premium Lifetime (2025-09-02 → 2099-12-18)
@@ -110,5 +102,5 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, api-sub.meitu.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
 enable = true
