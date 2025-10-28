@@ -1,12 +1,13 @@
 #!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸
 #!desc=Full Features
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-#!author=Nguyễn Ngọc Anh Tú 🌸
+#!author=Nguyễn Ngọc Anh Tú 🌸 -
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 
 [General]
 bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, *.crashlytics.com
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 dns-server = system
 ipv6 = false
 
@@ -63,6 +64,22 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 # ======================================== #
 SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/soundcloud.js
 
+# ======================================== #
+# --- RevenueCat Crack (Multiple Apps) ---
+# 👤 Author: quocchienn (github.com/quocchienn/Make)
+# 🔓 Universal unlock for RevenueCat apps
+# 📱 Works with various premium apps
+# ======================================== #
+Crack = type=http-response,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/crack.js
+
+# ======================================== #
+# --- VSCO Premium ---
+# 👤 Author: quocchienn (github.com/quocchienn/Make)
+# 📸 All filters, presets, and tools unlocked
+# 🎨 Full membership + pro features
+# ======================================== #
+VSCO = type=http-request,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/?(.*?)*$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/vsco.js
+
 ################################
 #        [ Url Rewrite ]       #
 ################################
@@ -100,5 +117,5 @@ SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/con
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com, api-mobile.soundcloud.com
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com, api-mobile.soundcloud.com, buy.itunes.apple.com
 enable = true
