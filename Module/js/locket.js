@@ -1,4 +1,4 @@
-var specificDate = "2025-07-18T00:00:00Z"; // Định dạng ISO 8601
+var specificDate = "2024-01-01T00:00:00Z"; // Định dạng ISO 8601
 
 // ========= ID Mapping ========= //
 const mapping = {
@@ -23,7 +23,7 @@ var hasu = {
   ownership_type: "PURCHASED",
   billing_issues_detected_at: null,
   period_type: "normal",
-  expires_date: "2099-07-18T01:04:17Z",
+  expires_date: "2099-12-31T23:59:59Z",
   grace_period_expires_date: null,
   unsubscribe_detected_at: null,
   original_purchase_date: specificDate,
@@ -35,7 +35,7 @@ var hasu_entitlement = {
   grace_period_expires_date: null,
   purchase_date: specificDate,
   product_identifier: "locket.premium.yearly",
-  expires_date: "2099-12-18T01:04:17Z"
+  expires_date: "2099-12-31T23:59:59Z"
 };
 
 // ========= Áp dụng Mapping ========= //
