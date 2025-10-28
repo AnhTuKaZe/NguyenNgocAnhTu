@@ -65,20 +65,15 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/soundcloud.js
 
 # ======================================== #
-# --- RevenueCat Crack (Multiple Apps) ---
-# 👤 Author: quocchienn (github.com/quocchienn/Make)
-# 🔓 Universal unlock for RevenueCat apps
-# 📱 Works with various premium apps
-# ======================================== #
-Crack = type=http-response,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/crack.js
-
-# ======================================== #
 # --- VSCO Premium ---
 # 👤 Author: quocchienn (github.com/quocchienn/Make)
 # 📸 All filters, presets, and tools unlocked
 # 🎨 Full membership + pro features
+# ⚡ 2 scripts: http-request + http-response
 # ======================================== #
-VSCO = type=http-request,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/?(.*?)*$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/vsco.js
+VSCO-Request = type=http-request,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/?(.*?)*$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/vsco.js
+
+VSCO-Response = type=http-response,pattern=^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$),requires-body=true,timeout=5,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/crack.js
 
 ################################
 #        [ Url Rewrite ]       #
