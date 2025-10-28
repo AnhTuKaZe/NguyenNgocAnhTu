@@ -1,25 +1,19 @@
 // ========================================= //
-// 🔐 Locket Gold Premium Unlocker v2.0
+// 🦉 Duolingo Plus Unlocker v1.0
 // 👤 Author: AnhTuKaZe
 // 📅 Updated: 2025-10-28
-// ⚡ RevenueCat API Interceptor
+// ⚡ Unlimited hearts, No ads, All features
 // ========================================= //
 
-const VERSION = 'v2.0';
-const SCRIPT_NAME = '🔐 Locket Gold Premium';
+const VERSION = 'v1.0';
+const SCRIPT_NAME = '🦉 Duolingo Plus';
 
 // ========= Configuration ========= //
 const CONFIG = {
-  purchaseDate: "2025-07-18T00:00:00Z",
-  expiryDate: "2099-12-18T01:04:17Z",
-  productId: "locket.premium.yearly",
-  debug: false // Bật để xem logs chi tiết
-};
-
-// ========= ID Mapping ========= //
-const mapping = {
-  '%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip', 'locket.premium.yearly'],
-  'Locket': ['Gold', 'locket.premium.yearly']
+  purchaseDate: "2025-01-01T00:00:00Z",
+  expiryDate: "2099-12-31T23:59:59Z",
+  productId: "duolingo.premium.yearly",
+  debug: false
 };
 
 // ========= Helper Functions ========= //
@@ -41,9 +35,6 @@ function safeParseJSON(body) {
 
 // ========= Main Logic ========= //
 log(`Starting ${SCRIPT_NAME} ${VERSION}`);
-
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "Unknown";
-log(`User-Agent: ${ua}`);
 
 var obj = safeParseJSON($response.body);
 
@@ -69,8 +60,7 @@ var premiumSubscription = {
   unsubscribe_detected_at: null,
   original_purchase_date: CONFIG.purchaseDate,
   purchase_date: CONFIG.purchaseDate,
-  store: "app_store",
-  store_transaction_id: "570001234567890"
+  store: "app_store"
 };
 
 var premiumEntitlement = {
@@ -80,26 +70,13 @@ var premiumEntitlement = {
   expires_date: CONFIG.expiryDate
 };
 
-// ========= Áp dụng Mapping ========= //
-const match = Object.keys(mapping).find(e => ua.includes(e));
+// Áp dụng premium
+obj.subscriber.subscriptions["premium"] = premiumSubscription;
+obj.subscriber.entitlements["Premium"] = premiumEntitlement;
+obj.subscriber.entitlements["Unlimited Hearts"] = premiumEntitlement;
+obj.subscriber.entitlements["No Ads"] = premiumEntitlement;
 
-if (match) {
-  let [entitlementKey, subscriptionKey] = mapping[match];
-  obj.subscriber.subscriptions[subscriptionKey] = premiumSubscription;
-  obj.subscriber.entitlements[entitlementKey] = premiumEntitlement;
-  log(`✅ Applied premium for matched User-Agent: ${match}`);
-} else {
-  obj.subscriber.subscriptions[CONFIG.productId] = premiumSubscription;
-  obj.subscriber.entitlements["Gold"] = premiumEntitlement;
-  log(`✅ Applied default premium configuration`);
-}
+log('✅ Applied Duolingo Plus premium features');
+log('🎉 Successfully unlocked all features');
 
-// Thêm thông tin subscriber
-if (obj.subscriber) {
-  obj.subscriber.non_subscriptions = obj.subscriber.non_subscriptions || {};
-  obj.subscriber.original_app_user_id = obj.subscriber.original_app_user_id || "$RCAnonymousID:premium_user";
-  obj.subscriber.original_application_version = obj.subscriber.original_application_version || "1.0";
-}
-
-log(`🎉 Successfully unlocked premium features`);
 $done({ body: JSON.stringify(obj) });

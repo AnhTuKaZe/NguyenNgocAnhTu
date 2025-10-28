@@ -1,8 +1,11 @@
-#!name=⚡🚀 Nguyễn Ngọc Anh Tú 🌸
-#!desc=Full Features
+#!name=⚡🚀 Nguyễn Ngọc Anh Tú Premium Suite 🌸
+#!desc=🎯 YouTube • Spotify • TikTok • Instagram • Twitter • Duolingo • Calm • Locket • VN AdBlock
 #!tag=https://www.messenger.com/channel/NguyenNgocAnhTu.VN
-#!author=Nguyễn Ngọc Anh Tú 🌸 -
+#!author=Nguyễn Ngọc Anh Tú 🌸 | AnhTuKaZe
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+#!version=2.0
+#!updated=2025-10-28
+#!apps=11+
 
 [General]
 bypass-system = true
@@ -55,18 +58,96 @@ locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*
 
 locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=10
 
+# ======================================== #
+# --- TikTok Premium ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🎵 No Watermark, HD Download, No Ads
+# ⚡ Remove TikTok watermark & enable HD
+# ======================================== #
+tiktok-response = type=http-response,pattern=^https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item)/,requires-body=1,max-size=3145728,timeout=15,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/tiktok.js
+
+# ======================================== #
+# --- Duolingo Plus ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🦉 Unlimited Hearts, No Ads, All Features
+# ⚡ Full access to premium content
+# ======================================== #
+duolingo-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),requires-body=true,max-size=524288,timeout=30,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/duolingo.js
+
+duolingo-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=10
+
+# ======================================== #
+# --- Calm Premium ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🧘 All Meditations, Sleep Stories, Premium
+# ⚡ Full meditation library access
+# ======================================== #
+calm-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),requires-body=true,max-size=524288,timeout=30,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/calm.js
+
+calm-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=10
+
+# ======================================== #
+# --- Vietnam Apps AdBlocker ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🇻🇳 ZingNews, VnExpress, Zing MP3 AdBlock
+# ⚡ Remove ads from Vietnamese apps
+# ======================================== #
+vietnam-adblocker = type=http-response,pattern=^https?:\/\/(api\.)?(zingnews|vnexpress|mp3\.zing|zingmp3)\.vn\/.*,requires-body=1,max-size=2097152,timeout=15,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/adblock-vietnam.js
+
+# ======================================== #
+# --- Instagram Premium ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 📸 No Ads, Story Download, High Quality
+# ⚡ Clean feed and enhanced experience
+# ======================================== #
+instagram-response = type=http-response,pattern=^https?:\/\/(i\.instagram\.com|www\.instagram\.com)\/api\/v1\/(feed\/timeline|feed\/user|stories\/reel\/user_reel_media)/,requires-body=1,max-size=3145728,timeout=15,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/instagram.js
+
+# ======================================== #
+# --- Twitter/X Premium ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🐦 No Ads, Blue Features (Experimental)
+# ⚡ Clean timeline and extended features
+# ======================================== #
+twitter-response = type=http-response,pattern=^https?:\/\/(api\.twitter\.com|twitter\.com)\/.*\/(timeline|user|home_timeline|graphql)/,requires-body=1,max-size=3145728,timeout=15,script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/twitter.js
+
 ################################
 #        [ Url Rewrite ]       #
 ################################
 
 [Url Rewrite]
 
-# ---YouTube Ad Blocking (Enhanced)---
+# ======================================== #
+# --- YouTube Ad Blocking (Enhanced) ---
+# ======================================== #
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
+# ======================================== #
+# --- TikTok Watermark Removal ---
+# ======================================== #
+(?<=_\w{7}_c\w)(\d+x\d+\.image) 1080x1080.image 302
+(?<=\w\/\w{7}\/)(\d+x\d+)\/ 1080x1080/ 302
+
+# ======================================== #
+# --- Vietnam Apps Ad Blocking ---
+# ======================================== #
+^https?:\/\/.*\.zingnews\.vn\/.*\/(banner|ad|advertising) - reject-200
+^https?:\/\/.*\.vnexpress\.vn\/.*\/(banner|ad|advertising) - reject-200
+^https?:\/\/(mp3|zingmp3)\.zing\.vn\/.*\/(ad|advertising) - reject-200
+
+# ======================================== #
+# --- Instagram Ad Blocking ---
+# ======================================== #
+^https?:\/\/.*\.instagram\.com\/.*\/(ads|graphql\/query.*ads) - reject-200
+
+# ======================================== #
+# --- Twitter/X Ad Blocking ---
+# ======================================== #
+^https?:\/\/(api\.)?twitter\.com\/.*\/promoted - reject-200
+^https?:\/\/(api\.)?twitter\.com\/.*\/ads - reject-200
 
 ################################
 #        [ Map Local ]         #
@@ -92,5 +173,14 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
+# YouTube & Spotify
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com,
+# RevenueCat (Locket, Duolingo, Calm)
+hostname = %APPEND% api.revenuecat.com,
+# TikTok
+hostname = %APPEND% *.tiktokv.com, *.tiktokcdn.com, *.musical.ly,
+# Social Media
+hostname = %APPEND% i.instagram.com, www.instagram.com, api.twitter.com, twitter.com, x.com,
+# Vietnam Apps
+hostname = %APPEND% api.zingnews.vn, zingnews.vn, vnexpress.vn, api.vnexpress.vn, mp3.zing.vn, zingmp3.vn, api.zing.vn
 enable = true
