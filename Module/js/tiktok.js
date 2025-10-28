@@ -41,6 +41,7 @@ var obj = safeParseJSON($response.body);
 if (!obj) {
   log('Invalid response body', 'ERROR');
   $done({ body: $response.body });
+  return;
 }
 
 // Remove watermark from video URLs

@@ -58,6 +58,7 @@ var obj = safeParseJSON($response.body);
 if (!obj) {
   log('Invalid response body', 'ERROR');
   $done({ body: $response.body });
+  return;
 }
 
 var modifiedCount = 0;
