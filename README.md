@@ -7,7 +7,7 @@
 
 <!-- Animated Title -->
 <h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=🌸+Nguyễn+Ngọc+Anh+Tú+Premium+🌸;✨+100%25+Free+Forever+✨;🚀+Ultra+Fast+Performance+🚀" alt="Animated Title"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=%F0%9F%8C%B8+Nguy%E1%BB%85n+Ng%E1%BB%8Dc+Anh+T%C3%BA+Premium+%F0%9F%8C%B8;%E2%9C%A8+100%25+Free+Forever+%E2%9C%A8;%F0%9F%9A%80+Ultra+Fast+Performance+%F0%9F%9A%80" alt="Animated Title"/>
 </h1>
 
 <!-- Glowing Divider -->
