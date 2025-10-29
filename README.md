@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<img src="https://img.icons8.com/color/200/apple-logo.png" alt="iOS Logo" width="140"/>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ4YTBjODhhNmVhMzM2NjI4YWQwOGQ3OWQ3NjU3OGE3MjY4YTY3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/du3J3cXyzhj75IOgvA/giphy.gif" alt="iOS Logo Animated" width="150"/>
 
 # 🌸 Nguyễn Ngọc Anh Tú Premium
 
