@@ -305,7 +305,7 @@ Performance Metrics
 <td align="center"><code>3.2KB</code></td>
 <td align="center">💰 $49.99</td>
 <td align="center">⭐⭐⭐⭐</td>
-<td align="center">Pro users</td>
+<td align="center">Người dùng Pro</td>
 </tr>
 <tr>
 <td align="center">
@@ -316,7 +316,7 @@ Performance Metrics
 <td align="center"><code>2.9KB</code></td>
 <td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
-<td align="center">Advanced</td>
+<td align="center">Nâng cao</td>
 </tr>
 <tr style="background-color: #fffbdd;">
 <td align="center">
@@ -327,7 +327,7 @@ Performance Metrics
 <td align="center"><code>2.6KB</code></td>
 <td align="center">💰 $2.99</td>
 <td align="center">⭐⭐⭐⭐⭐</td>
-<td align="center">⭐ <b>Recommended</b></td>
+<td align="center">⭐ <b>Khuyên dùng</b></td>
 </tr>
 <tr>
 <td align="center">
@@ -338,7 +338,7 @@ Performance Metrics
 <td align="center"><code>2.3KB</code></td>
 <td align="center">💰 $7.99</td>
 <td align="center">⭐⭐⭐</td>
-<td align="center">Technical</td>
+<td align="center">Kỹ thuật</td>
 </tr>
 <tr>
 <td align="center">
@@ -349,7 +349,7 @@ Performance Metrics
 <td align="center"><code>3.3KB</code></td>
 <td align="center">🆓 Free</td>
 <td align="center">⭐⭐⭐⭐</td>
-<td align="center">Budget option</td>
+<td align="center">Tiết kiệm</td>
 </tr>
 </tbody>
 </table>
