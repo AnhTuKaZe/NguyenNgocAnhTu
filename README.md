@@ -196,7 +196,7 @@ Locket Gold
 ## 🚀 Hiệu suất
 
 <h3>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" width="28"/> 
+⚡ 
 Performance Metrics
 </h3>
 
@@ -213,25 +213,25 @@ Performance Metrics
 </thead>
 <tbody>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Timer%20Clock.png" width="20"/> <b>Response Time</b></td>
+<td>⏱️ <b>Response Time</b></td>
 <td><code>150ms</code></td>
 <td><code>60ms</code></td>
 <td><img src="https://img.shields.io/badge/↓_60%25-34C759?style=for-the-badge" alt="60% faster"/></td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Floppy%20Disk.png" width="20"/> <b>Memory Usage</b></td>
+<td>💾 <b>Memory Usage</b></td>
 <td><code>512KB</code></td>
 <td><code>256KB</code></td>
 <td><img src="https://img.shields.io/badge/↓_50%25-34C759?style=for-the-badge" alt="50% less"/></td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20Facing%20Up.png" width="20"/> <b>File Size</b></td>
+<td>📄 <b>File Size</b></td>
 <td><code>5.0KB</code></td>
 <td><code>2.3KB</code></td>
 <td><img src="https://img.shields.io/badge/↓_54%25-34C759?style=for-the-badge" alt="54% smaller"/></td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="20"/> <b>Execution Speed</b></td>
+<td>🚀 <b>Execution Speed</b></td>
 <td><code>50ms</code></td>
 <td><code>15ms</code></td>
 <td><img src="https://img.shields.io/badge/↓_70%25-34C759?style=for-the-badge" alt="70% faster"/></td>
@@ -244,27 +244,27 @@ Performance Metrics
 <table>
 <tr>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark.png" width="32"/>
+✅
 <br><b>IIFE Pattern</b>
 <br><sub>Instant execution</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark.png" width="32"/>
+✅
 <br><b>Strict Mode</b>
 <br><sub>Error prevention</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark.png" width="32"/>
+✅
 <br><b>Pre-built Objects</b>
 <br><sub>Zero parsing</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark.png" width="32"/>
+✅
 <br><b>Native Loops</b>
 <br><sub>Fast iteration</sub>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark.png" width="32"/>
+✅
 <br><b>Zero I/O</b>
 <br><sub>Memory only</sub>
 </td>
@@ -720,7 +720,7 @@ App → Configuration → Modules
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Speech%20Balloon.png" width="60"/>
+<img src="https://img.icons8.com/fluency/96/speech-bubble-with-dots.png" width="60"/>
 <br><br>
 <h4>💬 Messenger</h4>
 <sub>Response: < 1 hour</sub>
@@ -730,7 +730,7 @@ App → Configuration → Modules
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Bug.png" width="60"/>
+<img src="https://img.icons8.com/fluency/96/bug.png" width="60"/>
 <br><br>
 <h4>🐛 Bug Reports</h4>
 <sub>Technical issues only</sub>
@@ -740,7 +740,7 @@ App → Configuration → Modules
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Light%20Bulb.png" width="60"/>
+<img src="https://img.icons8.com/fluency/96/idea.png" width="60"/>
 <br><br>
 <h4>💡 Discussions</h4>
 <sub>Questions & ideas</sub>
@@ -1765,7 +1765,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <table>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Cherry%20Blossom.png" width="80"/><br>
+<img src="https://img.icons8.com/fluency/96/cherry-blossom.png" width="80"/><br>
 <b>Nguyễn Ngọc Anh Tú</b>
 <br><br>
 <sub>
@@ -1864,28 +1864,28 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Mobile%20Phone.png" width="64"/>
+<img src="https://img.icons8.com/fluency/96/iphone-13-pro.png" width="64"/>
 <br><br>
 <b>iOS Platform</b>
 <br>
 <sub>iPhone & iPad</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="64"/>
+<img src="https://img.icons8.com/fluency/96/source-code.png" width="64"/>
 <br><br>
 <b>Open Source</b>
 <br>
 <sub>100% Transparent</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="64"/>
+<img src="https://img.icons8.com/fluency/96/shield.png" width="64"/>
 <br><br>
 <b>100% Safe</b>
 <br>
 <sub>No Data Collection</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="64"/>
+<img src="https://img.icons8.com/fluency/96/rocket.png" width="64"/>
 <br><br>
 <b>Ultra Fast</b>
 <br>
