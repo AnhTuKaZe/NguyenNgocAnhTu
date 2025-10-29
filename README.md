@@ -1,12 +1,11 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<img src="https://img.icons8.com/3d-fluency/200/rocket.png" alt="Logo" width="180"/>
+<img src="https://img.icons8.com/3d-fluency/200/mac-os.png" alt="iOS Logo" width="160"/>
 
 # 🌸 Nguyễn Ngọc Anh Tú Premium
 
-### **YouTube Premium • Spotify Premium • Locket Gold**
-#### Completely Free • No Jailbreak Required • Auto Updates
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=YouTube+Premium+%E2%9C%93;Spotify+Premium+%E2%9C%93;Locket+Gold+%E2%9C%93;100%25+Free+Forever!" alt="Typing SVG" />
 
 <br>
 
@@ -1199,17 +1198,43 @@ If this project helped you, please consider:
 
 <br>
 
-### 🎨 Made with ❤️ in Vietnam
+---
 
-<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="80" alt="Vietnam"/>
+### 🎨 Made with ❤️ in Vietnam 🇻🇳
 
-**Copyright © 2025 [Nguyễn Ngọc Anh Tú](https://github.com/AnhTuKaZe) 🌸**
+<table>
+<tr>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/96/mac-os.png" width="48" alt="iOS"/>
+<br><b>iOS / macOS</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/96/android.png" width="48" alt="Android"/>
+<br><b>Android</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/96/code.png" width="48" alt="Code"/>
+<br><b>Open Source</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/96/lock-2.png" width="48" alt="Secure"/>
+<br><b>100% Safe</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/96/rocket.png" width="48" alt="Fast"/>
+<br><b>Ultra Fast</b>
+</td>
+</tr>
+</table>
 
 <br>
+
+**Copyright © 2025 [Nguyễn Ngọc Anh Tú](https://github.com/AnhTuKaZe) 🌸**
 
 ![Coded with Love](https://img.shields.io/badge/Coded_with-❤️-E74C3C?style=flat-square)
 ![Coffee](https://img.shields.io/badge/Powered_by-☕-6F4E37?style=flat-square)
 ![Late Nights](https://img.shields.io/badge/Made_during-🌙_Late_Nights-4A90E2?style=flat-square)
+![Open Source](https://img.shields.io/badge/❤️-Open_Source-50C878?style=flat-square)
 
 <br>
 
@@ -1217,6 +1242,8 @@ If this project helped you, please consider:
 
 **🇻🇳 Cảm ơn bạn đã sử dụng! 🇬🇧 Thank you for using! 🇯🇵 ご利用ありがとうございます！**
 
-<sub>Last updated: 2025-10-28</sub>
+<br>
+
+<sub>Last updated: 2025-10-28 • Version 2.0 • Star us on GitHub ⭐</sub>
 
 </div>

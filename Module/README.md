@@ -1,13 +1,11 @@
 <div align="center">
 
 <!-- Header -->
-<picture>
-  <img width="140" alt="Modules" src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Puzzle.png">
-</picture>
+<img src="https://img.icons8.com/3d-fluency/160/module.png" alt="Modules" width="140"/>
 
 # 🌸 Premium Modules
 
-### **Optimized for 5 Proxy Apps**
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=50C878&center=true&vCenter=true&width=500&lines=Optimized+for+5+Proxy+Apps;Ultra+Fast+Performance;2.3KB+-+3.3KB+Size;100%25+Compatible!" alt="Typing SVG" />
 
 <br>
 
@@ -16,19 +14,19 @@
 <tr>
 <td align="center" width="33%">
 <a href="#-tiếng-việt">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Vietnam.png" width="28"><br>
+<img src="https://img.icons8.com/color/48/vietnam-circular.png" width="36" alt="Vietnam"/><br>
 <b>🇻🇳 Tiếng Việt</b>
 </a>
 </td>
 <td align="center" width="33%">
 <a href="#-english">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png" width="28"><br>
+<img src="https://img.icons8.com/color/48/usa-circular.png" width="36" alt="English"/><br>
 <b>🇬🇧 English</b>
 </a>
 </td>
 <td align="center" width="33%">
 <a href="#-日本語">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png" width="28"><br>
+<img src="https://img.icons8.com/color/48/japan-circular.png" width="36" alt="Japan"/><br>
 <b>🇯🇵 日本語</b>
 </a>
 </td>
@@ -858,18 +856,48 @@ Must keep open source • Same license
 
 <br>
 
+---
+
 ### 🎨 Made with ❤️ in Vietnam 🇻🇳
+
+<table>
+<tr>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/64/module.png" width="40" alt="Module"/>
+<br><b>6 Modules</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/64/speed.png" width="40" alt="Speed"/>
+<br><b>Ultra Fast</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/64/lightweight.png" width="40" alt="Light"/>
+<br><b>Lightweight</b>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/3d-fluency/64/ok.png" width="40" alt="Optimized"/>
+<br><b>Optimized</b>
+</td>
+</tr>
+</table>
+
+<br>
 
 **Nguyễn Ngọc Anh Tú** 🌸
 
 ![Love](https://img.shields.io/badge/Coded_with-❤️-E74C3C?style=flat-square)
 ![Coffee](https://img.shields.io/badge/Powered_by-☕-6F4E37?style=flat-square)
 ![Nights](https://img.shields.io/badge/Late-🌙_Nights-4A90E2?style=flat-square)
+![Open Source](https://img.shields.io/badge/❤️-Open_Source-50C878?style=flat-square)
 
 <br>
 
-**⚡ ご利用ありがとうございます！ ⚡**
+**⚡ Thank you for using! ⚡**
 
 **🇻🇳 Cảm ơn! 🇬🇧 Thank you! 🇯🇵 ありがとう！**
+
+<br>
+
+<sub>Version 2.0 • Updated 2025-10-28</sub>
 
 </div>
