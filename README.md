@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ4YTBjODhhNmVhMzM2NjI4YWQwOGQ3OWQ3NjU3OGE3MjY4YTY3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/du3J3cXyzhj75IOgvA/giphy.gif" alt="iOS Logo Animated" width="150"/>
+<img src="https://media.giphy.com/media/PjTSIlJx6vOzJdsXd9/giphy.gif" alt="iOS Logo Animated" width="140"/>
 
 # 🌸 [Nguyễn Ngọc Anh Tú](https://www.facebook.com/NguyenNgocAnhTu.VN) Premium
 
