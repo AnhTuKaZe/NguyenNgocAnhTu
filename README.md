@@ -298,7 +298,7 @@ Performance Metrics
 <tbody>
 <tr>
 <td align="center">
-<img src="https://avatars.githubusercontent.com/u/48485223?s=200&v=4" width="40" style="border-radius: 10px;"/><br>
+<img src="https://raw.githubusercontent.com/Orz-3/mini/master/Color/Surge.png" width="40"/><br>
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
