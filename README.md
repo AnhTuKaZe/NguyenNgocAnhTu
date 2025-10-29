@@ -1800,15 +1800,6 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
   </a>
 </p>
 
-<!-- GitHub Stats -->
-<h3 align="center">📊 GitHub Statistics</h3>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AnhTuKaZe&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1a2e&title_color=4A90E2&icon_color=F39C12&text_color=ffffff" width="48%" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhTuKaZe&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1a2e&title_color=4A90E2&text_color=ffffff" width="48%" alt="Top Languages"/>
-</p>
-
-<br>
 
 <div align="center">
 
@@ -1864,7 +1855,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/fluency/96/iphone-13-pro.png" width="64"/>
+<img src="https://img.icons8.com/color/96/ios-logo.png" width="64"/>
 <br><br>
 <b>iOS Platform</b>
 <br>
