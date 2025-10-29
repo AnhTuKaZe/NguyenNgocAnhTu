@@ -1,10 +1,7 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png">
-  <img width="180" alt="Logo" src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png">
-</picture>
+<img src="https://img.icons8.com/3d-fluency/200/rocket.png" alt="Logo" width="180"/>
 
 # 🌸 Nguyễn Ngọc Anh Tú Premium
 
@@ -18,19 +15,19 @@
 <tr>
 <td align="center" width="33%">
 <a href="#-tiếng-việt">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Vietnam.png" width="32"><br>
+<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="48" alt="Vietnam"/><br>
 <b>🇻🇳 Tiếng Việt</b>
 </a>
 </td>
 <td align="center" width="33%">
 <a href="#-english">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png" width="32"><br>
+<img src="https://img.icons8.com/color/96/usa-circular.png" width="48" alt="English"/><br>
 <b>🇬🇧 English</b>
 </a>
 </td>
 <td align="center" width="33%">
 <a href="#-日本語">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png" width="32"><br>
+<img src="https://img.icons8.com/color/96/japan-circular.png" width="48" alt="Japan"/><br>
 <b>🇯🇵 日本語</b>
 </a>
 </td>
@@ -49,7 +46,7 @@
 <br>
 
 <!-- Quick Links -->
-**[📥 Quick Install](#-quick-installation)**  •  **[📖 Documentation](#-features)**  •  **[💬 Support](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)**  •  **[⭐ Star Us](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)**
+**[📥 Quick Install](#-cài-đặt-nhanh)**  •  **[📖 Documentation](#-tính-năng)**  •  **[💬 Support](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)**  •  **[⭐ Star Us](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)**
 
 <br>
 
@@ -83,9 +80,18 @@
 <table>
 <thead>
 <tr>
-<th width="33%">📺 YouTube Premium</th>
-<th width="33%">🎵 Spotify Premium</th>
-<th width="33%">🔒 Locket Gold</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
+<br>YouTube Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
+<br>Spotify Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
+<br>Locket Gold
+</th>
 </tr>
 </thead>
 <tbody>
@@ -369,7 +375,7 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 
 **💬 Messenger**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Messenger.png" width="64">
+<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
 
 Thời gian phản hồi: **< 1 giờ**
 
@@ -382,7 +388,7 @@ Thời gian phản hồi: **< 1 giờ**
 
 **🐛 GitHub Issues**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png" width="64">
+<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
 
 Cho **báo cáo lỗi**
 
@@ -395,7 +401,7 @@ Cho **báo cáo lỗi**
 
 **💡 Discussions**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png" width="64">
+<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
 
 Cho **câu hỏi & ý tưởng**
 
@@ -439,9 +445,18 @@ Cho **câu hỏi & ý tưởng**
 <table>
 <thead>
 <tr>
-<th width="33%">📺 YouTube Premium</th>
-<th width="33%">🎵 Spotify Premium</th>
-<th width="33%">🔒 Locket Gold</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
+<br>YouTube Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
+<br>Spotify Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
+<br>Locket Gold
+</th>
 </tr>
 </thead>
 <tbody>
@@ -725,7 +740,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 **💬 Messenger**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Messenger.png" width="64">
+<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
 
 Response time: **< 1 hour**
 
@@ -738,7 +753,7 @@ Response time: **< 1 hour**
 
 **🐛 GitHub Issues**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png" width="64">
+<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
 
 For **bug reports**
 
@@ -751,7 +766,7 @@ For **bug reports**
 
 **💡 Discussions**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png" width="64">
+<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
 
 For **questions & ideas**
 
@@ -795,9 +810,18 @@ For **questions & ideas**
 <table>
 <thead>
 <tr>
-<th width="33%">📺 YouTube Premium</th>
-<th width="33%">🎵 Spotify Premium</th>
-<th width="33%">🔒 Locket Gold</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
+<br>YouTube Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
+<br>Spotify Premium
+</th>
+<th width="33%">
+<img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
+<br>Locket Gold
+</th>
 </tr>
 </thead>
 <tbody>
@@ -1081,7 +1105,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **💬 Messenger**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Messenger.png" width="64">
+<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
 
 応答時間: **< 1時間**
 
@@ -1094,7 +1118,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **🐛 GitHub Issues**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png" width="64">
+<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
 
 **バグ報告**用
 
@@ -1107,7 +1131,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **💡 Discussions**
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png" width="64">
+<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
 
 **質問＆アイデア**用
 
@@ -1177,7 +1201,7 @@ If this project helped you, please consider:
 
 ### 🎨 Made with ❤️ in Vietnam
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Vietnam.png" width="80">
+<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="80" alt="Vietnam"/>
 
 **Copyright © 2025 [Nguyễn Ngọc Anh Tú](https://github.com/AnhTuKaZe) 🌸**
 
