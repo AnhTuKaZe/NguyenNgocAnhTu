@@ -46,7 +46,7 @@
 
 <!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-iOS_│_macOS_│_Android-0080FF?style=for-the-badge&logo=apple&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Platform-iOS-0080FF?style=for-the-badge&logo=apple&logoColor=white"/>
   <img src="https://img.shields.io/badge/Version-2.0-00C853?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-AGPL--3.0-FF6D00?style=for-the-badge"/>
 </p>
