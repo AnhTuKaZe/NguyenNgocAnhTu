@@ -46,18 +46,32 @@
 
 <!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-iOS-0080FF?style=for-the-badge&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Version-2.0-00C853?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-AGPL--3.0-FF6D00?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/stargazers">
-    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&color=FFD700"/>
+    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=⭐%20Stars&labelColor=32383E&color=FFD700"/>
+  </a>
+  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
+    <img src="https://img.shields.io/github/forks/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🔀%20Forks&labelColor=32383E&color=0A84FF"/>
+  </a>
+  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+    <img src="https://img.shields.io/github/issues/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🐛%20Issues&labelColor=32383E&color=FF453A"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
   </a>
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-    <img src="https://img.shields.io/badge/Support-Messenger-0084FF?style=for-the-badge&logo=messenger"/>
+    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
   </a>
+  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
 
 <!-- Glowing Divider -->
@@ -95,8 +109,9 @@
 └─────────────────┘
 ```
 
-<img src="https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Users-1000+-4A90E2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+<img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&labelColor=1C1C1E"/>
+<img src="https://img.shields.io/badge/⚡_Speed-60ms-FFD700?style=for-the-badge&labelColor=1C1C1E"/>
 
 </td>
 </tr>
@@ -1777,17 +1792,32 @@ Performance Optimization • Module Integration • Documentation
 
 **GNU Affero General Public License v3.0 (AGPL-3.0)**
 
+<p align="center">
 <a href="LICENSE">
-  <img src="https://img.shields.io/badge/License-AGPL--3.0-F39C12?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-AGPL--3.0-FF9500?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=1C1C1E"/>
 </a>
-
-<br><br>
-
-Free to use • Modify • Distribute • Must keep open source
+</p>
 
 <br>
 
-<a href="LICENSE">📄 Read Full License</a>
+<p align="center">
+  <img src="https://img.shields.io/badge/✅-Free_to_Use-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/✅-Modify-0A84FF?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/✅-Distribute-AF52DE?style=for-the-badge&labelColor=1C1C1E"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/⚠️-Keep_Open_Source-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/⚠️-Same_License-FF9500?style=for-the-badge&labelColor=1C1C1E"/>
+</p>
+
+<br>
+
+<p align="center">
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/📄-Read_Full_License-8E8E93?style=for-the-badge&labelColor=1C1C1E"/>
+</a>
+</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
@@ -1798,15 +1828,29 @@ If this project helped you, please consider:
 
 <br>
 
+<p align="center">
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/⭐_Star-Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
-  <img src="https://img.shields.io/badge/🔀-Fork_Project-4A90E2?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/🔀_Fork-Project-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/📢-Share-50C878?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/📢_Share-With_Friends-34C759?style=for-the-badge&logo=telegram&logoColor=white&labelColor=32383E"/>
 </a>
+</p>
+
+<p align="center">
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+  <img src="https://img.shields.io/badge/🐛_Report-Bug-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
+</a>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions">
+  <img src="https://img.shields.io/badge/💡_Request-Feature-AF52DE?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
+</a>
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+  <img src="https://img.shields.io/badge/💬_Join-Community-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
+</a>
+</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
@@ -1856,8 +1900,9 @@ If this project helped you, please consider:
 </h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made_with-❤️_Love-E74C3C?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Open_Source-Community-50C878?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Made_with-❤️_Love-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/💻-Open_Source-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/☕-Powered_by_Coffee-8E8E93?style=for-the-badge&labelColor=1C1C1E"/>
 </p>
 
 <br>
@@ -1883,13 +1928,16 @@ If this project helped you, please consider:
 <!-- Social Links -->
 <p align="center">
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Facebook-Follow-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
   </a>
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-    <img src="https://img.shields.io/badge/GitHub-Star-181717?style=for-the-badge&logo=github&logoColor=white"/>
+    <img src="https://img.shields.io/badge/GitHub-⭐_Star-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
   </a>
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions">
-    <img src="https://img.shields.io/badge/Discussions-Join-50C878?style=for-the-badge&logo=github&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Discussions-💬_Join-34C759?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
+  </a>
+  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+    <img src="https://img.shields.io/badge/Issues-🐛_Report-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
   </a>
 </p>
 
@@ -1897,10 +1945,10 @@ If this project helped you, please consider:
 
 <!-- Version Info -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Last_Updated-29--10--2025-4A90E2?style=flat-square&logo=calendar"/>
-  <img src="https://img.shields.io/badge/Made_in-Vietnam-E74C3C?style=flat-square&logo=vietnam"/>
-  <img src="https://img.shields.io/badge/Version-2.0-50C878?style=flat-square&logo=semantic-release"/>
-  <img src="https://img.shields.io/badge/Star_on-GitHub-FFD700?style=flat-square&logo=github"/>
+  <img src="https://img.shields.io/badge/📅_Last_Updated-29_Oct_2025-0A84FF?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/🇻🇳_Made_in-Vietnam-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/📦_Version-2.0-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/⚡_Performance-Optimized-FFD700?style=for-the-badge&labelColor=1C1C1E"/>
 </p>
 
 <br>
