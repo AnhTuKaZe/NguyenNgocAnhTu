@@ -820,7 +820,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **最適化＆統合**
 
-⚡ **Nguyễn Ngọc Anh Tú** 🌸
+⚡ **[Nguyễn Ngọc Anh Tú](https://www.facebook.com/NguyenNgocAnhTu.VN)** 🌸
 
 <br>
 
@@ -885,7 +885,7 @@ Must keep open source • Same license
 
 <br>
 
-**Nguyễn Ngọc Anh Tú** 🌸
+**[Nguyễn Ngọc Anh Tú](https://www.facebook.com/NguyenNgocAnhTu.VN)** 🌸
 
 ![Love](https://img.shields.io/badge/Coded_with-❤️-E74C3C?style=flat-square)
 ![Coffee](https://img.shields.io/badge/Powered_by-☕-6F4E37?style=flat-square)

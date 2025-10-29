@@ -3,7 +3,7 @@
 <!-- Hero Banner -->
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWQ4YTBjODhhNmVhMzM2NjI4YWQwOGQ3OWQ3NjU3OGE3MjY4YTY3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/du3J3cXyzhj75IOgvA/giphy.gif" alt="iOS Logo Animated" width="150"/>
 
-# 🌸 Nguyễn Ngọc Anh Tú Premium
+# 🌸 [Nguyễn Ngọc Anh Tú](https://www.facebook.com/NguyenNgocAnhTu.VN) Premium
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=YouTube+Premium+%E2%9C%93;Spotify+Premium+%E2%9C%93;Locket+Gold+%E2%9C%93;100%25+Free+Forever!" alt="Typing SVG" />
 
@@ -1231,7 +1231,7 @@ If this project helped you, please consider:
 
 <br>
 
-**Copyright © 2025 [Nguyễn Ngọc Anh Tú](https://github.com/AnhTuKaZe) 🌸**
+**Copyright © 2025 [Nguyễn Ngọc Anh Tú](https://www.facebook.com/NguyenNgocAnhTu.VN) 🌸**
 
 ![Coded with Love](https://img.shields.io/badge/Coded_with-❤️-E74C3C?style=flat-square)
 ![Coffee](https://img.shields.io/badge/Powered_by-☕-6F4E37?style=flat-square)
