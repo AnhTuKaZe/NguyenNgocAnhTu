@@ -298,7 +298,7 @@ Performance Metrics
 <tbody>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/fluency/96/wave.png" width="40"/><br>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9b/48/2f/9b482f71-3f01-026b-29a8-b33c834b5bb3/AppIconS-0-0-1x_U007epad-0-1-0-0-85-220.png/230x0w.webp" width="40"/><br>
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
@@ -309,7 +309,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/fluency/96/air-balloon.png" width="40"/><br>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/5e/79/a15e79b1-9e6a-9714-c9f8-232e1b09f8f7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/230x0w.webp" width="40"/><br>
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
@@ -320,7 +320,7 @@ Performance Metrics
 </tr>
 <tr style="background-color: #fffbdd;">
 <td align="center">
-<img src="https://img.icons8.com/color/96/rocket--v1.png" width="40"/><br>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f6/d9/61/f6d961a1-1204-2152-693b-f621d02df3ff/AppIcon-0-0-1x_U007euniversal-0-1-85-220.png/230x0w.webp" width="40"/><br>
 <b>Shadowrocket</b>
 </td>
 <td align="center"><code>.module</code></td>
@@ -331,7 +331,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/fluency/96/big-x.png" width="40"/><br>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/df/ca/dddfca0c-a508-ba36-d9a0-e4d505b73eab/AppIcon-7-0-0-1x_U007epad-0-1-0-85-220.png/230x0w.webp" width="40"/><br>
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
@@ -342,12 +342,12 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/fluency/96/treasure-chest.png" width="40"/><br>
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/63/0d/b5630db0-eeb7-7cf8-2ddd-efe5476ea98a/AppIcon-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220-0.png/230x0w.webp" width="40"/><br>
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
 <td align="center"><code>3.3KB</code></td>
-<td align="center">🆓 Free</td>
+<td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Tiết kiệm</td>
 </tr>
