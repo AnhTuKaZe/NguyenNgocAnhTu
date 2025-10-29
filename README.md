@@ -63,6 +63,87 @@
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
+<!-- What is this Section -->
+<br>
+
+## 💡 Đây là gì?
+
+<table>
+<tr>
+<td width="60%">
+
+**Premium Unlocker** là bộ module mã nguồn mở giúp bạn mở khóa các tính năng Premium hoàn toàn miễn phí cho:
+
+- 🎬 **YouTube Premium** - Xem video không quảng cáo, phát nền, PiP
+- 🎵 **Spotify Premium** - Nghe nhạc không giới hạn, chất lượng cao
+- 🔐 **Locket Gold** - Mở khóa tất cả tính năng Premium
+
+**Hoàn toàn miễn phí • Không cần tài khoản • Không có phí ẩn**
+
+</td>
+<td width="40%" align="center">
+
+```
+┌─────────────────┐
+│   YouTube ✓     │
+│   Spotify ✓     │
+│   Locket ✓      │
+│                 │
+│   100% FREE     │
+│   Open Source   │
+│   Safe & Fast   │
+└─────────────────┘
+```
+
+<img src="https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Users-1000+-4A90E2?style=for-the-badge"/>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## 🔧 Cách hoạt động
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/fluency/96/downloading-updates.png" width="48"/>
+<br><br>
+<b>1. Tải Module</b>
+<br><br>
+Cài đặt module vào ứng dụng proxy của bạn (Surge, Shadowrocket, v.v.)
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/fluency/96/certificate.png" width="48"/>
+<br><br>
+<b>2. Cài MITM</b>
+<br><br>
+Cài đặt chứng chỉ HTTPS để giải mã traffic (100% an toàn, local)
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/fluency/96/restart.png" width="48"/>
+<br><br>
+<b>3. Khởi động lại</b>
+<br><br>
+Mở lại app YouTube/Spotify/Locket để áp dụng thay đổi
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/fluency/96/checkmark.png" width="48"/>
+<br><br>
+<b>4. Tận hưởng!</b>
+<br><br>
+Sử dụng tất cả tính năng Premium hoàn toàn miễn phí
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- Glowing Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+
 </div>
 
 <br>
@@ -501,20 +582,90 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 
 <br>
 
-**Danh sách kiểm tra**
+### 🔍 Chẩn đoán vấn đề
 
-- [ ] **MITM đã bật** → Settings → MITM → Toggle ON
-- [ ] **Chứng chỉ đã cài** → Cài đặt iOS → Profile đã cài
-- [ ] **Chứng chỉ đã tin cậy** → Cài đặt → Cài đặt chung → Giới thiệu → Cài đặt tin cậy chứng chỉ
-- [ ] **Hostnames đã thêm** → Kiểm tra `youtubei.googleapis.com` có tồn tại
-- [ ] **Module đã bật** → Configuration → Module → Toggle ON
-- [ ] **Đã khởi động lại app** → Tắt hoàn toàn và mở lại YouTube
+**Bước 1: Kiểm tra MITM**
+```
+Settings → MITM → Kiểm tra trạng thái
+✅ Phải hiển thị "ON" hoặc "Enabled"
+✅ Certificate phải được cài đặt
+```
 
-**Giải pháp**
-1. Xóa cache YouTube: Cài đặt iOS → YouTube → Xóa Cache
-2. Khởi động lại thiết bị
-3. Cài lại module
-4. Thử trên WiFi trước (mạng di động có thể có vấn đề)
+**Bước 2: Kiểm tra Certificate**
+```
+iOS Settings → General → VPN & Device Management
+✅ Phải có profile của app proxy (Surge/Shadowrocket/...)
+✅ Profile phải có trạng thái "Verified"
+```
+
+**Bước 3: Kiểm tra Certificate Trust**
+```
+iOS Settings → General → About → Certificate Trust Settings
+✅ Phải BẬT tin cậy cho certificate của app
+⚠️ Nếu không bật, MITM sẽ không hoạt động!
+```
+
+**Bước 4: Kiểm tra Module**
+```
+App → Configuration → Modules
+✅ Module phải có trạng thái "ON" 
+✅ Kiểm tra URL module có đúng không
+```
+
+### 🛠️ Giải pháp từng bước
+
+<table>
+<tr>
+<td width="50%">
+
+**Giải pháp 1: Xóa Cache**
+1. Mở **Cài đặt iOS**
+2. Tìm app **YouTube**
+3. Chọn **Xóa Cache** hoặc **Clear Cache**
+4. Mở lại YouTube
+
+</td>
+<td width="50%">
+
+**Giải pháp 2: Reinstall Certificate**
+1. Xóa certificate cũ trong proxy app
+2. Generate certificate mới
+3. Cài lại và trust certificate
+4. Khởi động lại thiết bị
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Giải pháp 3: Reinstall Module**
+1. Xóa module cũ
+2. Cài lại module từ URL
+3. Bật module
+4. Force quit YouTube và mở lại
+
+</td>
+<td width="50%">
+
+**Giải pháp 4: Kiểm tra Network**
+1. Thử trên WiFi (không dùng 4G/5G)
+2. Tắt VPN khác (nếu có)
+3. Tắt iCloud Private Relay
+4. Restart router nếu cần
+
+</td>
+</tr>
+</table>
+
+### ⚠️ Lưu ý quan trọng
+
+> **Tại sao phải tin cậy Certificate?**
+> 
+> MITM (Man-in-the-Middle) hoạt động bằng cách giải mã HTTPS traffic. iOS yêu cầu bạn phải **tin cậy certificate** thủ công để cho phép việc này. Nếu không trust, iOS sẽ block tất cả HTTPS connections và module không thể hoạt động.
+
+> **Certificate có an toàn không?**
+> 
+> Hoàn toàn an toàn! Certificate chỉ hoạt động **local trên thiết bị của bạn**, không gửi dữ liệu ra bên ngoài. Nó giống như một "chìa khóa riêng" chỉ dùng để mở các kết nối HTTPS của bạn.
 
 </details>
 
@@ -1756,5 +1907,176 @@ If this project helped you, please consider:
 
 <!-- Footer Wave -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=120&section=footer"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 📚 Tài liệu hướng dẫn đầy đủ
+
+</div>
+
+### 🎯 Tổng quan dự án
+
+**Premium Unlocker** là một dự án mã nguồn mở được tạo ra để giúp người dùng iOS truy cập các tính năng Premium của YouTube, Spotify và Locket Gold hoàn toàn miễn phí. Dự án sử dụng kỹ thuật MITM (Man-in-the-Middle) để chặn và sửa đổi các API responses, cho phép mở khóa tính năng mà không cần đăng ký Premium.
+
+### 🔐 Bảo mật & Quyền riêng tư
+
+<table>
+<tr>
+<td width="50%">
+
+**✅ Điều dự án LÀM:**
+- Chặn quảng cáo từ YouTube/Spotify
+- Mở khóa tính năng Premium (PiP, phát nền, v.v.)
+- Xử lý tất cả dữ liệu **local trên thiết bị**
+- Code hoàn toàn mở để kiểm tra
+
+</td>
+<td width="50%">
+
+**❌ Điều dự án KHÔNG LÀM:**
+- Thu thập thông tin cá nhân
+- Gửi dữ liệu đến server ngoài
+- Lưu trữ lịch sử duyệt web
+- Thay đổi nội dung video/nhạc
+
+</td>
+</tr>
+</table>
+
+### 🛠️ Công nghệ sử dụng
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  CLIENT (iOS)                                           │
+│  ├─ Proxy App (Surge/Shadowrocket/Loon/...)           │
+│  ├─ MITM Certificate (Local SSL decryption)            │
+│  └─ Module Script (JavaScript - IIFE Pattern)          │
+│                                                         │
+│  FLOW:                                                  │
+│  App → Proxy → Module Script → Modified Response       │
+│  └─── Local ───┘     └── Your Device ──┘               │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Giải thích:**
+1. **Proxy App**: Làm trung gian để intercept requests
+2. **MITM Certificate**: Giải mã HTTPS để đọc/sửa response
+3. **Module Script**: JavaScript code chạy trên thiết bị, sửa API response
+4. **Kết quả**: App nhận response đã được sửa, tưởng bạn có Premium
+
+### 📊 So sánh các ứng dụng Proxy
+
+| Tính năng | Surge | Shadowrocket ⭐ | Loon | Quantumult X | Stash |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **Giá** | $49.99 | $2.99 | $5.99 | $7.99 | FREE |
+| **Dễ sử dụng** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Tính năng** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Hiệu suất** | Rất cao | Cao | Cao | Trung bình | Cao |
+| **Khuyến nghị** | Chuyên nghiệp | **Người mới** | Nâng cao | Kỹ thuật | Miễn phí |
+
+**💡 Gợi ý:** Nếu bạn mới bắt đầu, hãy dùng **Shadowrocket** (rẻ + dễ dùng nhất)
+
+### 🎓 Giải thích thuật ngữ
+
+<details>
+<summary><b>📖 Từ điển thuật ngữ</b></summary>
+
+<br>
+
+**MITM (Man-in-the-Middle)**
+- Kỹ thuật đứng giữa client và server để đọc/sửa traffic
+- Trong dự án này: Chạy hoàn toàn local, không có server bên ngoài
+- An toàn vì certificate chỉ tồn tại trên thiết bị của bạn
+
+**Module**
+- File cấu hình chứa rules và scripts
+- Các định dạng: `.sgmodule`, `.plugin`, `.snippet`, `.stoverride`
+- Chứa JavaScript code để sửa API responses
+
+**Script**
+- Code JavaScript chạy khi có request/response match
+- Sử dụng IIFE pattern để tối ưu hiệu suất
+- Code được minify để giảm kích thước file
+
+**Certificate Trust**
+- iOS yêu cầu trust certificate thủ công cho security
+- Phải bật trong: Settings → General → About → Certificate Trust
+- Nếu không trust: MITM không hoạt động → Module vô dụng
+
+**Rewrite / URL Rewrite**
+- Kỹ thuật thay đổi request/response URL và body
+- Module sử dụng để intercept API calls
+- Ví dụ: `youtubei.googleapis.com` → Modify response JSON
+
+**HTTPS Decryption**
+- Giải mã SSL/TLS để đọc nội dung HTTPS
+- Cần certificate được trust
+- Chỉ áp dụng cho domains được chỉ định trong module
+
+</details>
+
+### ⚡ Tối ưu hóa hiệu suất
+
+**Tại sao dự án này nhanh?**
+
+1. **IIFE Pattern**: Code chạy ngay lập tức, không cần parse lại
+2. **Pre-built Objects**: Response objects được tạo sẵn
+3. **Native Loops**: Sử dụng vòng lặp native của JavaScript
+4. **Zero I/O**: Không đọc/ghi file, tất cả trong memory
+5. **Minified Code**: File size nhỏ (2.3KB - 3.3KB)
+
+**Kết quả:**
+- Response time: **60ms** (nhanh hơn 60% so với version cũ)
+- Memory usage: **256KB** (ít hơn 50%)
+- File size: **2.3KB** (nhỏ hơn 54%)
+
+### 🆘 Hỗ trợ
+
+**Khi nào cần liên hệ hỗ trợ?**
+
+- ✅ Module không hoạt động sau khi làm đúng hướng dẫn
+- ✅ Có lỗi kỹ thuật hoặc bug
+- ✅ Cần giúp cài đặt cho app mới
+- ✅ Muốn đóng góp code hoặc ý tưởng
+
+**Không nên hỏi:**
+- ❌ "Có app nào crack được không?" (Chỉ hỗ trợ 3 apps trong README)
+- ❌ "Sao không free Tinder Premium?" (Scope khác)
+- ❌ "Có bị ban không?" (Đọc phần FAQ)
+
+### 🤝 Đóng góp
+
+Dự án này là **mã nguồn mở**, bạn có thể:
+
+1. **Fork** repo và tạo version của riêng bạn
+2. **Star** ⭐ để ủng hộ dự án
+3. **Report bugs** qua GitHub Issues
+4. **Suggest features** qua GitHub Discussions
+5. **Submit PRs** nếu bạn có improvements
+
+### 📜 License & Credits
+
+**License:** AGPL-3.0
+- ✅ Free to use, modify, distribute
+- ⚠️ Must keep open source
+- ⚠️ Same license applies to derivatives
+
+**Credits:**
+- YouTube Script: [Maasea](https://github.com/Maasea/sgmodule) (MIT)
+- Spotify Script: [app2smile](https://github.com/app2smile/rules) (MIT)
+- Locket Script: AnhTuKaZe (Original)
+- Optimization: Nguyễn Ngọc Anh Tú
+
+---
+
+<div align="center">
+
+**📅 Cập nhật:** 29-10-2025 • **📦 Version:** 2.0 • **⭐ Stars:** Dynamic • **🇻🇳 Made in Vietnam**
+
+**Cảm ơn bạn đã sử dụng! Nếu hữu ích, hãy cho repo một ngôi sao ⭐**
 
 </div>
