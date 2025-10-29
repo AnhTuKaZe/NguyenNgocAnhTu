@@ -286,7 +286,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Cần trợ giúp?**
 
-[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 [![GitHub Issues](https://img.shields.io/badge/🐛-Issues-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
 [![Discussions](https://img.shields.io/badge/💡-Discussions-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
 
@@ -538,7 +538,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Need Help?**
 
-[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 [![GitHub Issues](https://img.shields.io/badge/🐛-Issues-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
 [![Discussions](https://img.shields.io/badge/💡-Discussions-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
 
@@ -790,7 +790,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **ヘルプが必要ですか？**
 
-[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Messenger](https://img.shields.io/badge/💬-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 [![GitHub Issues](https://img.shields.io/badge/🐛-Issues-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
 [![Discussions](https://img.shields.io/badge/💡-Discussions-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
 
@@ -863,19 +863,19 @@ Must keep open source • Same license
 <table>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/64/module.png" width="40" alt="Module"/>
+<img src="https://img.icons8.com/fluency/64/module.png" width="40" alt="Module"/>
 <br><b>6 Modules</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/64/speed.png" width="40" alt="Speed"/>
+<img src="https://img.icons8.com/fluency/64/speed.png" width="40" alt="Speed"/>
 <br><b>Ultra Fast</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/64/lightweight.png" width="40" alt="Light"/>
+<img src="https://img.icons8.com/fluency/64/lightweight.png" width="40" alt="Light"/>
 <br><b>Lightweight</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/64/ok.png" width="40" alt="Optimized"/>
+<img src="https://img.icons8.com/fluency/64/approval.png" width="40" alt="Optimized"/>
 <br><b>Optimized</b>
 </td>
 </tr>

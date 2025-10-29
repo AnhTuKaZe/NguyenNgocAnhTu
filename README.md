@@ -1,9 +1,9 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<img src="https://img.icons8.com/3d-fluency/200/mac-os.png" alt="iOS Logo" width="160"/>
+<img src="https://img.icons8.com/color/200/apple-logo.png" alt="iOS Logo" width="140"/>
 
-# 🌸 Nguyễn Ngọc Anh Tú Premium 🌸
+# 🌸 Nguyễn Ngọc Anh Tú Premium
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=YouTube+Premium+%E2%9C%93;Spotify+Premium+%E2%9C%93;Locket+Gold+%E2%9C%93;100%25+Free+Forever!" alt="Typing SVG" />
 
@@ -45,7 +45,7 @@
 <br>
 
 <!-- Quick Links -->
-**[📥 Quick Install](#-cài-đặt-nhanh)**  •  **[📖 Documentation](#-tính-năng)**  •  **[💬 Support](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)**  •  **[⭐ Star Us](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)**
+**[📥 Quick Install](#-cài-đặt-nhanh)**  •  **[📖 Documentation](#-tính-năng)**  •  **[💬 Support](https://www.facebook.com/NguyenNgocAnhTu.VN)**  •  **[⭐ Star Us](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)**
 
 <br>
 
@@ -380,7 +380,7 @@ Thời gian phản hồi: **< 1 giờ**
 
 <br>
 
-[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 
 </td>
 <td align="center" width="33%">
@@ -745,7 +745,7 @@ Response time: **< 1 hour**
 
 <br>
 
-[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 
 </td>
 <td align="center" width="33%">
@@ -1110,7 +1110,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <br>
 
-[![Chat on Messenger](https://img.shields.io/badge/チャット-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+[![Chat on Messenger](https://img.shields.io/badge/チャット-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
 
 </td>
 <td align="center" width="33%">
@@ -1205,23 +1205,23 @@ If this project helped you, please consider:
 <table>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/96/mac-os.png" width="48" alt="iOS"/>
+<img src="https://img.icons8.com/color/96/apple-logo.png" width="48" alt="iOS"/>
 <br><b>iOS / macOS</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/96/android.png" width="48" alt="Android"/>
+<img src="https://img.icons8.com/fluency/96/android-os.png" width="48" alt="Android"/>
 <br><b>Android</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/96/code.png" width="48" alt="Code"/>
+<img src="https://img.icons8.com/fluency/96/source-code.png" width="48" alt="Code"/>
 <br><b>Open Source</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/96/lock-2.png" width="48" alt="Secure"/>
+<img src="https://img.icons8.com/fluency/96/security-checked.png" width="48" alt="Secure"/>
 <br><b>100% Safe</b>
 </td>
 <td align="center">
-<img src="https://img.icons8.com/3d-fluency/96/rocket.png" width="48" alt="Fast"/>
+<img src="https://img.icons8.com/fluency/96/fast-forward.png" width="48" alt="Fast"/>
 <br><b>Ultra Fast</b>
 </td>
 </tr>
