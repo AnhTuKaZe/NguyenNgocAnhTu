@@ -578,7 +578,7 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 
 | Mã | Ngôn ngữ | Mã | Ngôn ngữ | Mã | Ngôn ngữ |
 |:----:|:--------:|:----:|:--------:|:----:|:--------:|
-| `vi` | 🇻🇳 Tiếng Việt | `en` | 🇺🇸 English | `zh-Hans` | 🇨🇳 简体中文 |
+| `vi` | 🇻🇳 Tiếng Việt | `en` | 🇺🇸 Tiếng Anh | `zh-Hans` | 🇨🇳 简体中文 |
 | `zh-Hant` | 🇹🇼 繁體中文 | `ja` | 🇯🇵 日本語 | `ko` | 🇰🇷 한국어 |
 | `fr` | 🇫🇷 Français | `de` | 🇩🇪 Deutsch | `ru` | 🇷🇺 Русский |
 
@@ -1725,81 +1725,6 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 </div>
 
 <br>
-
-<div align="center">
-
-<!-- Glowing Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
-
-## 🌟 Credits & Contributors
-
-### 👨‍💻 Original Script Authors
-
-<table>
-<tr>
-<td align="center" width="50%">
-<a href="https://github.com/Maasea/sgmodule">
-<img src="https://github.com/Maasea.png" width="80" style="border-radius: 50%;"/><br>
-<b>Maasea</b>
-</a>
-<br>
-<sub>YouTube Premium Script</sub>
-<br>
-<img src="https://img.shields.io/badge/MIT-License-green?style=flat-square"/>
-</td>
-<td align="center" width="50%">
-<a href="https://github.com/app2smile/rules">
-<img src="https://github.com/app2smile.png" width="80" style="border-radius: 50%;"/><br>
-<b>app2smile</b>
-</a>
-<br>
-<sub>Spotify Premium Script</sub>
-<br>
-<img src="https://img.shields.io/badge/MIT-License-green?style=flat-square"/>
-</td>
-</tr>
-</table>
-
-### 🎨 Project Maintainer
-
-<table>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/96/cherry-blossom.png" width="80"/><br>
-<b>Nguyễn Ngọc Anh Tú</b>
-<br><br>
-<sub>
-• Locket Gold Script (Original)<br>
-• Performance Optimization<br>
-• Module Integration<br>
-• Documentation & Support<br>
-• Continuous Updates
-</sub>
-<br><br>
-<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-<img src="https://img.shields.io/badge/Facebook-Connect-0084FF?style=for-the-badge&logo=facebook&logoColor=white"/>
-</a>
-</td>
-</tr>
-</table>
-
-### 🙏 Special Thanks
-
-<p align="center">
-<b>To all users, testers, and contributors who made this project better!</b>
-<br>
-<sub>Your feedback and support drive continuous improvement</sub>
-</p>
-
-<!-- Star History -->
-<h3 align="center">⭐ Stargazers over time</h3>
-
-<p align="center">
-  <a href="https://star-history.com/#AnhTuKaZe/NguyenNgocAnhTu&Date">
-    <img src="https://api.star-history.com/svg?repos=AnhTuKaZe/NguyenNgocAnhTu&type=Date" width="600" alt="Star History Chart"/>
-  </a>
-</p>
-
 
 <div align="center">
 
