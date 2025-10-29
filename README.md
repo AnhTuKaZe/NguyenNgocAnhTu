@@ -336,6 +336,112 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 </details>
 
+<details>
+<summary>
+  <h3>🎈 Loon (iOS)</h3>
+</summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+```
+
+**Các bước**
+1. Mở **Loon** → Tab **Configuration**
+2. Chọn **Plugin** → Nút **+**
+3. Dán URL ở trên → **Save**
+4. Bật plugin
+
+**Cài đặt MITM**
+1. **Configuration** → **Mitm**
+2. **Generate New CA Certificate**
+3. **Install CA Certificate** → Safari mở
+4. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+5. Cài profile "Loon..."
+6. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+7. Bật tin cậy cho Loon
+
+**Xác minh**
+- Mở YouTube → Không có quảng cáo ✅
+- Mở Spotify → Bỏ qua không giới hạn ✅
+- Mở Locket → Premium đã kích hoạt ✅
+
+</details>
+
+<details>
+<summary>
+  <h3>⚡ Quantumult X (iOS)</h3>
+</summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+```
+
+**Các bước**
+1. Mở **Quantumult X** → Tab **Settings**
+2. Chọn **Rewrite** → **引用** (Reference)
+3. Nhấn nút **+** ở góc trên bên phải
+4. Dán URL ở trên → **OK**
+5. Bật snippet
+
+**Cài đặt MITM**
+1. **Settings** → **MitM**
+2. **Generate Certificate** → **配置证书**
+3. Safari mở → Cài đặt profile
+4. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+5. Cài profile "Quantumult X..."
+6. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+7. Bật tin cậy cho Quantumult X
+8. Quay lại Quantumult X → Bật **MitM**
+
+**Xác minh**
+- Mở YouTube → Không có quảng cáo ✅
+- Mở Spotify → Bỏ qua không giới hạn ✅
+- Mở Locket → Premium đã kích hoạt ✅
+
+</details>
+
+<details>
+<summary>
+  <h3>💎 Stash (iOS)</h3>
+</summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+```
+
+**Các bước**
+1. Mở **Stash** → Tab **Overrides**
+2. Nhấn nút **+** → **New Override**
+3. Chọn **Install from URL**
+4. Dán URL ở trên → **Install**
+5. Bật override
+
+**Cài đặt MITM**
+1. **Settings** → **MitM**
+2. **HTTPS Decryption** → Bật ON
+3. **Certificates** → **Generate New Certificate**
+4. **Install Certificate** → Safari mở
+5. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+6. Cài profile "Stash..."
+7. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+8. Bật tin cậy cho Stash
+
+**Xác minh**
+- Mở YouTube → Không có quảng cáo ✅
+- Mở Spotify → Bỏ qua không giới hạn ✅
+- Mở Locket → Premium đã kích hoạt ✅
+
+</details>
+
 <br>
 
 <div align="center">
