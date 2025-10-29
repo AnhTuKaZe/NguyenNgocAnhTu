@@ -298,7 +298,7 @@ Performance Metrics
 <tbody>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Surge.png" width="40"/><br>
+<img src="https://avatars.githubusercontent.com/u/48485223?s=200&v=4" width="40" style="border-radius: 10px;"/><br>
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
@@ -309,7 +309,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Loon.png" width="40"/><br>
+<img src="https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/loon.png" width="40"/><br>
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
@@ -320,7 +320,7 @@ Performance Metrics
 </tr>
 <tr style="background-color: #fffbdd;">
 <td align="center">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png" width="40"/><br>
+<img src="https://img.icons8.com/color/96/rocket--v1.png" width="40"/><br>
 <b>Shadowrocket</b>
 </td>
 <td align="center"><code>.module</code></td>
@@ -331,7 +331,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png" width="40"/><br>
+<img src="https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Quantumult%20X.png" width="40"/><br>
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
@@ -342,7 +342,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stash.png" width="40"/><br>
+<img src="https://img.icons8.com/color/96/box-important--v1.png" width="40"/><br>
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
