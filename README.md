@@ -850,6 +850,106 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 </details>
 
+<details>
+<summary><b>🎈 Loon (iOS)</b></summary>
+
+<br>
+
+**Installation URL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+```
+
+**Steps**
+1. Open **Loon** → **Configuration** tab
+2. Select **Plugin** → **+** button
+3. Paste the URL above → **Save**
+4. Enable the plugin
+
+**MITM Setup**
+1. **Configuration** → **Mitm**
+2. **Generate New CA Certificate**
+3. **Install CA Certificate** → Safari opens
+4. **Settings** → **General** → **VPN & Device Management**
+5. Install "Loon..." profile
+6. **Settings** → **General** → **About** → **Certificate Trust Settings**
+7. Enable trust for Loon
+
+**Verification**
+- Open YouTube → No ads ✅
+- Open Spotify → Skip unlimited ✅
+- Open Locket → Premium active ✅
+
+</details>
+
+<details>
+<summary><b>⚡ Quantumult X (iOS)</b></summary>
+
+<br>
+
+**Installation URL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+```
+
+**Steps**
+1. Open **Quantumult X** → **Settings** tab
+2. Select **Rewrite** → **引用** (Reference)
+3. Tap **+** button at top right
+4. Paste the URL above → **OK**
+5. Enable the snippet
+
+**MITM Setup**
+1. **Settings** → **MitM**
+2. **Generate Certificate** → **配置证书**
+3. Safari opens → Install profile
+4. **Settings** → **General** → **VPN & Device Management**
+5. Install "Quantumult X..." profile
+6. **Settings** → **General** → **About** → **Certificate Trust Settings**
+7. Enable trust for Quantumult X
+8. Back to Quantumult X → Enable **MitM**
+
+**Verification**
+- Open YouTube → No ads ✅
+- Open Spotify → Skip unlimited ✅
+- Open Locket → Premium active ✅
+
+</details>
+
+<details>
+<summary><b>💎 Stash (iOS)</b></summary>
+
+<br>
+
+**Installation URL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+```
+
+**Steps**
+1. Open **Stash** → **Overrides** tab
+2. Tap **+** button → **New Override**
+3. Select **Install from URL**
+4. Paste the URL above → **Install**
+5. Enable the override
+
+**MITM Setup**
+1. **Settings** → **MitM**
+2. **HTTPS Decryption** → Turn ON
+3. **Certificates** → **Generate New Certificate**
+4. **Install Certificate** → Safari opens
+5. **Settings** → **General** → **VPN & Device Management**
+6. Install "Stash..." profile
+7. **Settings** → **General** → **About** → **Certificate Trust Settings**
+8. Enable trust for Stash
+
+**Verification**
+- Open YouTube → No ads ✅
+- Open Spotify → Skip unlimited ✅
+- Open Locket → Premium active ✅
+
+</details>
+
 <br>
 
 ## ⚙️ Configuration
@@ -1235,6 +1335,106 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 </details>
 
+<details>
+<summary><b>🎈 Loon (iOS)</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+```
+
+**手順**
+1. **Loon**を開く → **Configuration**タブ
+2. **Plugin** → **+**ボタンを選択
+3. 上記のURLを貼り付け → **Save**
+4. プラグインを有効にする
+
+**MITM設定**
+1. **Configuration** → **Mitm**
+2. **Generate New CA Certificate**
+3. **Install CA Certificate** → Safariが開く
+4. **設定** → **一般** → **VPNとデバイス管理**
+5. "Loon..."プロファイルをインストール
+6. **設定** → **一般** → **情報** → **証明書信頼設定**
+7. Loonの信頼を有効にする
+
+**確認**
+- YouTubeを開く → 広告なし ✅
+- Spotifyを開く → 無制限スキップ ✅
+- Locketを開く → Premium有効 ✅
+
+</details>
+
+<details>
+<summary><b>⚡ Quantumult X (iOS)</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+```
+
+**手順**
+1. **Quantumult X**を開く → **Settings**タブ
+2. **Rewrite** → **引用** (Reference)を選択
+3. 右上の**+**ボタンをタップ
+4. 上記のURLを貼り付け → **OK**
+5. スニペットを有効にする
+
+**MITM設定**
+1. **Settings** → **MitM**
+2. **Generate Certificate** → **配置证书**
+3. Safariが開く → プロファイルをインストール
+4. **設定** → **一般** → **VPNとデバイス管理**
+5. "Quantumult X..."プロファイルをインストール
+6. **設定** → **一般** → **情報** → **証明書信頼設定**
+7. Quantumult Xの信頼を有効にする
+8. Quantumult Xに戻る → **MitM**を有効にする
+
+**確認**
+- YouTubeを開く → 広告なし ✅
+- Spotifyを開く → 無制限スキップ ✅
+- Locketを開く → Premium有効 ✅
+
+</details>
+
+<details>
+<summary><b>💎 Stash (iOS)</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+```
+
+**手順**
+1. **Stash**を開く → **Overrides**タブ
+2. **+**ボタン → **New Override**をタップ
+3. **Install from URL**を選択
+4. 上記のURLを貼り付け → **Install**
+5. オーバーライドを有効にする
+
+**MITM設定**
+1. **Settings** → **MitM**
+2. **HTTPS Decryption** → ONにする
+3. **Certificates** → **Generate New Certificate**
+4. **Install Certificate** → Safariが開く
+5. **設定** → **一般** → **VPNとデバイス管理**
+6. "Stash..."プロファイルをインストール
+7. **設定** → **一般** → **情報** → **証明書信頼設定**
+8. Stashの信頼を有効にする
+
+**確認**
+- YouTubeを開く → 広告なし ✅
+- Spotifyを開く → 無制限スキップ ✅
+- Locketを開く → Premium有効 ✅
+
+</details>
+
 <br>
 
 ## ⚙️ 設定
@@ -1467,27 +1667,22 @@ If this project helped you, please consider:
 <!-- Feature Highlights -->
 <table>
 <tr>
-<td align="center" width="20%">
+<td align="center">
 <img src="https://img.icons8.com/fluency/96/apple-logo.png" width="64"/>
 <br><br>
-<b>iOS</b>
+<b>iOS Platform</b>
 </td>
-<td align="center" width="20%">
-<img src="https://img.icons8.com/fluency/96/iphone.png" width="64"/>
-<br><br>
-<b>All Devices</b>
-</td>
-<td align="center" width="20%">
+<td align="center">
 <img src="https://img.icons8.com/fluency/96/source-code.png" width="64"/>
 <br><br>
 <b>Open Source</b>
 </td>
-<td align="center" width="20%">
+<td align="center">
 <img src="https://img.icons8.com/fluency/96/security-checked.png" width="64"/>
 <br><br>
 <b>100% Safe</b>
 </td>
-<td align="center" width="20%">
+<td align="center">
 <img src="https://img.icons8.com/fluency/96/speed.png" width="64"/>
 <br><br>
 <b>Ultra Fast</b>
