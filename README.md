@@ -1668,7 +1668,7 @@ If this project helped you, please consider:
 <table>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/fluency/96/apple-logo.png" width="64"/>
+<img src="https://img.icons8.com/color/96/ios-logo.png" width="64"/>
 <br><br>
 <b>iOS Platform</b>
 </td>
