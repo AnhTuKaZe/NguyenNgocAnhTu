@@ -298,7 +298,7 @@ Performance Metrics
 <tbody>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/Orz-3/mini/master/Color/Surge.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/96/wave.png" width="40"/><br>
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
@@ -309,7 +309,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/loon.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/96/air-balloon.png" width="40"/><br>
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
@@ -331,7 +331,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/Quantumult%20X.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/96/big-x.png" width="40"/><br>
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
@@ -342,7 +342,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://img.icons8.com/color/96/box-important--v1.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/96/treasure-chest.png" width="40"/><br>
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
