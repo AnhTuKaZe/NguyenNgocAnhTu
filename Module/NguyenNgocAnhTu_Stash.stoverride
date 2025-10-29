@@ -1,11 +1,10 @@
-name: ⚡🚀 Nguyễn Ngọc Anh Tú - Stash
-desc: YouTube Premium + Spotify Premium + Locket Gold (Optimized for Stash)
-author: Nguyễn Ngọc Anh Tú 🌸
+name: ⚡ Anh Tú Premium - Stash
+desc: YouTube + Spotify + Locket (Optimized)
+author: Nguyễn Ngọc Anh Tú
 homepage: https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 
 rules:
-  # YouTube QUIC blocking
   - AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
   - AND,((DOMAIN,youtubei.googleapis.com),(PROTOCOL,UDP)),REJECT
 
@@ -18,85 +17,68 @@ http:
     - "spclient.wg.spotify.com"
     - "*-spclient.spotify.com"
     - "api.revenuecat.com"
-  
   url-rewrite:
-    # YouTube Ad Blocking
     - ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
     - ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
     - ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
     - ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
     - (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
-  
   script:
-    # ========== YouTube Premium ==========
     - match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch)
-      name: youtube-request
+      name: yt-req
       type: request
       require-body: true
       timeout: 20
       max-size: 3145728
       binary-mode: true
-      argument: ""
-      
     - match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)
-      name: youtube-response
+      name: yt-res
       type: response
       require-body: true
       timeout: 20
       max-size: 3145728
       binary-mode: true
       argument: '{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}'
-    
-    # ========== Spotify Premium ==========
     - match: ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/
-      name: spotify-json
+      name: sp-json
       type: request
       require-body: false
       timeout: 15
-      
     - match: ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
-      name: spotify-proto
+      name: sp-proto
       type: response
       require-body: true
       timeout: 25
       max-size: 0
       binary-mode: true
-    
-    # ========== Locket Gold ==========
     - match: ^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$)
-      name: locket-response
+      name: lk-res
       type: response
       require-body: true
       timeout: 15
       max-size: 262144
-      
     - match: ^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers)
-      name: locket-header
+      name: lk-hdr
       type: request
       require-body: false
       timeout: 5
 
 script-providers:
-  youtube-request:
+  yt-req:
     url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
     interval: 86400
-    
-  youtube-response:
+  yt-res:
     url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
     interval: 86400
-    
-  spotify-json:
+  sp-json:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
     interval: 86400
-    
-  spotify-proto:
+  sp-proto:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
-    
-  locket-response:
-    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js
+  lk-res:
+    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/locket.js
     interval: 86400
-    
-  locket-header:
-    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js
+  lk-hdr:
+    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/deleteHeader.js
     interval: 86400

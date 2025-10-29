@@ -1,18 +1,19 @@
-# 📱 CHỌN FILE PHÙ HỢP VỚI APP CỦA BẠN
+# 📥 Quick Install Links
 
-## 🎯 Hướng dẫn nhanh
+## 🎯 Choose Your App
 
-| App của bạn | File cần dùng | Link import |
-|-------------|---------------|-------------|
-| **Surge** | `NguyenNgocAnhTu_Surge.sgmodule` | [📥 Import](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
-| **Loon** | `NguyenNgocAnhTu_Loon.plugin` | [📥 Import](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
-| **Shadowrocket** | `NguyenNgocAnhTu_Shadowrocket.module` | [📥 Import](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module) |
-| **Quantumult X** | `NguyenNgocAnhTu_QuantumultX.snippet` | [📥 Import](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
-| **Stash** | `NguyenNgocAnhTu_Stash.stoverride` | [📥 Import](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
+| App | File | Size | Link |
+|-----|------|------|------|
+| **Surge** | `.sgmodule` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
+| **Loon** | `.plugin` | 2.9KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
+| **Shadowrocket** 🏆 | `.module` | 2.6KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module) |
+| **Quantumult X** | `.snippet` | 2.3KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
+| **Stash** | `.stoverride` | 3.3KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
+| **Universal** | `.module` | 3.1KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
 
 ---
 
-## ⚡ Import nhanh (Copy & Paste)
+## ⚡ Copy & Paste
 
 ### Surge
 ```
@@ -24,7 +25,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
-### Shadowrocket
+### Shadowrocket (Recommended) 🏆
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
@@ -39,16 +40,36 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
+### Universal (All Apps)
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+```
+
 ---
 
-## 📖 Chi tiết đầy đủ
+## 📖 Full Documentation
 
-Xem file [README.md](README.md) để biết:
-- ✅ Hướng dẫn cài đặt chi tiết
-- ✅ Cấu hình MITM
-- ✅ Tính năng đầy đủ
-- ✅ Performance benchmark
-- ✅ Troubleshooting
+➡️ See [README.md](README.md) for:
+- ✅ Detailed installation guides
+- ✅ MITM configuration
+- ✅ Performance benchmarks
+- ✅ FAQ & troubleshooting
+- ✅ Customization options
+
+---
+
+## 💡 Quick Tips
+
+**For Shadowrocket users:**
+- Use `.module` file (not `.sgmodule`)
+- 100% compatible
+- Fastest loading
+- Smallest size (2.6KB)
+
+**For other apps:**
+- Use the specific file for your app
+- Better compatibility
+- Optimized performance
 
 ---
 

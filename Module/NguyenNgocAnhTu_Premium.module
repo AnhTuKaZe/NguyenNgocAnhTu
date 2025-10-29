@@ -1,14 +1,9 @@
-#!name=⚡ Anh Tú Premium - Surge
-#!desc=YouTube + Spotify + Locket (Optimized)
+#!name=⚡ Anh Tú Premium - Universal
+#!desc=YouTube + Spotify + Locket | Works with Surge/Loon/SR
 #!author=Nguyễn Ngọc Anh Tú
 #!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
-
-[General]
-bypass-system=true
-skip-proxy=192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local
-dns-server=system
-ipv6=false
+#!system=ios,mac
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
