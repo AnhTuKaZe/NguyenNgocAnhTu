@@ -3,7 +3,7 @@
 <!-- Hero Banner -->
 <img src="https://img.icons8.com/3d-fluency/200/mac-os.png" alt="iOS Logo" width="160"/>
 
-# 🌸 Nguyễn Ngọc Anh Tú Premium
+# 🌸 Nguyễn Ngọc Anh Tú Premium 🌸
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=YouTube+Premium+%E2%9C%93;Spotify+Premium+%E2%9C%93;Locket+Gold+%E2%9C%93;100%25+Free+Forever!" alt="Typing SVG" />
 
