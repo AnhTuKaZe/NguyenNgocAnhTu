@@ -3,118 +3,60 @@
 <!-- Animated Header Wave -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Unlocker&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=YouTube%20•%20Spotify%20•%20Locket%20Gold&descAlignY=55&descSize=20"/>
 
-<!-- Hero Banner with Glowing Effect -->
-<img src="https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy.gif" alt="Premium Unlock" width="100" style="margin: 20px 0"/>
-<img src="https://media.giphy.com/media/PjTSIlJx6vOzJdsXd9/giphy.gif" alt="iOS Logo Animated" width="140"/>
-<img src="https://media.giphy.com/media/3oKIPic2BnoVZkRla8/giphy.gif" alt="Stars" width="100"/>
+<br>
 
 <!-- Animated Title -->
 <h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=🌸+Nguyễn+Ngọc+Anh+Tú+Premium+🌸;✨+100%25+Free+Forever+✨;🚀+Ultra+Fast+Performance+🚀;💎+Professional+Quality+💎" alt="Animated Title"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=🌸+Nguyễn+Ngọc+Anh+Tú+Premium+🌸;✨+100%25+Free+Forever+✨;🚀+Ultra+Fast+Performance+🚀" alt="Animated Title"/>
 </h1>
-
-<!-- Dynamic Feature Showcase -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=🎬+YouTube+Premium+%E2%9C%93+No+Ads+•+PiP+•+Background+Play;🎵+Spotify+Premium+%E2%9C%93+Unlimited+Skips+•+High+Quality;🔐+Locket+Gold+%E2%9C%93+Premium+Features+Unlocked" alt="Features Typing"/>
-</p>
-
-<!-- Animated Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡_Performance-Optimized-FF6B6B?style=for-the-badge&labelColor=1a1a2e&logo=lightning&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🛡️_Security-100%25_Safe-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/💎_Quality-Premium-FFD93D?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🎯_Status-Active-95E1D3?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br>
 
-<!-- Language Selector with Enhanced Design -->
-<h3>
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/> 
-  Choose Your Language 
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/>
-</h3>
-
+<!-- Language Selector -->
 <table>
 <tr>
-<td align="center" width="150">
+<td align="center" width="200">
 <a href="#-tiếng-việt">
-<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="60" alt="Vietnam"/>
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fb-1f1f3.svg" width="48" alt="Vietnam"/>
 <br><br>
-<img src="https://img.shields.io/badge/🇻🇳-Tiếng_Việt-E74C3C?style=for-the-badge&labelColor=1a1a2e"/>
+<b>🇻🇳 Tiếng Việt</b>
 </a>
 </td>
-<td align="center" width="150">
+<td align="center" width="200">
 <a href="#-english">
-<img src="https://img.icons8.com/color/96/usa-circular.png" width="60" alt="English"/>
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ec-1f1e7.svg" width="48" alt="English"/>
 <br><br>
-<img src="https://img.shields.io/badge/🇬🇧-English-4A90E2?style=for-the-badge&labelColor=1a1a2e"/>
+<b>🇬🇧 English</b>
 </a>
 </td>
-<td align="center" width="150">
+<td align="center" width="200">
 <a href="#-日本語">
-<img src="https://img.icons8.com/color/96/japan-circular.png" width="60" alt="Japan"/>
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ef-1f1f5.svg" width="48" alt="Japan"/>
 <br><br>
-<img src="https://img.shields.io/badge/🇯🇵-日本語-FF69B4?style=for-the-badge&labelColor=1a1a2e"/>
+<b>🇯🇵 日本語</b>
 </a>
 </td>
 </tr>
 </table>
 
-<!-- Glowing Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+<br>
 
-<!-- Enhanced Badges with Icons -->
+<!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/🍎_Platform-iOS_│_macOS_│_Android-4A90E2?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000"/>
-  <img src="https://img.shields.io/badge/📦_Version-2.0-50C878?style=for-the-badge&logo=semantic-release&logoColor=white&labelColor=000000"/>
-  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-F39C12?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=000000"/>
+  <img src="https://img.shields.io/badge/Platform-iOS_│_macOS_│_Android-0080FF?style=for-the-badge&logo=apple&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Version-2.0-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-AGPL--3.0-FF6D00?style=for-the-badge"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/stargazers">
-    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=FFD700"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/network/members">
-    <img src="https://img.shields.io/github/forks/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=7F52FF"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
-    <img src="https://img.shields.io/github/issues/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=FF6B6B"/>
-  </a>
-</p>
-
-<!-- Animated Stats -->
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡_Response_Time-60ms-success?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/💾_Memory-256KB-informational?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🔥_File_Size-2.3KB-orange?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✨_Active_Users-1000+-blueviolet?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-<!-- Glowing Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
-
-<!-- Quick Navigation with Enhanced Design -->
-<h3>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"/> 
-  Quick Navigation
-</h3>
-
-<p align="center">
-  <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📥-Quick_Install-FF6B6B?style=for-the-badge&labelColor=1a1a2e"/>
-  </a>
-  <a href="#-tính-năng">
-    <img src="https://img.shields.io/badge/📖-Documentation-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  </a>
-  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬-Support-FFD93D?style=for-the-badge&labelColor=1a1a2e&logo=messenger"/>
+    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&color=FFD700"/>
   </a>
   <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-    <img src="https://img.shields.io/badge/⭐-Star_Us-95E1D3?style=for-the-badge&labelColor=1a1a2e&logo=github"/>
+    <img src="https://img.shields.io/badge/Support-Messenger-0084FF?style=for-the-badge&logo=messenger"/>
   </a>
 </p>
 
@@ -163,15 +105,7 @@
 
 <div align="center">
   
-## ✨ Tính năng nổi bật ✨
-
-<img src="https://media.giphy.com/media/W3a0zO282fuBpsqqyD/giphy.gif" width="40"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎬-YouTube_Premium-FF0000?style=for-the-badge&labelColor=282828"/>
-  <img src="https://img.shields.io/badge/🎵-Spotify_Premium-1DB954?style=for-the-badge&labelColor=191414"/>
-  <img src="https://img.shields.io/badge/🔐-Locket_Gold-FFB6C1?style=for-the-badge&labelColor=FF69B4"/>
-</p>
+## ✨ Tính năng nổi bật
 
 </div>
 
@@ -179,19 +113,19 @@
 <thead>
 <tr>
 <th width="33%">
-<img src="https://media.giphy.com/media/13Nc3xlO1kGg3S/giphy.gif" width="50"/>
+<img src="https://img.icons8.com/fluency/96/youtube-play.png" width="48"/>
 <br>
-<img src="https://img.shields.io/badge/YouTube-Premium-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+YouTube Premium
 </th>
 <th width="33%">
-<img src="https://media.giphy.com/media/fSYmbgG5Ug8S11K0FU/giphy.gif" width="50"/>
+<img src="https://img.icons8.com/fluency/96/spotify.png" width="48"/>
 <br>
-<img src="https://img.shields.io/badge/Spotify-Premium-1DB954?style=for-the-badge&logo=spotify&logoColor=white"/>
+Spotify Premium
 </th>
 <th width="33%">
-<img src="https://media.giphy.com/media/SXqw0Vpql6f1bS54Et/giphy.gif" width="50"/>
+<img src="https://img.icons8.com/fluency/96/lock.png" width="48"/>
 <br>
-<img src="https://img.shields.io/badge/Locket-Gold-FF69B4?style=for-the-badge&logo=lock&logoColor=white"/>
+Locket Gold
 </th>
 </tr>
 </thead>
@@ -257,17 +191,9 @@
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🚀 Hiệu suất vượt trội 🚀
+## 🚀 Hiệu suất
 
-<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="60"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡-Ultra_Fast-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/💪-Optimized-FF6B6B?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🎯-Efficient-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-### **📊 Kết quả Benchmark**
+### **Kết quả Benchmark**
 
 <table>
 <thead>
@@ -306,19 +232,9 @@
 </tbody>
 </table>
 
-### **🔧 Kỹ thuật tối ưu hóa**
+### **Kỹ thuật tối ưu hóa**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/✓-IIFE_Pattern-4A90E2?style=for-the-badge&logo=javascript&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✓-Strict_Mode-50C878?style=for-the-badge&logo=code&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✓-Pre--built_Objects-F39C12?style=for-the-badge&logo=json&logoColor=white&labelColor=1a1a2e"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/✓-Native_Loops-7F52FF?style=for-the-badge&logo=loop&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✓-Zero_I/O-E74C3C?style=for-the-badge&logo=rocket&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✓-Memory_Optimized-FF69B4?style=for-the-badge&logo=memory&logoColor=white&labelColor=1a1a2e"/>
-</p>
+✓ IIFE Pattern • ✓ Strict Mode • ✓ Pre-built Objects • ✓ Native Loops • ✓ Zero I/O
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
@@ -329,21 +245,7 @@
 
 ## 📱 Ứng dụng hỗ trợ
 
-<div align="center">
-
-<img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="50"/>
-
-### **Chọn module phù hợp cho ứng dụng proxy của bạn**
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🌊-Surge-4A90E2?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🎈-Loon-F39C12?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🚀-Shadowrocket-E74C3C?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/⚡-Quantumult_X-7F52FF?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/💎-Stash-50C878?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-</div>
+Chọn module phù hợp cho ứng dụng proxy của bạn:
 
 <div align="center">
 
@@ -364,15 +266,7 @@
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 📥 Hướng dẫn cài đặt nhanh 📥
-
-<img src="https://media.giphy.com/media/3oKIPsx2VAYAgEHC12/giphy.gif" width="60"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/⏱️-Installation_Time-5_Minutes-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/📶-Difficulty-Easy-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✨-Success_Rate-99%25-50C878?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
+## 📥 Cài đặt nhanh
 
 </div>
 
@@ -449,15 +343,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⚙️ Tùy chỉnh cấu hình ⚙️
-
-<img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎨-Customizable-FF69B4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🔧-Flexible-4A90E2?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/⚡-Easy_Setup-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
+## ⚙️ Cấu hình
 
 </div>
 
@@ -498,15 +384,7 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ❓ Câu hỏi thường gặp ❓
-
-<img src="https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif" width="60"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/💡-Got_Questions?-FFD93D?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/📚-Find_Answers-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🎯-Quick_Solutions-FF6B6B?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
+## ❓ Câu hỏi thường gặp
 
 </div>
 
@@ -558,17 +436,9 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 💬 Hỗ trợ & Liên hệ 💬
+## 💬 Hỗ trợ
 
-<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="60"/>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡-Fast_Response-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/👨‍💻-Expert_Help-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🌟-Community_Support-FF69B4?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-### 📞 Nhận trợ giúp ngay lập tức
+### Nhận trợ giúp
 
 <table>
 <tr>
@@ -1393,13 +1263,9 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🌟 Credits & Attribution 🌟
+## 🌟 Credits
 
-<img src="https://media.giphy.com/media/hrRJ41JB2zlgZiYcCw/giphy.gif" width="60"/>
-
-</div>
-
-### **💻 Script Authors**
+### Script Authors
 
 <table>
 <tr>
@@ -1437,23 +1303,11 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 </tr>
 </table>
 
-### **🎯 Optimization & Integration**
+### Optimization & Integration
 
-<div align="center">
+**🌸 Nguyễn Ngọc Anh Tú 🌸**
 
-<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="40"/>
-
-<h3>
-  🌸 Nguyễn Ngọc Anh Tú 🌸
-</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡-Performance_Optimization-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🔧-Module_Integration-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/📚-Documentation-FF69B4?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-</div>
+Performance Optimization • Module Integration • Documentation
 
 <br>
 
@@ -1462,67 +1316,45 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 📄 License 📄
+## 📄 License
 
-<img src="https://media.giphy.com/media/ZCN6F3FAkwsyOGU2RS/giphy.gif" width="60"/>
-
-<h3>GNU Affero General Public License v3.0 (AGPL-3.0)</h3>
+**GNU Affero General Public License v3.0 (AGPL-3.0)**
 
 <a href="LICENSE">
-  <img src="https://img.shields.io/badge/License-AGPL--3.0-F39C12?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1a1a2e"/>
+  <img src="https://img.shields.io/badge/License-AGPL--3.0-F39C12?style=for-the-badge"/>
 </a>
 
 <br><br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/✅-Free_to_Use-50C878?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✅-Modify-4A90E2?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/✅-Distribute-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/⚠️-Must_Keep_Open_Source-FF6B6B?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/⚠️-Same_License_Applies-FF9800?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
+Free to use • Modify • Distribute • Must keep open source
 
 <br>
 
-<a href="LICENSE">
-  <img src="https://img.shields.io/badge/📄-Read_Full_License-7F52FF?style=for-the-badge&labelColor=1a1a2e"/>
-</a>
+<a href="LICENSE">📄 Read Full License</a>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⭐ Show Your Support ⭐
+## ⭐ Show Your Support
 
-<img src="https://media.giphy.com/media/2wYYlHuEw1UcsJYgAA/giphy.gif" width="60"/>
-
-<h3>If this project helped you, please consider:</h3>
+If this project helped you, please consider:
 
 <br>
 
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e"/>
+  <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github"/>
 </a>
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
-  <img src="https://img.shields.io/badge/🔀-Fork_Project-4A90E2?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e"/>
+  <img src="https://img.shields.io/badge/🔀-Fork_Project-4A90E2?style=for-the-badge&logo=github"/>
 </a>
 <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/📢-Share_with_Friends-50C878?style=for-the-badge&logo=telegram&logoColor=white&labelColor=1a1a2e"/>
+  <img src="https://img.shields.io/badge/📢-Share-50C878?style=for-the-badge"/>
 </a>
-
-<br><br>
-
-<!-- Contribution Graph -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnhTuKaZe&theme=react-dark&hide_border=true&area=true" width="100%"/>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 ## 🎨 Made with ❤️ in Vietnam 🇻🇳
-
-<img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="60"/>
 
 <br>
 
@@ -1530,29 +1362,29 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <table>
 <tr>
 <td align="center" width="20%">
-<img src="https://media.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif" width="60"/>
+<img src="https://img.icons8.com/fluency/96/apple-logo.png" width="64"/>
 <br><br>
-<img src="https://img.shields.io/badge/🍎-iOS_/_macOS-000000?style=for-the-badge&logo=apple&logoColor=white"/>
+<b>iOS / macOS</b>
 </td>
 <td align="center" width="20%">
-<img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="60"/>
+<img src="https://img.icons8.com/fluency/96/android-os.png" width="64"/>
 <br><br>
-<img src="https://img.shields.io/badge/🤖-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+<b>Android</b>
 </td>
 <td align="center" width="20%">
-<img src="https://media.giphy.com/media/3oKIPqsXYcdjcBcXL2/giphy.gif" width="60"/>
+<img src="https://img.icons8.com/fluency/96/source-code.png" width="64"/>
 <br><br>
-<img src="https://img.shields.io/badge/💻-Open_Source-50C878?style=for-the-badge&logo=github&logoColor=white"/>
+<b>Open Source</b>
 </td>
 <td align="center" width="20%">
-<img src="https://media.giphy.com/media/Y4bzLRdUYDzWfHlWu3/giphy.gif" width="60"/>
+<img src="https://img.icons8.com/fluency/96/security-checked.png" width="64"/>
 <br><br>
-<img src="https://img.shields.io/badge/🛡️-100%25_Safe-4ECDC4?style=for-the-badge&logo=security&logoColor=white"/>
+<b>100% Safe</b>
 </td>
 <td align="center" width="20%">
-<img src="https://media.giphy.com/media/l0HlPystfePnYIspq/giphy.gif" width="60"/>
+<img src="https://img.icons8.com/fluency/96/speed.png" width="64"/>
 <br><br>
-<img src="https://img.shields.io/badge/⚡-Ultra_Fast-FFD700?style=for-the-badge&logo=lightning&logoColor=white"/>
+<b>Ultra Fast</b>
 </td>
 </tr>
 </table>
@@ -1564,31 +1396,16 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <br>
 
-<!-- Stats and Achievements -->
-<h3>📊 Project Stats</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/💎-Premium_Quality-FFD700?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🚀-High_Performance-FF6B6B?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/🌟-Community_Driven-4ECDC4?style=for-the-badge&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/💝-Made_with_Love-FF69B4?style=for-the-badge&labelColor=1a1a2e"/>
-</p>
-
-<br>
-
 <!-- Copyright -->
 <h3>
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40"/> 
   Copyright © 2025 
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">Nguyễn Ngọc Anh Tú</a> 
   🌸
 </h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Coded_with-❤️_Love-E74C3C?style=for-the-badge&logo=heart&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Powered_by-☕_Coffee-6F4E37?style=for-the-badge&logo=coffee&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Made_during-🌙_Late_Nights-4A90E2?style=for-the-badge&logo=moon&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/❤️-Open_Source-50C878?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=1a1a2e"/>
+  <img src="https://img.shields.io/badge/Made_with-❤️_Love-E74C3C?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Open_Source-Community-50C878?style=for-the-badge"/>
 </p>
 
 <br>
@@ -1600,9 +1417,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <!-- Thank You Message -->
 <h2>
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="50"/>
-  Thank You for Using!
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="50"/>
+  ⚡ Thank You for Using! ⚡
 </h2>
 
 <h3>
