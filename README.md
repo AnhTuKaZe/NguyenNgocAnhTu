@@ -1896,37 +1896,6 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <br>
 
-<!-- Roadmap -->
-<h3 align="center">🗺️ Roadmap</h3>
-
-<table>
-<tr>
-<td width="50%">
-<h4>✅ Completed</h4>
-<ul>
-<li>✔️ YouTube Premium support</li>
-<li>✔️ Spotify Premium support</li>
-<li>✔️ Locket Gold support</li>
-<li>✔️ 5 proxy apps support</li>
-<li>✔️ IIFE optimization</li>
-<li>✔️ Multi-language docs</li>
-</ul>
-</td>
-<td width="50%">
-<h4>🔜 Coming Soon</h4>
-<ul>
-<li>🔄 Auto-update mechanism</li>
-<li>🔄 More apps support</li>
-<li>🔄 Advanced customization</li>
-<li>🔄 Performance analytics</li>
-<li>🔄 Web dashboard</li>
-<li>🔄 Video tutorials</li>
-</ul>
-</td>
-</tr>
-</table>
-
-<br>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
