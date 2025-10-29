@@ -1,8 +1,14 @@
+// ========================================
+// Locket Gold Premium - Optimized Version
+// ⚡ Performance: Fast & Smooth
+// 🔐 Lifetime Premium Unlock
+// ========================================
+
 (function() {
   'use strict';
   
   // ========= Constants (Pre-defined) ========= //
-  const SPECIFIC_DATE = "2024-07-18T00:00:00Z";
+  const SPECIFIC_DATE = "2025-07-18T00:00:00Z";
   const EXPIRES_DATE = "2099-07-18T01:04:17Z";
   const EXPIRES_DATE_LONG = "2099-12-18T01:04:17Z";
   const PRODUCT_ID = "locket.premium.yearly";
