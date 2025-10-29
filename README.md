@@ -13,6 +13,32 @@
 
 <br>
 
+<!-- Language Selector -->
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="#-tiếng-việt">
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Vietnam.png" width="32"><br>
+<b>🇻🇳 Tiếng Việt</b>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="#-english">
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png" width="32"><br>
+<b>🇬🇧 English</b>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="#-日本語">
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png" width="32"><br>
+<b>🇯🇵 日本語</b>
+</a>
+</td>
+</tr>
+</table>
+
+<br>
+
 <!-- Badges -->
 [![Platform](https://img.shields.io/badge/Platform-iOS_│_macOS_│_Android-4A90E2?style=flat-square&logo=apple)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)
 [![Version](https://img.shields.io/badge/Version-2.0-50C878?style=flat-square)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/releases)
@@ -33,21 +59,376 @@
 
 <br>
 
-## 📋 Table of Contents
+# 🇻🇳 Tiếng Việt
+
+## 📋 Mục lục
 
 <details open>
+<summary><b>Nhấp để mở rộng</b></summary>
+
+- [✨ Tính năng](#-tính-năng)
+- [🚀 Hiệu suất](#-hiệu-suất)
+- [📱 Ứng dụng hỗ trợ](#-ứng-dụng-hỗ-trợ)
+- [📥 Cài đặt nhanh](#-cài-đặt-nhanh)
+- [⚙️ Cấu hình](#️-cấu-hình)
+- [❓ Câu hỏi thường gặp](#-câu-hỏi-thường-gặp)
+- [💬 Hỗ trợ](#-hỗ-trợ)
+
+</details>
+
+<br>
+
+## ✨ Tính năng
+
+<table>
+<thead>
+<tr>
+<th width="33%">📺 YouTube Premium</th>
+<th width="33%">🎵 Spotify Premium</th>
+<th width="33%">🔒 Locket Gold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top">
+
+**Chặn quảng cáo**
+- ✅ Chặn quảng cáo video
+- ✅ Chặn quảng cáo banner
+- ✅ Chặn quảng cáo popup
+- ✅ Ẩn nội dung tài trợ
+
+**Tính năng Premium**
+- ✅ Picture in Picture (PiP)
+- ✅ Phát nền
+- ✅ Dịch phụ đề (VI/EN)
+- ✅ Dịch lời bài hát
+- ✅ Ẩn nút tải lên
+- ✅ Ẩn Shorts (tùy chọn)
+
+</td>
+<td valign="top">
+
+**Chặn quảng cáo**
+- ✅ Chặn quảng cáo âm thanh
+- ✅ Chặn quảng cáo video
+- ✅ Chặn quảng cáo banner
+- ✅ Giao diện sạch sẽ
+
+**Tính năng Premium**
+- ✅ Bỏ qua không giới hạn
+- ✅ Chất lượng âm thanh cao
+- ✅ Hiển thị lời bài hát
+- ✅ Tua tới bất kỳ đâu
+- ✅ Mở khóa tất cả tính năng
+
+</td>
+<td valign="top">
+
+**Mở khóa Premium**
+- ✅ Gói đăng ký Gold
+- ✅ Không có watermark
+- ✅ Widget không giới hạn
+- ✅ Mở khóa tất cả tính năng
+- ✅ Truy cập trọn đời
+
+**Hiệu suất**
+- ⚡ Thời gian phản hồi 60ms
+- 💾 Sử dụng bộ nhớ 256KB
+- 🔥 Tối ưu hóa IIFE
+- 📅 Hiệu lực đến năm 2099
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+## 🚀 Hiệu suất
+
+<div align="center">
+
+### **Kết quả Benchmark**
+
+<table>
+<thead>
+<tr>
+<th width="25%">Chỉ số</th>
+<th width="25%">Trước</th>
+<th width="25%">Sau</th>
+<th width="25%">Cải thiện</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Thời gian phản hồi</b></td>
+<td><code>150ms</code></td>
+<td><code>60ms</code></td>
+<td><img src="https://img.shields.io/badge/↓_60%25-success?style=flat-square" alt="Nhanh hơn 60%"></td>
+</tr>
+<tr>
+<td><b>Sử dụng bộ nhớ</b></td>
+<td><code>512KB</code></td>
+<td><code>256KB</code></td>
+<td><img src="https://img.shields.io/badge/↓_50%25-success?style=flat-square" alt="Ít hơn 50%"></td>
+</tr>
+<tr>
+<td><b>Kích thước file</b></td>
+<td><code>5.0KB</code></td>
+<td><code>2.3KB</code></td>
+<td><img src="https://img.shields.io/badge/↓_54%25-success?style=flat-square" alt="Nhỏ hơn 54%"></td>
+</tr>
+<tr>
+<td><b>Tốc độ thực thi</b></td>
+<td><code>50ms</code></td>
+<td><code>15ms</code></td>
+<td><img src="https://img.shields.io/badge/↓_70%25-success?style=flat-square" alt="Nhanh hơn 70%"></td>
+</tr>
+</tbody>
+</table>
+
+**Kỹ thuật tối ưu hóa**
+
+![IIFE Pattern](https://img.shields.io/badge/✓-IIFE_Pattern-4A90E2?style=flat-square)
+![Strict Mode](https://img.shields.io/badge/✓-Strict_Mode-50C878?style=flat-square)
+![Pre-built Objects](https://img.shields.io/badge/✓-Pre--built_Objects-F39C12?style=flat-square)
+![Native Loops](https://img.shields.io/badge/✓-Native_Loops-7F52FF?style=flat-square)
+![Zero I/O](https://img.shields.io/badge/✓-Zero_I/O-E74C3C?style=flat-square)
+
+</div>
+
+<br>
+
+## 📱 Ứng dụng hỗ trợ
+
+Chọn module phù hợp cho ứng dụng proxy của bạn:
+
+<div align="center">
+
+| Ứng dụng | Định dạng | Kích thước | Nền tảng | Trạng thái |
+|:---:|:------:|:----:|:--------:|:------:|
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS / macOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Khuyên_dùng-FFD700?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Nhỏ_nhất-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS / Android | ![Status](https://img.shields.io/badge/✓-Đa_nền_tảng-50C878?style=flat-square) |
+
+</div>
+
+<br>
+
+## 📥 Cài đặt nhanh
+
+<details>
+<summary><b>🌊 Surge (iOS / macOS)</b></summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+```
+
+**Các bước**
+1. Mở **Surge** → Tab **Home**
+2. Nhấn **Modules** → Nút **+**
+3. Chọn **Install Module from URL**
+4. Dán URL ở trên → **OK**
+5. Bật module
+
+**Cài đặt MITM**
+1. **Settings** → **MITM** → **Install Certificate**
+2. Làm theo hướng dẫn iOS để cài profile
+3. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+4. Bật tin cậy cho chứng chỉ Surge
+
+**Xác minh**
+- Mở YouTube → Không có quảng cáo ✅
+- Mở Spotify → Bỏ qua không giới hạn ✅
+- Mở Locket → Premium đã kích hoạt ✅
+
+</details>
+
+<details>
+<summary><b>🚀 Shadowrocket (iOS) — ⭐ Khuyên dùng</b></summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+```
+
+**Các bước**
+1. Mở **Shadowrocket** → Tab **Configuration**
+2. Chọn config đang dùng → **Edit Configuration**
+3. Kéo xuống phần **[Module]** → Nút **+**
+4. Chọn **Add Module URL** → Dán URL → **Save**
+
+**Cài đặt MITM**
+1. **Settings** → **Certificate** → **Generate New Certificate**
+2. **Install Certificate** → Safari mở
+3. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+4. Cài profile "Shadowrocket..."
+5. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+6. Bật tin cậy cho Shadowrocket
+
+**Tại sao dùng .module cho Shadowrocket?**
+- ✅ Định dạng gốc (tương thích 100%)
+- ✅ Kích thước nhỏ nhất (2.6KB)
+- ✅ Tải nhanh nhất
+- ✅ Không có phần không cần thiết
+
+</details>
+
+<br>
+
+## ⚙️ Cấu hình
+
+<details>
+<summary><b>🎨 Tùy chỉnh cài đặt YouTube</b></summary>
+
+<br>
+
+Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham số `argument` trong module:
+
+```json
+{
+  "lyricLang": "vi",        // Ngôn ngữ dịch lời bài hát
+  "captionLang": "vi",      // Ngôn ngữ dịch phụ đề
+  "blockUpload": true,      // Ẩn nút tải lên
+  "blockImmersive": true,   // Ẩn giao diện immersive
+  "blockShorts": false,     // Ẩn Shorts (thử nghiệm)
+  "debug": false            // Bật chế độ debug
+}
+```
+
+**Ngôn ngữ hỗ trợ**
+
+| Mã | Ngôn ngữ | Mã | Ngôn ngữ | Mã | Ngôn ngữ |
+|:----:|:--------:|:----:|:--------:|:----:|:--------:|
+| `vi` | 🇻🇳 Tiếng Việt | `en` | 🇬🇧 English | `zh-Hans` | 🇨🇳 简体中文 |
+| `zh-Hant` | 🇹🇼 繁體中文 | `ja` | 🇯🇵 日本語 | `ko` | 🇰🇷 한국어 |
+| `fr` | 🇫🇷 Français | `de` | 🇩🇪 Deutsch | `ru` | 🇷🇺 Русский |
+
+</details>
+
+<br>
+
+## ❓ Câu hỏi thường gặp
+
+<details>
+<summary><b>Tại sao YouTube vẫn có quảng cáo?</b></summary>
+
+<br>
+
+**Danh sách kiểm tra**
+
+- [ ] **MITM đã bật** → Settings → MITM → Toggle ON
+- [ ] **Chứng chỉ đã cài** → Cài đặt iOS → Profile đã cài
+- [ ] **Chứng chỉ đã tin cậy** → Cài đặt → Cài đặt chung → Giới thiệu → Cài đặt tin cậy chứng chỉ
+- [ ] **Hostnames đã thêm** → Kiểm tra `youtubei.googleapis.com` có tồn tại
+- [ ] **Module đã bật** → Configuration → Module → Toggle ON
+- [ ] **Đã khởi động lại app** → Tắt hoàn toàn và mở lại YouTube
+
+**Giải pháp**
+1. Xóa cache YouTube: Cài đặt iOS → YouTube → Xóa Cache
+2. Khởi động lại thiết bị
+3. Cài lại module
+4. Thử trên WiFi trước (mạng di động có thể có vấn đề)
+
+</details>
+
+<details>
+<summary><b>Có an toàn không?</b></summary>
+
+<br>
+
+**✅ 100% An toàn & Bảo mật**
+
+- **Mã nguồn mở** — Tất cả code đều công khai trên GitHub
+- **Không thu thập dữ liệu** — Không có analytics hoặc tracking
+- **Ưu tiên riêng tư** — Scripts chạy cục bộ trên thiết bị
+- **Không có server từ xa** — Không gửi dữ liệu đến server ngoài
+- **Đã được cộng đồng xem xét** — Code được người dùng review
+
+</details>
+
+<br>
+
+## 💬 Hỗ trợ
+
+<div align="center">
+
+### Nhận trợ giúp
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**💬 Messenger**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Messenger.png" width="64">
+
+Thời gian phản hồi: **< 1 giờ**
+
+<br>
+
+[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+
+</td>
+<td align="center" width="33%">
+
+**🐛 GitHub Issues**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png" width="64">
+
+Cho **báo cáo lỗi**
+
+<br>
+
+[![Report Issue](https://img.shields.io/badge/Báo_cáo-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
+
+</td>
+<td align="center" width="33%">
+
+**💡 Discussions**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png" width="64">
+
+Cho **câu hỏi & ý tưởng**
+
+<br>
+
+[![Join Discussion](https://img.shields.io/badge/Tham_gia-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+# 🇬🇧 English
+
+## 📋 Table of Contents
+
+<details>
 <summary><b>Click to expand</b></summary>
 
-- [✨ Features](#-features)
-- [🚀 Performance](#-performance)
-- [📱 Supported Apps](#-supported-apps)
-- [📥 Quick Installation](#-quick-installation)
-- [⚙️ Configuration](#️-configuration)
-- [❓ FAQ](#-faq)
-- [🐛 Troubleshooting](#-troubleshooting)
-- [🤝 Contributing](#-contributing)
-- [💬 Support](#-support)
-- [📄 License](#-license)
+- [✨ Features](#-features-1)
+- [🚀 Performance](#-performance-1)
+- [📱 Supported Apps](#-supported-apps-1)
+- [📥 Quick Installation](#-quick-installation-1)
+- [⚙️ Configuration](#️-configuration-1)
+- [❓ FAQ](#-faq-1)
+- [💬 Support](#-support-1)
 
 </details>
 
@@ -60,7 +441,7 @@
 <tr>
 <th width="33%">📺 YouTube Premium</th>
 <th width="33%">🎵 Spotify Premium</th>
-<th width="33%">🔐 Locket Gold</th>
+<th width="33%">🔒 Locket Gold</th>
 </tr>
 </thead>
 <tbody>
@@ -68,8 +449,8 @@
 <td valign="top">
 
 **Ad Blocking**
-- ✅ Video ads removed
-- ✅ Banner ads blocked
+- ✅ Video ads blocked
+- ✅ Banner ads removed
 - ✅ Popup ads eliminated
 - ✅ Sponsored content hidden
 
@@ -226,34 +607,6 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 </details>
 
 <details>
-<summary><b>🌙 Loon (iOS)</b></summary>
-
-<br>
-
-**Installation URL**
-```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
-```
-
-**Steps**
-1. Open **Loon** → **Configuration** tab
-2. Tap **Plugin** → **+** button
-3. Enter plugin URL above → **Save**
-4. Enable the plugin
-
-**MITM Setup**
-1. **Configuration** → **Mitm** → **Certificate Management**
-2. **Generate New Certificate** → **Install**
-3. Install profile in iOS Settings
-4. Trust certificate in **Certificate Trust Settings**
-
-**Verification**
-- Check plugin is enabled
-- Test YouTube, Spotify, Locket
-
-</details>
-
-<details>
 <summary><b>🚀 Shadowrocket (iOS) — ⭐ Recommended</b></summary>
 
 <br>
@@ -277,79 +630,11 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 5. **Settings** → **General** → **About** → **Certificate Trust Settings**
 6. Enable trust for Shadowrocket
 
-**Verify Hostnames**
-1. Configuration → Edit → **[MITM]** section
-2. Ensure these hostnames exist:
-   ```
-   *.googlevideo.com
-   youtubei.googleapis.com
-   spclient.wg.spotify.com
-   api.revenuecat.com
-   ```
-
-**Why Shadowrocket .module?**
+**Why .module for Shadowrocket?**
 - ✅ Native format (best compatibility)
 - ✅ Smallest size (2.6KB)
 - ✅ Fastest loading
 - ✅ No unnecessary sections
-
-</details>
-
-<details>
-<summary><b>♾️ Quantumult X (iOS)</b></summary>
-
-<br>
-
-**Installation URL**
-```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
-```
-
-**Steps**
-1. Open **Quantumult X** → **Configuration** tab
-2. **Rewrite** → **+** button (bottom)
-3. Select **Add URL Rewrite** → Paste URL → **OK**
-
-**Add Filter Rules**
-1. **Configuration** → **Filter** → **Edit**
-2. Scroll to **[filter_local]** section
-3. Add these rules:
-   ```
-   AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
-   AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
-   ```
-4. **Save**
-
-**MITM Setup**
-1. **Settings** → **MITM** → **Generate Certificate**
-2. **Install Certificate** → Profile opens
-3. Install in iOS Settings → Trust certificate
-4. Verify hostnames in MITM → Hostname section
-
-</details>
-
-<details>
-<summary><b>⚡ Stash (iOS / Android)</b></summary>
-
-<br>
-
-**Installation URL**
-```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
-```
-
-**iOS Steps**
-1. Open **Stash** → **Overrides** tab
-2. **Install Override** → Paste URL → Confirm
-3. **Settings** → **HTTPS Decryption** → **Certificate Management**
-4. **Generate New** → **Install** → Trust in iOS Settings
-5. Enable override → Restart Stash
-
-**Android Steps**
-1. Same as iOS for override installation
-2. **Settings** → **HTTPS Decryption** → **Generate & Install**
-3. Android **Settings** → **Security** → **Install from storage**
-4. Select certificate → Enable override
 
 </details>
 
@@ -379,30 +664,9 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 | Code | Language | Code | Language | Code | Language |
 |:----:|:--------:|:----:|:--------:|:----:|:--------:|
-| `vi` | 🇻🇳 Tiếng Việt | `en` | 🇺🇸 English | `zh-Hans` | 🇨🇳 简体中文 |
-| `zh-Hant` | 🇹🇼 繁體中文 | `ja` | 🇯🇵 日本語 | `ko` | 🇰🇷 한국어 |
-| `fr` | 🇫🇷 Français | `de` | 🇩🇪 Deutsch | `ru` | 🇷🇺 Русский |
-
-</details>
-
-<details>
-<summary><b>🔐 MITM Configuration (Required)</b></summary>
-
-<br>
-
-Ensure these hostnames are in your MITM configuration:
-
-```
-*.googlevideo.com
-www.youtube.com
-s.youtube.com
-youtubei.googleapis.com
-spclient.wg.spotify.com
-*-spclient.spotify.com
-api.revenuecat.com
-```
-
-> ⚠️ **Important:** Do NOT add `-redirector*.googlevideo.com` (already bypassed)
+| `vi` | 🇻🇳 Vietnamese | `en` | 🇬🇧 English | `zh-Hans` | 🇨🇳 Simplified Chinese |
+| `zh-Hant` | 🇹🇼 Traditional Chinese | `ja` | 🇯🇵 Japanese | `ko` | 🇰🇷 Korean |
+| `fr` | 🇫🇷 French | `de` | 🇩🇪 German | `ru` | 🇷🇺 Russian |
 
 </details>
 
@@ -433,42 +697,6 @@ api.revenuecat.com
 </details>
 
 <details>
-<summary><b>Spotify shows "Premium not available"?</b></summary>
-
-<br>
-
-**Quick Fixes**
-
-1. **Logout and login** to Spotify account
-2. **Clear app cache:** Spotify Settings → Storage → Clear Cache
-3. **Wait 5-10 minutes** after installing module (server sync)
-4. **Restart Spotify** completely (force quit)
-5. **Verify hostname:** `spclient.wg.spotify.com` must be in MITM
-
-> ℹ️ **Note:** Download UI will appear but downloads won't work (server-side limitation)
-
-</details>
-
-<details>
-<summary><b>Locket isn't showing premium?</b></summary>
-
-<br>
-
-**Debug Steps**
-
-1. **Restore purchase:** Locket → Settings → Restore Purchase
-2. **Verify hostname:** `api.revenuecat.com` must be in MITM
-3. **Check logs** (if available):
-   - Look for "locket script executed"
-   - Check for RevenueCat API responses
-4. **Force quit Locket** → Reopen
-5. **Clear app data:** iOS Settings → Locket → Clear Cache
-
-If still not working, check HTTPS decryption is enabled for RevenueCat hostname.
-
-</details>
-
-<details>
 <summary><b>Is this safe to use?</b></summary>
 
 <br>
@@ -481,128 +709,7 @@ If still not working, check HTTPS decryption is enabled for RevenueCat hostname.
 - **No Remote Servers** — No data sent to external servers
 - **Community Reviewed** — Code reviewed by users
 
-**Review the source code:**
-- [`locket.js`](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/blob/main/Module/js/locket.js)
-- [`deleteHeader.js`](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/blob/main/Module/js/deleteHeader.js)
-
 </details>
-
-<details>
-<summary><b>Can I use with other modules?</b></summary>
-
-<br>
-
-**✅ Compatible With**
-- AdBlock modules (AdGuard, etc.)
-- Privacy protection modules
-- DNS filtering modules
-- Rule-based modules
-
-**⚠️ May Conflict With**
-- Other YouTube unlock modules (use only one)
-- Other Spotify unlock modules (use only one)
-- Other RevenueCat unlock modules (use only one)
-
-**Recommendation:** Disable modules with overlapping functionality.
-
-</details>
-
-<details>
-<summary><b>Which file is best for Shadowrocket?</b></summary>
-
-<br>
-
-**⭐ Use `NguyenNgocAnhTu_Shadowrocket.module`**
-
-**Why?**
-- ✅ Native `.module` format for Shadowrocket
-- ✅ 100% compatibility (no parsing errors)
-- ✅ Smallest size (2.6KB vs 3.2KB)
-- ✅ Fastest loading and execution
-- ✅ No unnecessary `[General]` section
-
-**Don't use `.sgmodule`:**
-- ❌ Surge format (incomplete support in SR)
-- ❌ Larger file size
-- ❌ Slower parsing
-
-</details>
-
-<br>
-
-## 🐛 Troubleshooting
-
-<details>
-<summary><b>YouTube videos won't play</b></summary>
-
-<br>
-
-**Possible Causes**
-- Timeout on slow networks
-- MITM certificate issue
-- Conflicting modules
-
-**Solutions**
-1. **Increase timeout** to 30s (edit module config)
-2. **Test on WiFi** first before cellular
-3. **Check logs** for error messages
-4. **Disable module** → Reload → **Enable** again
-5. Try different video (some may have regional restrictions)
-
-</details>
-
-<details>
-<summary><b>Picture in Picture (PiP) not working</b></summary>
-
-<br>
-
-**Enable PiP in iOS**
-1. **iOS Settings** → **General** → **Picture in Picture**
-2. Toggle **"Start PiP Automatically"** ON
-
-**Enable PiP in YouTube**
-1. Open **YouTube** app
-2. **Settings** → **General** → **Picture in Picture**
-3. Enable if available
-
-**Verify Module**
-1. Check module is enabled
-2. Look for "youtube script executed" in logs
-3. Reinstall module if needed
-
-</details>
-
-<details>
-<summary><b>Spotify shuffle is forced</b></summary>
-
-<br>
-
-**Important Note**
-- Free accounts have **server-side limitations**
-- Module unlocks **UI only**, cannot bypass Spotify servers
-- Some restrictions are unavoidable
-
-**Workarounds**
-1. **Logout** → **Clear cache** → **Login** again
-2. Wait **10 minutes** for server sync
-3. **Restart** Spotify app completely
-4. Try using **playlists** (better free experience)
-
-</details>
-
-<br>
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for detailed guidelines.
 
 <br>
 
@@ -657,6 +764,366 @@ For **questions & ideas**
 </table>
 
 </div>
+
+<br>
+
+---
+
+<br>
+
+# 🇯🇵 日本語
+
+## 📋 目次
+
+<details>
+<summary><b>クリックして展開</b></summary>
+
+- [✨ 機能](#-機能)
+- [🚀 パフォーマンス](#-パフォーマンス)
+- [📱 対応アプリ](#-対応アプリ)
+- [📥 クイックインストール](#-クイックインストール)
+- [⚙️ 設定](#️-設定)
+- [❓ よくある質問](#-よくある質問)
+- [💬 サポート](#-サポート)
+
+</details>
+
+<br>
+
+## ✨ 機能
+
+<table>
+<thead>
+<tr>
+<th width="33%">📺 YouTube Premium</th>
+<th width="33%">🎵 Spotify Premium</th>
+<th width="33%">🔒 Locket Gold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top">
+
+**広告ブロック**
+- ✅ 動画広告をブロック
+- ✅ バナー広告を削除
+- ✅ ポップアップ広告を排除
+- ✅ スポンサーコンテンツを非表示
+
+**プレミアム機能**
+- ✅ ピクチャインピクチャ (PiP)
+- ✅ バックグラウンド再生
+- ✅ 字幕翻訳 (VI/EN)
+- ✅ 歌詞翻訳
+- ✅ アップロードボタンを非表示
+- ✅ Shortsを削除 (オプション)
+
+</td>
+<td valign="top">
+
+**広告ブロック**
+- ✅ 音声広告を削除
+- ✅ 動画広告をブロック
+- ✅ バナー広告を排除
+- ✅ クリーンなインターフェース
+
+**プレミアム機能**
+- ✅ 無制限スキップ
+- ✅ 高音質オーディオ
+- ✅ 歌詞表示
+- ✅ どこでもシーク
+- ✅ すべての機能がアンロック
+
+</td>
+<td valign="top">
+
+**プレミアムアンロック**
+- ✅ Goldサブスクリプション
+- ✅ ウォーターマークなし
+- ✅ 無制限ウィジェット
+- ✅ すべての機能がアンロック
+- ✅ 生涯アクセス
+
+**パフォーマンス**
+- ⚡ 60ms応答時間
+- 💾 256KBメモリ使用量
+- 🔥 IIFE最適化
+- 📅 2099年まで有効
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+## 🚀 パフォーマンス
+
+<div align="center">
+
+### **ベンチマーク結果**
+
+<table>
+<thead>
+<tr>
+<th width="25%">指標</th>
+<th width="25%">前</th>
+<th width="25%">後</th>
+<th width="25%">改善</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>応答時間</b></td>
+<td><code>150ms</code></td>
+<td><code>60ms</code></td>
+<td><img src="https://img.shields.io/badge/↓_60%25-success?style=flat-square" alt="60%高速化"></td>
+</tr>
+<tr>
+<td><b>メモリ使用量</b></td>
+<td><code>512KB</code></td>
+<td><code>256KB</code></td>
+<td><img src="https://img.shields.io/badge/↓_50%25-success?style=flat-square" alt="50%削減"></td>
+</tr>
+<tr>
+<td><b>ファイルサイズ</b></td>
+<td><code>5.0KB</code></td>
+<td><code>2.3KB</code></td>
+<td><img src="https://img.shields.io/badge/↓_54%25-success?style=flat-square" alt="54%小型化"></td>
+</tr>
+<tr>
+<td><b>実行速度</b></td>
+<td><code>50ms</code></td>
+<td><code>15ms</code></td>
+<td><img src="https://img.shields.io/badge/↓_70%25-success?style=flat-square" alt="70%高速化"></td>
+</tr>
+</tbody>
+</table>
+
+**最適化技術**
+
+![IIFE Pattern](https://img.shields.io/badge/✓-IIFE_Pattern-4A90E2?style=flat-square)
+![Strict Mode](https://img.shields.io/badge/✓-Strict_Mode-50C878?style=flat-square)
+![Pre-built Objects](https://img.shields.io/badge/✓-Pre--built_Objects-F39C12?style=flat-square)
+![Native Loops](https://img.shields.io/badge/✓-Native_Loops-7F52FF?style=flat-square)
+![Zero I/O](https://img.shields.io/badge/✓-Zero_I/O-E74C3C?style=flat-square)
+
+</div>
+
+<br>
+
+## 📱 対応アプリ
+
+プロキシアプリに適したモジュールを選択してください:
+
+<div align="center">
+
+| アプリ | フォーマット | サイズ | プラットフォーム | ステータス |
+|:---:|:------:|:----:|:--------:|:------:|
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS / macOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS / Android | ![Status](https://img.shields.io/badge/✓-クロスプラットフォーム-50C878?style=flat-square) |
+
+</div>
+
+<br>
+
+## 📥 クイックインストール
+
+<details>
+<summary><b>🌊 Surge (iOS / macOS)</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+```
+
+**手順**
+1. **Surge**を開く → **Home**タブ
+2. **Modules** → **+**ボタンをタップ
+3. **Install Module from URL**を選択
+4. 上記のURLを貼り付け → **OK**
+5. モジュールを有効にする
+
+**MITM設定**
+1. **Settings** → **MITM** → **Install Certificate**
+2. iOSのプロンプトに従ってプロファイルをインストール
+3. **設定** → **一般** → **情報** → **証明書信頼設定**
+4. Surge証明書の信頼を有効にする
+
+**確認**
+- YouTubeを開く → 広告なし ✅
+- Spotifyを開く → 無制限スキップ ✅
+- Locketを開く → Premium有効 ✅
+
+</details>
+
+<details>
+<summary><b>🚀 Shadowrocket (iOS) — ⭐ 推奨</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+```
+
+**手順**
+1. **Shadowrocket**を開く → **Configuration**タブ
+2. アクティブな設定を選択 → **Edit Configuration**
+3. **[Module]**セクションまでスクロール → **+**ボタン
+4. **Add Module URL**を選択 → URLを貼り付け → **Save**
+
+**MITM設定**
+1. **Settings** → **Certificate** → **Generate New Certificate**
+2. **Install Certificate** → Safariが開く
+3. **設定** → **一般** → **VPNとデバイス管理**
+4. "Shadowrocket..."プロファイルをインストール
+5. **設定** → **一般** → **情報** → **証明書信頼設定**
+6. Shadowrocketの信頼を有効にする
+
+**Shadowrocketに.moduleを使用する理由**
+- ✅ ネイティブフォーマット（最高の互換性）
+- ✅ 最小サイズ（2.6KB）
+- ✅ 最速読み込み
+- ✅ 不要なセクションなし
+
+</details>
+
+<br>
+
+## ⚙️ 設定
+
+<details>
+<summary><b>🎨 YouTube設定のカスタマイズ</b></summary>
+
+<br>
+
+モジュール内の`argument`パラメータを編集してYouTube機能をカスタマイズできます:
+
+```json
+{
+  "lyricLang": "vi",        // 歌詞翻訳言語
+  "captionLang": "vi",      // 字幕翻訳言語
+  "blockUpload": true,      // アップロードボタンを非表示
+  "blockImmersive": true,   // イマーシブUIを非表示
+  "blockShorts": false,     // Shortsを非表示（実験的）
+  "debug": false            // デバッグモードを有効化
+}
+```
+
+**対応言語**
+
+| コード | 言語 | コード | 言語 | コード | 言語 |
+|:----:|:--------:|:----:|:--------:|:----:|:--------:|
+| `vi` | 🇻🇳 ベトナム語 | `en` | 🇬🇧 英語 | `zh-Hans` | 🇨🇳 簡体字中国語 |
+| `zh-Hant` | 🇹🇼 繁体字中国語 | `ja` | 🇯🇵 日本語 | `ko` | 🇰🇷 韓国語 |
+| `fr` | 🇫🇷 フランス語 | `de` | 🇩🇪 ドイツ語 | `ru` | 🇷🇺 ロシア語 |
+
+</details>
+
+<br>
+
+## ❓ よくある質問
+
+<details>
+<summary><b>YouTubeの広告がまだ表示されるのはなぜですか？</b></summary>
+
+<br>
+
+**トラブルシューティングチェックリスト**
+
+- [ ] **MITMが有効** → 設定 → MITM → トグルON
+- [ ] **証明書がインストール済み** → iOS設定 → プロファイルがインストール済み
+- [ ] **証明書が信頼済み** → 設定 → 一般 → 情報 → 証明書信頼設定
+- [ ] **ホスト名が追加済み** → `youtubei.googleapis.com`が存在することを確認
+- [ ] **モジュールが有効** → Configuration → Module → トグルON
+- [ ] **アプリを再起動済み** → YouTubeを強制終了して再起動
+
+**解決策**
+1. YouTubeキャッシュをクリア: iOS設定 → YouTube → キャッシュをクリア
+2. デバイスを再起動
+3. モジュールを再インストール
+4. WiFiで最初にテスト（セルラーに問題がある可能性）
+
+</details>
+
+<details>
+<summary><b>これは安全に使用できますか？</b></summary>
+
+<br>
+
+**✅ 100%安全＆セキュア**
+
+- **オープンソース** — すべてのコードはGitHubで公開
+- **データ収集なし** — アナリティクスやトラッキングゼロ
+- **プライバシー優先** — スクリプトはデバイス上でローカルに実行
+- **リモートサーバーなし** — 外部サーバーにデータを送信しない
+- **コミュニティレビュー済み** — ユーザーによってコードがレビュー済み
+
+</details>
+
+<br>
+
+## 💬 サポート
+
+<div align="center">
+
+### ヘルプを取得
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+**💬 Messenger**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Messenger.png" width="64">
+
+応答時間: **< 1時間**
+
+<br>
+
+[![Chat on Messenger](https://img.shields.io/badge/チャット-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+
+</td>
+<td align="center" width="33%">
+
+**🐛 GitHub Issues**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png" width="64">
+
+**バグ報告**用
+
+<br>
+
+[![Report Issue](https://img.shields.io/badge/報告-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
+
+</td>
+<td align="center" width="33%">
+
+**💡 Discussions**
+
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png" width="64">
+
+**質問＆アイデア**用
+
+<br>
+
+[![Join Discussion](https://img.shields.io/badge/参加-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+---
 
 <br>
 
@@ -723,6 +1190,8 @@ If this project helped you, please consider:
 <br>
 
 **⚡ Thank you for using! ⚡**
+
+**🇻🇳 Cảm ơn bạn đã sử dụng! 🇬🇧 Thank you for using! 🇯🇵 ご利用ありがとうございます！**
 
 <sub>Last updated: 2025-10-28</sub>
 
