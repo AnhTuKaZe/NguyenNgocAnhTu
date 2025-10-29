@@ -1723,7 +1723,7 @@ If this project helped you, please consider:
 
 <h3>
   🇻🇳 Cảm ơn bạn đã sử dụng! • 
-  🇬🇧 Thank you for using! • 
+  🇺🇸 Thank you for using! • 
   🇯🇵 ご利用ありがとうございます！
 </h3>
 
@@ -1746,10 +1746,10 @@ If this project helped you, please consider:
 
 <!-- Version Info -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📅-Last_Updated-29--10--2025-4A90E2?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🇻🇳-Made_in_Vietnam-E74C3C?style=flat-square"/>
-  <img src="https://img.shields.io/badge/📦-Version-2.0-50C878?style=flat-square"/>
-  <img src="https://img.shields.io/badge/⭐-Star_on_GitHub-FFD700?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Last_Updated-29--10--2025-4A90E2?style=flat-square&logo=calendar"/>
+  <img src="https://img.shields.io/badge/Made_in-Vietnam-E74C3C?style=flat-square&logo=vietnam"/>
+  <img src="https://img.shields.io/badge/Version-2.0-50C878?style=flat-square&logo=semantic-release"/>
+  <img src="https://img.shields.io/badge/Star_on-GitHub-FFD700?style=flat-square&logo=github"/>
 </p>
 
 <br>
