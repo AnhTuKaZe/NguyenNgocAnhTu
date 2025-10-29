@@ -1,35 +1,98 @@
-#!name=⚡ Anh Tú Premium - Universal
-#!desc=YouTube + Spotify + Locket | Works with Surge/Loon/SR
-#!author=Nguyễn Ngọc Anh Tú
-#!homepage=https://github.com/AnhTuKaZe/NguyenNgocAnhTu
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
-#!system=ios,mac
+#!name=⚡ Nguyễn Ngọc Anh Tú 🌸
+#!desc=✨ 📸 [Locket] • 🎶 [Spotify] • 📺 [YouTube] 🔥
+#!tag=📩 [Messenger](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
+#!homepage=🌐 [GitHub](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)
+
+[General]
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+dns-server = system
+ipv6 = false
+
+################################
+#         [ Rule ]             #
+################################
 
 [Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com),(PROTOCOL,UDP)),REJECT
+# YouTube QUIC - Chặn UDP để ad blocking tốt hơn
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
+################################
+#         [ Script ]           #
+################################
 [Script]
-yt-req=type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
-yt-res=type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
-sp-json=type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=15,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
-sp-proto=type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=25,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
-lk-res=type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/locket.js,requires-body=true,max-size=262144,timeout=15
-lk-hdr=type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/deleteHeader.js,timeout=5
 
-[URL Rewrite]
+# ======================================== #
+# --- YouTube Premium (Optimized) ---
+# 👤 Author: Maasea (github.com/Maasea/sgmodule)
+# ⚡ Latest version: 2025/7/12 (PiP fix, Background Play)
+# 🎬 Lyric & caption translation, No Ads
+# 🚀 Performance: Fast processing, optimized timeout
+# ======================================== #
+youtube-request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+
+youtube-response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=3145728,binary-body-mode=1,timeout=20,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
+
+# ======================================== #
+# --- Spotify Premium (Optimized) ---
+# 👤 Author: app2smile (github.com/app2smile/rules)
+# ⚡ Protobuf method, binary mode decoding
+# 🎵 No ads, unlimited skips, high quality
+# 📅 Last Updated: 2025-06-20
+# 🚀 Performance: Fast binary processing, optimized patterns
+# ======================================== #
+spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,timeout=15,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+
+spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,timeout=25,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# ======================================== #
+# --- Locket Gold (Ultra Optimized) ---
+# 👤 Author: AnhTuKaZe (Custom Script)
+# 🔐 Premium Lifetime (2025-07-18 → 2099-12-18)
+# ⚡ Priority #1 for RevenueCat API
+# 🚀 Performance: Ultra-fast IIFE execution, optimized memory
+# ======================================== #
+locket-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/locket.js,requires-body=true,max-size=262144,timeout=15
+
+locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers),script-path=https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/refs/heads/main/Module/js/deleteHeader.js,timeout=5
+
+################################
+#        [ Url Rewrite ]       #
+################################
+
+[Url Rewrite]
+
+# ---YouTube Ad Blocking (Enhanced)---
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject-200
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
+################################
+#        [ Map Local ]         #
+################################
+
 [Map Local]
+
+# YouTube ad initialization blocking
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
 
+################################
+#         [ Header ]           #
+################################
+
 [Header Rewrite]
+
+# RevenueCat (for Locket)
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
 ^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
 
+################################
+#          [ MITM ]            #
+################################
+
 [MITM]
-hostname=%APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com
+enable = true
