@@ -298,7 +298,7 @@ Performance Metrics
 <tbody>
 <tr>
 <td align="center">
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a4/8e/29/a48e2968-1a58-7190-4990-1c6b6f1e84f5/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" width="32" style="border-radius: 8px;"/><br>
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Surge.png" width="40"/><br>
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
@@ -309,7 +309,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/28/9e/28289eb1-4890-51b4-f2d9-d4f9b5a1e8f4/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/230x0w.webp" width="32" style="border-radius: 8px;"/><br>
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Loon.png" width="40"/><br>
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
@@ -320,7 +320,7 @@ Performance Metrics
 </tr>
 <tr style="background-color: #fffbdd;">
 <td align="center">
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/87/93/00/8793006b-7b36-baa3-75db-89537ee8e682/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp" width="32" style="border-radius: 8px;"/><br>
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png" width="40"/><br>
 <b>Shadowrocket</b>
 </td>
 <td align="center"><code>.module</code></td>
@@ -331,7 +331,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/6c/91/836c91cf-0d13-eaed-f5c2-87bb3edd2222/AppIcon-0-0-1x_U007epad-0-1-85-220.png/230x0w.webp" width="32" style="border-radius: 8px;"/><br>
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png" width="40"/><br>
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
@@ -342,7 +342,7 @@ Performance Metrics
 </tr>
 <tr>
 <td align="center">
-<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/04/9a/dd/049add8e-dbb4-e35a-c658-b85f8ad75d87/AppIcon-0-0-1x_U007epad-0-1-85-220.png/230x0w.webp" width="32" style="border-radius: 8px;"/><br>
+<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stash.png" width="40"/><br>
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
