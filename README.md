@@ -578,9 +578,9 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 
 | Mã | Ngôn ngữ | Mã | Ngôn ngữ | Mã | Ngôn ngữ |
 |:----:|:--------:|:----:|:--------:|:----:|:--------:|
-| `vi` | 🇻🇳 Vietnamese | `en` | 🇺🇸 English | `zh-Hans` | 🇨🇳 Chinese (Simplified) |
-| `zh-Hant` | 🇹🇼 Chinese (Traditional) | `ja` | 🇯🇵 Japanese | `ko` | 🇰🇷 Korean |
-| `fr` | 🇫🇷 French | `de` | 🇩🇪 German | `ru` | 🇷🇺 Russian |
+| `vi` | 🇻🇳 Tiếng Việt | `en` | 🇺🇸 English | `zh-Hans` | 🇨🇳 简体中文 |
+| `zh-Hant` | 🇹🇼 繁體中文 | `ja` | 🇯🇵 日本語 | `ko` | 🇰🇷 한국어 |
+| `fr` | 🇫🇷 Français | `de` | 🇩🇪 Deutsch | `ru` | 🇷🇺 Русский |
 
 </details>
 
