@@ -53,18 +53,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/stargazers">
-    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=⭐%20Stars&labelColor=32383E&color=FFD700"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
-    <img src="https://img.shields.io/github/forks/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🔀%20Forks&labelColor=32383E&color=0A84FF"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
-    <img src="https://img.shields.io/github/issues/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🐛%20Issues&labelColor=32383E&color=FF453A"/>
-  </a>
-</p>
-
-<p align="center">
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
     <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
   </a>
