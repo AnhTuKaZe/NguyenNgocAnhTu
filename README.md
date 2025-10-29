@@ -42,215 +42,25 @@
 </tr>
 </table>
 
-<!-- Quick Info -->
-<table>
-<tr>
-<td width="50%">
-
-### 📦 What's This?
-**Premium Unlocker** - Unlock premium features for free!
-
-🎬 **YouTube** - No ads, PiP, background play  
-🎵 **Spotify** - Unlimited skips, HQ audio  
-🔐 **Locket** - Gold features unlocked  
-
-**100% Free • Open Source • Safe**
-
-</td>
-<td width="50%">
-
-### ⚡ Quick Start
-1. Install proxy app (Shadowrocket/Surge/Loon)
-2. Add module URL
-3. Trust MITM certificate
-4. Enjoy Premium features!
-
-**[📥 Jump to Installation](#-cài-đặt-nhanh)**
-
-</td>
-</tr>
-</table>
-
 <br>
 
 <!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/stargazers">
-    <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=⭐%20Stars&labelColor=32383E&color=FFD700"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
-    <img src="https://img.shields.io/github/forks/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🔀%20Forks&labelColor=32383E&color=0A84FF"/>
-  </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
-    <img src="https://img.shields.io/github/issues/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&label=🐛%20Issues&labelColor=32383E&color=FF453A"/>
-  </a>
+  <img src="https://img.shields.io/badge/📱_Nền_tảng-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/🔖_Phiên_bản-2.0-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/⚖️_Giấy_phép-AGPL--3.0-FF9500?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🎯_Trạng_thái-Hoạt_động-34C759?style=for-the-badge"/>
 </p>
 
 <p align="center">
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/💬_Hỗ_trợ-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
   </a>
   <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
+    <img src="https://img.shields.io/badge/📚_Tài_liệu-Đầy_đủ-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
   </a>
-  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/👥_Người_dùng-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
-
-<!-- Glowing Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
-
-<!-- Features Overview -->
-<br>
-
-<h2 align="center">🎯 Tính năng chính</h2>
-
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Television.png" width="80" />
-<h3>YouTube Premium</h3>
-<p align="left">
-• 🚫 Block all ads<br>
-• 🖼️ Picture-in-Picture<br>
-• 🔊 Background playback<br>
-• 🌐 Auto translation<br>
-• 📱 iOS optimized
-</p>
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Musical%20Note.png" width="80" />
-<h3>Spotify Premium</h3>
-<p align="left">
-• 🚫 No audio ads<br>
-• ⏭️ Unlimited skips<br>
-• 🎵 High quality audio<br>
-• 📱 Offline mode<br>
-• 🎨 Clean UI
-</p>
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="80" />
-<h3>Locket Gold</h3>
-<p align="left">
-• 💎 Gold subscription<br>
-• 🚫 No watermarks<br>
-• ♾️ Unlimited widgets<br>
-• 🔓 All features<br>
-• ⏰ Lifetime access
-</p>
-</td>
-</tr>
-</table>
-
-<br>
-
-<!-- Tech Stack -->
-<h2 align="center">🛠️ Technology Stack</h2>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,apple,github&theme=dark" />
-</p>
-
-<table align="center">
-<tr>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/javascript.png" width="48"/><br>
-<b>JavaScript</b><br>
-<sub>IIFE Pattern</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/api-settings.png" width="48"/><br>
-<b>MITM Proxy</b><br>
-<sub>API Interception</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/ssl-certificate.png" width="48"/><br>
-<b>SSL/TLS</b><br>
-<sub>HTTPS Decryption</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/github.png" width="48"/><br>
-<b>Open Source</b><br>
-<sub>AGPL-3.0</sub>
-</td>
-</tr>
-</table>
-
-<br>
-
-<!-- Quick Stats -->
-<h2 align="center">📊 Project Stats</h2>
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&color=yellow" alt="Stars"/>
-  <img src="https://img.shields.io/github/forks/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&color=blue" alt="Forks"/>
-  <img src="https://img.shields.io/github/issues/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&logo=github&color=red" alt="Issues"/>
-  <img src="https://img.shields.io/github/license/AnhTuKaZe/NguyenNgocAnhTu?style=for-the-badge&color=orange" alt="License"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Response_Time-60ms-success?style=for-the-badge&logo=speedtest" alt="Speed"/>
-  <img src="https://img.shields.io/badge/File_Size-2.3KB-blue?style=for-the-badge&logo=files" alt="Size"/>
-  <img src="https://img.shields.io/badge/Memory-256KB-purple?style=for-the-badge&logo=memory" alt="Memory"/>
-  <img src="https://img.shields.io/badge/Compatibility-iOS_14+-green?style=for-the-badge&logo=apple" alt="iOS"/>
-</p>
-
-<br>
-
-<!-- How It Works -->
-<h2 align="center">⚙️ How It Works</h2>
-
-```mermaid
-graph LR
-    A[📱 App Request] --> B[🔄 Proxy]
-    B --> C[🔐 MITM]
-    C --> D[📝 Module Script]
-    D --> E[✏️ Modify Response]
-    E --> F[✅ Premium Features]
-    
-    style A fill:#4A90E2
-    style F fill:#50C878
-    style D fill:#F39C12
-```
-
-<table align="center">
-<tr>
-<td width="20%" align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Inbox%20Tray.png" width="50"/>
-<br><b>1. Install</b>
-<br>Add module URL
-</td>
-<td width="20%" align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Pen.png" width="50"/>
-<br><b>2. Certificate</b>
-<br>Trust MITM cert
-</td>
-<td width="20%" align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="50"/>
-<br><b>3. Enable</b>
-<br>Turn on module
-</td>
-<td width="20%" align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Counterclockwise%20Arrows%20Button.png" width="50"/>
-<br><b>4. Restart</b>
-<br>Relaunch app
-</td>
-<td width="20%" align="center">
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark%20Button.png" width="50"/>
-<br><b>5. Enjoy!</b>
-<br>Premium unlocked
-</td>
-</tr>
-</table>
-
-<br>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
