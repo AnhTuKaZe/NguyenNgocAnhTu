@@ -251,11 +251,11 @@ Chọn module phù hợp cho ứng dụng proxy của bạn:
 
 | Ứng dụng | Định dạng | Kích thước | Nền tảng | Trạng thái |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS / macOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
 | **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
 | **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Khuyên_dùng-FFD700?style=flat-square) |
 | **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Nhỏ_nhất-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS / Android | ![Status](https://img.shields.io/badge/✓-Đa_nền_tảng-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Đã_tối_ưu-50C878?style=flat-square) |
 
 </div>
 
@@ -272,7 +272,7 @@ Chọn module phù hợp cho ứng dụng proxy của bạn:
 
 <details>
 <summary>
-  <h3>🌊 Surge (iOS / macOS)</h3>
+  <h3>🌊 Surge (iOS)</h3>
 </summary>
 
 <br>
@@ -670,11 +670,11 @@ Choose the right module for your proxy app:
 
 | App | Format | Size | Platform | Status |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS / macOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
 | **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
 | **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Recommended-FFD700?style=flat-square) |
 | **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Smallest-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS / Android | ![Status](https://img.shields.io/badge/✓-Cross--Platform-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
 
 </div>
 
@@ -683,7 +683,7 @@ Choose the right module for your proxy app:
 ## 📥 Quick Installation
 
 <details>
-<summary><b>🌊 Surge (iOS / macOS)</b></summary>
+<summary><b>🌊 Surge (iOS)</b></summary>
 
 <br>
 
@@ -1055,11 +1055,11 @@ For **questions & ideas**
 
 | アプリ | フォーマット | サイズ | プラットフォーム | ステータス |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS / macOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
 | **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
 | **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
 | **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS / Android | ![Status](https://img.shields.io/badge/✓-クロスプラットフォーム-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
 
 </div>
 
@@ -1068,7 +1068,7 @@ For **questions & ideas**
 ## 📥 クイックインストール
 
 <details>
-<summary><b>🌊 Surge (iOS / macOS)</b></summary>
+<summary><b>🌊 Surge (iOS)</b></summary>
 
 <br>
 
@@ -1364,12 +1364,12 @@ If this project helped you, please consider:
 <td align="center" width="20%">
 <img src="https://img.icons8.com/fluency/96/apple-logo.png" width="64"/>
 <br><br>
-<b>iOS / macOS</b>
+<b>iOS</b>
 </td>
 <td align="center" width="20%">
-<img src="https://img.icons8.com/fluency/96/android-os.png" width="64"/>
+<img src="https://img.icons8.com/fluency/96/iphone.png" width="64"/>
 <br><br>
-<b>Android</b>
+<b>All Devices</b>
 </td>
 <td align="center" width="20%">
 <img src="https://img.icons8.com/fluency/96/source-code.png" width="64"/>
