@@ -1,407 +1,1020 @@
 <div align="center">
 
-# ⚡ Anh Tú Premium Modules
+# 🌸 Anh Tú Premium Modules 🌸
 
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png" width="120">
+<img src="https://img.icons8.com/3d-fluency/200/000000/gift.png" width="150">
 
-### 🎯 YouTube Premium · Spotify Premium · Locket Gold
+### 🎁 **Free Premium for Everyone!**
 
-[![Downloads](https://img.shields.io/github/downloads/AnhTuKaZe/NguyenNgocAnhTu/total?style=flat-square&color=blue)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)
-[![Version](https://img.shields.io/badge/Version-2.0-brightgreen?style=flat-square)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu)
-[![License](https://img.shields.io/badge/License-AGPL--3.0-orange?style=flat-square)](../LICENSE)
+**📺 YouTube • 🎵 Spotify • 🔐 Locket**
 
-**[📥 Quick Install](#-quick-install) · [📖 Documentation](#-documentation) · [💬 Support](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)**
+<p>
+<img src="https://img.shields.io/badge/Files-6-blue?style=for-the-badge" alt="Files">
+<img src="https://img.shields.io/badge/Apps-5-green?style=for-the-badge" alt="Apps">
+<img src="https://img.shields.io/badge/Size-2.3KB--3.3KB-orange?style=for-the-badge" alt="Size">
+<img src="https://img.shields.io/badge/Performance-⚡_Ultra_Fast-yellow?style=for-the-badge" alt="Performance">
+</p>
 
 </div>
 
 ---
 
-## 📱 Choose Your App
+## 📱 Chọn app của bạn
+
+<div align="center">
 
 <table>
 <tr>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Surge.png" width="50"><br>
+<img src="https://img.icons8.com/color/96/000000/tsunami.png" width="60"><br>
 <b>Surge</b><br>
-<sub>2.9KB</sub><br>
-<a href="#surge">Install</a>
+<code>3.2KB</code><br>
+<img src="https://img.shields.io/badge/iOS-macOS-blue?style=flat-square"><br><br>
+<a href="#surge">
+<img src="https://img.shields.io/badge/📥_Install-blue?style=for-the-badge">
+</a>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Loon.png" width="50"><br>
+<img src="https://img.icons8.com/fluency/96/000000/full-moon.png" width="60"><br>
 <b>Loon</b><br>
-<sub>2.6KB</sub><br>
-<a href="#loon">Install</a>
+<code>2.9KB</code><br>
+<img src="https://img.shields.io/badge/iOS-only-orange?style=flat-square"><br><br>
+<a href="#loon">
+<img src="https://img.shields.io/badge/📥_Install-orange?style=for-the-badge">
+</a>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png" width="50"><br>
+<img src="https://img.icons8.com/color/96/000000/rocket.png" width="60"><br>
 <b>Shadowrocket</b><br>
-<sub>2.3KB</sub><br>
-<a href="#shadowrocket">Install</a>
+<code>2.6KB</code><br>
+<img src="https://img.shields.io/badge/iOS-recommended-red?style=flat-square"><br><br>
+<a href="#shadowrocket">
+<img src="https://img.shields.io/badge/📥_Install-red?style=for-the-badge">
+</a>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Quantumult_X.png" width="50"><br>
+<img src="https://img.icons8.com/fluency/96/000000/infinity.png" width="60"><br>
 <b>Quantumult X</b><br>
-<sub>2.3KB</sub><br>
-<a href="#quantumult-x">Install</a>
+<code>2.3KB</code><br>
+<img src="https://img.shields.io/badge/iOS-smallest-purple?style=flat-square"><br><br>
+<a href="#quantumult-x">
+<img src="https://img.shields.io/badge/📥_Install-purple?style=for-the-badge">
+</a>
 </td>
 <td align="center" width="20%">
-<img src="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stash.png" width="50"><br>
+<img src="https://img.icons8.com/fluency/96/000000/storm.png" width="60"><br>
 <b>Stash</b><br>
-<sub>3.3KB</sub><br>
-<a href="#stash">Install</a>
+<code>3.3KB</code><br>
+<img src="https://img.shields.io/badge/iOS-Android-green?style=flat-square"><br><br>
+<a href="#stash">
+<img src="https://img.shields.io/badge/📥_Install-green?style=for-the-badge">
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## ✨ Tính năng
+
+<table>
+<tr>
+<td align="center" colspan="3">
+<img src="https://img.shields.io/badge/⚡-ULTRA_OPTIMIZED-gold?style=for-the-badge">
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+
+### 📺 **YouTube Premium**
+
+<img src="https://img.icons8.com/3d-fluency/100/000000/youtube-play.png" width="80">
+
+**🚫 No Ads**
+```diff
++ Video Ads blocked
++ Banner Ads blocked  
++ Popup Ads blocked
+```
+
+**🎬 Premium**
+```diff
++ Picture in Picture (PiP)
++ Background Play
++ Caption Translation (VI)
++ Lyric Translation
++ Hide Upload Button
+```
+
+</td>
+<td align="center" width="33%">
+
+### 🎵 **Spotify Premium**
+
+<img src="https://img.icons8.com/3d-fluency/100/000000/spotify-logo.png" width="80">
+
+**🚫 No Ads**
+```diff
++ Audio Ads blocked
++ Video Ads blocked
++ Banner Ads blocked
+```
+
+**🎧 Premium**
+```diff
++ Unlimited Skips
++ High Quality Audio
++ Lyrics Support
++ All Features Unlocked
+```
+
+</td>
+<td align="center" width="33%">
+
+### 🔐 **Locket Gold**
+
+<img src="https://img.icons8.com/3d-fluency/100/000000/diamond.png" width="80">
+
+**💎 Lifetime**
+```diff
++ Gold Subscription
++ No Watermark
++ Unlimited Widgets
++ All Features
+```
+
+**⚡ Ultra Fast**
+```diff
++ 60ms response
++ 256KB memory
++ IIFE optimized
++ Expires: 2099
+```
+
 </td>
 </tr>
 </table>
 
 ---
 
-## ✨ Features
+## 🚀 Performance
 
-| Service | Features | Performance |
-|---------|----------|-------------|
-| **📺 YouTube** | No Ads · PiP · Background Play · Translation | ⚡ 3MB/20s |
-| **🎵 Spotify** | No Ads · Unlimited Skips · High Quality | 🔥 Binary/25s |
-| **🔐 Locket** | Lifetime Premium · All Features | 💎 256KB/15s |
+<div align="center">
 
-**⚡ Ultra Optimized:**
-- 🚀 60% faster response (150ms → 60ms)
-- 💾 50% less memory (512KB → 256KB)
-- ✨ IIFE + 'use strict' + Pre-built objects
-- 🔥 for...in loops (30-40% faster)
+### ⚡ **Benchmarks**
+
+<table>
+<tr style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);">
+<th>📊 Metric</th>
+<th>❌ Before</th>
+<th>✅ After</th>
+<th>🔥 Improvement</th>
+</tr>
+<tr>
+<td><b>🔐 Locket Response</b></td>
+<td><code>150ms</code></td>
+<td><b><code>60ms</code></b></td>
+<td><img src="https://img.shields.io/badge/⚡-60%25_faster-success"></td>
+</tr>
+<tr>
+<td><b>📝 Header Processing</b></td>
+<td><code>50ms</code></td>
+<td><b><code>15ms</code></b></td>
+<td><img src="https://img.shields.io/badge/🔥-70%25_faster-success"></td>
+</tr>
+<tr>
+<td><b>💾 Memory Usage</b></td>
+<td><code>512KB</code></td>
+<td><b><code>256KB</code></b></td>
+<td><img src="https://img.shields.io/badge/💾-50%25_less-success"></td>
+</tr>
+<tr>
+<td><b>📦 File Size</b></td>
+<td><code>5.0KB</code></td>
+<td><b><code>2.3KB</code></b></td>
+<td><img src="https://img.shields.io/badge/📦-54%25_smaller-success"></td>
+</tr>
+</table>
+
+### 🏆 **Optimization Techniques**
+
+<img src="https://img.shields.io/badge/IIFE_Pattern-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/'use_strict'-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/Pre--built_Objects-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/for...in_Loops-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/indexOf()-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/Early_Break-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/No_console.log-✅-success?style=flat-square">
+<img src="https://img.shields.io/badge/Minimal_try--catch-✅-success?style=flat-square">
+
+</div>
 
 ---
 
 ## 📥 Quick Install
 
-### Surge
+### 🎯 **Copy & Paste vào app của bạn:**
 
+<details open>
+<summary><h3>🌊 Surge</h3></summary>
+
+<br>
+
+**📋 Link:**
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
-**Steps:**
-1. Surge → Modules → `+` → Install from URL
-2. Settings → MITM → Install Certificate
-3. Reload Surge
+**📱 File:** `NguyenNgocAnhTu_Surge.sgmodule` | **📦 Size:** 3.2KB
 
----
+<div align="center">
+<img src="https://img.shields.io/badge/Surge-4.0+-blue?style=for-the-badge&logo=surge">
+<img src="https://img.shields.io/badge/Surge-5.0+-blue?style=for-the-badge&logo=surge">
+</div>
 
-### Loon
+</details>
 
+<details>
+<summary><h3>🌙 Loon</h3></summary>
+
+<br>
+
+**📋 Link:**
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
-**Steps:**
-1. Loon → Plugin → `+` → Plugin URL
-2. Configuration → MITM → Install Certificate
-3. Toggle ON plugin
+**📱 File:** `NguyenNgocAnhTu_Loon.plugin` | **📦 Size:** 2.9KB
 
----
+<div align="center">
+<img src="https://img.shields.io/badge/Loon-2.0+-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Loon-3.0+-orange?style=for-the-badge">
+</div>
 
-### Shadowrocket
+</details>
 
+<details>
+<summary><h3>🚀 Shadowrocket 🏆 RECOMMENDED</h3></summary>
+
+<br>
+
+**📋 Link:**
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
-**Steps:**
-1. Config → Edit → Module → `+`
-2. Settings → HTTPS Decryption → Install Certificate
-3. Save config
+**📱 File:** `NguyenNgocAnhTu_Shadowrocket.module` | **📦 Size:** 2.6KB
 
-**⭐ Best for SR:** Use `.module` format (100% compatible)
+<div align="center">
+<img src="https://img.shields.io/badge/Shadowrocket-2.2+-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/🏆-RECOMMENDED-gold?style=for-the-badge">
+<img src="https://img.shields.io/badge/✅-100%25_Compatible-success?style=for-the-badge">
+</div>
 
----
+**⚡ Tại sao nên dùng `.module`?**
+- ✅ Native format cho Shadowrocket
+- ✅ 100% tương thích (không lỗi)
+- ✅ Nhỏ nhất (2.6KB)
+- ✅ Load nhanh nhất
+- ✅ Không cần [General] section
 
-### Quantumult X
+</details>
 
+<details>
+<summary><h3>♾️ Quantumult X</h3></summary>
+
+<br>
+
+**📋 Link:**
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
-**Steps:**
-1. Rewrite → `+` → Add from URL
-2. Filter → Add rules (see snippet comments)
-3. MITM → Install Certificate
+**📱 File:** `NguyenNgocAnhTu_QuantumultX.snippet` | **📦 Size:** 2.3KB
 
----
+<div align="center">
+<img src="https://img.shields.io/badge/Quantumult_X-1.4+-purple?style=for-the-badge">
+<img src="https://img.shields.io/badge/📦-Smallest-purple?style=for-the-badge">
+</div>
 
-### Stash
+**⚠️ Lưu ý:** Cần thêm rules vào `[filter_local]` (xem trong file)
 
+</details>
+
+<details>
+<summary><h3>⚡ Stash</h3></summary>
+
+<br>
+
+**📋 Link:**
 ```
 https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
-**Steps:**
-1. Overrides → Install Override
-2. HTTPS Decryption → Install Certificate
-3. Toggle ON override
+**📱 File:** `NguyenNgocAnhTu_Stash.stoverride` | **📦 Size:** 3.3KB
+
+<div align="center">
+<img src="https://img.shields.io/badge/Stash-iOS-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/Stash-Android-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/YAML-Format-blue?style=for-the-badge">
+</div>
+
+</details>
 
 ---
 
-## 📊 File Comparison
+## 📊 So sánh files
 
-| File | Size | Apps | Notes |
-|------|------|------|-------|
-| **Surge** | 3.2KB | Surge 4/5 | Full features + [Map Local] |
-| **Loon** | 2.9KB | Loon 2/3 | Native plugin format |
-| **Shadowrocket** | 2.6KB | SR 2.2+ | 🏆 **Recommended for SR** |
-| **Quantumult X** | 2.3KB | QX 1.4+ | Smallest, snippet format |
-| **Stash** | 3.3KB | Stash 2+ | YAML, iOS/Android |
-| **Premium** | 5.0KB | Universal | Works with Surge/Loon/SR |
+<div align="center">
+
+| App | File | Size | Format | Best For |
+|:---:|:----:|:----:|:------:|:--------:|
+| **Surge** | `.sgmodule` | <img src="https://img.shields.io/badge/3.2KB-blue"> | Surge | <img src="https://img.shields.io/badge/Full_Features-blue"> |
+| **Loon** | `.plugin` | <img src="https://img.shields.io/badge/2.9KB-orange"> | Loon | <img src="https://img.shields.io/badge/Native-orange"> |
+| **Shadowrocket** | `.module` | <img src="https://img.shields.io/badge/2.6KB-red"> | SR | <img src="https://img.shields.io/badge/🏆_Best-gold"> |
+| **Quantumult X** | `.snippet` | <img src="https://img.shields.io/badge/2.3KB-purple"> | QX | <img src="https://img.shields.io/badge/Smallest-purple"> |
+| **Stash** | `.stoverride` | <img src="https://img.shields.io/badge/3.3KB-green"> | YAML | <img src="https://img.shields.io/badge/Cross_Platform-green"> |
+| **Premium** | `.module` | <img src="https://img.shields.io/badge/5.1KB-yellow"> | Universal | <img src="https://img.shields.io/badge/Full_Version-yellow"> |
+
+</div>
+
+---
+
+## 🎯 Features Comparison
+
+<div align="center">
+
+| Feature | YouTube | Spotify | Locket |
+|:-------:|:-------:|:-------:|:------:|
+| **No Ads** | <img src="https://img.shields.io/badge/✅-100%25-success"> | <img src="https://img.shields.io/badge/✅-100%25-success"> | - |
+| **Premium UI** | <img src="https://img.shields.io/badge/✅-Full-success"> | <img src="https://img.shields.io/badge/✅-Full-success"> | <img src="https://img.shields.io/badge/✅-Gold-success"> |
+| **Background** | <img src="https://img.shields.io/badge/✅-Yes-success"> | <img src="https://img.shields.io/badge/⚠️-UI_Only-orange"> | - |
+| **Translation** | <img src="https://img.shields.io/badge/✅-VI/EN/CN-success"> | - | - |
+| **Quality** | <img src="https://img.shields.io/badge/✅-Max-success"> | <img src="https://img.shields.io/badge/✅-High-success"> | - |
+| **Expires** | <img src="https://img.shields.io/badge/♾️-Forever-blue"> | <img src="https://img.shields.io/badge/♾️-Forever-blue"> | <img src="https://img.shields.io/badge/📅-2099-blue"> |
+
+</div>
 
 ---
 
 ## ⚙️ Configuration
 
-### Required MITM Hostnames
+### 🔧 **MITM Hostnames** (Required)
+
+<div align="center">
 
 ```
 *.googlevideo.com
+www.youtube.com
+s.youtube.com
 youtubei.googleapis.com
 spclient.wg.spotify.com
 *-spclient.spotify.com
 api.revenuecat.com
 ```
 
-### YouTube Customization
+<img src="https://img.shields.io/badge/⚠️-MUST_ADD_ALL-red?style=for-the-badge">
 
-Edit `argument` in module:
+</div>
+
+### 🎨 **Customize YouTube**
+
+<details>
+<summary><b>Click để xem options</b></summary>
+
+<br>
+
+Sửa phần `argument` trong module:
 
 ```json
 {
-  "lyricLang": "vi",      // vi, en, zh-Hans, ja, ko
-  "captionLang": "vi",    // vi, en, zh-Hans, ja, ko
-  "blockUpload": true,    // Hide upload button
-  "blockImmersive": true, // Hide immersive UI
-  "debug": false          // Debug mode
+  "lyricLang": "vi",        // 🎤 Ngôn ngữ dịch lyric
+  "captionLang": "vi",      // 📝 Ngôn ngữ phụ đề
+  "blockUpload": true,      // ⬆️ Ẩn nút Upload
+  "blockImmersive": true,   // 🎬 Ẩn Immersive UI
+  "blockShorts": false,     // 🎥 Ẩn Shorts (thử nghiệm)
+  "debug": false            // 🐛 Debug mode
 }
 ```
 
+**🌍 Languages:**
+
+<table>
+<tr>
+<td><code>vi</code> 🇻🇳 Tiếng Việt</td>
+<td><code>en</code> 🇺🇸 English</td>
+<td><code>zh-Hans</code> 🇨🇳 简体中文</td>
+</tr>
+<tr>
+<td><code>zh-Hant</code> 🇹🇼 繁體中文</td>
+<td><code>ja</code> 🇯🇵 日本語</td>
+<td><code>ko</code> 🇰🇷 한국어</td>
+</tr>
+<tr>
+<td><code>fr</code> 🇫🇷 Français</td>
+<td><code>de</code> 🇩🇪 Deutsch</td>
+<td><code>ru</code> 🇷🇺 Русский</td>
+</tr>
+</table>
+
+</details>
+
 ---
 
-## 🚀 Performance
+## 📖 Hướng dẫn chi tiết
 
-### Benchmarks
+### Surge (iOS / macOS)
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Locket Response | 150ms | **60ms** | 🔥 **60%** |
-| Header Processing | 50ms | **15ms** | ⚡ **70%** |
-| Memory Usage | 512KB | **256KB** | 💾 **50%** |
-| File Size | 5.0KB | **2.3KB** | 📦 **54%** |
+<div align="center">
 
-### Optimization Techniques
+<img src="https://img.shields.io/badge/Step_1-Import_Module-blue?style=for-the-badge">
 
-```javascript
-✅ IIFE Pattern         // Isolated scope
-✅ 'use strict'         // V8 optimization  
-✅ Pre-defined const    // Memory efficient
-✅ for...in loops       // 30-40% faster than .find()
-✅ indexOf()            // 10% faster than .includes()
-✅ Early break          // Stop immediately
-✅ Pre-built objects    // No re-creation
-✅ No console.log       // Zero I/O
-✅ Minimal try-catch    // Reduced overhead
+</div>
+
+**📍 Bước 1: Mở Surge**
+- Vào tab **Home** (Trang chủ)
+- Tìm phần **Modules** (Các module)
+- Nhấn nút **➕** ở góc trên bên phải
+
+**📍 Bước 2: Add Module URL**
+- Chọn **Install Module from URL**
+- Paste link:
+  ```
+  https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+  ```
+- Nhấn **OK** → Module sẽ download
+
+**📍 Bước 3: Verify Module**
+- Module "⚡ Anh Tú Premium" xuất hiện
+- Toggle switch phải **ON** (màu xanh)
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_2-Install_Certificate-orange?style=for-the-badge">
+</div>
+
+**📍 Bước 4: Generate Certificate**
+- Settings (⚙️) → **MITM**
+- **Install Certificate** → Nhấn **Install**
+
+**📍 Bước 5: Install Certificate**
+- Safari sẽ mở → Settings mở
+- Nhấn **Install** → Nhập passcode
+- Confirm **Install** → **Done**
+
+**📍 Bước 6: Trust Certificate**
+- Settings → General → About
+- Kéo xuống → **Certificate Trust Settings**
+- Bật toggle cho **"Surge"**
+- Confirm
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_3-Reload_&_Test-green?style=for-the-badge">
+</div>
+
+**📍 Bước 7: Reload Surge**
+- Mở Surge → Home
+- Swipe down để reload
+
+**📍 Bước 8: Test**
+- Mở **YouTube** → Xem video → Không ads! ✅
+- Mở **Spotify** → Play nhạc → Skip unlimited! ✅
+- Mở **Locket** → Settings → Premium! ✅
+
+<div align="center">
+<img src="https://img.shields.io/badge/✅-COMPLETE!-success?style=for-the-badge">
+</div>
+
+---
+
+### Loon (iOS)
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_1-Import_Plugin-orange?style=for-the-badge">
+</div>
+
+**📍 Bước 1: Mở Loon**
+- Vào tab **Configuration**
+- Chọn **Plugin**
+- Nhấn **➕** góc trên
+
+**📍 Bước 2: Add Plugin URL**
+- Chọn **Plugin URL**
+- Paste link:
+  ```
+  https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+  ```
+- **OK** → Plugin download
+
+**📍 Bước 3: Enable Plugin**
+- Plugin "⚡ Anh Tú Premium" xuất hiện
+- Toggle **ON** (màu xanh)
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_2-Setup_MITM-red?style=for-the-badge">
+</div>
+
+**📍 Bước 4: Generate Certificate**
+- Configuration → **Mitm**
+- **Certificate Management**
+- **Generate New Certificate**
+
+**📍 Bước 5: Install Certificate**
+- **Install** → Safari mở → Settings
+- **Install** → Passcode → Confirm
+
+**📍 Bước 6: Trust Certificate**
+- Settings → General → About
+- **Certificate Trust Settings**
+- Toggle ON **"Loon"** → Confirm
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_3-Done!-green?style=for-the-badge">
+</div>
+
+**📍 Bước 7: Save & Test**
+- Back to Loon → **Save**
+- Test YouTube, Spotify, Locket ✅
+
+---
+
+### Shadowrocket (iOS)
+
+<div align="center">
+<img src="https://img.shields.io/badge/🏆-BEST_FOR_SHADOWROCKET-gold?style=for-the-badge">
+</div>
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_1-Add_Module-red?style=for-the-badge">
+</div>
+
+**📍 Bước 1: Mở Shadowrocket**
+- Vào tab **Configuration** (Cấu hình)
+
+**📍 Bước 2: Edit Config**
+- Chọn config đang dùng (có dấu ✓)
+- Nhấn vào config → **Edit Configuration**
+
+**📍 Bước 3: Add Module**
+- Kéo xuống phần **[Module]**
+- Nhấn **➕** (Add Module)
+- Chọn **Add Module URL**
+
+**📍 Bước 4: Paste URL**
 ```
+https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+```
+- **OK** → Module download
+- **Save** ở góc trên
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_2-Install_Certificate-orange?style=for-the-badge">
+</div>
+
+**📍 Bước 5: Generate Certificate**
+- Settings (⚙️) → **Certificate**
+- **Generate New Certificate** → Confirm
+
+**📍 Bước 6: Install Certificate**
+- **Install Certificate** → Safari mở
+- **Allow** → Settings mở automatically
+
+**📍 Bước 7: Install Profile**
+- Settings → General → **VPN & Device Management**
+- Tìm **"Shadowrocket..."** profile
+- **Install** → Nhập passcode → **Install** → **Done**
+
+**📍 Bước 8: Trust Certificate**
+- Settings → General → About
+- Kéo xuống → **Certificate Trust Settings**
+- Toggle ON **"Shadowrocket"** → Confirm warning
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_3-Enable_HTTPS-yellow?style=for-the-badge">
+</div>
+
+**📍 Bước 9: Bật HTTPS Decryption**
+- Back to Shadowrocket
+- Configuration → **Edit**
+- Kéo xuống **[MITM]**
+- Verify hostnames:
+  ```
+  *.googlevideo.com
+  youtubei.googleapis.com
+  spclient.wg.spotify.com
+  api.revenuecat.com
+  ```
+
+**📍 Bước 10: Save & Done**
+- **Done** → **Save**
+- Toggle Shadowrocket **ON**
+
+<div align="center">
+<img src="https://img.shields.io/badge/✅-SUCCESS!-success?style=for-the-badge">
+</div>
+
+**📍 Bước 11: Test**
+- **YouTube** → Video không ads ✅
+- **Spotify** → Skip unlimited ✅
+- **Locket** → Premium active ✅
+
+---
+
+### Quantumult X (iOS)
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_1-Add_Rewrite-purple?style=for-the-badge">
+</div>
+
+**📍 Bước 1: Import Snippet**
+- Quantumult X → **Configuration**
+- **Rewrite** → Nhấn **➕** dưới cùng
+- **Add URL Rewrite**
+- Paste:
+  ```
+  https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+  ```
+- **OK**
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_2-Add_Rules-blue?style=for-the-badge">
+</div>
+
+**📍 Bước 2: Add Filter Rules**
+- Configuration → **Filter**
+- **Edit** → Kéo xuống **[filter_local]**
+- Add 2 rules:
+  ```
+  AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+  AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+  ```
+- **Save**
+
+<div align="center">
+<img src="https://img.shields.io/badge/Step_3-MITM_Setup-red?style=for-the-badge">
+</div>
+
+**📍 Bước 3: Generate Certificate**
+- Settings → **MITM** → **Generate Certificate**
+- **Save** certificate
+
+**📍 Bước 4: Install Certificate**
+- **Install Certificate** → Profile mở
+- **Install** → Passcode → **Done**
+
+**📍 Bước 5: Trust Certificate**
+- Settings → General → About
+- **Certificate Trust Settings**
+- Toggle ON certificate → Confirm
+
+**📍 Bước 6: Verify Hostnames**
+- QX → MITM → **Hostname**
+- Check list có đủ hostnames
+
+<div align="center">
+<img src="https://img.shields.io/badge/✅-DONE!-success?style=for-the-badge">
+</div>
+
+---
+
+### Stash (iOS / Android)
+
+<div align="center">
+<img src="https://img.shields.io/badge/Platform-iOS_+_Android-green?style=for-the-badge">
+</div>
+
+#### **iOS:**
+
+**📍 Bước 1: Import Override**
+- Stash → **Overrides**
+- **Install Override** → Paste URL:
+  ```
+  https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+  ```
+
+**📍 Bước 2: Install Certificate**
+- Settings → **HTTPS Decryption**
+- **Certificate Management** → **Generate New**
+- **Install** → Follow steps
+- Trust certificate in iOS Settings
+
+**📍 Bước 3: Enable**
+- Overrides → Toggle **ON**
+- Restart Stash
+
+#### **Android:**
+
+**📍 Bước 1: Import Override**
+- Same as iOS
+
+**📍 Bước 2: Install Certificate**
+- Settings → **HTTPS Decryption**
+- **Generate & Install**
+- Android Settings → **Security**
+- **Install from storage** → Select cert
+
+**📍 Bước 3: Enable**
+- Toggle ON override
+
+<div align="center">
+<img src="https://img.shields.io/badge/✅-READY!-success?style=for-the-badge">
+</div>
 
 ---
 
 ## ❓ FAQ
 
 <details>
-<summary><b>Which file should I use?</b></summary>
+<summary><b>❓ File nào tốt nhất cho Shadowrocket?</b></summary>
 
-**Use the file matching your app:**
-- Surge → `NguyenNgocAnhTu_Surge.sgmodule`
-- Loon → `NguyenNgocAnhTu_Loon.plugin`
-- Shadowrocket → `NguyenNgocAnhTu_Shadowrocket.module` 🏆
-- Quantumult X → `NguyenNgocAnhTu_QuantumultX.snippet`
-- Stash → `NguyenNgocAnhTu_Stash.stoverride`
+<br>
 
-**Universal:** `NguyenNgocAnhTu_Premium.module` (works with most apps)
+<div align="center">
+<img src="https://img.shields.io/badge/🏆-NguyenNgocAnhTu__Shadowrocket.module-gold?style=for-the-badge">
+</div>
 
-</details>
+**Lý do:**
+- ✅ Native `.module` format
+- ✅ 100% compatible
+- ✅ Nhỏ nhất (2.6KB)
+- ✅ Nhanh nhất
+- ✅ Không cần [General]
 
-<details>
-<summary><b>Why is Shadowrocket .module recommended?</b></summary>
-
-**Native format advantages:**
-- ✅ 100% compatible (no parsing issues)
-- ✅ Smaller size (2.6KB vs 3.2KB)
-- ✅ Faster loading
-- ✅ No [General] section needed
-- ✅ Direct argument format
-- ✅ Optimized for SR specifically
-
-`.sgmodule` is Surge format, SR may not support all features.
+**KHÔNG dùng `.sgmodule`:**
+- ❌ Surge format (SR không support đầy đủ)
+- ❌ Nặng hơn (3.2KB vs 2.6KB)
+- ❌ Parse chậm hơn
 
 </details>
 
 <details>
-<summary><b>Still seeing YouTube ads?</b></summary>
+<summary><b>❓ YouTube vẫn có ads?</b></summary>
 
-**Check:**
-1. MITM enabled? → Settings → MITM → ON
-2. Certificate installed? → Settings → General → About
-3. Module enabled? → Configuration → Toggle ON
-4. Restart YouTube app
-5. Clear YouTube cache
+<br>
+
+**✅ Checklist:**
+
+- [ ] MITM đã bật
+- [ ] Certificate đã install & trust
+- [ ] Hostname `youtubei.googleapis.com` đã add
+- [ ] Module đã toggle ON
+- [ ] Đã restart app
+
+**🔧 Fix:**
+1. Clear YouTube cache
+2. Restart iPhone
+3. Reinstall module
+4. Test on WiFi
 
 </details>
 
 <details>
-<summary><b>Spotify "Premium not available"?</b></summary>
+<summary><b>❓ Có tốn tiền không?</b></summary>
 
-**Fix:**
-1. Logout → Login again
-2. Clear Spotify cache
-3. Wait 5-10 minutes after install
-4. Restart Spotify app
-5. Check hostname: `spclient.wg.spotify.com`
+<br>
+
+<div align="center">
+<img src="https://img.shields.io/badge/100%25-MIỄN_PHÍ-success?style=for-the-badge">
+</div>
+
+**Hoàn toàn FREE:**
+- ✅ Module miễn phí
+- ✅ Scripts miễn phí
+- ✅ Updates miễn phí
+- ✅ Support miễn phí
+
+**Không:**
+- ❌ Không cần subscription
+- ❌ Không cần payment
+- ❌ Không có hidden costs
 
 </details>
 
 ---
 
-## 🔧 Troubleshooting
+## 📊 File Details
 
-### YouTube Issues
+<div align="center">
 
-**Video not playing:**
-- Increase timeout to 30s (slow network)
-- Test on WiFi first
-- Check logs for errors
-
-**PiP not working:**
-- iOS Settings → Picture in Picture → Allow
-- YouTube Settings → PiP → Enable
-- Verify script loaded (check logs)
-
-### Spotify Issues
-
-**Shuffle still forced:**
-- This is server-side limit
-- Module unlocks UI only
-- Workaround: Logout → Clear cache → Login
-
-### Locket Issues
-
-**Not unlocking:**
-- Test: Locket → Restore Purchase
-- Check hostname: `api.revenuecat.com`
-- Verify script loaded
-- Kill app completely → Reopen
-
----
-
-## 📝 Changelog
-
-### v2.0 (2025-10-28)
-
-**🎉 Major Update:**
-- ✅ Added 5 optimized formats
-- ✅ Minified all files (50% smaller)
-- ✅ 60-70% performance improvement
-- ✅ IIFE + strict mode
-- ✅ Professional README
-
-**Files:**
-- Surge: 3.5KB → **3.2KB**
-- Loon: 3.3KB → **2.9KB**
-- Shadowrocket: 2.9KB → **2.6KB**
-- QuantumultX: 2.9KB → **2.3KB**
-- Stash: 3.7KB → **3.3KB**
-
----
-
-## 📄 Files
-
-```
-Module/
-├── js/
-│   ├── locket.js (Optimized IIFE)
-│   └── deleteHeader.js (Ultra fast)
-├── NguyenNgocAnhTu_Surge.sgmodule (3.2KB)
-├── NguyenNgocAnhTu_Loon.plugin (2.9KB)
-├── NguyenNgocAnhTu_Shadowrocket.module (2.6KB) 🏆
-├── NguyenNgocAnhTu_QuantumultX.snippet (2.3KB)
-├── NguyenNgocAnhTu_Stash.stoverride (3.3KB)
-├── NguyenNgocAnhTu_Premium.module (5.0KB - Universal)
-└── README.md (This file)
-```
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! See [CONTRIBUTING.md](../CONTRIBUTING.md)
-
-**Quick:**
-1. Fork repo
-2. Create branch: `git checkout -b feature/amazing`
-3. Commit: `git commit -m "Add amazing feature"`
-4. Push: `git push origin feature/amazing`
-5. Open Pull Request
-
----
-
-## 💬 Support
+### 📁 **Module Files**
 
 <table>
 <tr>
-<td align="center" width="50%">
-
-### 📱 Messenger
-
-**Fastest Response**
-
-[💬 Chat Now](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
-
-</td>
-<td align="center" width="50%">
-
-### 🐛 GitHub
-
-**Bug Reports**
-
-[🐛 Report](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
-
-</td>
+<th>File</th>
+<th>Size</th>
+<th>Lines</th>
+<th>Type</th>
+<th>Status</th>
+</tr>
+<tr>
+<td><code>Surge.sgmodule</code></td>
+<td><img src="https://img.shields.io/badge/3.2KB-blue"></td>
+<td>60</td>
+<td>Surge</td>
+<td><img src="https://img.shields.io/badge/✅-Optimized-success"></td>
+</tr>
+<tr>
+<td><code>Loon.plugin</code></td>
+<td><img src="https://img.shields.io/badge/2.9KB-orange"></td>
+<td>55</td>
+<td>Loon</td>
+<td><img src="https://img.shields.io/badge/✅-Optimized-success"></td>
+</tr>
+<tr>
+<td><code>Shadowrocket.module</code></td>
+<td><img src="https://img.shields.io/badge/2.6KB-red"></td>
+<td>50</td>
+<td>SR</td>
+<td><img src="https://img.shields.io/badge/🏆-Best-gold"></td>
+</tr>
+<tr>
+<td><code>QuantumultX.snippet</code></td>
+<td><img src="https://img.shields.io/badge/2.3KB-purple"></td>
+<td>45</td>
+<td>QX</td>
+<td><img src="https://img.shields.io/badge/✅-Smallest-success"></td>
+</tr>
+<tr>
+<td><code>Stash.stoverride</code></td>
+<td><img src="https://img.shields.io/badge/3.3KB-green"></td>
+<td>70</td>
+<td>YAML</td>
+<td><img src="https://img.shields.io/badge/✅-Cross--Platform-success"></td>
+</tr>
+<tr>
+<td><code>Premium.module</code></td>
+<td><img src="https://img.shields.io/badge/5.1KB-yellow"></td>
+<td>100</td>
+<td>Universal</td>
+<td><img src="https://img.shields.io/badge/✅-Full-success"></td>
 </tr>
 </table>
+
+### 📜 **JavaScript Files**
+
+<table>
+<tr>
+<th>File</th>
+<th>Size</th>
+<th>Purpose</th>
+<th>Performance</th>
+</tr>
+<tr>
+<td><code>locket.js</code></td>
+<td><img src="https://img.shields.io/badge/2.8KB-blue"></td>
+<td>Premium unlock</td>
+<td><img src="https://img.shields.io/badge/60ms-success"></td>
+</tr>
+<tr>
+<td><code>deleteHeader.js</code></td>
+<td><img src="https://img.shields.io/badge/551B-green"></td>
+<td>Header removal</td>
+<td><img src="https://img.shields.io/badge/15ms-success"></td>
+</tr>
+</table>
+
+</div>
 
 ---
 
 ## 🌟 Credits
 
-**Scripts:**
-- [Maasea](https://github.com/Maasea/sgmodule) - YouTube
-- [app2smile](https://github.com/app2smile/rules) - Spotify
-- AnhTuKaZe - Locket (Custom)
+<div align="center">
 
-**Optimization & Integration:**
-- Nguyễn Ngọc Anh Tú 🌸
+**🎬 YouTube Script**
+
+<img src="https://img.icons8.com/color/48/000000/youtube-play.png">
+
+[Maasea](https://github.com/Maasea/sgmodule) • MIT License • 2025/7/12
+
+---
+
+**🎵 Spotify Scripts**
+
+<img src="https://img.icons8.com/color/48/000000/spotify.png">
+
+[app2smile](https://github.com/app2smile/rules) • MIT License • 2025-06-20
+
+---
+
+**🔐 Locket Scripts**
+
+<img src="https://img.icons8.com/fluency/48/000000/diamond.png">
+
+**AnhTuKaZe** • Custom • AGPL-3.0
+
+---
+
+**⚡ Optimization & Integration**
+
+<img src="https://img.icons8.com/fluency/48/000000/settings.png">
+
+**Nguyễn Ngọc Anh Tú** 🌸
+
+---
+
+</div>
+
+---
+
+## 💬 Support
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="https://img.icons8.com/fluency/96/000000/facebook-messenger--v2.png" width="80"><br>
+<b>Messenger</b><br>
+<sub>Response < 1h</sub><br><br>
+<a href="https://www.messenger.com/channel/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/💬-Chat_Now-0084FF?style=for-the-badge&logo=messenger&logoColor=white">
+</a>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/fluency/96/000000/github.png" width="80"><br>
+<b>GitHub Issues</b><br>
+<sub>Bug Reports</sub><br><br>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/🐛-Report-red?style=for-the-badge&logo=github">
+</a>
+</td>
+<td align="center">
+<img src="https://img.icons8.com/fluency/96/000000/conversation.png" width="80"><br>
+<b>Discussions</b><br>
+<sub>Q&A & Ideas</sub><br><br>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/💡-Discuss-green?style=for-the-badge">
+</a>
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
 ## 📄 License
 
-AGPL-3.0 - See [LICENSE](../LICENSE)
+<div align="center">
 
-**Free to use · Must keep open source · Network use must public source**
+<img src="https://img.icons8.com/fluency/96/000000/certificate.png" width="80">
+
+**GNU Affero General Public License v3.0**
+
+<img src="https://img.shields.io/badge/License-AGPL--3.0-orange?style=for-the-badge">
+
+**✅ Free to use • ✅ Modify • ✅ Distribute**
+
+**⚠️ Keep open source • ⚠️ Same license**
+
+[📄 Full License](../LICENSE)
+
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if helpful!**
+## 💝 Show Your Support
 
-**Made with ❤️ in Vietnam 🇻🇳**
+**Nếu module này hữu ích:**
 
-[Homepage](https://github.com/AnhTuKaZe/NguyenNgocAnhTu) · [Messenger](https://www.messenger.com/channel/NguyenNgocAnhTu.VN) · [Issues](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
+<p>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
+<img src="https://img.shields.io/badge/⭐-Star_This_Repo-yellow?style=for-the-badge">
+</a>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
+<img src="https://img.shields.io/badge/🔀-Fork_It-blue?style=for-the-badge">
+</a>
+<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/🐛-Report_Bugs-red?style=for-the-badge">
+</a>
+<a href="https://www.messenger.com/channel/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/☕-Buy_Coffee-brown?style=for-the-badge">
+</a>
+</p>
 
-Copyright © 2025 Nguyễn Ngọc Anh Tú
+---
+
+### 🎨 **Made with ❤️ in Vietnam** 🇻🇳
+
+<img src="https://img.icons8.com/fluency/96/000000/vietnam.png" width="80">
+
+**Nguyễn Ngọc Anh Tú** 🌸
+
+<p>
+<img src="https://img.shields.io/badge/Coded_with-❤️-ff69b4?style=for-the-badge">
+<img src="https://img.shields.io/badge/Coffee-☕-brown?style=for-the-badge">
+<img src="https://img.shields.io/badge/Nights-🌙-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Music-🎵-green?style=for-the-badge">
+</p>
+
+---
+
+**⚡ Thank you for using! ⚡**
+
+**🌸 Happy Streaming! 🌸**
 
 </div>
