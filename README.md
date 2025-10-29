@@ -22,7 +22,7 @@
 <a href="#-tiếng-việt">
 <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fb-1f1f3.svg" width="48" alt="Vietnam"/>
 <br><br>
-<b>🇻🇳 Vietnamese</b>
+<b>🇻🇳 Tiếng Việt</b>
 </a>
 </td>
 <td align="center" width="200">
@@ -36,7 +36,7 @@
 <a href="#-日本語">
 <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ef-1f1f5.svg" width="48" alt="Japan"/>
 <br><br>
-<b>🇯🇵 Japanese</b>
+<b>🇯🇵 日本語</b>
 </a>
 </td>
 </tr>
