@@ -12,24 +12,26 @@
 <!-- Language Selector -->
 <table>
 <tr>
-<td align="center" width="33%">
+<td align="center">
 <a href="#-tiếng-việt">
-<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="48" alt="Vietnam"/><br>
-<b>🇻🇳 Tiếng Việt</b>
+<img src="https://img.icons8.com/color/96/vietnam-circular.png" width="40" alt="Vietnam"/>
 </a>
 </td>
-<td align="center" width="33%">
+<td align="center">
 <a href="#-english">
-<img src="https://img.icons8.com/color/96/usa-circular.png" width="48" alt="English"/><br>
-<b>🇬🇧 English</b>
+<img src="https://img.icons8.com/color/96/usa-circular.png" width="40" alt="English"/>
 </a>
 </td>
-<td align="center" width="33%">
+<td align="center">
 <a href="#-日本語">
-<img src="https://img.icons8.com/color/96/japan-circular.png" width="48" alt="Japan"/><br>
-<b>🇯🇵 日本語</b>
+<img src="https://img.icons8.com/color/96/japan-circular.png" width="40" alt="Japan"/>
 </a>
 </td>
+</tr>
+<tr>
+<td align="center"><b><a href="#-tiếng-việt" style="text-decoration:none">🇻🇳 Tiếng Việt</a></b></td>
+<td align="center"><b><a href="#-english" style="text-decoration:none">🇬🇧 English</a></b></td>
+<td align="center"><b><a href="#-日本語" style="text-decoration:none">🇯🇵 日本語</a></b></td>
 </tr>
 </table>
 
@@ -1244,6 +1246,6 @@ If this project helped you, please consider:
 
 <br>
 
-<sub>Last updated: 2025-10-28 • Version 2.0 • Star us on GitHub ⭐</sub>
+<sub>Last updated: 29-10-2025 • Vietnam 🇻🇳 • Version 2.0 • Star us on GitHub ⭐</sub>
 
 </div>
