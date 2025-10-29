@@ -27,9 +27,9 @@
 </td>
 <td align="center" width="200">
 <a href="#-english">
-<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ec-1f1e7.svg" width="48" alt="English"/>
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg" width="48" alt="English"/>
 <br><br>
-<b>🇬🇧 English</b>
+<b>🇺🇸 English</b>
 </a>
 </td>
 <td align="center" width="200">
@@ -502,7 +502,7 @@ Cho **câu hỏi & ý tưởng**
 
 <div align="center">
   <h1>
-    <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/flag-united-kingdom_1f1ec-1f1e7.gif" width="40"/>
+    <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/flag-united-states_1f1fa-1f1f8.gif" width="40"/>
     English
     <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/356/flag-united-states_1f1fa-1f1f8.gif" width="40"/>
   </h1>
