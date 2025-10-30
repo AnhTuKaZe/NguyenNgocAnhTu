@@ -4,12 +4,12 @@
 
 | App | File | Size | Link |
 |-----|------|------|------|
-| **Surge** | `.sgmodule` | 3.8KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
-| **Loon** | `.plugin` | 3.4KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
-| **Shadowrocket** 🏆 | `.module` | 6.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
-| **LanceX** 💰 | `.module` | 6.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
-| **Quantumult X** | `.snippet` | 2.8KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
-| **Stash** | `.stoverride` | 4.0KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
+| **Surge** | `.sgmodule` | 3.5KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
+| **Loon** | `.plugin` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
+| **Shadowrocket** 🏆 | `.module` | 5.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
+| **LanceX** 💰 | `.module` | 5.7KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module) |
+| **Quantumult X** | `.snippet` | 2.5KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
+| **Stash** | `.stoverride` | 3.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
 
 ---
 
@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 ### LanceX (Cheapest) 💰
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
 ```
 
 ### Quantumult X

@@ -302,7 +302,7 @@ Performance Metrics
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
-<td align="center"><code>3.8KB</code></td>
+<td align="center"><code>3.5KB</code></td>
 <td align="center">💰 $49.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Người dùng Pro</td>
@@ -313,7 +313,7 @@ Performance Metrics
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
-<td align="center"><code>3.4KB</code></td>
+<td align="center"><code>3.2KB</code></td>
 <td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Nâng cao</td>
@@ -324,7 +324,7 @@ Performance Metrics
 <b>Shadowrocket</b>
 </td>
 <td align="center"><code>.module</code></td>
-<td align="center"><code>6.2KB</code></td>
+<td align="center"><code>5.6KB</code></td>
 <td align="center">💰 $2.99</td>
 <td align="center">⭐⭐⭐⭐⭐</td>
 <td align="center">⭐ <b>Khuyên dùng</b></td>
@@ -335,7 +335,7 @@ Performance Metrics
 <b>LanceX</b>
 </td>
 <td align="center"><code>.module</code></td>
-<td align="center"><code>6.2KB</code></td>
+<td align="center"><code>5.7KB</code></td>
 <td align="center">💰 $1.99</td>
 <td align="center">⭐⭐⭐⭐⭐</td>
 <td align="center">Giá rẻ nhất</td>
@@ -346,7 +346,7 @@ Performance Metrics
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
-<td align="center"><code>2.8KB</code></td>
+<td align="center"><code>2.5KB</code></td>
 <td align="center">💰 $7.99</td>
 <td align="center">⭐⭐⭐</td>
 <td align="center">Kỹ thuật</td>
@@ -357,7 +357,7 @@ Performance Metrics
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
-<td align="center"><code>4.0KB</code></td>
+<td align="center"><code>3.6KB</code></td>
 <td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Tiết kiệm</td>
@@ -442,7 +442,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Tại sao dùng .module cho Shadowrocket?**
 - ✅ Định dạng gốc (tương thích 100%)
-- ✅ Đầy đủ tính năng (6.2KB)
+- ✅ Đầy đủ tính năng (5.6KB)
 - ✅ Tải nhanh
 - ✅ Hỗ trợ 4 apps
 
@@ -457,7 +457,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
 ```
 
 **Các bước**
@@ -983,12 +983,12 @@ Choose the right module for your proxy app:
 
 | App | Format | Size | Platform | Status |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.8KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
-| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.4KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
-| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/6.2KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Recommended-FFD700?style=flat-square) |
-| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/6.2KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Cheapest-50C878?style=flat-square) |
-| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.8KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Smallest-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/4.0KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.5KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.2KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/5.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Recommended-FFD700?style=flat-square) |
+| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/5.7KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Cheapest-50C878?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.5KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Smallest-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.6KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
 
 </div>
 
@@ -1052,7 +1052,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Why .module for Shadowrocket?**
 - ✅ Native format (best compatibility)
-- ✅ Full features (6.2KB)
+- ✅ Full features (5.6KB)
 - ✅ Fast loading
 - ✅ Supports 4 apps
 
@@ -1065,7 +1065,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
 ```
 
 **Steps**
@@ -1492,12 +1492,12 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 | アプリ | フォーマット | サイズ | プラットフォーム | ステータス |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.8KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
-| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.4KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
-| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/6.2KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
-| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/6.2KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最安値-50C878?style=flat-square) |
-| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.8KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/4.0KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.5KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.2KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/5.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
+| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/5.7KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最安値-50C878?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.5KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.6KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
 
 </div>
 
@@ -1561,7 +1561,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Shadowrocketに.moduleを使用する理由**
 - ✅ ネイティブフォーマット（最高の互換性）
-- ✅ フル機能（6.2KB）
+- ✅ フル機能（5.6KB）
 - ✅ 高速読み込み
 - ✅ 4アプリ対応
 
@@ -1574,7 +1574,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
 ```
 
 **手順**
