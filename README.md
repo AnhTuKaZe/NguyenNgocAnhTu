@@ -16,6 +16,12 @@
   <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
 </p>
 
+<p align="center">
+  <b>High-Performance Premium Unlocker for iOS Proxy Apps</b>
+  <br>
+  <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
+</p>
+
 
 <!-- Language Links -->
 <p align="center">
