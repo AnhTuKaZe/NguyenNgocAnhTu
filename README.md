@@ -740,7 +740,7 @@ App → Configuration → Modules
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/topic.png" width="80"/>
 <br><br>
 <h3>💬 Community</h3>
 <sub>🚀 Questions & ideas</sub>
@@ -1216,7 +1216,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/topic.png" width="80"/>
 <br><br>
 <h3>💬 Community</h3>
 <sub>🚀 Questions & ideas</sub>
@@ -1692,7 +1692,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/topic.png" width="80"/>
 <br><br>
 <h3>💬 コミュニティ</h3>
 <sub>🚀 質問とアイデア</sub>
