@@ -65,11 +65,17 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 ## 💡 Quick Tips
 
-**For Shadowrocket & LanceX users:**
+**For Shadowrocket users:**
 - Use `.module` file (NguyenNgocAnhTu_Premium.module)
 - 100% compatible
 - Fastest loading
-- Full features (6.2KB)
+- Full features (5.6KB)
+
+**For LanceX users:**
+- Use `.module` file (NguyenNgocAnhTu_LanceX.module)
+- Optimized for LanceX
+- Cheapest option
+- Full features (5.7KB)
 
 **For other apps:**
 - Use the specific file for your app
