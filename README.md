@@ -1900,38 +1900,6 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## Project Statistics
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/github/stars/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=FFD700"/>
-<br>
-<b>Stars</b>
-</td>
-<td align="center">
-<img src="https://img.shields.io/github/forks/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=4A90E2"/>
-<br>
-<b>Forks</b>
-</td>
-<td align="center">
-<img src="https://img.shields.io/github/issues/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=F39C12"/>
-<br>
-<b>Issues</b>
-</td>
-<td align="center">
-<img src="https://img.shields.io/github/license/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=32383E&color=50C878"/>
-<br>
-<b>License</b>
-</td>
-</tr>
-</table>
-
-</div>
-
-<br>
 
 <!-- Feature Highlights -->
 <h3 align="center">✨ Project Highlights</h3>
