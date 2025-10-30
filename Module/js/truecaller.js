@@ -1,59 +1,58 @@
 // ========================================
-// Truecaller Premium - Enhanced Version
-// 👤 Author: z3rokaze (Optimized for NguyenNgocAnhTu)
+// Truecaller Premium - Working Version
+// 👤 Author: z3rokaze (Based on working script)
 // 📞 Unlock Gold/Premium features
-// 🚀 Performance: Ultra-fast, memory efficient
+// 🚀 Performance: Fast, tested & working
 // ========================================
 
-(function() {
-  'use strict';
-  
-  // ========= Helper Function ========= //
-  function findUrl(regex) {
-    return regex.test($request.url) ? $request.url : null;
+// Helper function to find matching URL
+function findUrl(_reg) {
+  if (_reg.test($request.url)) {
+    return $request.url;
   }
-  
-  // ========= Premium Features (Pre-built) ========= //
-  const PREMIUM_FEATURES = [
-    { "id": "live_lookup", "rank": 1, "status": "Included", "isFree": false },
-    { "id": "auto_spam_block", "rank": 2, "status": "Included", "isFree": false },
-    { "id": "series_blocking", "rank": 3, "status": "Included", "isFree": false },
-    { "id": "no_ads", "rank": 4, "status": "Included", "isFree": false },
-    { "id": "extended_spam_blocking", "rank": 5, "status": "Included", "isFree": false },
-    { "id": "advanced_caller_id", "rank": 6, "status": "Included", "isFree": false },
-    { "id": "verified_badge", "rank": 7, "status": "Included", "isFree": false },
-    { "id": "spam_stats", "rank": 8, "status": "Included", "isFree": false },
-    { "id": "call_alert", "rank": 9, "status": "Included", "isFree": false },
-    { "id": "premium_feature", "rank": 12, "status": "Included", "isFree": false },
-    { "id": "identifai", "rank": 15, "status": "Included", "isFree": false },
-    { "id": "siri_search", "rank": 16, "status": "Included", "isFree": false },
-    { "id": "who_viewed_my_profile", "rank": 17, "status": "Included", "isFree": false },
-    { "id": "who_searched_for_me", "rank": 18, "status": "Included", "isFree": false },
-    { "id": "contact_request", "rank": 19, "status": "Included", "isFree": false },
-    { "id": "incognito_mode", "rank": 20, "status": "Included", "isFree": false },
-    { "id": "premium_badge", "rank": 21, "status": "Included", "isFree": false },
-    { "id": "premium_app_icon", "rank": 22, "status": "Included", "isFree": false },
-    { "id": "ghost_call", "rank": 23, "status": "Included", "isFree": false },
-    { "id": "live_chat_support", "rank": 24, "status": "Included", "isFree": false },
-    { "id": "premium_support", "rank": 25, "status": "Included", "isFree": false },
-    { "id": "gold_caller_id", "rank": 27, "status": "Included", "isFree": false },
-    { "id": "caller_id", "rank": 29, "status": "Included", "isFree": true },
-    { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": true }
-  ];
-  
-  // ========= Date Constants ========= //
-  const START_DATE = "2025-01-01T00:00:00Z";
-  const EXPIRE_DATE = "2099-12-31T23:59:59Z";
-  
-  // ========= Response Handler ========= //
-  let response;
-  
-  // Check which endpoint was called
-  if (findUrl(/subscriptions\/status/)) {
-    // Subscription status endpoint
-    response = {
-      expire: EXPIRE_DATE,
-      start: START_DATE,
+}
+
+// Premium Features List
+const features = [
+  { "id": "live_lookup", "rank": 1, "status": "Included", "isFree": false },
+  { "id": "auto_spam_block", "rank": 2, "status": "Included", "isFree": false },
+  { "id": "series_blocking", "rank": 3, "status": "Included", "isFree": false },
+  { "id": "no_ads", "rank": 4, "status": "Included", "isFree": false },
+  { "id": "extended_spam_blocking", "rank": 5, "status": "Included", "isFree": false },
+  { "id": "advanced_caller_id", "rank": 6, "status": "Included", "isFree": false },
+  { "id": "verified_badge", "rank": 7, "status": "Included", "isFree": false },
+  { "id": "spam_stats", "rank": 8, "status": "Included", "isFree": false },
+  { "id": "call_alert", "rank": 9, "status": "Included", "isFree": false },
+  { "id": "premium_feature", "rank": 12, "status": "Included", "isFree": false },
+  { "id": "identifai", "rank": 15, "status": "Included", "isFree": false },
+  { "id": "siri_search", "rank": 16, "status": "Included", "isFree": false },
+  { "id": "who_viewed_my_profile", "rank": 17, "status": "Included", "isFree": false },
+  { "id": "who_searched_for_me", "rank": 18, "status": "Included", "isFree": false },
+  { "id": "contact_request", "rank": 19, "status": "Included", "isFree": false },
+  { "id": "incognito_mode", "rank": 20, "status": "Included", "isFree": false },
+  { "id": "premium_badge", "rank": 21, "status": "Included", "isFree": false },
+  { "id": "premium_app_icon", "rank": 22, "status": "Included", "isFree": false },
+  { "id": "ghost_call", "rank": 23, "status": "Included", "isFree": false },
+  { "id": "live_chat_support", "rank": 24, "status": "Included", "isFree": false },
+  { "id": "call_recording", "rank": 25, "status": "Excluded", "isFree": false },
+  { "id": "premium_support", "rank": 25, "status": "Included", "isFree": false },
+  { "id": "family_sharing", "rank": 26, "status": "Excluded", "isFree": false },
+  { "id": "gold_caller_id", "rank": 27, "status": "Included", "isFree": false },
+  { "id": "announce_call", "rank": 28, "status": "Excluded", "isFree": false },
+  { "id": "caller_id", "rank": 29, "status": "Included", "isFree": true },
+  { "id": "spam_blocking", "rank": 30, "status": "Included", "isFree": true },
+  { "id": "whatsapp_caller_id", "rank": 31, "status": "Excluded", "isFree": false }
+];
+
+// Response object
+var obj;
+
+// Check URL and build response
+switch ($request.url) {
+  case findUrl(/subscriptions\/status/):
+    obj = {
+      expire: "2099-12-31T23:59:59Z",
+      start: "2025-01-01T00:00:00Z",
       paymentProvider: "Apple",
       isExpired: false,
       isGracePeriodExpired: false,
@@ -66,15 +65,15 @@
         productType: "GoldYearly",
         isFreeTrial: false
       },
-      tier: {
-        id: "gold",
-        feature: PREMIUM_FEATURES
+      tier: { 
+        id: "gold", 
+        feature: features 
       }
     };
-  } 
-  else if (findUrl(/products\/apple/)) {
-    // Products endpoint
-    response = {
+    break;
+    
+  case findUrl(/products\/apple/):
+    obj = {
       tier: [
         {
           id: "gold",
@@ -93,18 +92,13 @@
               }
             }
           ],
-          feature: PREMIUM_FEATURES,
+          feature: features,
           rank: 5
         }
       ]
     };
-  }
-  else {
-    // Unknown endpoint - return original
-    response = JSON.parse($response.body);
-  }
-  
-  // ========= Return Modified Response ========= //
-  $done({ body: JSON.stringify(response) });
-  
-})();
+    break;
+}
+
+// Return response
+$done({ body: JSON.stringify(obj) });
