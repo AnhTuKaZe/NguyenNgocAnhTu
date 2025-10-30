@@ -1,14 +1,20 @@
 <div align="center">
 
-<!-- Animated Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Unlocker&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=YouTube%20•%20Spotify%20•%20Locket%20Gold&descAlignY=55&descSize=20"/>
+<!-- Header Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Module%20Collection&fontSize=45&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Open%20Source%20%E2%80%A2%20High%20Performance%20%E2%80%A2%20MIT%20Licensed&descAlignY=55&descSize=18"/>
 
 <br>
 
-<!-- Animated Title -->
+<!-- Project Title -->
 <h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=%F0%9F%8C%B8+Nguy%E1%BB%85n+Ng%E1%BB%8Dc+Anh+T%C3%BA+Premium+%F0%9F%8C%B8;%E2%9C%A8+100%25+Free+Forever+%E2%9C%A8;%F0%9F%9A%80+Ultra+Fast+Performance+%F0%9F%9A%80" alt="Animated Title"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=Premium+Module+Collection;Open+Source+%E2%80%A2+MIT+Licensed;6+Platforms+%E2%80%A2+4+Apps+Supported" alt="Typing SVG"/>
 </h1>
+
+<p align="center">
+  <b>High-Performance Premium Unlocker for iOS Proxy Apps</b>
+  <br>
+  <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
+</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
@@ -44,22 +50,30 @@
 
 <br>
 
-<!-- Badges -->
+<!-- Status Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Platform-iOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Version-2.0-34C759?style=for-the-badge&logo=semantic-release&logoColor=white"/>
+  <img src="https://img.shields.io/github/license/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=50C878"/>
+  <img src="https://img.shields.io/badge/Status-Active-FFD700?style=for-the-badge&logo=statuspage&logoColor=white"/>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/z3rokaze/NguyenNgocAnhTu?style=social"/>
+  <img src="https://img.shields.io/github/forks/z3rokaze/NguyenNgocAnhTu?style=social"/>
+  <img src="https://img.shields.io/github/watchers/z3rokaze/NguyenNgocAnhTu?style=social"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+    <img src="https://img.shields.io/github/issues/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=F39C12"/>
+  </a>
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+    <img src="https://img.shields.io/badge/Discussions-Active-7F52FF?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/Facebook-Community-0084FF?style=for-the-badge&logo=facebook&logoColor=white"/>
   </a>
-  <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
-  </a>
-  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
 
 <!-- Glowing Divider -->
