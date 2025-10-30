@@ -1894,19 +1894,6 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⭐ Show Your Support
-
-<p align="center">
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/fork">
-  <img src="https://img.shields.io/badge/🔀-Fork_Project-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
-  <img src="https://img.shields.io/badge/🐛-Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
