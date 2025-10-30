@@ -1,5 +1,5 @@
 name: ⚡ Anh Tú Premium - Stash
-desc: YouTube + Spotify + Locket (Optimized) | Spotify v2025.06.27
+desc: YouTube + Spotify + Locket + SoundCloud (Optimized) | Spotify v2025.06.27
 author: Nguyễn Ngọc Anh Tú
 homepage: https://github.com/z3rokaze/NguyenNgocAnhTu
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
@@ -17,6 +17,7 @@ http:
     - "spclient.wg.spotify.com"
     - "*-spclient.spotify.com"
     - "api.revenuecat.com"
+    - "api-mobile.soundcloud.com"
   url-rewrite:
     - ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject-200
     - ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject-200
@@ -62,6 +63,12 @@ http:
       type: request
       require-body: false
       timeout: 5
+    - match: ^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios
+      name: sc-res
+      type: response
+      require-body: true
+      timeout: 15
+      max-size: 262144
 
 script-providers:
   yt-req:
@@ -81,4 +88,7 @@ script-providers:
     interval: 86400
   lk-hdr:
     url: https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/deleteHeader.js
+    interval: 86400
+  sc-res:
+    url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
     interval: 86400

@@ -4,12 +4,12 @@
 
 | App | File | Size | Link |
 |-----|------|------|------|
-| **Surge** | `.sgmodule` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
-| **Loon** | `.plugin` | 2.9KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
-| **Shadowrocket** 🏆 | `.module` | 2.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module) |
-| **Quantumult X** | `.snippet` | 2.3KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
-| **Stash** | `.stoverride` | 3.3KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
-| **Universal** | `.module` | 3.1KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
+| **Surge** | `.sgmodule` | 3.5KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
+| **Loon** | `.plugin` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
+| **Shadowrocket** 🏆 | `.module` | 5.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
+| **LanceX** 💰 | `.module` | 5.7KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module) |
+| **Quantumult X** | `.snippet` | 2.5KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
+| **Stash** | `.stoverride` | 3.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
 
 ---
 
@@ -27,7 +27,12 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 ### Shadowrocket (Recommended) 🏆
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+```
+
+### LanceX (Cheapest) 💰
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
 ```
 
 ### Quantumult X
@@ -61,10 +66,16 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 ## 💡 Quick Tips
 
 **For Shadowrocket users:**
-- Use `.module` file (not `.sgmodule`)
+- Use `.module` file (NguyenNgocAnhTu_Premium.module)
 - 100% compatible
 - Fastest loading
-- Smallest size (2.6KB)
+- Full features (5.6KB)
+
+**For LanceX users:**
+- Use `.module` file (NguyenNgocAnhTu_LanceX.module)
+- Optimized for LanceX
+- Cheapest option
+- Full features (5.7KB)
 
 **For other apps:**
 - Use the specific file for your app

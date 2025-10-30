@@ -43,23 +43,30 @@
 </table>
 
 <br>
-
-<!-- Badges -->
+<!-- Status Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Platform-iOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Version-2.0-34C759?style=for-the-badge&logo=semantic-release&logoColor=white"/>
+  <img src="https://img.shields.io/github/license/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=50C878"/>
+  <img src="https://img.shields.io/badge/Status-Active-FFD700?style=for-the-badge&logo=statuspage&logoColor=white"/>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/z3rokaze/NguyenNgocAnhTu?style=social"/>
+  <img src="https://img.shields.io/github/forks/z3rokaze/NguyenNgocAnhTu?style=social"/>
+  <img src="https://img.shields.io/github/watchers/z3rokaze/NguyenNgocAnhTu?style=social"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+    <img src="https://img.shields.io/github/issues/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=F39C12"/>
+  </a>
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+    <img src="https://img.shields.io/badge/Discussions-Active-7F52FF?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/Facebook-Community-0084FF?style=for-the-badge&logo=facebook&logoColor=white"/>
   </a>
-  <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
-  </a>
-  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
 
 <!-- Glowing Divider -->
@@ -88,7 +95,7 @@
 
 <br>
 
-## 📋 Mục lục
+## Mục lục
 
 <details open>
 <summary><b>Nhấp để mở rộng</b></summary>
@@ -107,27 +114,32 @@
 
 <div align="center">
   
-## ✨ Tính năng nổi bật
+## Tính năng nổi bật
 
 </div>
 
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/youtube-play.png" width="48"/>
 <br>
 YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/spotify.png" width="48"/>
 <br>
 Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/lock.png" width="48"/>
 <br>
 Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/96/soundcloud.png" width="48"/>
+<br>
+SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -182,6 +194,22 @@ Locket Gold
 - 📅 Hiệu lực đến năm 2099
 
 </td>
+<td valign="top">
+
+**Mở khóa Go+**
+- ✅ Không quảng cáo
+- ✅ Nghe offline
+- ✅ Chất lượng cao
+- ✅ Bỏ qua không giới hạn
+- ✅ Tất cả tính năng Pro
+
+**Hiệu suất**
+- ⚡ Phản hồi nhanh
+- 💾 Tối ưu băng thông
+- 🔥 Streaming mượt mà
+- 📊 API configuration
+
+</td>
 </tr>
 </tbody>
 </table>
@@ -193,7 +221,7 @@ Locket Gold
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🚀 Hiệu suất
+## Hiệu suất
 
 <h3>
 ⚡ 
@@ -278,7 +306,7 @@ Performance Metrics
 
 <br>
 
-## 📱 Ứng dụng hỗ trợ
+## Ứng dụng hỗ trợ
 
 <div align="center">
 
@@ -302,7 +330,7 @@ Performance Metrics
 <b>Surge</b>
 </td>
 <td align="center"><code>.sgmodule</code></td>
-<td align="center"><code>3.2KB</code></td>
+<td align="center"><code>3.5KB</code></td>
 <td align="center">💰 $49.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Người dùng Pro</td>
@@ -313,7 +341,7 @@ Performance Metrics
 <b>Loon</b>
 </td>
 <td align="center"><code>.plugin</code></td>
-<td align="center"><code>2.9KB</code></td>
+<td align="center"><code>3.2KB</code></td>
 <td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Nâng cao</td>
@@ -324,10 +352,21 @@ Performance Metrics
 <b>Shadowrocket</b>
 </td>
 <td align="center"><code>.module</code></td>
-<td align="center"><code>2.6KB</code></td>
+<td align="center"><code>5.6KB</code></td>
 <td align="center">💰 $2.99</td>
 <td align="center">⭐⭐⭐⭐⭐</td>
 <td align="center">⭐ <b>Khuyên dùng</b></td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/90/81/cb/9081cbba-b7c4-63b5-1207-23ab9efbbe04/AppIcon-0-1x_U007emarketing-0-11-0-0-85-220-0.png/230x0w.webp" width="40"/><br>
+<b>LanceX</b>
+</td>
+<td align="center"><code>.module</code></td>
+<td align="center"><code>5.7KB</code></td>
+<td align="center">💰 $1.99</td>
+<td align="center">⭐⭐⭐⭐⭐</td>
+<td align="center">Giá rẻ nhất</td>
 </tr>
 <tr>
 <td align="center">
@@ -335,7 +374,7 @@ Performance Metrics
 <b>Quantumult X</b>
 </td>
 <td align="center"><code>.snippet</code></td>
-<td align="center"><code>2.3KB</code></td>
+<td align="center"><code>2.5KB</code></td>
 <td align="center">💰 $7.99</td>
 <td align="center">⭐⭐⭐</td>
 <td align="center">Kỹ thuật</td>
@@ -346,7 +385,7 @@ Performance Metrics
 <b>Stash</b>
 </td>
 <td align="center"><code>.stoverride</code></td>
-<td align="center"><code>3.3KB</code></td>
+<td align="center"><code>3.6KB</code></td>
 <td align="center">💰 $5.99</td>
 <td align="center">⭐⭐⭐⭐</td>
 <td align="center">Tiết kiệm</td>
@@ -356,7 +395,7 @@ Performance Metrics
 
 <br>
 
-**💡 Gợi ý:** Người mới nên dùng **Shadowrocket** - Rẻ ($2.99), dễ dùng nhất (⭐⭐⭐⭐⭐), file nhỏ (2.6KB)
+**💡 Gợi ý:** Người mới nên dùng **Shadowrocket** hoặc **LanceX** - Rẻ ($2.99/$1.99), dễ dùng nhất (⭐⭐⭐⭐⭐), tương thích 100%
 
 </div>
 
@@ -367,7 +406,7 @@ Performance Metrics
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 📥 Cài đặt nhanh
+## Cài đặt nhanh
 
 </div>
 
@@ -412,7 +451,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **Các bước**
@@ -431,9 +470,43 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Tại sao dùng .module cho Shadowrocket?**
 - ✅ Định dạng gốc (tương thích 100%)
-- ✅ Kích thước nhỏ nhất (2.6KB)
-- ✅ Tải nhanh nhất
-- ✅ Không có phần không cần thiết
+- ✅ Đầy đủ tính năng (5.6KB)
+- ✅ Tải nhanh
+- ✅ Hỗ trợ 4 apps
+
+</details>
+
+<details>
+<summary>
+  <h3>💰 LanceX (iOS) — Giá rẻ nhất</h3>
+</summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
+```
+
+**Các bước**
+1. Mở **LanceX** → Tab **配置** (Configuration)
+2. Chọn config đang dùng → **编辑配置** (Edit)
+3. Kéo xuống phần **[Module]** → Nút **+**
+4. Chọn **URL** → Dán URL → **完成** (Done)
+
+**Cài đặt MITM**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safari mở
+3. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+4. Cài profile "LanceX..."
+5. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+6. Bật tin cậy cho LanceX
+
+**Tại sao dùng LanceX?**
+- ✅ Giá rẻ nhất ($1.99 vs $2.99)
+- ✅ 100% tương thích Shadowrocket
+- ✅ Cùng file .module
+- ✅ Giao diện tiếng Trung/Anh
 
 </details>
 
@@ -550,7 +623,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⚙️ Cấu hình
+## Cấu hình
 
 </div>
 
@@ -591,7 +664,7 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ❓ Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
 </div>
 
@@ -713,7 +786,7 @@ App → Configuration → Modules
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 💬 Hỗ trợ
+## Hỗ trợ
 
 ### Kênh hỗ trợ
 
@@ -782,7 +855,7 @@ App → Configuration → Modules
 
 <br>
 
-## 📋 Table of Contents
+## Table of Contents
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -799,22 +872,26 @@ App → Configuration → Modules
 
 <br>
 
-## ✨ Features
+## Features
 
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
 <br>YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
 <br>Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
 <br>Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/48/soundcloud.png" alt="SoundCloud" width="32"/>
+<br>SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -869,13 +946,29 @@ App → Configuration → Modules
 - 📅 Valid until 2099
 
 </td>
+<td valign="top">
+
+**Go+ Unlock**
+- ✅ Ad-free listening
+- ✅ Offline playback
+- ✅ High quality audio
+- ✅ Unlimited skips
+- ✅ All Pro features
+
+**Performance**
+- ⚡ Fast response
+- 💾 Optimized bandwidth
+- 🔥 Smooth streaming
+- 📊 API configuration
+
+</td>
 </tr>
 </tbody>
 </table>
 
 <br>
 
-## 🚀 Performance
+## Performance
 
 <div align="center">
 
@@ -930,7 +1023,7 @@ App → Configuration → Modules
 
 <br>
 
-## 📱 Supported Apps
+## Supported Apps
 
 Choose the right module for your proxy app:
 
@@ -938,17 +1031,18 @@ Choose the right module for your proxy app:
 
 | App | Format | Size | Platform | Status |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
-| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
-| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Recommended-FFD700?style=flat-square) |
-| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Smallest-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.5KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.2KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/5.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-Recommended-FFD700?style=flat-square) |
+| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/5.7KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Cheapest-50C878?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.5KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Smallest-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.6KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-Optimized-50C878?style=flat-square) |
 
 </div>
 
 <br>
 
-## 📥 Quick Installation
+## Installation
 
 <details>
 <summary><b>🌊 Surge (iOS)</b></summary>
@@ -987,7 +1081,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **Steps**
@@ -1006,9 +1100,41 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Why .module for Shadowrocket?**
 - ✅ Native format (best compatibility)
-- ✅ Smallest size (2.6KB)
-- ✅ Fastest loading
-- ✅ No unnecessary sections
+- ✅ Full features (5.6KB)
+- ✅ Fast loading
+- ✅ Supports 4 apps
+
+</details>
+
+<details>
+<summary><b>💰 LanceX (iOS) — Cheapest Option</b></summary>
+
+<br>
+
+**Installation URL**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
+```
+
+**Steps**
+1. Open **LanceX** → **配置** (Configuration) tab
+2. Select your active config → **编辑配置** (Edit)
+3. Scroll to **[Module]** section → **+** button
+4. Choose **URL** → Paste URL → **完成** (Done)
+
+**MITM Setup**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safari opens
+3. **Settings** → **General** → **VPN & Device Management**
+4. Install "LanceX..." profile
+5. **Settings** → **General** → **About** → **Certificate Trust Settings**
+6. Enable trust for LanceX
+
+**Why use LanceX?**
+- ✅ Cheapest price ($1.99 vs $2.99)
+- ✅ 100% Shadowrocket compatible
+- ✅ Same .module file
+- ✅ Chinese/English UI
 
 </details>
 
@@ -1114,7 +1240,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ⚙️ Configuration
+## Configuration
 
 <details>
 <summary><b>🎨 Customize YouTube Settings</b></summary>
@@ -1146,7 +1272,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## ❓ FAQ
+## FAQ
 
 <details>
 <summary><b>Why are YouTube ads still showing?</b></summary>
@@ -1187,7 +1313,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 💬 Support
+## Support
 
 <div align="center">
 
@@ -1258,7 +1384,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 📋 目次
+## 目次
 
 <details>
 <summary><b>クリックして展開</b></summary>
@@ -1275,22 +1401,26 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## ✨ 機能
+## 機能
 
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
 <br>YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
 <br>Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
 <br>Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/48/soundcloud.png" alt="SoundCloud" width="32"/>
+<br>SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -1345,13 +1475,29 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 - 📅 2099年まで有効
 
 </td>
+<td valign="top">
+
+**Go+アンロック**
+- ✅ 広告なし
+- ✅ オフライン再生
+- ✅ 高音質オーディオ
+- ✅ 無制限スキップ
+- ✅ すべてのPro機能
+
+**パフォーマンス**
+- ⚡ 高速レスポンス
+- 💾 最適化された帯域幅
+- 🔥 スムーズなストリーミング
+- 📊 API設定
+
+</td>
 </tr>
 </tbody>
 </table>
 
 <br>
 
-## 🚀 パフォーマンス
+## パフォーマンス
 
 <div align="center">
 
@@ -1406,7 +1552,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 📱 対応アプリ
+## 対応アプリ
 
 プロキシアプリに適したモジュールを選択してください:
 
@@ -1414,17 +1560,18 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 | アプリ | フォーマット | サイズ | プラットフォーム | ステータス |
 |:---:|:------:|:----:|:--------:|:------:|
-| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.2KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
-| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/2.9KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
-| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/2.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
-| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.3KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
-| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.3KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Surge** | `.sgmodule` | ![Size](https://img.shields.io/badge/3.5KB-4A90E2?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Loon** | `.plugin` | ![Size](https://img.shields.io/badge/3.2KB-F39C12?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
+| **Shadowrocket** | `.module` | ![Size](https://img.shields.io/badge/5.6KB-E74C3C?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/★-推奨-FFD700?style=flat-square) |
+| **LanceX** | `.module` | ![Size](https://img.shields.io/badge/5.7KB-9B59B6?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最安値-50C878?style=flat-square) |
+| **Quantumult X** | `.snippet` | ![Size](https://img.shields.io/badge/2.5KB-7F52FF?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最小-50C878?style=flat-square) |
+| **Stash** | `.stoverride` | ![Size](https://img.shields.io/badge/3.6KB-50C878?style=flat-square) | iOS | ![Status](https://img.shields.io/badge/✓-最適化済み-50C878?style=flat-square) |
 
 </div>
 
 <br>
 
-## 📥 クイックインストール
+## インストール
 
 <details>
 <summary><b>🌊 Surge (iOS)</b></summary>
@@ -1463,7 +1610,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **手順**
@@ -1482,9 +1629,41 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Shadowrocketに.moduleを使用する理由**
 - ✅ ネイティブフォーマット（最高の互換性）
-- ✅ 最小サイズ（2.6KB）
-- ✅ 最速読み込み
-- ✅ 不要なセクションなし
+- ✅ フル機能（5.6KB）
+- ✅ 高速読み込み
+- ✅ 4アプリ対応
+
+</details>
+
+<details>
+<summary><b>💰 LanceX (iOS) — 最安値</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_LanceX.module
+```
+
+**手順**
+1. **LanceX**を開く → **配置** (Configuration) タブ
+2. アクティブな設定を選択 → **编辑配置** (Edit)
+3. **[Module]**セクションまでスクロール → **+**ボタン
+4. **URL**を選択 → URLを貼り付け → **完成** (Done)
+
+**MITM設定**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safariが開く
+3. **設定** → **一般** → **VPNとデバイス管理**
+4. "LanceX..."プロファイルをインストール
+5. **設定** → **一般** → **情報** → **証明書信頼設定**
+6. LanceXの信頼を有効にする
+
+**LanceXを使用する理由**
+- ✅ 最安値（$1.99 vs $2.99）
+- ✅ 100% Shadowrocket互換
+- ✅ 同じ.moduleファイル
+- ✅ 中国語/英語UI
 
 </details>
 
@@ -1590,7 +1769,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ⚙️ 設定
+## 設定
 
 <details>
 <summary><b>🎨 YouTube設定のカスタマイズ</b></summary>
@@ -1622,7 +1801,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ❓ よくある質問
+## よくある質問
 
 <details>
 <summary><b>YouTubeの広告がまだ表示されるのはなぜですか？</b></summary>
@@ -1663,7 +1842,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## 💬 サポート
+## サポート
 
 <div align="center">
 
@@ -1728,33 +1907,12 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⭐ Show Your Support
-
-<p align="center">
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
-  <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/fork">
-  <img src="https://img.shields.io/badge/🔀-Fork_Project-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
-  <img src="https://img.shields.io/badge/🐛-Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-</a>
-</p>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🎨 Made with ❤️ in Vietnam 🇻🇳
-
-<!-- GitHub Activity Graph -->
-<h3 align="center">📈 Contribution Graph</h3>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z3rokaze&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
-</p>
-
 <br>
+
 
 <!-- Feature Highlights -->
 <h3 align="center">✨ Project Highlights</h3>
@@ -1801,54 +1959,70 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <br>
 
 <!-- Copyright -->
-<h3>
-  Copyright © 2025 
-  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">Nguyễn Ngọc Anh Tú</a> 
-  🌸
-</h3>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Made_with-❤️_Love-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Open_Source-Community-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+  <sub>
+    Copyright © 2025 
+    <a href="https://github.com/z3rokaze">Nguyễn Ngọc Anh Tú</a> 
+    • All Rights Reserved
+  </sub>
 </p>
-
-<br>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br>
 
-<!-- Thank You Message -->
-<h2>
-  ⚡ Thank You for Using! ⚡
-</h2>
+## Support & Contact
 
-<h3>
-  🇻🇳 Cảm ơn bạn đã sử dụng! • 
-  🇺🇸 Thank you for using! • 
-  🇯🇵 ご利用ありがとうございます！
-</h3>
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.icons8.com/fluency/96/bug.png" width="64"/>
+<br><br>
+<b>Report Bug</b>
+<br>
+<sub>GitHub Issues</sub>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.icons8.com/fluency/96/chat.png" width="64"/>
+<br><br>
+<b>Discussions</b>
+<br>
+<sub>Community Support</sub>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.icons8.com/fluency/96/facebook.png" width="64"/>
+<br><br>
+<b>Facebook</b>
+<br>
+<sub>Direct Contact</sub>
+</a>
+</td>
+</tr>
+</table>
+
+</div>
 
 <br>
 
-<!-- Social Links -->
+<!-- Version & Status Info -->
 <p align="center">
-  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/Facebook-Support-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
-  </a>
-  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-  </a>
+  <img src="https://img.shields.io/badge/Status-Active-50C878?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Version-2.0-4A90E2?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Platforms-6-7F52FF?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Apps-4-F39C12?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Updated-Oct_2025-FFD700?style=flat-square&labelColor=1C1C1E"/>
 </p>
 
-<br>
-
-<!-- Version Info -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.0-34C759?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Made_in-Vietnam-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Last_Updated-Oct_2025-0A84FF?style=for-the-badge&labelColor=1C1C1E"/>
+  <sub>Open Source • MIT License • Community Driven</sub>
 </p>
 
 <br>
