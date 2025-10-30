@@ -1,5 +1,5 @@
 #!name=⚡ Anh Tú Premium - Loon
-#!desc=YouTube + Spotify + Locket (Optimized) | Spotify v2025.06.27
+#!desc=YouTube + Spotify + Locket + SoundCloud + Truecaller (Optimized) | Spotify v2025.06.27
 #!author=Nguyễn Ngọc Anh Tú
 #!homepage=https://github.com/z3rokaze/NguyenNgocAnhTu
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
@@ -25,6 +25,8 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/
 http-response ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,requires-body=true,binary-body-mode=true,timeout=25,tag=SP-Proto
 http-response ^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$) script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/locket.js,requires-body=true,timeout=15,tag=LK-Res
 http-request ^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers) script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/deleteHeader.js,timeout=5,tag=LK-Hdr
+http-response ^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js,requires-body=true,timeout=15,tag=SC-Res
+http-response ^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple) script-path=https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js,requires-body=true,timeout=15,tag=TC-Res
 
 [MITM]
-hostname=-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com
+hostname=-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com,api-mobile.soundcloud.com,premium*.truecaller.com

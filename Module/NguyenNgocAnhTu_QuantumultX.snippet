@@ -1,8 +1,8 @@
 # ⚡ Anh Tú Premium - Quantumult X
-# YouTube + Spotify + Locket (Optimized) | Spotify v2025.06.27
+# YouTube + Spotify + Locket + SoundCloud + Truecaller (Optimized) | Spotify v2025.06.27
 # https://github.com/z3rokaze/NguyenNgocAnhTu
 
-hostname=*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com
+hostname=*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com,api-mobile.soundcloud.com,premium*.truecaller.com
 
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
@@ -18,3 +18,5 @@ hostname=*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
 ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 ^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/locket.js
 ^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers) url script-request-header https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/deleteHeader.js
+^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios url script-response-body https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
+^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple) url script-response-body https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js
