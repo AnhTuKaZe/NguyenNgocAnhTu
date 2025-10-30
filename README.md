@@ -720,30 +720,30 @@ App → Configuration → Modules
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/speech-bubble-with-dots.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
 <br><br>
-<h4>💬 Messenger</h4>
-<sub>Response: < 1 hour</sub>
+<h3>📨 Live Chat</h3>
+<sub>⭐ Response: < 1 hour</sub>
 <br><br>
 <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-<img src="https://img.shields.io/badge/Chat_Now-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+<img src="https://img.shields.io/badge/Chat_on_Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/bug.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
 <br><br>
-<h4>🐛 Bug Reports</h4>
-<sub>Technical issues only</sub>
+<h3>🔧 Bug Reports</h3>
+<sub>🛡️ Technical issues only</sub>
 <br><br>
 <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
 <img src="https://img.shields.io/badge/Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/idea.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
 <br><br>
-<h4>💡 Discussions</h4>
-<sub>Questions & ideas</sub>
+<h3>💬 Community</h3>
+<sub>🚀 Questions & ideas</sub>
 <br><br>
 <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
 <img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
@@ -1196,43 +1196,34 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 <table>
 <tr>
 <td align="center" width="33%">
-
-**💬 Messenger**
-
-<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
-
-Response time: **< 1 hour**
-
-<br>
-
-[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
-
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
+<br><br>
+<h3>📨 Live Chat</h3>
+<sub>⭐ Response: < 1 hour</sub>
+<br><br>
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/Chat_on_Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**🐛 GitHub Issues**
-
-<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
-
-For **bug reports**
-
-<br>
-
-[![Report Issue](https://img.shields.io/badge/Report-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/z3rokaze/NguyenNgocAnhTu/issues)
-
+<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
+<br><br>
+<h3>🔧 Bug Reports</h3>
+<sub>🛡️ Technical issues only</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**💡 Discussions**
-
-<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
-
-For **questions & ideas**
-
-<br>
-
-[![Join Discussion](https://img.shields.io/badge/Join-Discussion-50C878?style=for-the-badge)](https://github.com/z3rokaze/NguyenNgocAnhTu/discussions)
-
+<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
+<br><br>
+<h3>💬 Community</h3>
+<sub>🚀 Questions & ideas</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 </tr>
 </table>
@@ -1681,43 +1672,34 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <table>
 <tr>
 <td align="center" width="33%">
-
-**💬 Messenger**
-
-<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
-
-応答時間: **< 1時間**
-
-<br>
-
-[![Chat on Messenger](https://img.shields.io/badge/チャット-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
-
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
+<br><br>
+<h3>📨 ライブチャット</h3>
+<sub>⭐ 応答: < 1時間</sub>
+<br><br>
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/Messengerでチャット-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**🐛 GitHub Issues**
-
-<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
-
-**バグ報告**用
-
-<br>
-
-[![Report Issue](https://img.shields.io/badge/報告-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/z3rokaze/NguyenNgocAnhTu/issues)
-
+<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
+<br><br>
+<h3>🔧 バグ報告</h3>
+<sub>🛡️ 技術的な問題のみ</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/Issueを報告-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**💡 Discussions**
-
-<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
-
-**質問＆アイデア**用
-
-<br>
-
-[![Join Discussion](https://img.shields.io/badge/参加-Discussion-50C878?style=for-the-badge)](https://github.com/z3rokaze/NguyenNgocAnhTu/discussions)
-
+<img src="https://img.icons8.com/3d-fluency/94/forum.png" width="80"/>
+<br><br>
+<h3>💬 コミュニティ</h3>
+<sub>🚀 質問とアイデア</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/Discussionに参加-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 </tr>
 </table>
