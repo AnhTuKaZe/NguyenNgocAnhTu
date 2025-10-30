@@ -1,9 +1,15 @@
-<div align="center">
+<<div align="center">
 
-<!-- Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Module%20Collection&fontSize=45&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Open%20Source%20%E2%80%A2%20High%20Performance%20%E2%80%A2%20MIT%20Licensed&descAlignY=55&descSize=18"/>
+<!-- Animated Header Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Unlocker&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=YouTube%20•%20Spotify%20•%20Locket%20Gold&descAlignY=55&descSize=20"/>
 
 <br>
+
+<!-- Animated Title -->
+<h1>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=%F0%9F%8C%B8+Nguy%E1%BB%85n+Ng%E1%BB%8Dc+Anh+T%C3%BA+Premium+%F0%9F%8C%B8;%E2%9C%A8+100%25+Free+Forever+%E2%9C%A8;%F0%9F%9A%80+Ultra+Fast+Performance+%F0%9F%9A%80" alt="Animated Title"/>
+</h1>
+
 
 <!-- Project Title -->
 <h1>
