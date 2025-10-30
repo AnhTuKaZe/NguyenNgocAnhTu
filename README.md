@@ -16,10 +16,6 @@
   <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
 </p>
 
-<!-- Glowing Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
-
-<br>
 
 <!-- Language Links -->
 <p align="center">
