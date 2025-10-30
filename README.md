@@ -21,32 +21,12 @@
 
 <br>
 
-<!-- Language Selector -->
-<table>
-<tr>
-<td align="center" width="200">
-<a href="#-tiếng-việt">
-<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fb-1f1f3.svg" width="48" alt="Vietnam"/>
-<br><br>
-<b>🇻🇳 Tiếng Việt</b>
-</a>
-</td>
-<td align="center" width="200">
-<a href="#-english">
-<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg" width="48" alt="English"/>
-<br><br>
-<b>🇺🇸 English</b>
-</a>
-</td>
-<td align="center" width="200">
-<a href="#-日本語">
-<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ef-1f1f5.svg" width="48" alt="Japan"/>
-<br><br>
-<b>🇯🇵 日本語</b>
-</a>
-</td>
-</tr>
-</table>
+<!-- Language Links -->
+<p align="center">
+  <a href="#tiếng-việt"><kbd> 🇻🇳 Tiếng Việt </kbd></a>
+  <a href="#english"><kbd> 🇺🇸 English </kbd></a>
+  <a href="#日本語"><kbd> 🇯🇵 日本語 </kbd></a>
+</p>
 
 <br>
 
@@ -102,7 +82,7 @@
 
 <br>
 
-## 📋 Mục lục
+## Mục lục
 
 <details open>
 <summary><b>Nhấp để mở rộng</b></summary>
@@ -121,7 +101,7 @@
 
 <div align="center">
   
-## ✨ Tính năng nổi bật
+## Tính năng nổi bật
 
 </div>
 
@@ -228,7 +208,7 @@ SoundCloud Go+
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🚀 Hiệu suất
+## Hiệu suất
 
 <h3>
 ⚡ 
@@ -313,7 +293,7 @@ Performance Metrics
 
 <br>
 
-## 📱 Ứng dụng hỗ trợ
+## Ứng dụng hỗ trợ
 
 <div align="center">
 
@@ -413,7 +393,7 @@ Performance Metrics
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 📥 Cài đặt nhanh
+## Cài đặt nhanh
 
 </div>
 
@@ -630,7 +610,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ⚙️ Cấu hình
+## Cấu hình
 
 </div>
 
@@ -671,7 +651,7 @@ Bạn có thể tùy chỉnh tính năng YouTube bằng cách chỉnh sửa tham
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## ❓ Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
 </div>
 
@@ -793,7 +773,7 @@ App → Configuration → Modules
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 💬 Hỗ trợ
+## Hỗ trợ
 
 ### Kênh hỗ trợ
 
@@ -862,7 +842,7 @@ App → Configuration → Modules
 
 <br>
 
-## 📋 Table of Contents
+## Table of Contents
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -879,7 +859,7 @@ App → Configuration → Modules
 
 <br>
 
-## ✨ Features
+## Features
 
 <table>
 <thead>
@@ -975,7 +955,7 @@ App → Configuration → Modules
 
 <br>
 
-## 🚀 Performance
+## Performance
 
 <div align="center">
 
@@ -1030,7 +1010,7 @@ App → Configuration → Modules
 
 <br>
 
-## 📱 Supported Apps
+## Supported Apps
 
 Choose the right module for your proxy app:
 
@@ -1049,7 +1029,7 @@ Choose the right module for your proxy app:
 
 <br>
 
-## 📥 Quick Installation
+## Installation
 
 <details>
 <summary><b>🌊 Surge (iOS)</b></summary>
@@ -1247,7 +1227,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ⚙️ Configuration
+## Configuration
 
 <details>
 <summary><b>🎨 Customize YouTube Settings</b></summary>
@@ -1279,7 +1259,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## ❓ FAQ
+## FAQ
 
 <details>
 <summary><b>Why are YouTube ads still showing?</b></summary>
@@ -1320,7 +1300,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 💬 Support
+## Support
 
 <div align="center">
 
@@ -1391,7 +1371,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 📋 目次
+## 目次
 
 <details>
 <summary><b>クリックして展開</b></summary>
@@ -1408,7 +1388,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## ✨ 機能
+## 機能
 
 <table>
 <thead>
@@ -1504,7 +1484,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 🚀 パフォーマンス
+## パフォーマンス
 
 <div align="center">
 
@@ -1559,7 +1539,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 📱 対応アプリ
+## 対応アプリ
 
 プロキシアプリに適したモジュールを選択してください:
 
@@ -1578,7 +1558,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 
 <br>
 
-## 📥 クイックインストール
+## インストール
 
 <details>
 <summary><b>🌊 Surge (iOS)</b></summary>
@@ -1776,7 +1756,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ⚙️ 設定
+## 設定
 
 <details>
 <summary><b>🎨 YouTube設定のカスタマイズ</b></summary>
@@ -1808,7 +1788,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## ❓ よくある質問
+## よくある質問
 
 <details>
 <summary><b>YouTubeの広告がまだ表示されるのはなぜですか？</b></summary>
@@ -1849,7 +1829,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## 💬 サポート
+## サポート
 
 <div align="center">
 
@@ -1933,7 +1913,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## 📊 Project Stats
+## Project Statistics
 
 <div align="center">
 
@@ -2024,7 +2004,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 <br>
 
-## 📞 Support & Contact
+## Support & Contact
 
 <div align="center">
 
