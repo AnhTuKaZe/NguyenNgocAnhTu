@@ -26,7 +26,7 @@ http-response ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)\
 http-response ^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$) script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/locket.js,requires-body=true,timeout=15,tag=LK-Res
 http-request ^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers) script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/deleteHeader.js,timeout=5,tag=LK-Hdr
 http-response ^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js,requires-body=true,timeout=15,tag=SC-Res
-http-response ^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple) script-path=https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js,requires-body=true,timeout=15,tag=TC-Res
+http-response ^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple) script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/truecaller.js,requires-body=true,timeout=15,tag=TC-Res
 
 [MITM]
 hostname=-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com,*-spclient.spotify.com,api.revenuecat.com,api-mobile.soundcloud.com,premium*.truecaller.com

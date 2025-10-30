@@ -100,5 +100,5 @@ script-providers:
     url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
     interval: 86400
   tc-res:
-    url: https://raw.githubusercontent.com/NightmarketServer/Shadowrocket-Module/refs/heads/main/TCPV.js
+    url: https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/truecaller.js
     interval: 86400
