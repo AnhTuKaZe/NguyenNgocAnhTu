@@ -46,20 +46,20 @@
 
 <!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📱_Nền_tảng-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🔖_Phiên_bản-2.0-34C759?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/⚖️_Giấy_phép-AGPL--3.0-FF9500?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🎯_Trạng_thái-Hoạt_động-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
 </p>
 
 <p align="center">
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬_Hỗ_trợ-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
   </a>
   <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📚_Tài_liệu-Đầy_đủ-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
+    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
   </a>
-  <img src="https://img.shields.io/badge/👥_Người_dùng-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
 
 <!-- Glowing Divider -->
