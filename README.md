@@ -114,20 +114,25 @@
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/youtube-play.png" width="48"/>
 <br>
 YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/spotify.png" width="48"/>
 <br>
 Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/96/lock.png" width="48"/>
 <br>
 Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/96/soundcloud.png" width="48"/>
+<br>
+SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -180,6 +185,22 @@ Locket Gold
 - 💾 Sử dụng bộ nhớ 256KB
 - 🔥 Tối ưu hóa IIFE
 - 📅 Hiệu lực đến năm 2099
+
+</td>
+<td valign="top">
+
+**Mở khóa Go+**
+- ✅ Không quảng cáo
+- ✅ Nghe offline
+- ✅ Chất lượng cao
+- ✅ Bỏ qua không giới hạn
+- ✅ Tất cả tính năng Pro
+
+**Hiệu suất**
+- ⚡ Phản hồi nhanh
+- 💾 Tối ưu băng thông
+- 🔥 Streaming mượt mà
+- 📊 API configuration
 
 </td>
 </tr>
@@ -849,17 +870,21 @@ App → Configuration → Modules
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
 <br>YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
 <br>Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
 <br>Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/48/soundcloud.png" alt="SoundCloud" width="32"/>
+<br>SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -912,6 +937,22 @@ App → Configuration → Modules
 - 💾 256KB memory usage
 - 🔥 IIFE optimized
 - 📅 Valid until 2099
+
+</td>
+<td valign="top">
+
+**Go+ Unlock**
+- ✅ Ad-free listening
+- ✅ Offline playback
+- ✅ High quality audio
+- ✅ Unlimited skips
+- ✅ All Pro features
+
+**Performance**
+- ⚡ Fast response
+- 💾 Optimized bandwidth
+- 🔥 Smooth streaming
+- 📊 API configuration
 
 </td>
 </tr>
@@ -1358,17 +1399,21 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 <table>
 <thead>
 <tr>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube" width="32"/>
 <br>YouTube Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/spotify.png" alt="Spotify" width="32"/>
 <br>Spotify Premium
 </th>
-<th width="33%">
+<th width="25%">
 <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Locket" width="32"/>
 <br>Locket Gold
+</th>
+<th width="25%">
+<img src="https://img.icons8.com/fluency/48/soundcloud.png" alt="SoundCloud" width="32"/>
+<br>SoundCloud Go+
 </th>
 </tr>
 </thead>
@@ -1421,6 +1466,22 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 - 💾 256KBメモリ使用量
 - 🔥 IIFE最適化
 - 📅 2099年まで有効
+
+</td>
+<td valign="top">
+
+**Go+アンロック**
+- ✅ 広告なし
+- ✅ オフライン再生
+- ✅ 高音質オーディオ
+- ✅ 無制限スキップ
+- ✅ すべてのPro機能
+
+**パフォーマンス**
+- ⚡ 高速レスポンス
+- 💾 最適化された帯域幅
+- 🔥 スムーズなストリーミング
+- 📊 API設定
 
 </td>
 </tr>
