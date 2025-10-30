@@ -46,20 +46,20 @@
 
 <!-- Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📱_Nền_tảng-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/🔖_Phiên_bản-2.0-34C759?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/⚖️_Giấy_phép-AGPL--3.0-FF9500?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🎯_Trạng_thái-Hoạt_động-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/📱_Platform-iOS-0A84FF?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/🔖_Version-2.0-34C759?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/⚖️_License-AGPL--3.0-FF9500?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🎯_Status-Active-34C759?style=for-the-badge"/>
 </p>
 
 <p align="center">
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/💬_Hỗ_trợ-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/💬_Support-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=000000"/>
   </a>
   <a href="#-cài-đặt-nhanh">
-    <img src="https://img.shields.io/badge/📚_Tài_liệu-Đầy_đủ-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
+    <img src="https://img.shields.io/badge/📚_Docs-Complete-8E8E93?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1C1C1E"/>
   </a>
-  <img src="https://img.shields.io/badge/👥_Người_dùng-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/👥_Users-1000+-AF52DE?style=for-the-badge&logoColor=white&labelColor=1C1C1E"/>
 </p>
 
 <!-- Glowing Divider -->
@@ -380,7 +380,7 @@ Performance Metrics
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **Các bước**
@@ -412,7 +412,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **Các bước**
@@ -446,7 +446,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **Các bước**
@@ -480,7 +480,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **Các bước**
@@ -516,7 +516,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **Các bước**
@@ -720,33 +720,33 @@ App → Configuration → Modules
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/speech-bubble-with-dots.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
 <br><br>
-<h4>💬 Messenger</h4>
-<sub>Response: < 1 hour</sub>
+<h3>📨 Live Chat</h3>
+<sub>⭐ Response: < 1 hour</sub>
 <br><br>
 <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-<img src="https://img.shields.io/badge/Chat_Now-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+<img src="https://img.shields.io/badge/Chat_on_Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/bug.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
 <br><br>
-<h4>🐛 Bug Reports</h4>
-<sub>Technical issues only</sub>
+<h3>🔧 Bug Reports</h3>
+<sub>🛡️ Technical issues only</sub>
 <br><br>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
 <img src="https://img.shields.io/badge/Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/fluency/96/idea.png" width="60"/>
+<img src="https://img.icons8.com/3d-fluency/94/comments.png" width="80"/>
 <br><br>
-<h4>💡 Discussions</h4>
-<sub>Questions & ideas</sub>
+<h3>💬 Community</h3>
+<sub>🚀 Questions & ideas</sub>
 <br><br>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions">
-<img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/Join_Discussion-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 </tr>
@@ -957,7 +957,7 @@ Choose the right module for your proxy app:
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **Steps**
@@ -987,7 +987,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **Steps**
@@ -1019,7 +1019,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **Steps**
@@ -1051,7 +1051,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **Steps**
@@ -1085,7 +1085,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **Steps**
@@ -1196,43 +1196,34 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 <table>
 <tr>
 <td align="center" width="33%">
-
-**💬 Messenger**
-
-<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
-
-Response time: **< 1 hour**
-
-<br>
-
-[![Chat on Messenger](https://img.shields.io/badge/Chat-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
-
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
+<br><br>
+<h3>📨 Live Chat</h3>
+<sub>⭐ Response: < 1 hour</sub>
+<br><br>
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/Chat_on_Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**🐛 GitHub Issues**
-
-<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
-
-For **bug reports**
-
-<br>
-
-[![Report Issue](https://img.shields.io/badge/Report-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
-
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
+<br><br>
+<h3>🔧 Bug Reports</h3>
+<sub>🛡️ Technical issues only</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**💡 Discussions**
-
-<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
-
-For **questions & ideas**
-
-<br>
-
-[![Join Discussion](https://img.shields.io/badge/Join-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
-
+<img src="https://img.icons8.com/3d-fluency/94/comments.png" width="80"/>
+<br><br>
+<h3>💬 Community</h3>
+<sub>🚀 Questions & ideas</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/Join_Discussion-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 </tr>
 </table>
@@ -1442,7 +1433,7 @@ For **questions & ideas**
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **手順**
@@ -1472,7 +1463,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **手順**
@@ -1504,7 +1495,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **手順**
@@ -1536,7 +1527,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **手順**
@@ -1570,7 +1561,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **手順**
@@ -1681,43 +1672,34 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <table>
 <tr>
 <td align="center" width="33%">
-
-**💬 Messenger**
-
-<img src="https://img.icons8.com/fluency/96/facebook-messenger.png" width="64" alt="Messenger"/>
-
-応答時間: **< 1時間**
-
-<br>
-
-[![Chat on Messenger](https://img.shields.io/badge/チャット-Messenger-0084FF?style=for-the-badge&logo=messenger&logoColor=white)](https://www.facebook.com/NguyenNgocAnhTu.VN)
-
+<img src="https://img.icons8.com/3d-fluency/94/facebook-messenger.png" width="80"/>
+<br><br>
+<h3>📨 ライブチャット</h3>
+<sub>⭐ 応答: < 1時間</sub>
+<br><br>
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.shields.io/badge/Messengerでチャット-0084FF?style=for-the-badge&logo=messenger&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**🐛 GitHub Issues**
-
-<img src="https://img.icons8.com/fluency/96/github.png" width="64" alt="GitHub"/>
-
-**バグ報告**用
-
-<br>
-
-[![Report Issue](https://img.shields.io/badge/報告-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
-
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
+<br><br>
+<h3>🔧 バグ報告</h3>
+<sub>🛡️ 技術的な問題のみ</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.shields.io/badge/Issueを報告-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 <td align="center" width="33%">
-
-**💡 Discussions**
-
-<img src="https://img.icons8.com/fluency/96/chat.png" width="64" alt="Discussion"/>
-
-**質問＆アイデア**用
-
-<br>
-
-[![Join Discussion](https://img.shields.io/badge/参加-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
-
+<img src="https://img.icons8.com/3d-fluency/94/comments.png" width="80"/>
+<br><br>
+<h3>💬 コミュニティ</h3>
+<sub>🚀 質問とアイデア</sub>
+<br><br>
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.shields.io/badge/Discussionに参加-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </td>
 </tr>
 </table>
@@ -1749,13 +1731,13 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 ## ⭐ Show Your Support
 
 <p align="center">
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
   <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/fork">
   <img src="https://img.shields.io/badge/🔀-Fork_Project-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
   <img src="https://img.shields.io/badge/🐛-Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
 </p>
@@ -1769,7 +1751,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <h3 align="center">📈 Contribution Graph</h3>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AnhTuKaZe&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z3rokaze&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
 </p>
 
 <br>
@@ -1855,7 +1837,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
     <img src="https://img.shields.io/badge/Facebook-Support-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
   </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
     <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
   </a>
 </p>
