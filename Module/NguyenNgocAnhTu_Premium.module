@@ -1,5 +1,5 @@
 #!name=⚡ Nguyễn Ngọc Anh Tú 🌸
-#!desc=✨ 📸 [Locket] • 🎶 [Spotify v2025.06.27] • 📺 [YouTube] • 🎵 [SoundCloud] • 📞 [Truecaller] 🔥
+#!desc=✨ 📸 [Locket] • 🎶 [Spotify v2025.06.27] • 📺 [YouTube] • 🎵 [SoundCloud] 🔥
 #!tag=📩 [Messenger](https://www.messenger.com/channel/NguyenNgocAnhTu.VN)
 #!homepage=🌐 [GitHub](https://github.com/z3rokaze/NguyenNgocAnhTu)
 #!system=ios,mac
@@ -66,15 +66,6 @@ locket-header = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/.*\/(
 # ======================================== #
 soundcloud-response = type=http-response,pattern=^https:\/\/api-mobile\.soundcloud\.com\/configuration\/ios,requires-body=1,max-size=262144,timeout=15,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/soundcloud.js
 
-# ======================================== #
-# --- Truecaller Premium ---
-# 👤 Author: NightmarketServer (Tested & Working)
-# 📞 Unlock Gold/Premium features
-# ⚡ Lifetime subscription (until 9999)
-# 🚀 Performance: Proven stable script
-# ======================================== #
-truecaller-response = type=http-response,pattern=^https:\/\/premium-(.+)\.truecaller\.com\/v\d\/(subscriptions|products\/apple),requires-body=1,max-size=262144,timeout=15,script-path=https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/truecaller.js
-
 ################################
 #        [ Url Rewrite ]       #
 ################################
@@ -112,5 +103,5 @@ truecaller-response = type=http-response,pattern=^https:\/\/premium-(.+)\.trueca
 ################################
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com, api-mobile.soundcloud.com, premium*.truecaller.com
+hostname = %APPEND% -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, spclient.wg.spotify.com, *-spclient.spotify.com, api.revenuecat.com, api-mobile.soundcloud.com
 enable = true
