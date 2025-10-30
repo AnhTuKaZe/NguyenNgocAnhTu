@@ -423,7 +423,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **Các bước**
@@ -442,9 +442,43 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Tại sao dùng .module cho Shadowrocket?**
 - ✅ Định dạng gốc (tương thích 100%)
-- ✅ Kích thước nhỏ nhất (2.6KB)
-- ✅ Tải nhanh nhất
-- ✅ Không có phần không cần thiết
+- ✅ Đầy đủ tính năng (6.2KB)
+- ✅ Tải nhanh
+- ✅ Hỗ trợ 4 apps
+
+</details>
+
+<details>
+<summary>
+  <h3>💰 LanceX (iOS) — Giá rẻ nhất</h3>
+</summary>
+
+<br>
+
+**URL cài đặt**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+```
+
+**Các bước**
+1. Mở **LanceX** → Tab **配置** (Configuration)
+2. Chọn config đang dùng → **编辑配置** (Edit)
+3. Kéo xuống phần **[Module]** → Nút **+**
+4. Chọn **URL** → Dán URL → **完成** (Done)
+
+**Cài đặt MITM**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safari mở
+3. **Cài đặt** → **Cài đặt chung** → **VPN & Quản lý thiết bị**
+4. Cài profile "LanceX..."
+5. **Cài đặt** → **Cài đặt chung** → **Giới thiệu** → **Cài đặt tin cậy chứng chỉ**
+6. Bật tin cậy cho LanceX
+
+**Tại sao dùng LanceX?**
+- ✅ Giá rẻ nhất ($1.99 vs $2.99)
+- ✅ 100% tương thích Shadowrocket
+- ✅ Cùng file .module
+- ✅ Giao diện tiếng Trung/Anh
 
 </details>
 
@@ -999,7 +1033,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **Steps**
@@ -1018,9 +1052,41 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Why .module for Shadowrocket?**
 - ✅ Native format (best compatibility)
-- ✅ Smallest size (2.6KB)
-- ✅ Fastest loading
-- ✅ No unnecessary sections
+- ✅ Full features (6.2KB)
+- ✅ Fast loading
+- ✅ Supports 4 apps
+
+</details>
+
+<details>
+<summary><b>💰 LanceX (iOS) — Cheapest Option</b></summary>
+
+<br>
+
+**Installation URL**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+```
+
+**Steps**
+1. Open **LanceX** → **配置** (Configuration) tab
+2. Select your active config → **编辑配置** (Edit)
+3. Scroll to **[Module]** section → **+** button
+4. Choose **URL** → Paste URL → **完成** (Done)
+
+**MITM Setup**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safari opens
+3. **Settings** → **General** → **VPN & Device Management**
+4. Install "LanceX..." profile
+5. **Settings** → **General** → **About** → **Certificate Trust Settings**
+6. Enable trust for LanceX
+
+**Why use LanceX?**
+- ✅ Cheapest price ($1.99 vs $2.99)
+- ✅ 100% Shadowrocket compatible
+- ✅ Same .module file
+- ✅ Chinese/English UI
 
 </details>
 
@@ -1476,7 +1542,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 **手順**
@@ -1495,9 +1561,41 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 
 **Shadowrocketに.moduleを使用する理由**
 - ✅ ネイティブフォーマット（最高の互換性）
-- ✅ 最小サイズ（2.6KB）
-- ✅ 最速読み込み
-- ✅ 不要なセクションなし
+- ✅ フル機能（6.2KB）
+- ✅ 高速読み込み
+- ✅ 4アプリ対応
+
+</details>
+
+<details>
+<summary><b>💰 LanceX (iOS) — 最安値</b></summary>
+
+<br>
+
+**インストールURL**
+```
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+```
+
+**手順**
+1. **LanceX**を開く → **配置** (Configuration) タブ
+2. アクティブな設定を選択 → **编辑配置** (Edit)
+3. **[Module]**セクションまでスクロール → **+**ボタン
+4. **URL**を選択 → URLを貼り付け → **完成** (Done)
+
+**MITM設定**
+1. **设置** (Settings) → **证书** (Certificate) → **生成新的证书** (Generate)
+2. **安装证书** (Install Certificate) → Safariが開く
+3. **設定** → **一般** → **VPNとデバイス管理**
+4. "LanceX..."プロファイルをインストール
+5. **設定** → **一般** → **情報** → **証明書信頼設定**
+6. LanceXの信頼を有効にする
+
+**LanceXを使用する理由**
+- ✅ 最安値（$1.99 vs $2.99）
+- ✅ 100% Shadowrocket互換
+- ✅ 同じ.moduleファイル
+- ✅ 中国語/英語UI
 
 </details>
 
