@@ -4,12 +4,12 @@
 
 | App | File | Size | Link |
 |-----|------|------|------|
-| **Surge** | `.sgmodule` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
-| **Loon** | `.plugin` | 2.9KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
-| **Shadowrocket** 🏆 | `.module` | 2.6KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module) |
-| **Quantumult X** | `.snippet` | 2.3KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
-| **Stash** | `.stoverride` | 3.3KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
-| **Universal** | `.module` | 3.1KB | [📥 Install](https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
+| **Surge** | `.sgmodule` | 3.2KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule) |
+| **Loon** | `.plugin` | 2.9KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin) |
+| **Shadowrocket** 🏆 | `.module` | 2.6KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module) |
+| **Quantumult X** | `.snippet` | 2.3KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet) |
+| **Stash** | `.stoverride` | 3.3KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride) |
+| **Universal** | `.module` | 3.1KB | [📥 Install](https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module) |
 
 ---
 
@@ -17,32 +17,32 @@
 
 ### Surge
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 ### Loon
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 ### Shadowrocket (Recommended) 🏆
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 ### Quantumult X
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 ### Stash
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 ### Universal (All Apps)
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Premium.module
 ```
 
 ---

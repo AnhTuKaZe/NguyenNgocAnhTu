@@ -1,7 +1,7 @@
 name: ⚡ Anh Tú Premium - Stash
 desc: YouTube + Spotify + Locket (Optimized)
 author: Nguyễn Ngọc Anh Tú
-homepage: https://github.com/AnhTuKaZe/NguyenNgocAnhTu
+homepage: https://github.com/z3rokaze/NguyenNgocAnhTu
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 
 rules:
@@ -77,8 +77,8 @@ script-providers:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
   lk-res:
-    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/locket.js
+    url: https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/locket.js
     interval: 86400
   lk-hdr:
-    url: https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/js/deleteHeader.js
+    url: https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/js/deleteHeader.js
     interval: 86400

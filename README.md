@@ -380,7 +380,7 @@ Performance Metrics
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **Các bước**
@@ -412,7 +412,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **Các bước**
@@ -446,7 +446,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **Các bước**
@@ -480,7 +480,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **Các bước**
@@ -516,7 +516,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **URL cài đặt**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **Các bước**
@@ -735,7 +735,7 @@ App → Configuration → Modules
 <h4>🐛 Bug Reports</h4>
 <sub>Technical issues only</sub>
 <br><br>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
 <img src="https://img.shields.io/badge/Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
@@ -745,7 +745,7 @@ App → Configuration → Modules
 <h4>💡 Discussions</h4>
 <sub>Questions & ideas</sub>
 <br><br>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
 <img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
@@ -957,7 +957,7 @@ Choose the right module for your proxy app:
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **Steps**
@@ -987,7 +987,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **Steps**
@@ -1019,7 +1019,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **Steps**
@@ -1051,7 +1051,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **Steps**
@@ -1085,7 +1085,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **Installation URL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **Steps**
@@ -1218,7 +1218,7 @@ For **bug reports**
 
 <br>
 
-[![Report Issue](https://img.shields.io/badge/Report-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
+[![Report Issue](https://img.shields.io/badge/Report-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/z3rokaze/NguyenNgocAnhTu/issues)
 
 </td>
 <td align="center" width="33%">
@@ -1231,7 +1231,7 @@ For **questions & ideas**
 
 <br>
 
-[![Join Discussion](https://img.shields.io/badge/Join-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
+[![Join Discussion](https://img.shields.io/badge/Join-Discussion-50C878?style=for-the-badge)](https://github.com/z3rokaze/NguyenNgocAnhTu/discussions)
 
 </td>
 </tr>
@@ -1442,7 +1442,7 @@ For **questions & ideas**
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Surge.sgmodule
 ```
 
 **手順**
@@ -1472,7 +1472,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Shadowrocket.module
 ```
 
 **手順**
@@ -1504,7 +1504,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Loon.plugin
 ```
 
 **手順**
@@ -1536,7 +1536,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_QuantumultX.snippet
 ```
 
 **手順**
@@ -1570,7 +1570,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 **インストールURL**
 ```
-https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
+https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgocAnhTu_Stash.stoverride
 ```
 
 **手順**
@@ -1703,7 +1703,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <br>
 
-[![Report Issue](https://img.shields.io/badge/報告-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues)
+[![Report Issue](https://img.shields.io/badge/報告-Issue-E74C3C?style=for-the-badge&logo=github)](https://github.com/z3rokaze/NguyenNgocAnhTu/issues)
 
 </td>
 <td align="center" width="33%">
@@ -1716,7 +1716,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 
 <br>
 
-[![Join Discussion](https://img.shields.io/badge/参加-Discussion-50C878?style=for-the-badge)](https://github.com/AnhTuKaZe/NguyenNgocAnhTu/discussions)
+[![Join Discussion](https://img.shields.io/badge/参加-Discussion-50C878?style=for-the-badge)](https://github.com/z3rokaze/NguyenNgocAnhTu/discussions)
 
 </td>
 </tr>
@@ -1749,13 +1749,13 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 ## ⭐ Show Your Support
 
 <p align="center">
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
   <img src="https://img.shields.io/badge/⭐-Star_this_Repository-FFD700?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/fork">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/fork">
   <img src="https://img.shields.io/badge/🔀-Fork_Project-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
-<a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu/issues">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
   <img src="https://img.shields.io/badge/🐛-Report_Issue-FF453A?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
 </a>
 </p>
@@ -1769,7 +1769,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
 <h3 align="center">📈 Contribution Graph</h3>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AnhTuKaZe&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z3rokaze&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
 </p>
 
 <br>
@@ -1855,7 +1855,7 @@ https://raw.githubusercontent.com/AnhTuKaZe/NguyenNgocAnhTu/main/Module/NguyenNg
   <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
     <img src="https://img.shields.io/badge/Facebook-Support-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
   </a>
-  <a href="https://github.com/AnhTuKaZe/NguyenNgocAnhTu">
+  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
     <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
   </a>
 </p>
