@@ -746,7 +746,7 @@ App → Configuration → Modules
 <sub>🚀 Questions & ideas</sub>
 <br><br>
 <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
-<img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Join_Discussion-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 </tr>
@@ -1222,7 +1222,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 <sub>🚀 Questions & ideas</sub>
 <br><br>
 <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
-<img src="https://img.shields.io/badge/Join_Discussion-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Join_Discussion-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 </tr>
@@ -1698,7 +1698,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <sub>🚀 質問とアイデア</sub>
 <br><br>
 <a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
-<img src="https://img.shields.io/badge/Discussionに参加-34C759?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Discussionに参加-8B5CF6?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 </td>
 </tr>
