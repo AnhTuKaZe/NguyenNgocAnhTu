@@ -1,4 +1,4 @@
-<<div align="center">
+<div align="center">
 
 <!-- Animated Header Wave -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24,25&height=180&section=header&text=Premium%20Unlocker&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=YouTube%20•%20Spotify%20•%20Locket%20Gold&descAlignY=55&descSize=20"/>
@@ -10,34 +10,39 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2000&pause=500&color=FF69B4&center=true&vCenter=true&width=600&lines=%F0%9F%8C%B8+Nguy%E1%BB%85n+Ng%E1%BB%8Dc+Anh+T%C3%BA+Premium+%F0%9F%8C%B8;%E2%9C%A8+100%25+Free+Forever+%E2%9C%A8;%F0%9F%9A%80+Ultra+Fast+Performance+%F0%9F%9A%80" alt="Animated Title"/>
 </h1>
 
-
-<!-- Project Title -->
-<h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=4A90E2&center=true&vCenter=true&width=600&lines=Premium+Module+Collection;Open+Source+%E2%80%A2+MIT+Licensed;6+Platforms+%E2%80%A2+4+Apps+Supported" alt="Typing SVG"/>
-</h1>
-
-<p align="center">
-  <b>High-Performance Premium Unlocker for iOS Proxy Apps</b>
-  <br>
-  <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
-</p>
-
-<p align="center">
-  <b>High-Performance Premium Unlocker for iOS Proxy Apps</b>
-  <br>
-  <sub>Unlock YouTube Premium, Spotify Premium, Locket Gold & SoundCloud Go+</sub>
-</p>
-
-
-<!-- Language Links -->
-<p align="center">
-  <a href="#tiếng-việt"><kbd> 🇻🇳 Tiếng Việt </kbd></a>
-  <a href="#english"><kbd> 🇺🇸 English </kbd></a>
-  <a href="#日本語"><kbd> 🇯🇵 日本語 </kbd></a>
-</p>
+<!-- Glowing Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br>
 
+<!-- Language Selector -->
+<table>
+<tr>
+<td align="center" width="200">
+<a href="#-tiếng-việt">
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fb-1f1f3.svg" width="48" alt="Vietnam"/>
+<br><br>
+<b>🇻🇳 Tiếng Việt</b>
+</a>
+</td>
+<td align="center" width="200">
+<a href="#-english">
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1fa-1f1f8.svg" width="48" alt="English"/>
+<br><br>
+<b>🇺🇸 English</b>
+</a>
+</td>
+<td align="center" width="200">
+<a href="#-日本語">
+<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1ef-1f1f5.svg" width="48" alt="Japan"/>
+<br><br>
+<b>🇯🇵 日本語</b>
+</a>
+</td>
+</tr>
+</table>
+
+<br>
 <!-- Status Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-iOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white"/>
