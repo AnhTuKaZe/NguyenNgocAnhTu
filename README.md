@@ -1917,14 +1917,38 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
-## 🎨 Made with ❤️ in Vietnam 🇻🇳
+<br>
 
-<!-- GitHub Activity Graph -->
-<h3 align="center">📈 Contribution Graph</h3>
+## 📊 Project Stats
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z3rokaze&custom_title=Project%20Activity&bg_color=1a1a2e&color=4A90E2&line=F39C12&point=50C878&area_color=7F52FF&area=true&hide_border=true" width="100%"/>
-</p>
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/github/stars/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=FFD700"/>
+<br>
+<b>Stars</b>
+</td>
+<td align="center">
+<img src="https://img.shields.io/github/forks/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=4A90E2"/>
+<br>
+<b>Forks</b>
+</td>
+<td align="center">
+<img src="https://img.shields.io/github/issues/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E&color=F39C12"/>
+<br>
+<b>Issues</b>
+</td>
+<td align="center">
+<img src="https://img.shields.io/github/license/z3rokaze/NguyenNgocAnhTu?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=32383E&color=50C878"/>
+<br>
+<b>License</b>
+</td>
+</tr>
+</table>
+
+</div>
 
 <br>
 
@@ -1973,54 +1997,70 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 <br>
 
 <!-- Copyright -->
-<h3>
-  Copyright © 2025 
-  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">Nguyễn Ngọc Anh Tú</a> 
-  🌸
-</h3>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Made_with-❤️_Love-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Open_Source-Community-34C759?style=for-the-badge&labelColor=1C1C1E"/>
+  <sub>
+    Copyright © 2025 
+    <a href="https://github.com/z3rokaze">Nguyễn Ngọc Anh Tú</a> 
+    • All Rights Reserved
+  </sub>
 </p>
-
-<br>
 
 <!-- Glowing Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 
 <br>
 
-<!-- Thank You Message -->
-<h2>
-  ⚡ Thank You for Using! ⚡
-</h2>
+## 📞 Support & Contact
 
-<h3>
-  🇻🇳 Cảm ơn bạn đã sử dụng! • 
-  🇺🇸 Thank you for using! • 
-  🇯🇵 ご利用ありがとうございます！
-</h3>
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/issues">
+<img src="https://img.icons8.com/fluency/96/bug.png" width="64"/>
+<br><br>
+<b>Report Bug</b>
+<br>
+<sub>GitHub Issues</sub>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://github.com/z3rokaze/NguyenNgocAnhTu/discussions">
+<img src="https://img.icons8.com/fluency/96/chat.png" width="64"/>
+<br><br>
+<b>Discussions</b>
+<br>
+<sub>Community Support</sub>
+</a>
+</td>
+<td align="center" width="33%">
+<a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
+<img src="https://img.icons8.com/fluency/96/facebook.png" width="64"/>
+<br><br>
+<b>Facebook</b>
+<br>
+<sub>Direct Contact</sub>
+</a>
+</td>
+</tr>
+</table>
+
+</div>
 
 <br>
 
-<!-- Social Links -->
+<!-- Version & Status Info -->
 <p align="center">
-  <a href="https://www.facebook.com/NguyenNgocAnhTu.VN">
-    <img src="https://img.shields.io/badge/Facebook-Support-0084FF?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1877F2"/>
-  </a>
-  <a href="https://github.com/z3rokaze/NguyenNgocAnhTu">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=32383E"/>
-  </a>
+  <img src="https://img.shields.io/badge/Status-Active-50C878?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Version-2.0-4A90E2?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Platforms-6-7F52FF?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Apps-4-F39C12?style=flat-square&labelColor=1C1C1E"/>
+  <img src="https://img.shields.io/badge/Updated-Oct_2025-FFD700?style=flat-square&labelColor=1C1C1E"/>
 </p>
 
-<br>
-
-<!-- Version Info -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.0-34C759?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Made_in-Vietnam-FF453A?style=for-the-badge&labelColor=1C1C1E"/>
-  <img src="https://img.shields.io/badge/Last_Updated-Oct_2025-0A84FF?style=for-the-badge&labelColor=1C1C1E"/>
+  <sub>Open Source • MIT License • Community Driven</sub>
 </p>
 
 <br>
