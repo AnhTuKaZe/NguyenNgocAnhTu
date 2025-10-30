@@ -730,7 +730,7 @@ App → Configuration → Modules
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
 <br><br>
 <h3>🔧 Bug Reports</h3>
 <sub>🛡️ Technical issues only</sub>
@@ -1206,7 +1206,7 @@ You can customize YouTube features by editing the `argument` parameter in the mo
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
 <br><br>
 <h3>🔧 Bug Reports</h3>
 <sub>🛡️ Technical issues only</sub>
@@ -1682,7 +1682,7 @@ https://raw.githubusercontent.com/z3rokaze/NguyenNgocAnhTu/main/Module/NguyenNgo
 </a>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/3d-fluency/94/bug.png" width="80"/>
+<img src="https://img.icons8.com/3d-fluency/94/technical-support.png" width="80"/>
 <br><br>
 <h3>🔧 バグ報告</h3>
 <sub>🛡️ 技術的な問題のみ</sub>
